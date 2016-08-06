@@ -69,6 +69,25 @@
 		/*color: #E7FDBD;*/
 	}
 
+	.tooltip 
+	{
+		background-color: #E1D486;
+		color: black;
+		opacity: .9;
+	    position: absolute;
+	    height: auto;
+	    padding: 4px;
+	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    pointer-events: none;
+	}
+
+	.hidden
+	{
+		display: none;
+	}
+
 	p
 	{
 		display: inline;
@@ -148,7 +167,9 @@
 	</div>
 
 	<div id="skillTree">
-
+		<div id="tooltip" class="hidden">
+			<p><span id="value"></span></p>
+		</div>
 	</div>	
 </body>
 
@@ -228,6 +249,9 @@ function changeClass()
 function changeSpecialization()
 {
 	specialization = specializationDropdown.value;
+
+	calculateSkillPoints();
+	resetSkillPoints();
 }
 
 function calculateSkillPoints()
