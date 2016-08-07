@@ -1,0 +1,491 @@
+<!DOCTYPE html>	
+
+<title>Etrian Odyssey V Skill Simulator</title>
+<meta charset="utf-8"/>
+
+<style>
+	body
+	{
+		background-color: #002B2A;
+		font-family: Helvetica, Arial;
+		color: #E7FDBD;
+	}
+
+	#header
+	{
+		justify-content: center;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px 10px 10px;
+	}
+
+	#header div
+	{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 15px 0px 15px;
+	}
+
+	#treeSelector
+	{
+		justify-content: center;
+		display: flex;
+		flex-direction: row;
+		background-color: #033B3A;
+		height: 40px;
+	}
+
+	#treeSelector div
+	{
+		text-align: center;
+		display: flex;
+		background-color: #033B3A;
+		flex-grow: 1;
+		font-size: 24px;
+		align-items: center;
+		justify-content: center;	
+	}
+
+	#treeSelector div .selected
+	{
+		background-color: #185F51;
+	}
+
+	#treeSelector div:hover
+	{
+		background-color: #E7FDBD;
+		color: #033B3A;
+	}
+
+	#treeSelector .selected
+	{
+		background-color: #185F51;
+	}
+
+	#skillTreeContainer
+	{
+		background-color: #185F51;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+		height: 720px;
+	}
+
+	#skillTree
+	{
+		background-color: none;		
+	}
+
+	.skillBox
+	{
+		color: #E7FDBD;
+		border: 2px solid;
+		border-radius: 30px;
+		border-color: #ACFFE5;
+		position: absolute;
+		text-align: center;
+		background-color: #019484;	
+		display: flex;	
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;		
+	}
+
+	.line
+	{
+		position: absolute;
+		background-color: #ACFFE5;
+	}
+
+	.levelReq
+	{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		font-weight: bold;
+		color: #ffff99;
+		text-shadow: -1px -1px 0 #105068, 1px -1px 0 #105068, -1px 1px 0 #105068, 1px 1px 0 #105068;
+		text-align: center;
+		width: 30px;
+		height: 20px;
+	}
+
+	.tooltip 
+	{
+		background-color: #E1D486;
+		color: black;
+		opacity: .9;
+	    position: absolute;
+	    height: auto;
+	    padding: 4px;
+	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    pointer-events: none;
+	}
+
+	.hidden
+	{
+		display: none;
+	}
+
+	p
+	{
+		display: inline;
+	}
+</style>
+
+<body onload="init()">
+	<div id="header">
+		<div>
+			<div>
+				<strong>Level:</strong>
+				<select id="levelDropdown" onchange="changeLevel()"></select>
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<strong>Race:</strong>
+				<select id="raceDropdown" onchange="changeRace()">
+					<option value="earthrun">Earthrun</option>
+					<option value="lunaria">Lunaria</option>
+					<option value="therian">Therian</option>
+					<option value="brownie">Brownie</option>
+				</select>
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<strong>Class:</strong>
+				<select id="classDropdown" onchange="changeClass()">
+					<option value="fencer">Fencer</option>
+					<option value="dragoon">Dragoon</option>
+					<option value="cestus">Cestus</option>
+					<option value="reaper">Reaper</option>
+					<option value="warlock">Warlock</option>
+					<option value="necromancer">Necromancer</option>
+					<option value="hound">Hound</option>
+					<option value="masurao">Masurao</option>
+					<option value="shaman">Shaman</option>
+					<option value="herbalist">Herbalist</option>
+				</select>
+			</div>
+
+			<br>
+
+			<div>
+				<strong>Specialization:</strong>
+				<select id="specializationDropdown" onchange="changeSpecialization()">
+					<option value="none">N/A</option>
+					<option value="typeA">Type A</option>
+					<option value="typeB">Type B</option>
+				</select>
+			</div>
+		</div>
+
+		<div>
+			<strong>Points Remaining: <p id="remainingPointsLabel"></p>/<p id="maxPointsLabel"></p></strong>
+		</div>
+	</div>
+
+	<div id="treeSelector">
+		<div id="raceTreeButton" onclick="selectTree(event)">
+			<strong>Race Skills</strong>
+		</div>
+
+		<div id="classTreeButton" onclick="selectTree(event)">
+		<strong>Class Skills</strong>
+		</div>
+	</div>
+
+	<div id="skillTreeContainer">
+		<div id="tooltip" class="hidden">
+			<p><span id="value"></span></p>
+		</div>
+
+		<div id="skillTree">
+		</div>
+	</div>	
+</body>
+
+<script type="text/javascript" src="data/classSkills.js"></script>
+<script type="text/javascript" src="data/classSkillLevels.js"></script>
+<script type="text/javascript" src="data/classSkillForwardReqs.js"></script>
+
+<script type="text/javascript">
+
+// Constants
+const MAX_CLASSTREE_HEIGHT = 7;
+const MAX_CLASSTREE_WIDTH = 8;
+
+const CLASSTREE_WIDTH = 1600;
+const CLASSTREE_HEIGHT = 600;
+
+const SKILLBOX_WIDTH = 300;
+const SKILLBOX_HEIGHT = 50;
+const SKILLBOX_PADDING = {x:100, y:30};
+
+// HTML elements
+var levelDropdown;
+var raceDropdown;
+var classDropdown;
+var specializationDropdown;
+
+var remainingPointsLabel;
+var maxPointsLabel;
+
+var treeDiv;
+
+// Character properties
+var level;
+var race;
+var className;
+var specName;
+
+// Skill points
+var remainingPoints;
+var maxPoints;
+
+// Working data sets
+var activeClassSkills;
+var activeClassSkillForwards;
+var activeSpecSkills;
+var activeRaceSkills;
+
+function init()
+{
+	levelDropdown = document.getElementById("levelDropdown");
+	raceDropdown = document.getElementById("raceDropdown");
+	classDropdown = document.getElementById("classDropdown");
+	specializationDropdown = document.getElementById("specializationDropdown");
+
+	remainingPointsLabel = document.getElementById("remainingPointsLabel");
+	maxPointsLabel = document.getElementById("maxPointsLabel");
+
+	treeDiv = document.getElementById("skillTree");
+	treeDiv.style.width = CLASSTREE_WIDTH + "px";
+	treeDiv.style.height = CLASSTREE_HEIGHT + "px";
+
+
+	populateLevelDropdown();
+
+	changeLevel();
+	changeRace();
+	changeClass();
+	changeSpecialization();
+
+	calculateSkillPoints();
+	resetSkillPoints();
+
+	showClassSkillTree();
+}
+
+function populateLevelDropdown()
+{
+	for(var i = 1; i <= 99; i++)
+	{
+		var option = document.createElement("option");
+		option.innerHTML = i;
+		option.value = i;
+		levelDropdown.appendChild(option);
+	}
+}
+
+function changeLevel()
+{
+	var oldLevel = level;
+	level = +levelDropdown.value;
+
+	calculateSkillPoints();
+	resetSkillPoints();
+}
+
+function changeRace()
+{
+	race = raceDropdown.value;
+}
+
+function changeClass()
+{
+	var oldClass = className;
+	className = classDropdown.value;
+
+	if(oldClass != className)
+	{
+		// we selected another class, take back skill points and draw new skill tree
+		resetSkillPoints();
+		showClassSkillTree();
+	}
+}
+
+function changeSpecialization()
+{
+	specName = specializationDropdown.value;
+
+	calculateSkillPoints();
+	resetSkillPoints();
+}
+
+function calculateSkillPoints()
+{
+	var points = 2;
+
+	points += level;
+
+	if(specName !== "none")
+		points += 5;
+
+	maxPoints = points;	
+}
+
+function resetSkillPoints()
+{
+	calculateSkillPoints();
+	remainingPoints = maxPoints;
+
+	updatePointsLabels();
+}
+
+function updatePointsLabels()
+{
+	remainingPointsLabel.innerHTML = remainingPoints;
+	maxPointsLabel.innerHTML = maxPoints;
+}
+
+function selectTree(e)
+{
+	var clicked = e.target || e.srcElement;
+	
+	if(clicked === raceTreeButton)
+	{
+		showRaceSkillTree();
+	}
+	else
+	{
+		showClassSkillTree();
+	}
+}
+
+function showClassSkillTree()
+{
+	// clear tree canvas
+	while (treeDiv.firstChild) 
+	{
+    	treeDiv.removeChild(treeDiv.firstChild);
+	}
+
+	raceTreeButton.className = "";
+	classTreeButton.className = "selected";
+
+	// grab data for the class
+	activeClassSkills = classSkills[className].base;
+	activeClassSkillForwards = classSkillForwardReqs[className].base;
+
+	if(specName !== "none")
+	{
+		activeSpecSkills = classSkills[className][specName];
+	}
+	else
+	{
+		activeSpecSkills = {};
+	}
+
+	/*
+	activeRaceSkills = raceSkills[race];
+	*/
+
+	// create and place node divs for each skill in the active tree
+
+	Object.keys(activeClassSkills).forEach(function(skillName)
+	{		
+		var currentSkill = activeClassSkills[skillName];
+		var currentForwards = activeClassSkillForwards[skillName];
+
+		// draw prereq lines that connect this skill to others
+
+		// draw lines to forwards
+		if(Object.keys(currentForwards).length > 0)
+		{
+			var startx = (currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) + SKILLBOX_WIDTH;
+			var starty = (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2;
+			drawHorizontalLine(startx, starty, SKILLBOX_PADDING.x/2);
+
+			// draw required level on line
+			var levelReq = document.createElement("div");
+			levelReq.innerHTML = "Lv2";
+			levelReq.className = "levelReq";
+			console.log("w: " + levelReq.style.width);
+			levelReq.style.left = treeDiv.getBoundingClientRect().left + window.scrollX + startx + SKILLBOX_PADDING.x/4 - 15 + "px";
+			levelReq.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + starty - 10 + "px";
+			treeDiv.appendChild(levelReq);
+		}
+
+		// draw lines back to prereqs
+		var prereqNames = Object.keys(currentSkill.dep);
+
+		if(prereqNames.length > 0)
+		{
+			drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2);
+
+			// if there were multiple prereqs draw a connecting line
+			if(prereqNames.length > 1)
+			{
+				var starty = classSkills[className].base[prereqNames[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
+
+				drawVerticalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, starty, (prereqNames.length - 1) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y));
+			}
+		}		
+
+		// draw skillbox
+		var skillDiv = document.createElement("div");
+		skillDiv.innerHTML = "<strong>" + currentSkill.name_en + "</strong>&ensp;(" + currentSkill.name_jp + ")";
+		skillDiv.className = "skillBox";
+		skillDiv.style.width = SKILLBOX_WIDTH + "px";
+		skillDiv.style.height = SKILLBOX_HEIGHT + "px";
+		skillDiv.style.left = treeDiv.getBoundingClientRect().left + window.scrollX + (+currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) + "px";
+		skillDiv.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + (+currentSkill.coords.y) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + "px";
+		treeDiv.appendChild(skillDiv);
+	});
+}
+
+function showRaceSkillTree()
+{
+	// clear tree canvas
+	while (treeDiv.firstChild) 
+	{
+    	treeDiv.removeChild(treeDiv.firstChild);
+	}
+
+	raceTreeButton.className = "selected";
+	classTreeButton.className = "";
+
+
+}
+
+function drawVerticalLine(x, y, length)
+{
+	var line = document.createElement("div");
+	line.className = "line";
+	line.style.width = "4px";
+	line.style.height = length + 4 + "px"; 
+	line.style.left = treeDiv.getBoundingClientRect().left + window.scrollX + x + "px";
+	line.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + y + "px";
+	treeDiv.appendChild(line);
+}
+
+function drawHorizontalLine(x, y, length)
+{
+	var line = document.createElement("div");
+	line.className = "line";
+	line.style.width = length + 4 + "px";
+	line.style.height = "4px";
+	line.style.left = treeDiv.getBoundingClientRect().left + window.scrollX + x + "px";
+	line.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + y + "px";
+	treeDiv.appendChild(line);
+}
+
+</script>
