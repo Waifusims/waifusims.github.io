@@ -191,7 +191,7 @@
 		color: black;
 		opacity: .9;
 	    position: absolute;
-	    max-width: 650px;
+	    max-width: 550px;
 	    height: auto;
 	    padding: 4px;
 	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
@@ -254,15 +254,17 @@
 			<div>
 				<strong>Specialization:</strong>
 				<select id="specializationDropdown" onchange="changeSpecialization()">
-					<option value="none">N/A</option>
-					<option value="typeA">Type A</option>
-					<option value="typeB">Type B</option>
+					<option value="base">N/A</option>
+					<option value="specA">Type A</option>
+					<option value="specB">Type B</option>
 				</select>
 			</div>
 		</div>
 
 		<div>
 			<strong>Points Remaining: <p id="remainingPointsLabel"></p>/<p id="maxPointsLabel"></p></strong>
+			<br>
+			<button onclick="resetSkillPoints()">Reset Skill Points</button>
 		</div>
 	</div>
 
@@ -330,7 +332,6 @@ var maxPoints;
 var activeClassSkills;
 var activeClassSkillLevels;
 var activeClassSkillForwards;
-var activeSpecSkills;
 var activeRaceSkills;
 
 function init()
@@ -350,12 +351,14 @@ function init()
 	tooltip = document.getElementById("tooltip");
 
 	populateLevelDropdown();
+	
+	specName = specializationDropdown.value;
+	className = classDropdown.value;
+	level = +levelDropdown.value;
+	race = raceDropdown.value;
 
-	changeLevel();
-	changeRace();
-	changeClass();
-	changeSpecialization();
-
+	showClassSkillTree();
+	
 	calculateSkillPoints();
 	resetSkillPoints();
 }
@@ -388,6 +391,8 @@ function changeLevel()
 
 		updatePointsLabels();
 	}
+
+	showClassSkillTree();
 }
 
 function changeRace()
@@ -413,6 +418,7 @@ function changeSpecialization()
 	specName = specializationDropdown.value;
 
 	calculateSkillPoints();
+	showClassSkillTree();
 	resetSkillPoints();
 }
 
@@ -422,7 +428,7 @@ function calculateSkillPoints()
 
 	points += level;
 
-	if(specName !== "none")
+	if(specName !== "base")
 		points += 5;
 
 	maxPoints = points;	
@@ -463,6 +469,11 @@ function updatePointsLabels()
 
 function canLearn(skillName)
 {
+	if(activeClassSkills[skillName].reqLevel > level)
+	{
+		return false;
+	}
+
 	var deps = Object.keys(activeClassSkills[skillName].dep);
 
 	for(var i = 0; i < deps.length; i++)
@@ -492,20 +503,7 @@ function updateReqs(skillName)
 
 		if(skillDiv != undefined)
 		{
-			var active = true;
-
-			var deps = Object.keys(activeClassSkills[forwardSkill].dep)
-
-			for(var i = 0; i < deps.length; i++)
-			{
-				if(!(activeClassSkills[deps[i]].level >= activeClassSkills[forwardSkill].dep[deps[i]]))
-				{
-					active = false;
-					break;
-				}
-			}
-
-			if(!active)
+			if(!canLearn(forwardSkill))
 			{
 				// we don't have enough points to have this skill learned, reclaim any points in it and mark it inactive
 				remainingPoints += activeClassSkills[forwardSkill].level;
@@ -618,18 +616,11 @@ function showClassSkillTree()
 	classTreeButton.className = "selected";
 
 	// grab data for the class
-	activeClassSkills = classSkills[className].base;
-	activeClassSkillLevels = classSkillLevels[className].base;
-	activeClassSkillForwards = classSkillForwardReqs[className].base;
+	activeClassSkills = classSkills[className][specName];
+	activeClassSkillLevels = classSkillLevels[className][specName];
+	activeClassSkillForwards = classSkillForwardReqs[className][specName];
 
-	if(specName !== "none")
-	{
-		activeSpecSkills = classSkills[className][specName];
-	}
-	else
-	{
-		activeSpecSkills = {};
-	}
+	console.log(activeClassSkills);
 
 	/*
 	activeRaceSkills = raceSkills[race];
@@ -651,6 +642,15 @@ function showClassSkillTree()
 			var starty = (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2;
 			drawHorizontalLine(startx, starty, SKILLBOX_PADDING.x/2);
 
+			// if there was more than one forward draw a line connecting them
+			if(Object.keys(currentForwards).length > 1)
+			{
+				var ox = (currentSkill.coords.x + 1) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2
+				var oy = classSkills[className][specName][Object.keys(currentForwards)[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
+
+				drawVerticalLine(ox, oy, (Object.keys(currentForwards).length - 1) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y));
+			}
+
 			// draw required level on line
 			var levelReq = document.createElement("div");
 			levelReq.innerHTML = "Lv" + currentForwards[Object.keys(currentForwards)[0]];
@@ -666,14 +666,14 @@ function showClassSkillTree()
 		if(prereqNames.length > 0)
 		{
 			drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2);
-
+			
 			// if there were multiple prereqs draw a connecting line
 			if(prereqNames.length > 1)
 			{
-				var starty = classSkills[className].base[prereqNames[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
+				var starty = classSkills[className][specName][prereqNames[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
 
 				drawVerticalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, starty, (prereqNames.length - 1) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y));
-			}
+			}			
 		}		
 
 		// create skillbox
@@ -700,7 +700,7 @@ function showClassSkillTree()
 		for(var i = 0; i < activeClassSkills[skillName].max; i++)
 		{
 			var levelBox = document.createElement("div");
-			levelBox.className = "levelBox";
+			levelBox.className = activeClassSkills[skillName].level > i ? "activeLevelBox" : "levelBox";
 			levelBoxContainer.appendChild(levelBox);
 		}	
 
@@ -748,6 +748,9 @@ function drawHorizontalLine(x, y, length)
 function updateTooltipText(skillName)
 {
 	tooltip.innerHTML = activeClassSkills[skillName].details + "<br>";
+
+	if(!activeClassSkillLevels[skillName])
+		return;
 
 	Object.keys(activeClassSkillLevels[skillName]).forEach(function(level)
 	{		
