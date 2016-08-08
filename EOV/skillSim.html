@@ -330,8 +330,6 @@ function init()
 
 	calculateSkillPoints();
 	resetSkillPoints();
-
-	showClassSkillTree();
 }
 
 function populateLevelDropdown()
@@ -376,9 +374,9 @@ function changeClass()
 
 	if(oldClass != className)
 	{
-		// we selected another class, take back skill points and draw new skill tree
-		resetSkillPoints();
+		// we selected another class, take back skill points and draw new skill tree		
 		showClassSkillTree();
+		resetSkillPoints();
 	}
 }
 
@@ -415,6 +413,11 @@ function resetSkillPoints()
 		});
 	}
 
+	Object.keys(activeClassSkills).forEach(function(skillName)
+	{
+		updateReqs(skillName);
+	});
+	
 	updatePointsLabels();
 }
 
@@ -725,14 +728,20 @@ function onSkillClick(skillName, e)
 {
 	var source = e.target || e.srcElement;
 
-	addPoint(skillName);
+	if(source.className != "inactive")
+	{
+		addPoint(skillName);
+	}
 }
 
 function onSkillRightClick(skillName, e)
 {
 	var source = e.target || e.srcElement;
 
-	subtractPoint(skillName);
+	if(source.className != "inactive")
+	{
+		subtractPoint(skillName);
+	}
 }
 
 </script>
