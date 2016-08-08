@@ -40,16 +40,26 @@ var classSkillForwardReqs =
 		},
 		specB:
 		{
-			RapierMastery: {},
+			RapierMastery: {SpeedofSoundBlade:3},
 			ChainFire: {ChainBoost:2, ChainBurst:2},
 			ChainIce: {ChainBoost:2, ChainBurst:2},
 			ChainVolt: {ChainBoost:2, ChainBurst:2},
 			Predict: {WindCurtain:3},
-			ChainBoost: {},
-			ChainBurst: {},
+			ChainBoost: {ChainKiller:3},
+			ChainBurst: {ChainKiller:3},
 			WindCurtain: {},
-			VisionThrust: {},
-			Sylphid: {}
+			VisionThrust: {RandomStab:3},
+			Sylphid: {},
+			SpeedofSoundBlade: {},
+			ChainKiller: {ChainAll:5, ChainPlus:5, ChainDouble:5},
+			SylphScreen: {},
+			RandomStab: {Resonance:5},
+			SpeedBoost: {},
+			PhysicalAttackBoost: {},
+			ChainAll: {},
+			ChainPlus: {},
+			ChainDouble: {},
+			Resonance: {}
 		}
 	},
 	dragoon: 

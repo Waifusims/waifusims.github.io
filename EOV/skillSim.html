@@ -663,7 +663,15 @@ function showClassSkillTree()
 
 		if(prereqNames.length > 0)
 		{
-			drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2);
+			// if the skills are farther than one column apart draw a longer line
+			if(currentSkill.coords.x - classSkills[className][specName][prereqNames[0]].coords.x > 1)
+			{
+				drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2 + (currentSkill.coords.x - classSkills[className][specName][prereqNames[0]].coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING));
+			}
+			else
+			{
+				drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2);
+			}
 			
 			// if there were multiple prereqs draw a connecting line
 			if(prereqNames.length > 1)
