@@ -6,17 +6,24 @@
 <style>
 	body
 	{
-		background-color: #002B2A;
+		background-color: #185F51;
 		font-family: Helvetica, Arial;
 		color: #E7FDBD;
+		margin: 0px;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-o-user-select: none;
 	}
 
 	#header
 	{
+		background-color: #002B2A;
 		justify-content: center;
         display: flex;
         flex-direction: row;
-        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
 	}
 
 	#header div
@@ -78,7 +85,7 @@
 
 	.skillBox
 	{
-		color: #E7FDBD;
+		color: #ACFFE5;
 		border: 2px solid;
 		border-radius: 30px;
 		border-color: #ACFFE5;
@@ -89,6 +96,42 @@
 		align-items: center;
 		justify-content: center;
 		font-size: 18px;		
+	}
+
+	.skillBox:hover
+	{
+		color: #E7FDBD;
+		background-color: #E5885B;	
+		border-color: #E7FDBD;
+	}
+
+	.skillBox:active
+	{
+		color: #E5885B;
+		background-color: #E7FDBD;
+		border-color: #E5885B;
+	}
+
+	.inactive
+	{
+		border: 2px solid;
+		border-radius: 30px;
+		position: absolute;
+		text-align: center;
+		display: flex;	
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;	
+		color: #D8DFD8;
+		background-color: #586F68;
+		border-color: #D8DFD8;
+	}	
+
+	.inactive:hover
+	{
+		color: #586F68;
+		background-color: #D8DFD8;
+		border-color: #586F68;
 	}
 
 	.line
@@ -114,10 +157,13 @@
 
 	.tooltip 
 	{
-		background-color: #E1D486;
+		text-align: center;
+		font-size: 12px;
+		background-color: #E7FDBD;
 		color: black;
 		opacity: .9;
 	    position: absolute;
+	    max-width: 650px;
 	    height: auto;
 	    padding: 4px;
 	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
@@ -203,13 +249,13 @@
 	</div>
 
 	<div id="skillTreeContainer">
-		<div id="tooltip" class="hidden">
-			<p><span id="value"></span></p>
-		</div>
-
 		<div id="skillTree">
 		</div>
 	</div>	
+
+	<div id="tooltip" class="hidden">
+			<p><span id="value"></span></p>
+	</div>
 </body>
 
 <script type="text/javascript" src="data/classSkills.js"></script>
@@ -240,6 +286,8 @@ var maxPointsLabel;
 
 var treeDiv;
 
+var tooltip;
+
 // Character properties
 var level;
 var race;
@@ -252,6 +300,7 @@ var maxPoints;
 
 // Working data sets
 var activeClassSkills;
+var activeClassSkillLevels;
 var activeClassSkillForwards;
 var activeSpecSkills;
 var activeRaceSkills;
@@ -270,6 +319,7 @@ function init()
 	treeDiv.style.width = CLASSTREE_WIDTH + "px";
 	treeDiv.style.height = CLASSTREE_HEIGHT + "px";
 
+	tooltip = document.getElementById("tooltip");
 
 	populateLevelDropdown();
 
@@ -299,9 +349,19 @@ function changeLevel()
 {
 	var oldLevel = level;
 	level = +levelDropdown.value;
+	
+	if(level < oldLevel)
+	{
+		resetSkillPoints();
+	}
+	else
+	{
+		calculateSkillPoints();
 
-	calculateSkillPoints();
-	resetSkillPoints();
+		remainingPoints += (level - oldLevel);
+
+		updatePointsLabels();
+	}
 }
 
 function changeRace()
@@ -347,6 +407,14 @@ function resetSkillPoints()
 	calculateSkillPoints();
 	remainingPoints = maxPoints;
 
+	if(activeClassSkills != undefined)
+	{
+		Object.keys(activeClassSkills).forEach(function(skill)
+		{
+			activeClassSkills[skill].level = 0;
+		});
+	}
+
 	updatePointsLabels();
 }
 
@@ -354,6 +422,102 @@ function updatePointsLabels()
 {
 	remainingPointsLabel.innerHTML = remainingPoints;
 	maxPointsLabel.innerHTML = maxPoints;
+}
+
+function canLearn(skillName)
+{
+	var deps = Object.keys(activeClassSkills[skillName].dep);
+
+	for(var i = 0; i < deps.length; i++)
+	{
+		if(!(activeClassSkills[deps[i]].level >= activeClassSkills[skillName].dep[deps[i]]))
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+
+function updateReqs(skillName)
+{
+	// check whether or not we have enough points in this skill to satsify prerequisites of later skills
+
+	// if we do not have enough levels, revoke points from later skills and mark them as inactive (we cannot learn them)
+	var forwards = Object.keys(activeClassSkillForwards[skillName]);
+
+	if(forwards.length == 0)
+		return;
+
+	forwards.forEach(function(forwardSkill)
+	{
+		var skillDiv = document.getElementById(forwardSkill);
+
+		if(skillDiv != undefined)
+		{
+			var active = true;
+
+			var deps = Object.keys(activeClassSkills[forwardSkill].dep)
+
+			for(var i = 0; i < deps.length; i++)
+			{
+				if(!(activeClassSkills[deps[i]].level >= activeClassSkills[forwardSkill].dep[deps[i]]))
+				{
+					active = false;
+					break;
+				}
+			}
+
+			if(!active)
+			{
+				// we don't have enough points to have this skill learned, reclaim any points in it and mark it inactive
+				remainingPoints += activeClassSkills[forwardSkill].level;
+				activeClassSkills[forwardSkill].level = 0;
+				skillDiv.className = "inactive";
+			}
+			else
+			{
+				// we have enough points to have this skill learned, mark it as active
+				skillDiv.className = "skillBox";
+			}
+
+			// check skills that require this forward skill
+			updateReqs(forwardSkill);
+		}
+	});
+
+	// if we have enough levels, leave them be
+}
+
+function addPoint(skillName)
+{
+	if(remainingPoints == 0)
+		return;
+
+	if(activeClassSkills[skillName].level == activeClassSkills[skillName].max)
+		return;
+
+	activeClassSkills[skillName].level++;
+	remainingPoints--;
+
+	updateReqs(skillName);
+
+	updateTooltipText(skillName);
+	updatePointsLabels();
+}
+
+function subtractPoint(skillName)
+{
+	if(activeClassSkills[skillName].level == 0)
+		return;
+
+	activeClassSkills[skillName].level--;
+	remainingPoints++;
+
+	updateReqs(skillName);
+
+	updateTooltipText(skillName);
+	updatePointsLabels();
 }
 
 function selectTree(e)
@@ -383,6 +547,7 @@ function showClassSkillTree()
 
 	// grab data for the class
 	activeClassSkills = classSkills[className].base;
+	activeClassSkillLevels = classSkillLevels[className].base;
 	activeClassSkillForwards = classSkillForwardReqs[className].base;
 
 	if(specName !== "none")
@@ -416,9 +581,8 @@ function showClassSkillTree()
 
 			// draw required level on line
 			var levelReq = document.createElement("div");
-			levelReq.innerHTML = "Lv2";
+			levelReq.innerHTML = "Lv" + currentForwards[Object.keys(currentForwards)[0]];
 			levelReq.className = "levelReq";
-			console.log("w: " + levelReq.style.width);
 			levelReq.style.left = treeDiv.getBoundingClientRect().left + window.scrollX + startx + SKILLBOX_PADDING.x/4 - 15 + "px";
 			levelReq.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + starty - 10 + "px";
 			treeDiv.appendChild(levelReq);
@@ -440,14 +604,23 @@ function showClassSkillTree()
 			}
 		}		
 
-		// draw skillbox
+		// create skillbox
 		var skillDiv = document.createElement("div");
 		skillDiv.innerHTML = "<strong>" + currentSkill.name_en + "</strong>&ensp;(" + currentSkill.name_jp + ")";
-		skillDiv.className = "skillBox";
+		skillDiv.className =  canLearn(skillName) ? "skillBox" : "inactive";
+		skillDiv.id = skillName;
 		skillDiv.style.width = SKILLBOX_WIDTH + "px";
 		skillDiv.style.height = SKILLBOX_HEIGHT + "px";
 		skillDiv.style.left = treeDiv.getBoundingClientRect().left + window.scrollX + (+currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) + "px";
-		skillDiv.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + (+currentSkill.coords.y) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + "px";
+		skillDiv.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + (+currentSkill.coords.y) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + "px"; 
+
+		// add event handler
+		skillDiv.onmouseenter = function(e){onSkillMouseEnter(skillName, e);};
+		skillDiv.onmouseleave = function(e){onSkillMouseLeave(skillName, e);};
+		skillDiv.onclick = function(e){onSkillClick(skillName, e);};
+		skillDiv.oncontextmenu = function(e){onSkillRightClick(skillName, e); return false;};
+
+		// draw skillbox
 		treeDiv.appendChild(skillDiv);
 	});
 }
@@ -486,6 +659,80 @@ function drawHorizontalLine(x, y, length)
 	line.style.left = treeDiv.getBoundingClientRect().left + window.scrollX + x + "px";
 	line.style.top = treeDiv.getBoundingClientRect().top + window.scrollY + y + "px";
 	treeDiv.appendChild(line);
+}
+
+function updateTooltipText(skillName)
+{
+	tooltip.innerHTML = activeClassSkills[skillName].details + "<br>";
+
+	Object.keys(activeClassSkillLevels[skillName]).forEach(function(level)
+	{		
+		if(level == activeClassSkills[skillName].level)
+		{
+			tooltip.innerHTML += "<br><strong><span>Lv" + level + ": " + activeClassSkillLevels[skillName][level] + "</span></strong>";
+		}
+		else
+		{
+			tooltip.innerHTML += "<br><span>Lv" + level + ": " + activeClassSkillLevels[skillName][level] + "</span>";
+		}
+	});
+}
+
+// event handlers
+function onSkillMouseEnter(skillName, e)
+{
+	var source = e.target || e.srcElement;
+
+	// update tooltip text
+	updateTooltipText(skillName);
+
+	// show tooltip
+	tooltip.className = "tooltip";
+
+	// set tooltip position
+	var x = source.getBoundingClientRect().left + window.scrollX + SKILLBOX_WIDTH/3;
+	var y = source.getBoundingClientRect().top + window.scrollY + SKILLBOX_HEIGHT + SKILLBOX_PADDING.y/3;
+
+	tooltip.style.left = x + "px";
+	tooltip.style.top = y + "px";	
+
+	// constrain tooltip to visible window
+	var roomx = tooltip.getBoundingClientRect().left + tooltip.getBoundingClientRect().width - (window.innerWidth);
+	var roomy = tooltip.getBoundingClientRect().top + tooltip.getBoundingClientRect().height - (window.innerHeight);
+
+	if(roomx > 0)
+	{
+		x -= roomx;
+		tooltip.style.left = x + "px";
+	}
+
+	if(roomy > 0)
+	{
+		y -= roomy;
+		tooltip.style.top = y + "px";
+	}	
+}
+
+function onSkillMouseLeave(skillName, e)
+{
+	var source = e.target || e.srcElement;
+
+	// hide tooltip
+	tooltip.className = "hidden";
+}
+
+function onSkillClick(skillName, e)
+{
+	var source = e.target || e.srcElement;
+
+	addPoint(skillName);
+}
+
+function onSkillRightClick(skillName, e)
+{
+	var source = e.target || e.srcElement;
+
+	subtractPoint(skillName);
 }
 
 </script>

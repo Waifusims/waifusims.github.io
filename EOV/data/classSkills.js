@@ -11,6 +11,7 @@ var classSkills =
 				details: "Raises attack power when a sword is equipped. Normal attacks with a sword become Stab attacks.",
 				dep: {},
 				active: false,
+				level: 0,
 				max: 10,
 				coords: {x:0, y:0}
 			},
@@ -21,6 +22,7 @@ var classSkills =
 				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
+				level: 0,
 				max: 10,
 				coords: {x:0, y:1}
 			},
@@ -31,6 +33,7 @@ var classSkills =
 				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
+				level: 0,
 				max: 10,
 				coords: {x:0, y:2}
 			},
@@ -41,6 +44,7 @@ var classSkills =
 				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
+				level: 0,
 				max: 10,
 				coords: {x:0, y:3}
 			},
@@ -51,6 +55,7 @@ var classSkills =
 				details: "For one turn, increases the Fencer's evasion and chance to be targeted. The Fencer takes 2.5x damage from all sources while Predict is active. Each time the Fencer dodges an attack, their evasion and chance to be targeted are decreased.",
 				dep: {},
 				active: true,
+				level: 0,
 				max: 10,
 				coords: {x:0, y:4}
 			},
@@ -61,6 +66,7 @@ var classSkills =
 				details: "Each time a Chain skill activates, the Chain skill's damage on that turn increases. The maximum bonus is 99%.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
+				level: 0,
 				max: 10,
 				coords: {x:1, y:1.5}
 			},
@@ -71,6 +77,7 @@ var classSkills =
 				details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element. The activation has +10 base accuracy at all levels.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
+				level: 0,
 				max: 10,
 				coords: {x:1, y:2.5}
 			},
@@ -81,6 +88,7 @@ var classSkills =
 				details: "For a set amount of turns, make a row of allies avoid a physical attack, only once.",
 				dep: {Predict:3},
 				active: true,
+				level: 0,
 				max: 5,
 				coords: {x:1, y:4}
 			},
@@ -91,6 +99,7 @@ var classSkills =
 				details: "Performs a STR-based stab attack to one target. This attack has a chance to inflict the blind ailment. Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
 				active: true,
+				level: 0,
 				max: 10,
 				coords: {x:1, y:5}
 			},
@@ -101,6 +110,7 @@ var classSkills =
 				details: "When an attack is dodged, the Fencer has a chance to counter-attack the source of the attack. Every time the Fencer counters, the chance to counter again on that turn decreases by 40%.",
 				dep: {},
 				active: false,
+				level: 0,
 				max: 10,
 				coords: {x:1, y:6}
 			}
