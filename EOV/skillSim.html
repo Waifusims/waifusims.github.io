@@ -510,6 +510,13 @@ function updateReqs(skillName)
 				// we don't have enough points to have this skill learned, reclaim any points in it and mark it inactive
 				remainingPoints += activeClassSkills[forwardSkill].level;
 				activeClassSkills[forwardSkill].level = 0;
+
+				var levelBoxes = document.getElementById(forwardSkill + "Levels").children;
+				for(var i = 0; i < levelBoxes.length; i++)
+				{
+					levelBoxes[i].className = "levelBox";
+				}
+
 				skillDiv.className = "inactive";
 			}
 			else
