@@ -93,6 +93,7 @@
 		text-align: center;
 		background-color: #019484;	
 		display: flex;	
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		font-size: 18px;		
@@ -119,6 +120,7 @@
 		position: absolute;
 		text-align: center;
 		display: flex;	
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		font-size: 18px;	
@@ -132,6 +134,32 @@
 		color: #586F68;
 		background-color: #D8DFD8;
 		border-color: #586F68;
+	}
+
+	.levelBoxContainer
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.levelBox
+	{
+		display: flex;
+		width: 8px;
+		height: 8px;
+		margin: 2px;
+		background-color: #002B2A;
+	}
+
+	.activeLevelBox
+	{
+		display: flex;
+		width: 8px;
+		height: 8px;
+		margin: 2px;
+		background-color: #E7FDBD;
 	}
 
 	.line
@@ -272,7 +300,7 @@ const CLASSTREE_WIDTH = 1600;
 const CLASSTREE_HEIGHT = 600;
 
 const SKILLBOX_WIDTH = 300;
-const SKILLBOX_HEIGHT = 50;
+const SKILLBOX_HEIGHT = 60;
 const SKILLBOX_PADDING = {x:100, y:30};
 
 // HTML elements
@@ -410,6 +438,12 @@ function resetSkillPoints()
 		Object.keys(activeClassSkills).forEach(function(skill)
 		{
 			activeClassSkills[skill].level = 0;
+
+			var levelBoxes = document.getElementById(skill + "Levels").children;
+			for(var i = 0; i < levelBoxes.length; i++)
+			{
+				levelBoxes[i].className = "levelBox";
+			}
 		});
 	}
 
@@ -501,6 +535,20 @@ function addPoint(skillName)
 		return;
 
 	activeClassSkills[skillName].level++;
+
+	var levelBoxes = document.getElementById(skillName + "Levels").children;
+	for(var i = 0; i < levelBoxes.length; i++)
+	{
+		if(i < activeClassSkills[skillName].level)
+		{
+			levelBoxes[i].className = "activeLevelBox";
+		}
+		else
+		{
+			levelBoxes[i].className = "levelBox";
+		}
+	}
+
 	remainingPoints--;
 
 	updateReqs(skillName);
@@ -515,6 +563,20 @@ function subtractPoint(skillName)
 		return;
 
 	activeClassSkills[skillName].level--;
+
+	var levelBoxes = document.getElementById(skillName + "Levels").children;
+	for(var i = 0; i < levelBoxes.length; i++)
+	{
+		if(i < activeClassSkills[skillName].level)
+		{
+			levelBoxes[i].className = "activeLevelBox";
+		}
+		else
+		{
+			levelBoxes[i].className = "levelBox";
+		}
+	}
+
 	remainingPoints++;
 
 	updateReqs(skillName);
@@ -623,6 +685,20 @@ function showClassSkillTree()
 		skillDiv.onclick = function(e){onSkillClick(skillName, e);};
 		skillDiv.oncontextmenu = function(e){onSkillRightClick(skillName, e); return false;};
 
+		// add level indicator
+		var levelBoxContainer = document.createElement("div");
+		levelBoxContainer.className = "levelBoxContainer";
+		levelBoxContainer.id = skillName + "Levels";
+
+		for(var i = 0; i < activeClassSkills[skillName].max; i++)
+		{
+			var levelBox = document.createElement("div");
+			levelBox.className = "levelBox";
+			levelBoxContainer.appendChild(levelBox);
+		}	
+
+		skillDiv.appendChild(levelBoxContainer);
+
 		// draw skillbox
 		treeDiv.appendChild(skillDiv);
 	});
@@ -638,8 +714,6 @@ function showRaceSkillTree()
 
 	raceTreeButton.className = "selected";
 	classTreeButton.className = "";
-
-
 }
 
 function drawVerticalLine(x, y, length)
