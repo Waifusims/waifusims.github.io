@@ -809,7 +809,7 @@ function onSkillClick(skillName, e)
 {
 	var source = e.target || e.srcElement;
 
-	if(source.className != "inactive")
+	if(canLearn(skillName))
 	{
 		addPoint(skillName);
 	}
@@ -819,7 +819,7 @@ function onSkillRightClick(skillName, e)
 {
 	var source = e.target || e.srcElement;
 
-	if(source.className != "inactive")
+	if(canLearn(skillName))
 	{
 		subtractPoint(skillName);
 	}
