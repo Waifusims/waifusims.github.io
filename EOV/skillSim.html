@@ -664,9 +664,15 @@ function showClassSkillTree()
 		if(prereqNames.length > 0)
 		{
 			// if the skills are farther than one column apart draw a longer line
-			if(currentSkill.coords.x - classSkills[className][specName][prereqNames[0]].coords.x > 1)
+			if(currentSkill.coords.x - activeClassSkills[prereqNames[0]].coords.x > 1)
 			{
-				drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2 + (currentSkill.coords.x - classSkills[className][specName][prereqNames[0]].coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING));
+				console.log("currentx: " + currentSkill.coords.x);
+				console.log("otherx: " + activeClassSkills[prereqNames[0]].coords.x);
+				var ox = (currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2 - ((currentSkill.coords.x - activeClassSkills[prereqNames[0]].coords.x - 1) * (SKILLBOX_PADDING.x + SKILLBOX_WIDTH));
+				console.log("ox: " + ox);
+				var ow = ((currentSkill.coords.x - activeClassSkills[prereqNames[0]].coords.x - 1) * (SKILLBOX_PADDING.x + SKILLBOX_WIDTH)) + SKILLBOX_PADDING.x/2;
+				console.log("ow: " + ow);
+				drawHorizontalLine(ox, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, ow);
 			}
 			else
 			{
