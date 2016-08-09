@@ -389,38 +389,137 @@ var classSkillLevels =
 	},
 	dragoon: 
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	cestus:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	reaper:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	warlock:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	necromancer:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	hound:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	masurao:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	shaman:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	herbalist:
 	{
-		
+		base:
+		{
+
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	}
 }

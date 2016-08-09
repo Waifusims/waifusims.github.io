@@ -64,38 +64,184 @@ var classSkillForwardReqs =
 	},
 	dragoon: 
 	{
-
+		base:
+		{
+			ShieldMastery: {},
+			LineGuard: {GunMount:2},
+			MaterialGuard: {GunMount:2},
+			HealingGuard: {GunMount:2},
+			Bunker: {DefensivePosition:2},
+			ArtilleryMastery: {},
+			GunMount: {},
+			BarrageWall: {},
+			DragonsRoar: {},
+			DefensivePosition: {}
+		},
+		specA:
+		{
+			ShieldMastery: {},
+			LineGuard: {GunMount:2},
+			MaterialGuard: {GunMount:2},
+			HealingGuard: {GunMount:2},
+			Bunker: {DefensivePosition:2},
+			ArtilleryMastery: {},
+			GunMount: {RecoveryGuard:3,CounterGuard:3,DivideGuard:3},
+			BarrageWall: {},
+			DragonsRoar: {PreemptiveRoar:3},
+			DefensivePosition: {PreemptiveBunker:3},
+			HPBoost: {},
+			RecoveryGuard: {FullGuard:3,SoulGuard:3},
+			CounterGuard: {FullGuard:3,SoulGuard:3},
+			DivideGuard: {FullGuard:3,SoulGuard:3},
+			ShieldThrow: {},
+			PreemptiveRoar: {DragonForce:3},
+			PreemptiveBunker: {},
+			FullGuard: {},
+			SoulGuard: {},
+			DragonForce: {}
+		},
+		specB:
+		{
+			ShieldMastery: {},
+			LineGuard: {GunMount:2},
+			MaterialGuard: {GunMount:2},
+			HealingGuard: {GunMount:2},
+			Bunker: {DefensivePosition:2},
+			ArtilleryMastery: {},
+			GunMount: {},
+			BarrageWall: {RapidCannon:3,CurseCannon:3,HypnoCannon:3},
+			DragonsRoar: {},
+			DefensivePosition: {Pillbox:3},
+			GunRevenge: {},
+			TPBoost: {BombardmentPrep:3},
+			RapidCannon: {BusterCannon:3},
+			CurseCannon: {BusterCannon:3},
+			HypnoCannon: {BusterCannon:3},
+			Pillbox: {GunSupport:3},
+			PhysicalAttackBoost: {},
+			BombardmentPrep: {},
+			BusterCannon: {},
+			GunSupport: {}
+		}
 	},
 	cestus:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	reaper:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	warlock:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	necromancer:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	hound:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	masurao:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	shaman:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	herbalist:
 	{
-		
+		base:
+		{
+
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	}
 }

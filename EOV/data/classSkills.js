@@ -614,38 +614,734 @@ var classSkills =
 	},
 	dragoon: 
 	{
-
+		base:
+		{
+			ShieldMastery:
+			{
+				name_en: "Shield Mastery",
+				name_jp: "盾マスタリー",
+				details: "Reduces physical damage taken when equipped with a shield.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			LineGuard:
+			{
+				name_en: "Line Guard",
+				name_jp: "ラインガード",
+				details: "Reduces physical damage taken to one row for one turn.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:1}
+			},
+			MaterialGuard:
+			{
+				name_en: "Material Guard",
+				name_jp: "マテリアルガード",
+				details: "Reduces magical damage taken by all allies this turn.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			HealingGuard:
+			{
+				name_en: "Healing Guard",
+				name_jp: "ヒーリングガード",
+				details: "Reduces physical damage taken by the Dragoon this turn, and recovers a fixed amount plus a percentage of the Dragoon's maximum HP when damage is taken.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:3}
+			},
+			Bunker:
+			{
+				name_en: "Bunker",
+				name_jp: "バンカー",
+				details: "Creates a bunker that draws enemy attacks. The bunker has 10 HP at all levels. Has a 125% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:6}
+			},
+			ArtilleryMastery:
+			{
+				name_en: "Artillery Mastery",
+				name_jp: "重砲マスタリー",
+				details: "Increases physical attack when equipped with artillery.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			GunMount:
+			{
+				name_en: "Gun Mount",
+				name_jp: "ガンマウント",
+				details: "Preserves the effect of last turn's guard skill while making a ranged Bash attack to 1 enemy.",
+				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			BarrageWall:
+			{
+				name_en: "Barrage Wall",
+				name_jp: "バラージウォール",
+				details: "Deals ranged bash damage to all enemies. Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			DragonsRoar:
+			{
+				name_en: "Dragon's Roar",
+				name_jp: "竜の咆哮",
+				details: "Increases one party member's defense and chance of being targeted for a set amount of turns.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			DefensivePosition:
+			{
+				name_en: "Defensive Position",
+				name_jp: "防衛陣地",
+				details: "Increases all party members' physical defense for a set amount of turns. Has an 80% speed modifier at all levels.",
+				dep: {Bunker:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:6}
+			}
+		},
+		specA:
+		{
+			ShieldMastery:
+			{
+				name_en: "Shield Mastery",
+				name_jp: "盾マスタリー",
+				details: "Reduces physical damage taken when equipped with a shield.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			LineGuard:
+			{
+				name_en: "Line Guard",
+				name_jp: "ラインガード",
+				details: "Reduces physical damage taken to one row for one turn.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:1}
+			},
+			MaterialGuard:
+			{
+				name_en: "Material Guard",
+				name_jp: "マテリアルガード",
+				details: "Reduces magical damage taken by all allies this turn.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			HealingGuard:
+			{
+				name_en: "Healing Guard",
+				name_jp: "ヒーリングガード",
+				details: "Reduces physical damage taken by the Dragoon this turn, and recovers a fixed amount plus a percentage of the Dragoon's maximum HP when damage is taken.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:3}
+			},
+			Bunker:
+			{
+				name_en: "Bunker",
+				name_jp: "バンカー",
+				details: "Creates a bunker that draws enemy attacks. The bunker has 10 HP at all levels. Has a 125% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:6}
+			},
+			ArtilleryMastery:
+			{
+				name_en: "Artillery Mastery",
+				name_jp: "重砲マスタリー",
+				details: "Increases physical attack when equipped with artillery.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			GunMount:
+			{
+				name_en: "Gun Mount",
+				name_jp: "ガンマウント",
+				details: "Preserves the effect of last turn's guard skill while making a ranged Bash attack to 1 enemy.",
+				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			BarrageWall:
+			{
+				name_en: "Barrage Wall",
+				name_jp: "バラージウォール",
+				details: "Deals ranged bash damage to all enemies. Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			DragonsRoar:
+			{
+				name_en: "Dragon's Roar",
+				name_jp: "竜の咆哮",
+				details: "Increases one party member's defense and chance of being targeted for a set amount of turns.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			DefensivePosition:
+			{
+				name_en: "Defensive Position",
+				name_jp: "防衛陣地",
+				details: "Increases all party members' physical defense for a set amount of turns. Has an 80% speed modifier at all levels.",
+				dep: {Bunker:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:6}
+			},
+			HPBoost:
+			{
+				name_en: "HP Boost",
+				name_jp: "ＨＰブースト",
+				details: "Increases the Dragoon's maximum HP.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:0}
+			},
+			RecoveryGuard:
+			{
+				name_en: "Recovery Guard",
+				name_jp: "リカバリーガード",
+				details: "Reduces cut/stab/bash damage to one row for one turn. If a party member under the effect of Recovery Guard has binds, there is a chance the binds will be removed.",
+				dep: {GunMount:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:1}
+			},
+			CounterGuard:
+			{
+				name_en: "Counter Guard",
+				name_jp: "カウンターガード",
+				details: "Reduces cut/stab/bash damage to one row for one turn. If Counter Guard is activated by enemy damage, the Dragoon will counter with a ranged stab attack to the source of damage. The chance for countering starts at 100%, and from levels 1-9, will be reduced with each counter. Level 10 will always counter.",
+				dep: {GunMount:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:2}
+			},
+			DivideGuard:
+			{
+				name_en: "Divide Guard",
+				name_jp: "ディバイドガード",
+				details: "The Dragoon takes all damage for one party member for one turn. Reduces damage taken by the Dragoon while in effect.",
+				dep: {GunMount:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:3}
+			},
+			ShieldThrow:
+			{
+				name_en: "Shield Throw",
+				name_jp: "シールドスロー",
+				details: "Deals ranged cut damage to one row of enemies. Has a 60% speed modifier and 75 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:4}
+			},
+			PreemptiveRoar:
+			{
+				name_en: "Preemptive Roar",
+				name_jp: "先制咆哮",
+				details: "Gives a chance for the Dragoon to use Dragon's Roar on themself immediately at the start of battle.",
+				dep: {DragonsRoar:3},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 5,
+				coords: {x:2, y:5}
+			},
+			PreemptiveBunker:
+			{
+				name_en: "Preemptive Bunker",
+				name_jp: "先制バンカー",
+				details: "Gives a chance to use Bunker immediately at the start of battle.",
+				dep: {DefensivePosition:3},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 5,
+				coords: {x:2, y:6}
+			},
+			FullGuard:
+			{
+				name_en: "Full Guard",
+				name_jp: "フルガード",
+				details: "The Dragoon takes all damage for the party for one turn. Reduces damage taken by the Dragoon while in effect. The protection chance starts at 100%. Every time Full Guard activates, the chance of it activating again goes down.",
+				dep: {RecoveryGuard:3,CounterGuard:3,DivideGuard:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:1.5}
+			},
+			SoulGuard:
+			{
+				name_en: "Soul Guard",
+				name_jp: "ソウルガード",
+				details: "Reduces cut/stab/bash damage to one row for one turn. Party members under the effect of Soul Guard have a chance to survive fatal damage.",
+				dep: {RecoveryGuard:3,CounterGuard:3,DivideGuard:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:2.5}
+			},
+			DragonForce:
+			{
+				name_en: "Dragon Force",
+				name_jp: "竜圧",
+				details: "Gives a chance to nullify attacks on party members in the row that the Dragoon is not in.",
+				dep: {PreemptiveRoar:3},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:5}
+			}
+		},
+		specB:
+		{
+			ShieldMastery:
+			{
+				name_en: "Shield Mastery",
+				name_jp: "盾マスタリー",
+				details: "Reduces physical damage taken when equipped with a shield.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			LineGuard:
+			{
+				name_en: "Line Guard",
+				name_jp: "ラインガード",
+				details: "Reduces physical damage taken to one row for one turn.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:1}
+			},
+			MaterialGuard:
+			{
+				name_en: "Material Guard",
+				name_jp: "マテリアルガード",
+				details: "Reduces magical damage taken by all allies this turn.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			HealingGuard:
+			{
+				name_en: "Healing Guard",
+				name_jp: "ヒーリングガード",
+				details: "Reduces physical damage taken by the Dragoon this turn, and recovers a fixed amount plus a percentage of the Dragoon's maximum HP when damage is taken.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:3}
+			},
+			Bunker:
+			{
+				name_en: "Bunker",
+				name_jp: "バンカー",
+				details: "Creates a bunker that draws enemy attacks. The bunker has 10 HP at all levels. Has a 125% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:6}
+			},
+			ArtilleryMastery:
+			{
+				name_en: "Artillery Mastery",
+				name_jp: "重砲マスタリー",
+				details: "Increases physical attack when equipped with artillery.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			GunMount:
+			{
+				name_en: "Gun Mount",
+				name_jp: "ガンマウント",
+				details: "Preserves the effect of last turn's guard skill while making a ranged Bash attack to 1 enemy.",
+				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			BarrageWall:
+			{
+				name_en: "Barrage Wall",
+				name_jp: "バラージウォール",
+				details: "Deals ranged bash damage to all enemies. Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			DragonsRoar:
+			{
+				name_en: "Dragon's Roar",
+				name_jp: "竜の咆哮",
+				details: "Increases one party member's defense and chance of being targeted for a set amount of turns.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			DefensivePosition:
+			{
+				name_en: "Defensive Position",
+				name_jp: "防衛陣地",
+				details: "Increases all party members' physical defense for a set amount of turns. Has an 80% speed modifier at all levels.",
+				dep: {Bunker:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:6}
+			},
+			GunRevenge: 
+			{
+				name_en: "Gun Revenge",
+				name_jp: "ガンリベンジ",
+				details: "Increases the damage of artillery skills after either activating a Guard skill, or when the Bunker (possibly Pillbox too?) is attacked.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:0}
+			},
+			TPBoost: 
+			{
+				name_en: "TP Boost",
+				name_jp: "ＴＰブースト",
+				details: "Increases the Dragoon's maximum TP.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:1}
+			},
+			RapidCannon: 
+			{
+				name_en: "Rapid Cannon",
+				name_jp: "ラピッドカノン",
+				details: "Deals ranged bash damage to one enemy at the start of the turn. Has +20 base accuracy at all levels.",
+				dep: {BarrageWall:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:3}
+			},
+			CurseCannon: 
+			{
+				name_en: "Curse Cannon",
+				name_jp: "カースカノン",
+				details: "Deals ranged bash damage to one enemy. Attempts to inflict curse on the target. Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {BarrageWall:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:4}
+			},
+			HypnoCannon: 
+			{
+				name_en: "Hypno Cannon",
+				name_jp: "ヒュプノカノン",
+				details: "Deals ranged bash damage to one enemy. Attempts to inflict sleep on the target. Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {BarrageWall:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:5}
+			},
+			Pillbox: 
+			{
+				name_en: "Pillbox",
+				name_jp: "トーチカ",
+				details: "Creates a pillbox that can take hits. The pillbox will counter whoever attacks it. The pillbox has 10 HP at all levels. Has no speed modifier at all levels.",
+				dep: {DefensivePosition:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:6}
+			},
+			PhysicalAttackBoost: 
+			{
+				name_en: "Physical Attack Boost",
+				name_jp: "物理攻撃ブースト",
+				details: "Passively increases cut/stab/bash damage.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:0}
+			},
+			BombardmentPrep: 
+			{
+				name_en: "Bombardment Prep",
+				name_jp: "砲撃準備",
+				details: "Increases the damage, accuracy, and speed of the artillery skill used on the next turn. Has no speed modifier at all levels.",
+				dep: {TPBoost:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:1}
+			},
+			BusterCannon: 
+			{
+				name_en: "Buster Cannon",
+				name_jp: "バスターカノン",
+				details: "One turn after casting, deals ranged bash+fire damage to one enemy. Damage is multiplied by 2x if both the Dragoon and their target are in the front row, 1.5x if the Dragoon is in the back row and the target is in the front and vice versa, and 1x if both the Dragoon and their target are in the back row. Cannot be recasted until it has gone off. Initial prepration has a 90% speed modifier, actual hit has a 1000% speed modifier. Actual hit has no base accuracy modifier.",
+				dep: {RapidCannon:3,CurseCannon:3,HypnoCannon:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:4}
+			},
+			GunSupport: 
+			{
+				name_en: "Gun Support",
+				name_jp: "ガンサポート",
+				details: "Gives a chance to automatically use Pillbox when the Dragoon reduces damage dealt to them, or negates an attack.",
+				dep: {Pillbox:3},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:6}
+			}
+		}
 	},
 	cestus:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	reaper:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	warlock:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	necromancer:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	hound:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	masurao:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	shaman:
 	{
+		base:
+		{
 
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	},
 	herbalist:
 	{
-		
+		base:
+		{
+
+		},
+		specA:
+		{
+
+		},
+		specB:
+		{
+			
+		}
 	}
 }
