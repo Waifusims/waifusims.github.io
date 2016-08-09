@@ -183,15 +183,16 @@
 		height: 20px;
 	}
 
-	.tooltip 
+	.tooltip
 	{
+		min-width: 450px;
+		max-width: 450px;
 		text-align: center;
 		font-size: 12px;
 		background-color: #E7FDBD;
 		color: black;
 		opacity: .9;
 	    position: absolute;
-	    max-width: 550px;
 	    height: auto;
 	    padding: 4px;
 	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
@@ -378,6 +379,12 @@ function changeLevel()
 {
 	var oldLevel = level;
 	level = +levelDropdown.value;
+
+	if(level < 20)
+	{
+		specializationDropdown.selectedIndex = 0;
+		changeSpecialization();
+	}
 	
 	if(level < oldLevel)
 	{
@@ -416,6 +423,15 @@ function changeClass()
 function changeSpecialization()
 {
 	specName = specializationDropdown.value;
+
+	if(specName != "base")
+	{
+		if(level < 20)
+		{
+			levelDropdown.selectedIndex = 19;
+			changeLevel();
+		}
+	}
 
 	calculateSkillPoints();
 	showClassSkillTree();
@@ -761,7 +777,14 @@ function drawHorizontalLine(x, y, length)
 
 function updateTooltipText(skillName)
 {
-	tooltip.innerHTML = activeClassSkills[skillName].details + "<br>";
+	// add skill name
+	tooltip.innerHTML = "<strong>" + activeClassSkills[skillName].name_en;
+
+	// add passive/active indicator
+	tooltip.innerHTML += ":&ensp;" + (activeClassSkills[skillName].active ? "Active" : "Passive") + "<br>- - -<br>";
+
+	// add skill description
+	tooltip.innerHTML += "<p>" + activeClassSkills[skillName].details + "</p><br>";
 
 	if(!activeClassSkillLevels[skillName])
 		return;

@@ -8,7 +8,7 @@ var classSkills =
 			{
 				name_en: "Rapier Mastery",
 				name_jp: "突剣マスタリー",
-				details: "Raises attack power when a sword is equipped. Normal attacks with a sword become Stab attacks.",
+				details: "Raises attack power when a sword is equipped.<br>Normal attacks with a sword become Stab attacks.",
 				dep: {},
 				active: false,
 				level: 0,
@@ -20,7 +20,7 @@ var classSkills =
 			{
 				name_en: "Chain Fire",
 				name_jp: "チェインファイア",
-				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -32,7 +32,7 @@ var classSkills =
 			{
 				name_en: "Chain Ice",
 				name_jp: "チェインフリーズ",
-				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -44,7 +44,7 @@ var classSkills =
 			{
 				name_en: "Chain Volt",
 				name_jp: "チェインショック",
-				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -56,7 +56,7 @@ var classSkills =
 			{
 				name_en: "Predict",
 				name_jp: "プレディクト",
-				details: "For one turn, increases the Fencer's evasion and chance to be targeted. The Fencer takes 2.5x damage from all sources while Predict is active. Each time the Fencer dodges an attack, their evasion and chance to be targeted are decreased.",
+				details: "For one turn, increases the Fencer's evasion and chance to be targeted.<br>The Fencer takes 2.5x damage from all sources while Predict is active.<br>Each time the Fencer dodges an attack, their evasion and chance to be targeted are decreased.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -68,7 +68,7 @@ var classSkills =
 			{
 				name_en: "Chain Boost",
 				name_jp: "チェインブースト",
-				details: "Each time a Chain skill activates, the Chain skill's damage on that turn increases. The maximum bonus is 99%.",
+				details: "Each time a Chain skill activates, the Chain skill's damage on that turn increases.<br>The maximum bonus is 99%.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
 				reqLevel: 0,
@@ -80,7 +80,7 @@ var classSkills =
 			{
 				name_en: "Chain Burst",
 				name_jp: "チェインバースト",
-				details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element. The activation has +10 base accuracy at all levels.",
+				details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element.<br>The activation has +10 base accuracy at all levels.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
 				reqLevel: 0,
@@ -104,7 +104,7 @@ var classSkills =
 			{
 				name_en: "Vision Thrust",
 				name_jp: "ビジョンスラスト",
-				details: "Performs a STR-based stab attack to one target. This attack has a chance to inflict the blind ailment. Has a 120% speed modifier and +25 base accuracy at all levels.",
+				details: "Performs a STR-based stab attack to one target.<br>This attack has a chance to inflict the blind ailment.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -116,7 +116,7 @@ var classSkills =
 			{
 				name_en: "Sylphid",
 				name_jp: "シルフィード",
-				details: "When an attack is dodged, the Fencer has a chance to counter-attack the source of the attack. Every time the Fencer counters, the chance to counter again on that turn decreases by 40%.",
+				details: "When an attack is dodged, the Fencer has a chance to counter-attack the source of the attack.<br>Every time the Fencer counters, the chance to counter again on that turn decreases by 40%.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -131,7 +131,7 @@ var classSkills =
 			{
 				name_en: "Rapier Mastery",
 				name_jp: "突剣マスタリー",
-				details: "Raises attack power when a sword is equipped. Normal attacks with a sword become Stab attacks.",
+				details: "Raises attack power when a sword is equipped.<br>Normal attacks with a sword become Stab attacks.",
 				dep: {},
 				active: false,
 				level: 0,
@@ -143,7 +143,7 @@ var classSkills =
 			{
 				name_en: "Chain Fire",
 				name_jp: "チェインファイア",
-				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -155,7 +155,7 @@ var classSkills =
 			{
 				name_en: "Chain Ice",
 				name_jp: "チェインフリーズ",
-				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -167,7 +167,7 @@ var classSkills =
 			{
 				name_en: "Chain Volt",
 				name_jp: "チェインショック",
-				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -179,7 +179,7 @@ var classSkills =
 			{
 				name_en: "Predict",
 				name_jp: "プレディクト",
-				details: "For one turn, increases the Fencer's evasion and chance to be targeted. The Fencer takes 2.5x damage from all sources while Predict is active. Each time the Fencer dodges an attack, their evasion and chance to be targeted are decreased.",
+				details: "For one turn, increases the Fencer's evasion and chance to be targeted.<br>The Fencer takes 2.5x damage from all sources while Predict is active.<br>Each time the Fencer dodges an attack, their evasion and chance to be targeted are decreased.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -191,7 +191,7 @@ var classSkills =
 			{
 				name_en: "Chain Boost",
 				name_jp: "チェインブースト",
-				details: "Each time a Chain skill activates, the Chain skill's damage on that turn increases. The maximum bonus is 99%.",
+				details: "Each time a Chain skill activates, the Chain skill's damage on that turn increases.<br>The maximum bonus is 99%.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
 				reqLevel: 0,
@@ -203,7 +203,7 @@ var classSkills =
 			{
 				name_en: "Chain Burst",
 				name_jp: "チェインバースト",
-				details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element. The activation has +10 base accuracy at all levels.",
+				details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element.<br>The activation has +10 base accuracy at all levels.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
 				reqLevel: 0,
@@ -227,7 +227,7 @@ var classSkills =
 			{
 				name_en: "Vision Thrust",
 				name_jp: "ビジョンスラスト",
-				details: "Performs a STR-based stab attack to one target. This attack has a chance to inflict the blind ailment. Has a 120% speed modifier and +25 base accuracy at all levels.",
+				details: "Performs a STR-based stab attack to one target.<br>This attack has a chance to inflict the blind ailment.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -239,7 +239,7 @@ var classSkills =
 			{
 				name_en: "Sylphid",
 				name_jp: "シルフィード",
-				details: "When an attack is dodged, the Fencer has a chance to counter-attack the source of the attack. Every time the Fencer counters, the chance to counter again on that turn decreases by 40%.",
+				details: "When an attack is dodged, the Fencer has a chance to counter-attack the source of the attack.<br>Every time the Fencer counters, the chance to counter again on that turn decreases by 40%.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -251,7 +251,7 @@ var classSkills =
 			{
 				name_en: "Ray of Light",
 				name_jp: "レイオブライト",
-				details: "When the Fencer is attacked, their chance to be targeted and their defense increase. If the Fencer fails to dodge the attack, Ray of Light's effects are reset.",
+				details: "When the Fencer is attacked, their chance to be targeted and their defense increase.<br>If the Fencer fails to dodge the attack, Ray of Light's effects are reset.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -263,7 +263,7 @@ var classSkills =
 			{
 				name_en: "Bewitching Sword Dance",
 				name_jp: "幻惑の剣舞",
-				details: "Reduces the accuracy of one row of enemies for a set amount of turns. Has a 90% speed modifier at all levels.",
+				details: "Reduces the accuracy of one row of enemies for a set amount of turns.<br>Has a 90% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -287,7 +287,7 @@ var classSkills =
 			{
 				name_en: "Sharp Thrust",
 				name_jp: "シャープスラスト",
-				details: "Deals melee STR-based stab damage to one target. For the rest of the turn, the Fencer's chance of beign targeted and evasion will be increased. Has a 500% speed modifier and +20 base accuracy at all levels.",
+				details: "Deals melee STR-based stab damage to one target.<br>For the rest of the turn, the Fencer's chance of beign targeted and evasion will be increased.<br>Has a 500% speed modifier and +20 base accuracy at all levels.",
 				dep: {VisionThrust:3},
 				active: true,
 				reqLevel: 20,
@@ -311,7 +311,7 @@ var classSkills =
 			{
 				name_en: "Unburdened",
 				name_jp: "持たざる者",
-				details: "Increases the Fencer's evasion based on the number of empty equipment slots. The format of evasion bonuses is: 1 empty slot, 2 empty slots, 3 empty slots, no equipment.",
+				details: "Increases the Fencer's evasion based on the number of empty equipment slots.<br>The format of evasion bonuses is: 1 empty slot, 2 empty slots, 3 empty slots, no equipment.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -323,7 +323,7 @@ var classSkills =
 			{
 				name_en: "Pile On",
 				name_jp: "誘い込み",
-				details: "On this turn, when the fencer dodges an attack, all other party members in their row will counter-attack the source of the attack. The damage is based on the party members' stats, not the Fencer's. Has a 300% speed modifier at all levels.",
+				details: "On this turn, when the fencer dodges an attack, all other party members in their row will counter-attack the source of the attack.<br>The damage is based on the party members' stats, not the Fencer's.<br>Has a 300% speed modifier at all levels.",
 				dep: {BewitchingSwordDance:3},
 				active: true,
 				reqLevel: 20,
@@ -347,7 +347,7 @@ var classSkills =
 			{
 				name_en: "Divine Wind",
 				name_jp: "ディバインガスト",
-				details: "Increases all party members' evasion for one turn. Each time a party member dodges, the bonus provided by Divine Wind is reduced. Has a 150% speed modifier at all levels.",
+				details: "Increases all party members' evasion for one turn.<br>Each time a party member dodges, the bonus provided by Divine Wind is reduced.<br>Has a 150% speed modifier at all levels.",
 				dep: {PreemptiveCurtain:3},
 				active: true,
 				reqLevel: 20,
@@ -359,7 +359,7 @@ var classSkills =
 			{
 				name_en: "Revenge Thrust",
 				name_jp: "リベンジスラスト",
-				details: "Deals melee STR-based stab+volt damage to one enemy. Damage starts at 100%, and is multiplied by a damage bonus times the number of times the Fencer has dodged. Has a 75% speed modifier and +10 base accuracy at all levels.",
+				details: "Deals melee STR-based stab+volt damage to one enemy.<br>Damage starts at 100%, and is multiplied by a damage bonus times the number of times the Fencer has dodged.<br>Has a 75% speed modifier and +10 base accuracy at all levels.",
 				dep: {SharpThrust:5},
 				active: true,
 				reqLevel: 20,
@@ -374,7 +374,7 @@ var classSkills =
 			{
 				name_en: "Rapier Mastery",
 				name_jp: "突剣マスタリー",
-				details: "Raises attack power when a sword is equipped. Normal attacks with a sword become Stab attacks.",
+				details: "Raises attack power when a sword is equipped.<br>Normal attacks with a sword become Stab attacks.",
 				dep: {},
 				active: false,
 				level: 0,
@@ -386,7 +386,7 @@ var classSkills =
 			{
 				name_en: "Chain Fire",
 				name_jp: "チェインファイア",
-				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -398,7 +398,7 @@ var classSkills =
 			{
 				name_en: "Chain Ice",
 				name_jp: "チェインフリーズ",
-				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -410,7 +410,7 @@ var classSkills =
 			{
 				name_en: "Chain Volt",
 				name_jp: "チェインショック",
-				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack. The chance of a Chain activating starts at 100%, and decreases with each activation.",
+				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -422,7 +422,7 @@ var classSkills =
 			{
 				name_en: "Predict",
 				name_jp: "プレディクト",
-				details: "For one turn, increases the Fencer's evasion and chance to be targeted. The Fencer takes 2.5x damage from all sources while Predict is active. Each time the Fencer dodges an attack, their evasion and chance to be targeted are decreased.",
+				details: "For one turn, increases the Fencer's evasion and chance to be targeted.<br>The Fencer takes 2.5x damage from all sources while Predict is active.<br>Each time the Fencer dodges an attack, their evasion and chance to be targeted are decreased.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -434,7 +434,7 @@ var classSkills =
 			{
 				name_en: "Chain Boost",
 				name_jp: "チェインブースト",
-				details: "Each time a Chain skill activates, the Chain skill's damage on that turn increases. The maximum bonus is 99%.",
+				details: "Each time a Chain skill activates, the Chain skill's damage on that turn increases.<br>The maximum bonus is 99%.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
 				reqLevel: 0,
@@ -446,7 +446,7 @@ var classSkills =
 			{
 				name_en: "Chain Burst",
 				name_jp: "チェインバースト",
-				details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element. The activation has +10 base accuracy at all levels.",
+				details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element.<br>The activation has +10 base accuracy at all levels.",
 				dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 				active: false,
 				reqLevel: 0,
@@ -470,7 +470,7 @@ var classSkills =
 			{
 				name_en: "Vision Thrust",
 				name_jp: "ビジョンスラスト",
-				details: "Performs a STR-based stab attack to one target. This attack has a chance to inflict the blind ailment. Has a 120% speed modifier and +25 base accuracy at all levels.",
+				details: "Performs a STR-based stab attack to one target.<br>This attack has a chance to inflict the blind ailment.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -482,7 +482,7 @@ var classSkills =
 			{
 				name_en: "Sylphid",
 				name_jp: "シルフィード",
-				details: "When an attack is dodged, the Fencer has a chance to counter-attack the source of the attack. Every time the Fencer counters, the chance to counter again on that turn decreases by 40%.",
+				details: "When an attack is dodged, the Fencer has a chance to counter-attack the source of the attack.<br>Every time the Fencer counters, the chance to counter again on that turn decreases by 40%.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -494,7 +494,7 @@ var classSkills =
 			{
 				name_en: "Speed of Sound Blade",
 				name_jp: "音速剣",
-				details: "Passively gives normal attacks a chance to add an extra cut attack. The extra attack has the same damage as a normal attack.",
+				details: "Passively gives normal attacks a chance to add an extra cut attack.<br>The extra attack has the same damage as a normal attack.",
 				dep: {RapierMastery:3},
 				active: false,
 				reqLevel: 20,
@@ -506,7 +506,7 @@ var classSkills =
 			{
 				name_en: "Chain Killer",
 				name_jp: "チェインキラー",
-				details: "Targets one enemy. For one turn, if that enemy becomes afflicted with an ailment, bind, or stun, the Fencer will attack. Has no base accuracy modifier at all levels.",
+				details: "Targets one enemy.<br>For one turn, if that enemy becomes afflicted with an ailment, bind, or stun, the Fencer will attack.<br>Has no base accuracy modifier at all levels.",
 				dep: {ChainBoost:3, ChainBurst:3},
 				active: true,
 				reqLevel: 20,
@@ -530,7 +530,7 @@ var classSkills =
 			{
 				name_en: "Random Stab",
 				name_jp: "乱れ突き",
-				details: "Deals melee STR-based Stab damage to random targets. Can hit the same target multiple times. Has no speed modifier and -5 base accuracy at all levels.",
+				details: "Deals melee STR-based Stab damage to random targets.<br>Can hit the same target multiple times.<br>Has no speed modifier and -5 base accuracy at all levels.",
 				dep: {VisionThrust:3},
 				active: true,
 				reqLevel: 20,
@@ -566,7 +566,7 @@ var classSkills =
 			{
 				name_en: "Chain All",
 				name_jp: "チェインオール",
-				details: "On the next turn, Chain skills will target all enemies. Also increases the maximum number of activations. Has no speed modifier at all levels.",
+				details: "On the next turn, Chain skills will target all enemies.<br>Also increases the maximum number of activations.<br>Has no speed modifier at all levels.",
 				dep: {ChainKiller:5},
 				active: true,
 				reqLevel: 20,
@@ -578,7 +578,7 @@ var classSkills =
 			{
 				name_en: "Chain Plus",
 				name_jp: "チェインプラス",
-				details: "For a set amount of turns, both the chance of Chain skills activating and their damage are increased. Note: Currently, which values correspond to the damage boost, and which coorespond to the chance are guesswork, since they both scale in standard ways. Has no speed modifier at all levels.",
+				details: "For a set amount of turns, both the chance of Chain skills activating and their damage are increased.<br>Note: Currently, which values correspond to the damage boost, and which coorespond to the chance are guesswork, since they both scale in standard ways.<br>Has no speed modifier at all levels.",
 				dep: {ChainKiller:5},
 				active: true,
 				reqLevel: 20,
@@ -602,7 +602,7 @@ var classSkills =
 			{
 				name_en: "Resonance",
 				name_jp: "レゾナンス",
-				details: "Deals melee STR-based stab damage to one target. The damage starts at 100%, and is increased by the bonus damage times the number of times the Fencer attacked last turn. There is a maximum of 9 stacks of bonus damage. Has an 80% speed modifier and +10 base accuracy at all levels.",
+				details: "Deals melee STR-based stab damage to one target.<br>The damage starts at 100%, and is increased by the bonus damage times the number of times the Fencer attacked last turn.<br>There is a maximum of 9 stacks of bonus damage.<br>Has an 80% speed modifier and +10 base accuracy at all levels.",
 				dep: {RandomStab:5},
 				active: true,
 				reqLevel: 20,
@@ -668,7 +668,7 @@ var classSkills =
 			{
 				name_en: "Bunker",
 				name_jp: "バンカー",
-				details: "Creates a bunker that draws enemy attacks. The bunker has 10 HP at all levels. Has a 125% speed modifier at all levels.",
+				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>Has a 125% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -704,7 +704,7 @@ var classSkills =
 			{
 				name_en: "Barrage Wall",
 				name_jp: "バラージウォール",
-				details: "Deals ranged bash damage to all enemies. Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -728,7 +728,7 @@ var classSkills =
 			{
 				name_en: "Defensive Position",
 				name_jp: "防衛陣地",
-				details: "Increases all party members' physical defense for a set amount of turns. Has an 80% speed modifier at all levels.",
+				details: "Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
 				active: true,
 				reqLevel: 0,
@@ -791,7 +791,7 @@ var classSkills =
 			{
 				name_en: "Bunker",
 				name_jp: "バンカー",
-				details: "Creates a bunker that draws enemy attacks. The bunker has 10 HP at all levels. Has a 125% speed modifier at all levels.",
+				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>Has a 125% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -827,7 +827,7 @@ var classSkills =
 			{
 				name_en: "Barrage Wall",
 				name_jp: "バラージウォール",
-				details: "Deals ranged bash damage to all enemies. Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -851,7 +851,7 @@ var classSkills =
 			{
 				name_en: "Defensive Position",
 				name_jp: "防衛陣地",
-				details: "Increases all party members' physical defense for a set amount of turns. Has an 80% speed modifier at all levels.",
+				details: "Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
 				active: true,
 				reqLevel: 0,
@@ -875,7 +875,7 @@ var classSkills =
 			{
 				name_en: "Recovery Guard",
 				name_jp: "リカバリーガード",
-				details: "Reduces cut/stab/bash damage to one row for one turn. If a party member under the effect of Recovery Guard has binds, there is a chance the binds will be removed.",
+				details: "Reduces cut/stab/bash damage to one row for one turn.<br>If a party member under the effect of Recovery Guard has binds, there is a chance the binds will be removed.",
 				dep: {GunMount:3},
 				active: true,
 				reqLevel: 0,
@@ -887,7 +887,7 @@ var classSkills =
 			{
 				name_en: "Counter Guard",
 				name_jp: "カウンターガード",
-				details: "Reduces cut/stab/bash damage to one row for one turn. If Counter Guard is activated by enemy damage, the Dragoon will counter with a ranged stab attack to the source of damage. The chance for countering starts at 100%, and from levels 1-9, will be reduced with each counter. Level 10 will always counter.",
+				details: "Reduces cut/stab/bash damage to one row for one turn.<br>If Counter Guard is activated by enemy damage, the Dragoon will counter with a ranged stab attack to the source of damage.<br>The chance for countering starts at 100%, and from levels 1-9, will be reduced with each counter.<br>Level 10 will always counter.",
 				dep: {GunMount:3},
 				active: true,
 				reqLevel: 0,
@@ -899,7 +899,7 @@ var classSkills =
 			{
 				name_en: "Divide Guard",
 				name_jp: "ディバイドガード",
-				details: "The Dragoon takes all damage for one party member for one turn. Reduces damage taken by the Dragoon while in effect.",
+				details: "The Dragoon takes all damage for one party member for one turn.<br>Reduces damage taken by the Dragoon while in effect.",
 				dep: {GunMount:3},
 				active: true,
 				reqLevel: 0,
@@ -911,7 +911,7 @@ var classSkills =
 			{
 				name_en: "Shield Throw",
 				name_jp: "シールドスロー",
-				details: "Deals ranged cut damage to one row of enemies. Has a 60% speed modifier and 75 base accuracy at all levels.",
+				details: "Deals ranged cut damage to one row of enemies.<br>Has a 60% speed modifier and 75 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -947,7 +947,7 @@ var classSkills =
 			{
 				name_en: "Full Guard",
 				name_jp: "フルガード",
-				details: "The Dragoon takes all damage for the party for one turn. Reduces damage taken by the Dragoon while in effect. The protection chance starts at 100%. Every time Full Guard activates, the chance of it activating again goes down.",
+				details: "The Dragoon takes all damage for the party for one turn.<br>Reduces damage taken by the Dragoon while in effect.<br>The protection chance starts at 100%.<br>Every time Full Guard activates, the chance of it activating again goes down.",
 				dep: {RecoveryGuard:3,CounterGuard:3,DivideGuard:3},
 				active: true,
 				reqLevel: 0,
@@ -959,7 +959,7 @@ var classSkills =
 			{
 				name_en: "Soul Guard",
 				name_jp: "ソウルガード",
-				details: "Reduces cut/stab/bash damage to one row for one turn. Party members under the effect of Soul Guard have a chance to survive fatal damage.",
+				details: "Reduces cut/stab/bash damage to one row for one turn.<br>Party members under the effect of Soul Guard have a chance to survive fatal damage.",
 				dep: {RecoveryGuard:3,CounterGuard:3,DivideGuard:3},
 				active: true,
 				reqLevel: 0,
@@ -1034,7 +1034,7 @@ var classSkills =
 			{
 				name_en: "Bunker",
 				name_jp: "バンカー",
-				details: "Creates a bunker that draws enemy attacks. The bunker has 10 HP at all levels. Has a 125% speed modifier at all levels.",
+				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>Has a 125% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1070,7 +1070,7 @@ var classSkills =
 			{
 				name_en: "Barrage Wall",
 				name_jp: "バラージウォール",
-				details: "Deals ranged bash damage to all enemies. Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br/>Has an 80% speed modifier and no base accuracy modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1094,7 +1094,7 @@ var classSkills =
 			{
 				name_en: "Defensive Position",
 				name_jp: "防衛陣地",
-				details: "Increases all party members' physical defense for a set amount of turns. Has an 80% speed modifier at all levels.",
+				details: "Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
 				active: true,
 				reqLevel: 0,
@@ -1130,7 +1130,7 @@ var classSkills =
 			{
 				name_en: "Rapid Cannon",
 				name_jp: "ラピッドカノン",
-				details: "Deals ranged bash damage to one enemy at the start of the turn. Has +20 base accuracy at all levels.",
+				details: "Deals ranged bash damage to one enemy at the start of the turn.<br>Has +20 base accuracy at all levels.",
 				dep: {BarrageWall:3},
 				active: true,
 				reqLevel: 20,
@@ -1142,7 +1142,7 @@ var classSkills =
 			{
 				name_en: "Curse Cannon",
 				name_jp: "カースカノン",
-				details: "Deals ranged bash damage to one enemy. Attempts to inflict curse on the target. Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged bash damage to one enemy.<br>Attempts to inflict curse on the target.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {BarrageWall:3},
 				active: true,
 				reqLevel: 20,
@@ -1154,7 +1154,7 @@ var classSkills =
 			{
 				name_en: "Hypno Cannon",
 				name_jp: "ヒュプノカノン",
-				details: "Deals ranged bash damage to one enemy. Attempts to inflict sleep on the target. Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged bash damage to one enemy.<br>Attempts to inflict sleep on the target.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {BarrageWall:3},
 				active: true,
 				reqLevel: 20,
@@ -1166,7 +1166,7 @@ var classSkills =
 			{
 				name_en: "Pillbox",
 				name_jp: "トーチカ",
-				details: "Creates a pillbox that can take hits. The pillbox will counter whoever attacks it. The pillbox has 10 HP at all levels. Has no speed modifier at all levels.",
+				details: "Creates a pillbox that can take hits.<br>The pillbox will counter whoever attacks it.<br>The pillbox has 10 HP at all levels.<br>Has no speed modifier at all levels.",
 				dep: {DefensivePosition:3},
 				active: true,
 				reqLevel: 20,
@@ -1190,7 +1190,7 @@ var classSkills =
 			{
 				name_en: "Bombardment Prep",
 				name_jp: "砲撃準備",
-				details: "Increases the damage, accuracy, and speed of the artillery skill used on the next turn. Has no speed modifier at all levels.",
+				details: "Increases the damage, accuracy, and speed of the artillery skill used on the next turn.<br>Has no speed modifier at all levels.",
 				dep: {TPBoost:3},
 				active: true,
 				reqLevel: 20,
@@ -1202,7 +1202,7 @@ var classSkills =
 			{
 				name_en: "Buster Cannon",
 				name_jp: "バスターカノン",
-				details: "One turn after casting, deals ranged bash+fire damage to one enemy. Damage is multiplied by 2x if both the Dragoon and their target are in the front row, 1.5x if the Dragoon is in the back row and the target is in the front and vice versa, and 1x if both the Dragoon and their target are in the back row. Cannot be recasted until it has gone off. Initial prepration has a 90% speed modifier, actual hit has a 1000% speed modifier. Actual hit has no base accuracy modifier.",
+				details: "One turn after casting, deals ranged bash+fire damage to one enemy.<br>Damage is multiplied by 2x if both the Dragoon and their target are in the front row, 1.5x if the Dragoon is in the back row and the target is in the front and vice versa, and 1x if both the Dragoon and their target are in the back row.<br>Cannot be recasted until it has gone off.<br>Initial prepration has a 90% speed modifier, actual hit has a 1000% speed modifier.<br>Actual hit has no base accuracy modifier.",
 				dep: {RapidCannon:3,CurseCannon:3,HypnoCannon:3},
 				active: true,
 				reqLevel: 20,
