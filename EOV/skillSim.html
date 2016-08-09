@@ -649,14 +649,22 @@ function showClassSkillTree()
 
 		// draw prereq lines that connect this skill to others
 
-		console.log(currentSkill);
-		console.log(currentForwards);
 		// draw lines to forwards
 		if(Object.keys(currentForwards).length > 0)
 		{
 			var startx = (currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) + SKILLBOX_WIDTH;
 			var starty = (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2;
-			drawHorizontalLine(startx, starty, SKILLBOX_PADDING.x/2);
+			
+
+			// if the skills are farther than one column apart draw a longer line, else a normal one
+			if(activeClassSkills[Object.keys(currentForwards)[0]].coords.x - currentSkill.coords.x > 1)
+			{
+				drawHorizontalLine(startx, starty, ( activeClassSkills[Object.keys(currentForwards)[0]].coords.x - currentSkill.coords.x - 1)* (SKILLBOX_PADDING.x + SKILLBOX_WIDTH) + SKILLBOX_PADDING.x/2);
+			}
+			else
+			{
+				drawHorizontalLine(startx, starty, SKILLBOX_PADDING.x/2);
+			}
 
 			// if there was more than one forward draw a line connecting them
 			if(Object.keys(currentForwards).length > 1)
@@ -681,21 +689,7 @@ function showClassSkillTree()
 
 		if(prereqNames.length > 0)
 		{
-			// if the skills are farther than one column apart draw a longer line
-			if(currentSkill.coords.x - activeClassSkills[prereqNames[0]].coords.x > 1)
-			{
-				console.log("currentx: " + currentSkill.coords.x);
-				console.log("otherx: " + activeClassSkills[prereqNames[0]].coords.x);
-				var ox = (currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2 - ((currentSkill.coords.x - activeClassSkills[prereqNames[0]].coords.x - 1) * (SKILLBOX_PADDING.x + SKILLBOX_WIDTH));
-				console.log("ox: " + ox);
-				var ow = ((currentSkill.coords.x - activeClassSkills[prereqNames[0]].coords.x - 1) * (SKILLBOX_PADDING.x + SKILLBOX_WIDTH)) + SKILLBOX_PADDING.x/2;
-				console.log("ow: " + ow);
-				drawHorizontalLine(ox, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, ow);
-			}
-			else
-			{
-				drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2);
-			}
+			drawHorizontalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, (currentSkill.coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y)) + SKILLBOX_HEIGHT/2, SKILLBOX_PADDING.x/2);
 			
 			// if there were multiple prereqs draw a connecting line
 			if(prereqNames.length > 1)

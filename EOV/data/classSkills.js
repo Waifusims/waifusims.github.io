@@ -1228,15 +1228,492 @@ var classSkills =
 	{
 		base:
 		{
-
+			GauntletMastery:
+			{
+				name_en: "Gauntlet Mastery",
+				name_jp: "拳甲マスタリー",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			Flicker:
+			{
+				name_en: "Flicker",
+				name_jp: "フリッカー",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:1}
+			},
+			ArmBreak:
+			{
+				name_en: "Arm Break",
+				name_jp: "アームブレイク",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			LiverBlow:
+			{
+				name_en: "Liver Blow",
+				name_jp: "リバーブロー",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:3}
+			},
+			RushingBlood:
+			{
+				name_en: "Rushing Blood",
+				name_jp: "血の暴走",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			ThunderGodFist:
+			{
+				name_en: "Thunder God Fist",
+				name_jp: "雷神拳",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:5}
+			},
+			PhysicalAttackBoost:
+			{
+				name_en: "Physical Attack Boost",
+				name_jp: "物理攻撃ブースト",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			OneTwo:
+			{
+				name_en: "One-Two",
+				name_jp: "ワンツー",
+				details: "",
+				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			GivingitEverything:
+			{
+				name_en: "Giving it Everything",
+				name_jp: "粉骨砕身",
+				details: "",
+				dep: {RushingBlood:1},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			DemonFist:
+			{
+				name_en: "Demon Fist",
+				name_jp: "鬼人拳",
+				details: "",
+				dep: {ThunderGodFist:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			}
 		},
 		specA:
 		{
-
+			GauntletMastery:
+			{
+				name_en: "Gauntlet Mastery",
+				name_jp: "拳甲マスタリー",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			Flicker:
+			{
+				name_en: "Flicker",
+				name_jp: "フリッカー",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:1}
+			},
+			ArmBreak:
+			{
+				name_en: "Arm Break",
+				name_jp: "アームブレイク",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			LiverBlow:
+			{
+				name_en: "Liver Blow",
+				name_jp: "リバーブロー",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:3}
+			},
+			RushingBlood:
+			{
+				name_en: "Rushing Blood",
+				name_jp: "血の暴走",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			ThunderGodFist:
+			{
+				name_en: "Thunder God Fist",
+				name_jp: "雷神拳",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:5}
+			},
+			PhysicalAttackBoost:
+			{
+				name_en: "Physical Attack Boost",
+				name_jp: "物理攻撃ブースト",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			OneTwo:
+			{
+				name_en: "One-Two",
+				name_jp: "ワンツー",
+				details: "",
+				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			GivingitEverything:
+			{
+				name_en: "Giving it Everything",
+				name_jp: "粉骨砕身",
+				details: "",
+				dep: {RushingBlood:1},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			DemonFist:
+			{
+				name_en: "Demon Fist",
+				name_jp: "鬼人拳",
+				details: "",
+				dep: {ThunderGodFist:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			DoublePunch:
+			{
+				name_en: "Double Punch",
+				name_jp: "ダブルパンチ",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:0}
+			},
+			Corkscrew:
+			{
+				name_en: "Corkscrew",
+				name_jp: "コークスクリュー",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:1}
+			},
+			SpeedBoost:
+			{
+				name_en: "Speed Boost",
+				name_jp: "素早さブースト",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:3}
+			},
+			CrossCounter:
+			{
+				name_en: "Cross Counter",
+				name_jp: "クロスカウンター",
+				details: "",
+				dep: {GivingitEverything:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:4}
+			},
+			Interval:
+			{
+				name_en: "Interval",
+				name_jp: "インターバル",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:5}
+			},
+			ArmBlock:
+			{
+				name_en: "Arm Block",
+				name_jp: "アームブロック",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:6}
+			},
+			ConstraintAttackBoost:
+			{
+				name_en: "Constraint Attack Boost",
+				name_jp: "抑制攻撃ブースト",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:0}
+			},
+			LeadBlow:
+			{
+				name_en: "Lead Blow",
+				name_jp: "リードブロー",
+				details: "",
+				dep: {Corkscrew:2,OneTwo:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:1.5}
+			},
+			RushOut:
+			{
+				name_en: "Rush Out",
+				name_jp: "ラッシュアウト",
+				details: "",
+				dep: {SpeedBoost:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:3}
+			},
+			Clinch:
+			{
+				name_en: "Clinch",
+				name_jp: "クリンチ",
+				details: "",
+				dep: {Interval:3,ArmBlock:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:5.5}
+			}
 		},
 		specB:
 		{
-			
+			GauntletMastery:
+			{
+				name_en: "Gauntlet Mastery",
+				name_jp: "拳甲マスタリー",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			Flicker:
+			{
+				name_en: "Flicker",
+				name_jp: "フリッカー",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:1}
+			},
+			ArmBreak:
+			{
+				name_en: "Arm Break",
+				name_jp: "アームブレイク",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			LiverBlow:
+			{
+				name_en: "Liver Blow",
+				name_jp: "リバーブロー",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:3}
+			},
+			RushingBlood:
+			{
+				name_en: "Rushing Blood",
+				name_jp: "血の暴走",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			ThunderGodFist:
+			{
+				name_en: "Thunder God Fist",
+				name_jp: "雷神拳",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:5}
+			},
+			PhysicalAttackBoost:
+			{
+				name_en: "Physical Attack Boost",
+				name_jp: "物理攻撃ブースト",
+				details: "",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			OneTwo:
+			{
+				name_en: "One-Two",
+				name_jp: "ワンツー",
+				details: "",
+				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			GivingitEverything:
+			{
+				name_en: "Giving it Everything",
+				name_jp: "粉骨砕身",
+				details: "",
+				dep: {RushingBlood:1},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			DemonFist:
+			{
+				name_en: "Demon Fist",
+				name_jp: "鬼人拳",
+				details: "",
+				dep: {ThunderGodFist:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			}
 		}
 	},
 	reaper:

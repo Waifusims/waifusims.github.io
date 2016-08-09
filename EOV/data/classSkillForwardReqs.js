@@ -128,15 +128,52 @@ var classSkillForwardReqs =
 	{
 		base:
 		{
-
+			GauntletMastery: {},
+			Flicker: {OneTwo:3},
+			ArmBreak: {OneTwo:3},
+			LiverBlow: {OneTwo:3},
+			RushingBlood: {GivingitEverything:1},
+			ThunderGodFist: {DemonFist:2},
+			PhysicalAttackBoost: {},
+			OneTwo: {},
+			GivingitEverything: {},
+			DemonFist: {}
 		},
 		specA:
 		{
-
+			GauntletMastery: {},
+			Flicker: {OneTwo:3},
+			ArmBreak: {OneTwo:3},
+			LiverBlow: {OneTwo:3},
+			RushingBlood: {GivingitEverything:1},
+			ThunderGodFist: {DemonFist:2},
+			PhysicalAttackBoost: {},
+			OneTwo: {LeadBlow:5},
+			GivingitEverything: {CrossCounter:5},
+			DemonFist: {},
+			DoublePunch: {},
+			Corkscrew: {LeadBlow:5},
+			SpeedBoost: {RushOut:5},
+			CrossCounter: {},
+			Interval: {Clinch:3},
+			ArmBlock: {Clinch:3},
+			ConstraintAttackBoost: {},
+			LeadBlow: {},
+			RushOut: {},
+			Clinch: {}
 		},
 		specB:
 		{
-			
+			GauntletMastery: {},
+			Flicker: {OneTwo:3},
+			ArmBreak: {OneTwo:3},
+			LiverBlow: {OneTwo:3},
+			RushingBlood: {GivingitEverything:1},
+			ThunderGodFist: {DemonFist:2},
+			PhysicalAttackBoost: {},
+			OneTwo: {},
+			GivingitEverything: {},
+			DemonFist: {}
 		}
 	},
 	reaper:
