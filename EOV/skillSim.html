@@ -96,7 +96,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		font-size: 18px;		
+		font-size: 16px;		
 	}
 
 	.skillBox:hover
@@ -123,7 +123,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		font-size: 18px;	
+		font-size: 16px;	
 		color: #D8DFD8;
 		background-color: #586F68;
 		border-color: #D8DFD8;
@@ -299,12 +299,12 @@
 const MAX_CLASSTREE_HEIGHT = 7;
 const MAX_CLASSTREE_WIDTH = 8;
 
-const CLASSTREE_WIDTH = 1600;
-const CLASSTREE_HEIGHT = 600;
-
 const SKILLBOX_WIDTH = 300;
 const SKILLBOX_HEIGHT = 60;
-const SKILLBOX_PADDING = {x:100, y:30};
+const SKILLBOX_PADDING = {x:90, y:15};
+
+const CLASSTREE_WIDTH = 4 * SKILLBOX_WIDTH + 3 * SKILLBOX_PADDING.x + 5;
+const CLASSTREE_HEIGHT =  7 * SKILLBOX_HEIGHT + 6 * SKILLBOX_PADDING.y + 5;
 
 // HTML elements
 var levelDropdown;
@@ -337,6 +337,8 @@ var activeRaceSkills;
 
 function init()
 {
+	window.addEventListener("resize", onResize);
+
 	levelDropdown = document.getElementById("levelDropdown");
 	raceDropdown = document.getElementById("raceDropdown");
 	classDropdown = document.getElementById("classDropdown");
@@ -348,6 +350,8 @@ function init()
 	treeDiv = document.getElementById("skillTree");
 	treeDiv.style.width = CLASSTREE_WIDTH + "px";
 	treeDiv.style.height = CLASSTREE_HEIGHT + "px";
+
+	document.body.style.minWidth = CLASSTREE_WIDTH + "px";
 
 	tooltip = document.getElementById("tooltip");
 
@@ -857,6 +861,11 @@ function onSkillRightClick(skillName, e)
 	{
 		subtractPoint(skillName);
 	}
+}
+
+function onResize()
+{
+	showClassSkillTree();
 }
 
 </script>
