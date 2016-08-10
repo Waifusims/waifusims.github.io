@@ -1549,7 +1549,7 @@ var classSkills =
 				name_jp: "抑制攻撃ブースト",
 				details: "",
 				dep: {},
-				active: true,
+				active: false,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
