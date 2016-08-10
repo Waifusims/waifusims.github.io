@@ -1560,7 +1560,7 @@ var classSkills =
 				name_en: "Lead Blow",
 				name_jp: "リードブロー",
 				details: "",
-				dep: {Corkscrew:5,OneTwo:5},
+				dep: {Corkscrew:2,OneTwo:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,

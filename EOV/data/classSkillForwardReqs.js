@@ -152,7 +152,7 @@ var classSkillForwardReqs =
 			GivingitEverything: {CrossCounter:5},
 			DemonFist: {},
 			DoublePunch: {},
-			Corkscrew: {LeadBlow:5},
+			Corkscrew: {LeadBlow:2},
 			SpeedBoost: {RushOut:5},
 			CrossCounter: {},
 			Interval: {Clinch:3},
