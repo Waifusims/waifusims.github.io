@@ -314,75 +314,310 @@ var classSkillForwardReqs =
 	{
 		base:
 		{
-
+			GhostMastery: {},
+			GhostSummoning: {ThePriceofLife:2},
+			MoaningSpirits: {MercilessWall:2},
+			SoulFood: {MercilessWall:2},
+			GravekeepingKnowledge: {GhostReincarnation:3},
+			ThePriceofLife: {},
+			MercilessWall: {},
+			GhostReincarnation: {},
+			PoisonBomb: {},
+			FireBomb: {}
 		},
 		specA:
 		{
-
+			GhostMastery: {},
+			GhostSummoning: {ThePriceofLife:2},
+			MoaningSpirits: {MercilessWall:2},
+			SoulFood: {MercilessWall:2},
+			GravekeepingKnowledge: {GhostReincarnation:3},
+			ThePriceofLife: {CurseTransfer:5},
+			MercilessWall: {OpenGrave:3},
+			GhostReincarnation: {},
+			PoisonBomb: {CurseBomb:3},
+			FireBomb: {IceBomb:3},
+			GhostSecretArts: {},
+			CurseTransfer: {SoulTrade:5},
+			OpenGrave: {GhostDance:5},
+			ConstraintAttackBoost: {},
+			CurseBomb: {GravestoneBinding:3},
+			IceBomb: {GravestoneBinding:3},
+			HPBoost: {},
+			SoulTrade: {},
+			GhostDance: {},
+			GravestoneBinding: {}
 		},
 		specB:
 		{
-			
+			GhostMastery: {},
+			GhostSummoning: {ThePriceofLife:2},
+			MoaningSpirits: {MercilessWall:2},
+			SoulFood: {MercilessWall:2},
+			GravekeepingKnowledge: {GhostReincarnation:3},
+			ThePriceofLife: {PreemptiveGhostSummoning:3},
+			MercilessWall: {EquivalentExchange:3},
+			GhostReincarnation: {},
+			PoisonBomb: {TheGatesofHell:5},
+			FireBomb: {TheGatesofHell:5},
+			TheBeckoningofHades: {},
+			PreemptiveGhostSummoning: {},
+			EquivalentExchange: {GhostExplosion:5},
+			Sacrifice: {NegativeEnergy:3},
+			MagicAttackBoost: {},
+			TheGatesofHell: {ZombiePowder:5},
+			TPBoost: {},
+			GhostExplosion: {},
+			NegativeEnergy: {},
+			ZombiePowder: {}
 		}
 	},
 	hound:
 	{
 		base:
 		{
-
+			BowMastery: {},
+			HawkWhistle: {HawkArrow:3,FlashofBothWings:3},
+			DogWhistle: {AidCommand:3,HunterShot:3},
+			Brushing: {},
+			AnimalTherapy: {},
+			HawkArrow: {},
+			FlashofBothWings: {},
+			AidCommand: {},
+			HunterShot: {},
+			TargetArrow: {}
 		},
 		specA:
 		{
-
+			BowMastery: {},
+			HawkWhistle: {HawkArrow:3,FlashofBothWings:3},
+			DogWhistle: {AidCommand:3,HunterShot:3},
+			Brushing: {},
+			AnimalTherapy: {},
+			HawkArrow: {FlyingTalonStrike:3},
+			FlashofBothWings: {IcePeck:3},
+			AidCommand: {},
+			HunterShot: {},
+			TargetArrow: {PowerShot:5},
+			SkyPatrol: {},
+			FlyingTalonStrike: {SkyDive:5},
+			IcePeck: {SkyDive:5},
+			PhysicalAttackBoost: {},
+			SpeedBoost: {},
+			PowerShot: {MillionShot:5},
+			ScatterFeathers: {},
+			FinishingArrow: {},
+			SkyDive: {},
+			MillionShot: {}
 		},
 		specB:
 		{
-			
+			BowMastery: {},
+			HawkWhistle: {HawkArrow:3,FlashofBothWings:3},
+			DogWhistle: {AidCommand:3,HunterShot:3},
+			Brushing: {},
+			AnimalTherapy: {},
+			HawkArrow: {},
+			FlashofBothWings: {},
+			AidCommand: {DefenseCommand:3},
+			HunterShot: {FootPierce:3},
+			TargetArrow: {DropShot:5},
+			GroundPatrol: {},
+			ConstraintAttackBoost: {},
+			MenacingHowl: {},
+			DefenseCommand: {MedicalLick:5},
+			FootPierce: {MedicalLick:5},
+			DropShot: {StunShot:5},
+			HealingBoost: {},
+			TPBoost: {},
+			MedicalLick: {},
+			StunShot: {}
 		}
 	},
 	masurao:
 	{
 		base:
 		{
-
+			KatanaMastery: {},
+			PeerlessDemon: {},
+			TotheDeath: {FlyingSparrow:3},
+			ArmorPenetrate: {MistSlice:2},
+			VacuumBlade: {Kamaitachi:3},
+			NewChallenger: {},
+			FlyingSparrow: {},
+			MistSlice: {},
+			Kamaitachi: {},
+			AdvantageousPosition: {}
 		},
 		specA:
 		{
-
+			KatanaMastery: {},
+			PeerlessDemon: {},
+			TotheDeath: {FlyingSparrow:3},
+			ArmorPenetrate: {MistSlice:2},
+			VacuumBlade: {Kamaitachi:3},
+			NewChallenger: {},
+			FlyingSparrow: {CrossingtheSanzu:3},
+			MistSlice: {},
+			Kamaitachi: {FourGods:3,LayeredBlossoms:3},
+			AdvantageousPosition: {},
+			MultiSwordTechnique: {},
+			HPBoost: {BrinkofDeathResuscitation:3},
+			CrossingtheSanzu: {Reflower:3},
+			FourGods: {Hyakkaryouran:3},
+			LayeredBlossom: {Hyakkaryouran:3},
+			PhysicalAttackBoost: {Tenryuuransei:3},
+			BrinkofDeathResuscitation: {},
+			Reflower: {},
+			Hyakkaryouran: {},
+			Tenryuuransei: {}
 		},
 		specB:
 		{
-			
+			KatanaMastery: {},
+			PeerlessDemon: {},
+			TotheDeath: {FlyingSparrow:3},
+			ArmorPenetrate: {MistSlice:2},
+			VacuumBlade: {Kamaitachi:3},
+			NewChallenger: {},
+			FlyingSparrow: {},
+			MistSlice: {LegSweep:3},
+			Kamaitachi: {},
+			AdvantageousPosition: {SwordsVigor:3},
+			SwordGod: {},
+			TPBoost: {ThunderSlash:5,Suigetsu:5},
+			LegSweep: {HelmDivide:5},
+			SwordsVigor: {ThreeStageStrike:5,Sange:5},
+			SpeedBoost: {},
+			ThunderSlash: {},
+			Suigetsu: {},
+			HelmDivide: {},
+			ThreeStageStrike: {},
+			Sange: {}
 		}
 	},
 	shaman:
 	{
 		base:
 		{
-
+			PrayerMastery: {},
+			PrayerEradication: {BlessingofHeaven:2},
+			PrayerGuardian: {BlessingofHeaven:2},
+			PrayerBullseye: {BlessingofHeaven:2},
+			PrayerBlaze: {OracleDance:3},
+			PrayerColdRain: {OracleDance:3},
+			PrayerPurpleLightning: {OracleDance:3},
+			Gospel: {},
+			BlessingofHeaven: {},
+			OracleDance: {}
 		},
 		specA:
 		{
-
+			PrayerMastery: {},
+			PrayerEradication: {BlessingofHeaven:2},
+			PrayerGuardian: {BlessingofHeaven:2},
+			PrayerBullseye: {BlessingofHeaven:2},
+			PrayerBlaze: {OracleDance:3},
+			PrayerColdRain: {OracleDance:3},
+			PrayerPurpleLightning: {OracleDance:3},
+			Gospel: {},
+			BlessingofHeaven: {PrayerfortheSoul:3,ProtectionoftheOfferings:3},
+			OracleDance: {OracleThreeRuns:3,OracleHalo:3},
+			MemoriesofaPreviousLife: {},
+			PrayerfortheSoul: {Purification:5},
+			ProtectionoftheOfferings: {Purification:5},
+			MagicAttackBoost: {},
+			OracleThreeRuns: {ChanneltheGods:5},
+			OracleHalo: {ChanneltheGods:3},
+			HPBoost: {},
+			Purification: {},
+			TPBoost: {},
+			ChanneltheGods: {}
 		},
 		specB:
 		{
-			
+			PrayerMastery: {},
+			PrayerEradication: {BlessingofHeaven:2},
+			PrayerGuardian: {BlessingofHeaven:2},
+			PrayerBullseye: {BlessingofHeaven:2},
+			PrayerBlaze: {OracleDance:3},
+			PrayerColdRain: {OracleDance:3},
+			PrayerPurpleLightning: {OracleDance:3},
+			Gospel: {},
+			BlessingofHeaven: {PrayerExorcism:3,PrayerEscape:3,PrayerLongevity:3},
+			OracleDance: {Bunrei:3},
+			ConsolingtheDead: {},
+			PrayerExorcism: {Sanctuary:5},
+			PrayerEscape: {Sanctuary:5},
+			PrayerLongevity: {Sanctuary:5},
+			PurifyingFlame: {Affection:2},
+			Bunrei: {Affection:2},
+			MagicDefenseBoost: {},
+			ConstraintDefenseBoost: {},
+			Sanctuary: {},
+			Affection: {}
 		}
 	},
 	herbalist:
 	{
 		base:
 		{
-
+			HerbMastery: {},
+			CureHerb: {LineHerb:5},
+			RefreshHerb: {ResurrectionHerb:3},
+			PoisonSmoke: {SmokeRot:2},
+			DarkSmoke: {SmokeRot:2},
+			LineHerb: {},
+			ResurrectionHerb: {},
+			Antibody: {},
+			MedicinalKnowledge: {},
+			SmokeRot: {}
 		},
 		specA:
 		{
-
+			HerbMastery: {},
+			CureHerb: {LineHerb:5},
+			RefreshHerb: {ResurrectionHerb:3},
+			PoisonSmoke: {SmokeRot:2},
+			DarkSmoke: {SmokeRot:2},
+			LineHerb: {AreaHerb:5},
+			ResurrectionHerb: {RecoveryHerb:3},
+			Antibody: {},
+			MedicinalKnowledge: {SecretRemedyCompound:5},
+			SmokeRot: {},
+			HerbBoost: {},
+			AreaHerb: {},
+			RecoveryHerb: {AutoResurrection:3},
+			ConstraintDefenseBoost: {},
+			SecretRemedyCompound: {},
+			ChaseHerb: {LingeringScent:3},
+			DelayHerb: {LingeringScent:3},
+			HPBoost: {},
+			AutoResurrection: {},
+			LingeringScent: {}
 		},
 		specB:
 		{
-			
+			HerbMastery: {},
+			CureHerb: {LineHerb:5},
+			RefreshHerb: {ResurrectionHerb:3},
+			PoisonSmoke: {SmokeRot:2},
+			DarkSmoke: {SmokeRot:2},
+			LineHerb: {},
+			ResurrectionHerb: {},
+			Antibody: {ParalyzeSmoke:3,BunglingSmoke:3},
+			MedicinalKnowledge: {},
+			SmokeRot: {SmokeSolid:5,SmokeSpark:5},
+			SmokeBoost: {},
+			ConstraintAttackBoost: {},
+			ParalyzeSmoke: {SmokeBomb:3},
+			BunglingSmoke: {SmokeBomb:3},
+			SmokeSolid: {PersistingScent:3,PreemptiveSmoke:3},
+			SmokeSpark: {PersistingScent:3,PreemptiveSmoke:3},
+			TPBoost: {},
+			SmokeBomb: {},
+			PersistingScent: {},
+			PreemptiveSmoke: {}
 		}
 	}
 }
