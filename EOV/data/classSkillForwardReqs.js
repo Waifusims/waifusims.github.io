@@ -172,23 +172,80 @@ var classSkillForwardReqs =
 			ThunderGodFist: {DemonFist:2},
 			PhysicalAttackBoost: {},
 			OneTwo: {},
-			GivingitEverything: {},
-			DemonFist: {}
+			GivingitEverything: {BackFromtheDead:3},
+			DemonFist: {DemonGodFist:3},
+			Grit: {},
+			VajraStance: {OugiRengokusatsu:5},
+			SoulSmash: {OugiRengokusatsu:5},
+			GiantKiller: {OugiTenchihaten:3},
+			BackFromtheDead: {OugiTenchihaten:3},
+			DemonGodFist: {},
+			ConstraintDefenseBoost: {},
+			HPBoost: {},
+			OugiRengokusatsu: {},
+			OugiTenchihaten: {}
 		}
 	},
 	reaper:
 	{
 		base:
 		{
-
+			ScytheMastery: {},
+			MiasmaWeapon: {PreemptiveWeapon:2,EndlessShroud:2,DeathsJudgment:2},
+			FrailMiasma: {FeebleMiasma:3},
+			ScytheofNumbStasis: {ScytheofExorcism:3},
+			GatherSouls: {},
+			PreemptiveWeapon: {},
+			EndlessShroud: {},
+			DeathsJudgment: {},
+			FeebleMiasma: {},
+			ScytheofExorcism: {}
 		},
 		specA:
 		{
-
+			ScytheMastery: {},
+			MiasmaWeapon: {PreemptiveWeapon:2,EndlessShroud:2,DeathsJudgment:2},
+			FrailMiasma: {FeebleMiasma:3},
+			ScytheofNumbStasis: {ScytheofExorcism:3},
+			GatherSouls: {},
+			PreemptiveWeapon: {},
+			EndlessShroud: {},
+			DeathsJudgment: {FreshBloodSlash:3,GreateScytheofColdAsh:3},
+			FeebleMiasma: {},
+			ScytheofExorcism: {ScytheofCruelPoison:3,ScytheofWickedChaos:3},
+			BlackBlade: {},
+			TPBoost: {},
+			FreshBloodSlash: {ShroudofReality:3},
+			GreateScytheofColdAsh: {ShroudofReality:3},
+			ScytheofCruelPoison: {ScytheofDeath:3},
+			ScytheofWickedChaos: {ScytheofDeath:3},
+			BlackShroud: {},
+			ConstraintAttackBoost: {},
+			ShroudofReality: {},
+			ScytheofDeath: {}
 		},
 		specB:
 		{
-			
+			ScytheMastery: {},
+			MiasmaWeapon: {PreemptiveWeapon:2,EndlessShroud:2,DeathsJudgment:2},
+			FrailMiasma: {FeebleMiasma:3},
+			ScytheofNumbStasis: {ScytheofExorcism:3},
+			GatherSouls: {},
+			PreemptiveWeapon: {},
+			EndlessShroud: {DeathResistance:5},
+			DeathsJudgment: {},
+			FeebleMiasma: {BrittleMiasma:3,DimMiasma:3},
+			ScytheofExorcism: {},
+			AbsorbVitality: {},
+			MagicDefenseBoost: {},
+			DeathResistance: {BloodofAtonement:5,WallofMiasma:5},
+			BrittleMiasma: {ScytheofTransience:5,SoulTransfer:5},
+			DimMiasma: {ScytheofTransience:5,SoulTransfer:5},
+			HPBoost: {},
+			BloodofAtonement: {},
+			WallofMiasma: {},
+			ScytheofTransience: {},
+			SoulTransfer: {}
 		}
 	},
 	warlock:

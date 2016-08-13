@@ -1232,7 +1232,7 @@ var classSkills =
 			{
 				name_en: "Gauntlet Mastery",
 				name_jp: "拳甲マスタリー",
-				details: "",
+				details: "Increases physical attack when equipped with gauntlets.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1244,7 +1244,7 @@ var classSkills =
 			{
 				name_en: "Flicker",
 				name_jp: "フリッカー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1256,7 +1256,7 @@ var classSkills =
 			{
 				name_en: "Arm Break",
 				name_jp: "アームブレイク",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1268,7 +1268,7 @@ var classSkills =
 			{
 				name_en: "Liver Blow",
 				name_jp: "リバーブロー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1280,7 +1280,7 @@ var classSkills =
 			{
 				name_en: "Rushing Blood",
 				name_jp: "血の暴走",
-				details: "",
+				details: "Every time the Cestus' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier at all levels.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1292,7 +1292,7 @@ var classSkills =
 			{
 				name_en: "Thunder God Fist",
 				name_jp: "雷神拳",
-				details: "",
+				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Cestus takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1304,7 +1304,7 @@ var classSkills =
 			{
 				name_en: "Physical Attack Boost",
 				name_jp: "物理攻撃ブースト",
-				details: "",
+				details: "Passively increases cut/stab/bash damage.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1316,7 +1316,7 @@ var classSkills =
 			{
 				name_en: "One-Two",
 				name_jp: "ワンツー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Cestus knows (Flicker, Arm Break, or Liver Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
 				active: true,
 				reqLevel: 0,
@@ -1328,7 +1328,7 @@ var classSkills =
 			{
 				name_en: "Giving it Everything",
 				name_jp: "粉骨砕身",
-				details: "",
+				details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP every time they act (This means that the HP loss from this buff cannot kill them no matter what).<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier at all levels.",
 				dep: {RushingBlood:1},
 				active: true,
 				reqLevel: 0,
@@ -1340,7 +1340,7 @@ var classSkills =
 			{
 				name_en: "Demon Fist",
 				name_jp: "鬼人拳",
-				details: "",
+				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 				dep: {ThunderGodFist:2},
 				active: true,
 				reqLevel: 0,
@@ -1355,7 +1355,7 @@ var classSkills =
 			{
 				name_en: "Gauntlet Mastery",
 				name_jp: "拳甲マスタリー",
-				details: "",
+				details: "Increases physical attack when equipped with gauntlets.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1367,7 +1367,7 @@ var classSkills =
 			{
 				name_en: "Flicker",
 				name_jp: "フリッカー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1379,7 +1379,7 @@ var classSkills =
 			{
 				name_en: "Arm Break",
 				name_jp: "アームブレイク",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1391,7 +1391,7 @@ var classSkills =
 			{
 				name_en: "Liver Blow",
 				name_jp: "リバーブロー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1403,7 +1403,7 @@ var classSkills =
 			{
 				name_en: "Rushing Blood",
 				name_jp: "血の暴走",
-				details: "",
+				details: "Every time the Cestus' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier at all levels.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1415,7 +1415,7 @@ var classSkills =
 			{
 				name_en: "Thunder God Fist",
 				name_jp: "雷神拳",
-				details: "",
+				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Cestus takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1427,7 +1427,7 @@ var classSkills =
 			{
 				name_en: "Physical Attack Boost",
 				name_jp: "物理攻撃ブースト",
-				details: "",
+				details: "Passively increases cut/stab/bash damage.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1439,7 +1439,7 @@ var classSkills =
 			{
 				name_en: "One-Two",
 				name_jp: "ワンツー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Cestus knows (Flicker, Arm Break, or Liver Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
 				active: true,
 				reqLevel: 0,
@@ -1451,7 +1451,7 @@ var classSkills =
 			{
 				name_en: "Giving it Everything",
 				name_jp: "粉骨砕身",
-				details: "",
+				details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP every time they act (This means that the HP loss from this buff cannot kill them no matter what).<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier at all levels.",
 				dep: {RushingBlood:1},
 				active: true,
 				reqLevel: 0,
@@ -1463,7 +1463,7 @@ var classSkills =
 			{
 				name_en: "Demon Fist",
 				name_jp: "鬼人拳",
-				details: "",
+				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 				dep: {ThunderGodFist:2},
 				active: true,
 				reqLevel: 0,
@@ -1475,7 +1475,7 @@ var classSkills =
 			{
 				name_en: "Double Punch",
 				name_jp: "ダブルパンチ",
-				details: "",
+				details: "If a binding skill fails to inflict a bind, there is a chance for that skill to activate again.<br>Will not activate if the target already has the specified body part bound.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1487,7 +1487,7 @@ var classSkills =
 			{
 				name_en: "Corkscrew",
 				name_jp: "コークスクリュー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to inflict paralysis.<br>Has a 90% speed modifier and an accuracy modifier of -5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1499,7 +1499,7 @@ var classSkills =
 			{
 				name_en: "Speed Boost",
 				name_jp: "素早さブースト",
-				details: "",
+				details: "Increases speed, accuracy, and evasion.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1511,7 +1511,7 @@ var classSkills =
 			{
 				name_en: "Cross Counter",
 				name_jp: "クロスカウンター",
-				details: "",
+				details: "When an ally on the same row takes physical damage, the Cestus counters with a STR-based melee attack that attempts to bind the body part used to attack. Only activates once per turn.<br>Has a 1500% speed modifier and an accuracy modifier of +50 at all levels.",
 				dep: {GivingitEverything:5},
 				active: true,
 				reqLevel: 20,
@@ -1523,7 +1523,7 @@ var classSkills =
 			{
 				name_en: "Interval",
 				name_jp: "インターバル",
-				details: "",
+				details: "Dispels all ailments and binds on the Cestus and increases their attack power for the next turn.<br>Does not work if you don't have any binds/ailments.<br>Will not increase the damage output of Union skills.<br>The charge lasts until the end of the next turn (This means that the charge will not get used up on the very next attack).<br>Has a 200% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1535,7 +1535,7 @@ var classSkills =
 			{
 				name_en: "Arm Block",
 				name_jp: "アームブロック",
-				details: "",
+				details: "Raises ailment and bind resistance for allies in the same row as the Cestus for a set number of turns (This buff may follow EO4's Dancer buff rules).<br/>Has a speed modifier of 70% at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1547,7 +1547,7 @@ var classSkills =
 			{
 				name_en: "Constraint Attack Boost",
 				name_jp: "抑制攻撃ブースト",
-				details: "",
+				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1559,7 +1559,7 @@ var classSkills =
 			{
 				name_en: "Lead Blow",
 				name_jp: "リードブロー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one enemy.<br>If they have any binds or ailments, follow up with any skills that inflict those binds (Flicker, Arm Break, or Liver Blow).<br>For ailments, Corkscrew will be used, no matter what ailment the target has.<br>Has a 90% speed modifier and no accuracy modifier at all levels.",
 				dep: {Corkscrew:2,OneTwo:5},
 				active: true,
 				reqLevel: 20,
@@ -1571,7 +1571,7 @@ var classSkills =
 			{
 				name_en: "Rush Out",
 				name_jp: "ラッシュアウト",
-				details: "",
+				details: "Attacks one enemy with STR-based melee bash damage multiple times.<br>The number of attacks is equal to the number of times the Cestus attacked on the previous turn. Maximum number of hits is 9.<br>Any Union skills that got cast does not count toward the hit total.<br>Has an 80% speed modifier and an accuracy modifier of -10 at all levels.",
 				dep: {SpeedBoost:5},
 				active: true,
 				reqLevel: 20,
@@ -1583,7 +1583,7 @@ var classSkills =
 			{
 				name_en: "Clinch",
 				name_jp: "クリンチ",
-				details: "",
+				details: "Chance to bind the head, arms, and legs of the Cestus and one enemy.<br>Attempts to bind the enemy before binding the Cestus.<br>Has an 80% speed modifier at all levels.",
 				dep: {Interval:3,ArmBlock:3},
 				active: true,
 				reqLevel: 20,
@@ -1598,7 +1598,7 @@ var classSkills =
 			{
 				name_en: "Gauntlet Mastery",
 				name_jp: "拳甲マスタリー",
-				details: "",
+				details: "Increases physical attack when equipped with gauntlets.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1610,7 +1610,7 @@ var classSkills =
 			{
 				name_en: "Flicker",
 				name_jp: "フリッカー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1622,7 +1622,7 @@ var classSkills =
 			{
 				name_en: "Arm Break",
 				name_jp: "アームブレイク",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1634,7 +1634,7 @@ var classSkills =
 			{
 				name_en: "Liver Blow",
 				name_jp: "リバーブロー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1646,7 +1646,7 @@ var classSkills =
 			{
 				name_en: "Rushing Blood",
 				name_jp: "血の暴走",
-				details: "",
+				details: "Every time the Cestus' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit.)<br>Has a +5 accuracy modifier at all levels.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1658,7 +1658,7 @@ var classSkills =
 			{
 				name_en: "Thunder God Fist",
 				name_jp: "雷神拳",
-				details: "",
+				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Cestus takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1670,7 +1670,7 @@ var classSkills =
 			{
 				name_en: "Physical Attack Boost",
 				name_jp: "物理攻撃ブースト",
-				details: "",
+				details: "Passively increases cut/stab/bash damage.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1682,7 +1682,7 @@ var classSkills =
 			{
 				name_en: "One-Two",
 				name_jp: "ワンツー",
-				details: "",
+				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Cestus knows (Flicker, Arm Break, or Liver Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
 				active: true,
 				reqLevel: 0,
@@ -1694,7 +1694,7 @@ var classSkills =
 			{
 				name_en: "Giving it Everything",
 				name_jp: "粉骨砕身",
-				details: "",
+				details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP every time they act. (This means that the HP loss from this buff cannot kill them no matter what.)<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier at all levels.",
 				dep: {RushingBlood:1},
 				active: true,
 				reqLevel: 0,
@@ -1706,13 +1706,133 @@ var classSkills =
 			{
 				name_en: "Demon Fist",
 				name_jp: "鬼人拳",
-				details: "",
+				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 				dep: {ThunderGodFist:2},
 				active: true,
 				reqLevel: 0,
 				level: 0,
 				max: 10,
 				coords: {x:1, y:5}
+			},
+			Grit:
+			{
+				name_en: "Grit",
+				name_jp: "不屈",
+				details: "Increases the Cestus' damage output when their HP is below a certain percentage.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:0}
+			},
+			VajraStance:
+			{
+				name_en: "Vajra Stance",
+				name_jp: "金剛の構え",
+				details: "Raises physical defense for allies in the same row as the Cestus for a set number of turns (This buff may follow EO4's Dancer buff rules).<br>Has a speed modifier of 70% at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:1}
+			},
+			SoulSmash:
+			{
+				name_en: "Soul Smash",
+				name_jp: "魂砕き",
+				details: "Deals STR-based melee bash damage to all enemies, and heals the Cestus for a portion of the damage they dealt.<br>Has an 80% speed modifier and an accuracy modifier of -5 at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:2}
+			},
+			GiantKiller:
+			{
+				name_en: "Giant Killer",
+				name_jp: "大物殺し",
+				details: "Deals STR-based melee bash damage to one enemy.<br>Deals even more damage as long as the target has at least 1% more remaining HP% than the Cestus' current HP pool.<br>Has a 150% speed modifier and no accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:3}
+			},
+			BackFromtheDead:
+			{
+				name_en: "Back From the Dead",
+				name_jp: "黄泉返し",
+				details: "Deals STR-based melee bash damage to one enemy.<br>Deals more damage the less HP the entire party has. How this works is that each % of HP missing is added onto a 1x multiplier (dead party members do not count for this), up to a maximum of a 5.95x multiplier (each party member has only 1% HP remaining).<br>Has a 20% speed modifier and an accuracy modifier of +50 at all levels.",
+				dep: {GivingitEverything:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:4}
+			},
+			DemonGodFist:
+			{
+				name_en: "Demon God Fist",
+				name_jp: "鬼神拳",
+				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
+				dep: {DemonFist:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:5}
+			},
+			ConstraintDefenseBoost:
+			{
+				name_en: "Constraint Defense Boost",
+				name_jp: "抑制防御ブースト",
+				details: "Increases defense against ailments and binds.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:6}
+			},
+			HPBoost:
+			{
+				name_en: "HP Boost",
+				name_jp: "ＨＰブースト",
+				details: "Increases the Cestus' maximum HP.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:0}
+			},
+			OugiRengokusatsu:
+			{
+				name_en: "Ougi Rengokusatsu",
+				name_jp: "奥義 煉獄殺",
+				details: "When cast, places the Cestus under the Endure status (not a buff, lasts one turn), which lets them survive a fatal blow and increases the amount of damage they deal on the next turn when the Endure activates.<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.",
+				dep: {VajraStance:5,SoulSmash:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:1.5}
+			},
+			OugiTenchihaten:
+			{
+				name_en: "Ougi Tenchihaten",
+				name_jp: "奥義 天地破天",
+				details: "When cast, this lets the Cestus deal even more damage on the next turn the more HP they recover on the previous turn (Not a buff, lasts one turn).<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.<br>NOTE: How much HP recovery is needed to reach the max damage boost is currently unknown at this time.",
+				dep: {GiantKiller:3,BackFromtheDead:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:3.5}
 			}
 		}
 	},
@@ -1720,15 +1840,612 @@ var classSkills =
 	{
 		base:
 		{
-
+			ScytheMastery: 
+			{
+				name_en: "Scythe Mastery",
+				name_jp: "鎌マスタリー",
+				details: "Raises physical attack power when a scythe is equipped.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			MiasmaWeapon: 
+			{
+				name_en: "Miasma Weapon",
+				name_jp: "瘴気の兵装",
+				details: "Sacrifices a percentage of the Reaper's maximum (or current?) HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			FrailMiasma: 
+			{
+				name_en: "Frail Miasma",
+				name_jp: "繊弱の瘴気",
+				details: "Lowers all enemies' physical and elemental attack for a set amount of turns.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			ScytheofNumbStasis: 
+			{
+				name_en: "Scythe of Numb Stasis",
+				name_jp: "痺止の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:5}
+			},
+			GatherSouls: 
+			{
+				name_en: "Gather Souls",
+				name_jp: "魂寄せ",
+				details: "Increases the encounter rate and increases the amount of exp gained from battles for a set number of steps.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			PreemptiveWeapon: 
+			{
+				name_en: "Preemptive Weapon",
+				name_jp: "先制兵装",
+				details: "Gives a chance to use Miasma Weapon immediately at the start of battle.<br>Does not activate if someone already used this.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:1}
+			},
+			EndlessShroud: 
+			{
+				name_en: "Endless Shroud",
+				name_jp: "終わりなき衣",
+				details: "Chance to apply Miasma Weapon when using a debuff skill.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			DeathsJudgment: 
+			{
+				name_en: "Death's Judgment",
+				name_jp: "死の審判",
+				details: "If Miasma Weapon is active, the Reaper has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:3}
+			},
+			FeebleMiasma: 
+			{
+				name_en: "Feeble Miasma",
+				name_jp: "虚弱の瘴気",
+				details: "Increases the chance of inflicting ailments and binds on all enemies for a set amount of turns.",
+				dep: {FrailMiasma:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			ScytheofExorcism: 
+			{
+				name_en: "Scythe of Exorcism",
+				name_jp: "呪禁の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {ScytheofNumbStasis:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			}
 		},
 		specA:
 		{
-
+			ScytheMastery: 
+			{
+				name_en: "Scythe Mastery",
+				name_jp: "鎌マスタリー",
+				details: "Raises physical attack power when a scythe is equipped.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			MiasmaWeapon: 
+			{
+				name_en: "Miasma Weapon",
+				name_jp: "瘴気の兵装",
+				details: "Sacrifices a percentage of the Reaper's maximum (or current?) HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			FrailMiasma: 
+			{
+				name_en: "Frail Miasma",
+				name_jp: "繊弱の瘴気",
+				details: "Lowers all enemies' physical and elemental attack for a set amount of turns.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			ScytheofNumbStasis: 
+			{
+				name_en: "Scythe of Numb Stasis",
+				name_jp: "痺止の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:5}
+			},
+			GatherSouls: 
+			{
+				name_en: "Gather Souls",
+				name_jp: "魂寄せ",
+				details: "Increases the encounter rate and increases the amount of exp gained from battles for a set number of steps.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			PreemptiveWeapon: 
+			{
+				name_en: "Preemptive Weapon",
+				name_jp: "先制兵装",
+				details: "Gives a chance to use Miasma Weapon immediately at the start of battle.<br>Does not activate if someone already used this.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:1}
+			},
+			EndlessShroud: 
+			{
+				name_en: "Endless Shroud",
+				name_jp: "終わりなき衣",
+				details: "Chance to apply Miasma Weapon when using a debuff skill.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			DeathsJudgment: 
+			{
+				name_en: "Death's Judgment",
+				name_jp: "死の審判",
+				details: "If Miasma Weapon is active, the Reaper has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:3}
+			},
+			FeebleMiasma: 
+			{
+				name_en: "Feeble Miasma",
+				name_jp: "虚弱の瘴気",
+				details: "Increases the chance of inflicting ailments and binds on all enemies for a set amount of turns.",
+				dep: {FrailMiasma:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			ScytheofExorcism: 
+			{
+				name_en: "Scythe of Exorcism",
+				name_jp: "呪禁の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {ScytheofNumbStasis:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			BlackBlade: 
+			{
+				name_en: "Black Blade",
+				name_jp: "黒き刃",
+				details: "If Miasma Weapon is active, the Reaper's attack power increases every time they inflict an ailment.<br>Lasts until the Reaper dies, or until the battle ends.<br>Affects all damage types.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:0}
+			},
+			TPBoost: 
+			{
+				name_en: "TP Boost",
+				name_jp: "ＴＰブースト",
+				details: "Increases the Reaper's maximum TP.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:1}
+			},
+			FreshBloodSlash: 
+			{
+				name_en: "Fresh Blood Slash",
+				name_jp: "鮮血の斬撃",
+				details: "This skill can only be used when Miasma Weapon is active.<br>The Reaper sacrifices a portion of their maximum maximum (or current?) HP to deal 2 to 4 STR based melee cut attacks to random enemies.<br>Has a 50% speed modifier and -10 accuracy modifier at all levels.",
+				dep: {DeathsJudgment:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:2.5}
+			},
+			GreateScytheofColdAsh: 
+			{
+				name_en: "Great Scythe of Cold Ash",
+				name_jp: "冷灰の大鎌",
+				details: "Deals STR based melee cut + ice damage to one row.<br>Deals a follow-up attack on enemies that have ailments.<br>The follow-up attack deals double damage.<br>Has a 75% speed modifier and no base accuracy modifier at all levels.",
+				dep: {DeathsJudgment:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:3.5}
+			},
+			ScytheofCruelPoison: 
+			{
+				name_en: "Scythe of Cruel Poison",
+				name_jp: "惨毒の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If the Reaper has Miasma Weapon active, it has a chance to inflict poison.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {ScytheofExorcism:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:4.5}
+			},
+			ScytheofWickedChaos: 
+			{
+				name_en: "Scythe of Wicked Chaos",
+				name_jp: "禍乱の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If the Reaper has Miasma Weapon active, it has a chance to inflict panic.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {ScytheofExorcism:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:5.5}
+			},
+			BlackShroud: 
+			{
+				name_en: "Black Shroud",
+				name_jp: "黒き衣",
+				details: "If Miasma Weapon is active, the Reaper's defense increases every time they inflict an ailment.<br>Lasts until the Reaper dies, or until the battle ends. Affects all damage types.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:0}
+			},
+			ConstraintAttackBoost: 
+			{
+				name_en: "Constraint Attack Boost",
+				name_jp: "抑制攻撃ブースト",
+				details: "Increases the chance of inflicting ailments and binds.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:1}
+			},
+			ShroudofReality: 
+			{
+				name_en: "Shroud of Reality",
+				name_jp: "空蝉の衣",
+				details: "This skill can only be used when Miasma Weapon is active.<br>Dispels the Miasma Weapon buff from the Reaper and hides them from the battle for the current turn, and puts a scapegoat in their place.<br>If the scapegoat is still alive at the end of the turn, the Reaper will reenter battle and deal STR based melee cut damage to one enemy.<br>If the scapegoat dies, the Reaper reenters the battle immediately without attacking.<br>Has an +50 accuracy modifier at all levels.<br>The initial cast has a variable speed modifier, while the actual attack has a 1% speed modifier at all levels.",
+				dep: {FreshBloodSlash:3,GreateScytheofColdAsh:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:3}
+			},
+			ScytheofDeath: 
+			{
+				name_en: "Scythe of Death",
+				name_jp: "死の鎌",
+				details: "Deals STR based melee cut damage to one enemy and has a chance to inflict instant death.<br>If the target is asleep, the damage and instant death chance rises.<br>Has a 20% speed modifier and -10 accuracy modifier at all levels.<br>NOTE: The data does not include the damage multiplier from attacking a sleeping enemy (which is usually 1.5x in the other EO games). Also, it is possible that the damage and success rate multipliers may be flipped.",
+				dep: {ScytheofCruelPoison:3,ScytheofWickedChaos:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:5}
+			}
 		},
 		specB:
 		{
-			
+			ScytheMastery: 
+			{
+				name_en: "Scythe Mastery",
+				name_jp: "鎌マスタリー",
+				details: "Raises physical attack power when a scythe is equipped.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			MiasmaWeapon: 
+			{
+				name_en: "Miasma Weapon",
+				name_jp: "瘴気の兵装",
+				details: "Sacrifices a percentage of the Reaper's maximum (or current?) HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:2}
+			},
+			FrailMiasma: 
+			{
+				name_en: "Frail Miasma",
+				name_jp: "繊弱の瘴気",
+				details: "Lowers all enemies' physical and elemental attack for a set amount of turns.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			ScytheofNumbStasis: 
+			{
+				name_en: "Scythe of Numb Stasis",
+				name_jp: "痺止の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:5}
+			},
+			GatherSouls: 
+			{
+				name_en: "Gather Souls",
+				name_jp: "魂寄せ",
+				details: "Increases the encounter rate and increases the amount of exp gained from battles for a set number of steps.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:0}
+			},
+			PreemptiveWeapon: 
+			{
+				name_en: "Preemptive Weapon",
+				name_jp: "先制兵装",
+				details: "Gives a chance to use Miasma Weapon immediately at the start of battle.<br>Does not activate if someone already used this.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:1}
+			},
+			EndlessShroud: 
+			{
+				name_en: "Endless Shroud",
+				name_jp: "終わりなき衣",
+				details: "Chance to apply Miasma Weapon when using a debuff skill.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			DeathsJudgment: 
+			{
+				name_en: "Death's Judgment",
+				name_jp: "死の審判",
+				details: "If Miasma Weapon is active, the Reaper has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
+				dep: {MiasmaWeapon:2},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:3}
+			},
+			FeebleMiasma: 
+			{
+				name_en: "Feeble Miasma",
+				name_jp: "虚弱の瘴気",
+				details: "Increases the chance of inflicting ailments and binds on all enemies for a set amount of turns.",
+				dep: {FrailMiasma:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			ScytheofExorcism: 
+			{
+				name_en: "Scythe of Exorcism",
+				name_jp: "呪禁の鎌",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				dep: {ScytheofNumbStasis:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			AbsorbVitality: 
+			{
+				name_en: "Absorb Vitality",
+				name_jp: "生気吸収",
+				details: "When the Reaper debuffs an enemy, the reaper is healed.<br>The heal can bring the Reaper's HP above the Reaper's maximum HP pool, but any extra HP will go away at the end of the turn.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:0}
+			},
+			MagicDefenseBoost: 
+			{
+				name_en: "Magic Defense Boost",
+				name_jp: "魔法防御ブースト",
+				details: "Passively increases defense against magic attacks.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:1}
+			},
+			DeathResistance: 
+			{
+				name_en: "Death Resistance",
+				name_jp: "死の耐性",
+				details: "Gives the Reaper a chance to nullify the effects of debuffs and ailments enemies attempt to apply to them.",
+				dep: {EndlessShroud:5},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:2}
+			},
+			BrittleMiasma: 
+			{
+				name_en: "Brittle Miasma",
+				name_jp: "削弱の瘴気",
+				details: "Lowers all enemies' physical and elemental defense for a set amount of turns.<br>Has an 85% speed modifier at all levels.",
+				dep: {FeebleMiasma:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:3.5}
+			},
+			DimMiasma: 
+			{
+				name_en: "Dim Miasma",
+				name_jp: "闇弱の瘴気",
+				details: "Lowers all enemies' accuracy for a set amount of turns.<br>Has an 85% speed modifier at all levels.",
+				dep: {FeebleMiasma:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:4.5}
+			},
+			HPBoost: 
+			{
+				name_en: "HP Boost",
+				name_jp: "ＨＰブースト",
+				details: "Increases the Reaper's maximum HP.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:0}
+			},
+			BloodofAtonement: 
+			{
+				name_en: "Blood of Atonement",
+				name_jp: "贖いの血",
+				details: "This skill can only be used when Miasma Weapon is active.<br>Dispels Miasma Weapon to heal all allies HP, with a chance of dispelling all ailments on the party as well.<br>Has an 85% speed modifier at all levels.",
+				dep: {DeathResistance:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:1.5}
+			},
+			WallofMiasma: 
+			{
+				name_en: "Wall of Miasma",
+				name_jp: "瘴気の防壁",
+				details: "This skill can only be used when Miasma Weapon is active.<br>Dispels Miasma Weapon to give all allies a chance to defend against ailments and binds for the current turn.<br>Activates at the start of the turn.",
+				dep: {DeathResistance:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:2.5}
+			},
+			ScytheofTransience: 
+			{
+				name_en: "Scythe of Transience",
+				name_jp: "泡沫の鎌",
+				details: "Removes all debuffs from one enemy and attacks them with STR based melee cut attacks.<br>The number of times they attack is equal to the number of debuffs that have been removed (Maximum of 3).<br>Only deals 100% damage if the enemy has no debuffs.<br>The debuffs are purged before dealing damage.<br>Has a 75% speed modifier and cannot miss at all levels.",
+				dep: {BrittleMiasma:5,DimMiasma:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:3.5}
+			},
+			SoulTransfer: 
+			{
+				name_en: "Soul Transfer",
+				name_jp: "魂転移",
+				details: "Dispels all debuffs from one enemy, and gives allies a chance to revive if they happen to die on the same turn.<br>Has no effect if there are no debuffs to purge.<br>Activates at the start of the turn.",
+				dep: {BrittleMiasma:5,DimMiasma:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:4.5}
+			}
 		}
 	},
 	warlock:
