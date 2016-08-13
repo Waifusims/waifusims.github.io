@@ -252,15 +252,62 @@ var classSkillForwardReqs =
 	{
 		base:
 		{
-
+			MagiMastery: {HighSpeedIncantation:5},
+			Amplifier: {MagicShield:2},
+			Levitation: {},
+			HighSpeedIncantation: {},
+			Fireball: {},
+			IcicleLance: {},
+			Lightning: {},
+			MagicShield: {},
+			IncantationCompressionForm: {},
+			Invisible: {}
 		},
 		specA:
 		{
-
+			MagiMastery: {HighSpeedIncantation:5},
+			Amplifier: {MagicShield:2},
+			Levitation: {},
+			HighSpeedIncantation: {},
+			Fireball: {Windstorm:3,EarthSpike:3,Rockfall:3},
+			IcicleLance: {Windstorm:3,EarthSpike:3,Rockfall:3},
+			Lightning: {Windstorm:3,EarthSpike:3,Rockfall:3},
+			MagicShield: {AntiMagic:3},
+			IncantationCompressionForm: {IncantationMultistrikeForm:5},
+			Invisible: {},
+			ReserveMagic: {},
+			Windstorm: {Alter:5},
+			EarthSpike: {Alter:5},
+			Rockfall: {Alter:5},
+			AntiMagic: {LifeDrain:3},
+			IncantationMultistrikeForm: {},
+			MagicDefenseBoost: {},
+			TPBoost: {},
+			Alter: {},
+			LifeDrain: {}
 		},
 		specB:
 		{
-			
+			MagiMastery: {HighSpeedIncantation:5},
+			Amplifier: {MagicShield:2},
+			Levitation: {},
+			HighSpeedIncantation: {},
+			Fireball: {Explode:5},
+			IcicleLance: {IceStream:5},
+			Lightning: {ThunderBreak:5},
+			MagicShield: {MagicWeapon:3},
+			IncantationCompressionForm: {IncantationReductionForm:5},
+			Invisible: {},
+			CommonMagic: {},
+			Explode: {MagicLeak:3,CostCut:3},
+			IceStream: {MagicLeak:3,CostCut:3},
+			ThunderBreak: {MagicLeak:3,CostCut:3},
+			MagicWeapon: {},
+			IncantationReductionForm: {},
+			ConstraintDefenseBoost: {},
+			MagicAttackBoost: {},
+			MagicLeak: {},
+			CostCut: {}
 		}
 	},
 	necromancer:

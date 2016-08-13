@@ -2452,15 +2452,612 @@ var classSkills =
 	{
 		base:
 		{
-
+			MagiMastery: 
+			{
+				name_en: "Magi Mastery",
+				name_jp: "マギマスタリー",
+				details: "Increases the damage of the Warlock's Magi skills.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			Amplifier: 
+			{
+				name_en: "Amplifier",
+				name_jp: "アンプリファー",
+				details: "Increases one row's magic attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			Levitation: 
+			{
+				name_en: "Levitation",
+				name_jp: "レビテーション",
+				details: "For a set number of steps, negates damage taken from damage tiles, and increases the chance of preemptive attacks.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:6}
+			},
+			HighSpeedIncantation: 
+			{
+				name_en: "High Speed Incantation",
+				name_jp: "高速詠唱",
+				details: "Enables the use of Incantation skills without using a turn, but increases the skill used's TP cost.<br>WARNING: This is a permanent passive, and once learned, it cannot be turned off!",
+				dep: {MagiMastery:5},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 5,
+				coords: {x:1, y:0}
+			},
+			Fireball: 
+			{
+				name_en: "Fireball",
+				name_jp: "ファイアボール",
+				details: "Deals ranged INT-based fire damage to one enemy, with splash damage.<br>Has a 70% speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:1}
+			},
+			IcicleLance:
+			{
+				name_en: "Icicle Lance",
+				name_jp: "アイシクルランス",
+				details: "Deals ranged INT-based ice damage to one enemy, with piercing effect.<br>Has no speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			Lightning: 
+			{
+				name_en: "Lighning",
+				name_jp: "ライトニング",
+				details: "Deals ranged INT-based volt damage to one row of enemies.<br>Has a 130% speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:3}
+			},
+			MagicShield: 
+			{
+				name_en: "Magic Shield",
+				name_jp: "マジックシールド",
+				details: "Reduces magic damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
+				dep: {Amplifier:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			IncantationCompressionForm: 
+			{
+				name_en: "Incantation: Compression Form",
+				name_jp: "詠唱：圧縮術式",
+				details: "Next turn, the Warlock's Magi skills will only hit a single target, but their power is increased.<br>Has a 60% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			Invisible: 
+			{
+				name_en: "Invisible",
+				name_jp: "インビジブル",
+				details: "Reduces the encounter rate for a set number of steps.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:6}
+			}
 		},
 		specA:
 		{
-
+			MagiMastery: 
+			{
+				name_en: "Magi Mastery",
+				name_jp: "マギマスタリー",
+				details: "Increases the damage of the Warlock's Magi skills.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			Amplifier: 
+			{
+				name_en: "Amplifier",
+				name_jp: "アンプリファー",
+				details: "Increases one row's magic attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			Levitation: 
+			{
+				name_en: "Levitation",
+				name_jp: "レビテーション",
+				details: "For a set number of steps, negates damage taken from damage tiles, and increases the chance of preemptive attacks.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:6}
+			},
+			HighSpeedIncantation: 
+			{
+				name_en: "High Speed Incantation",
+				name_jp: "高速詠唱",
+				details: "Enables the use of Incantation skills without using a turn, but increases the skill used's TP cost.<br>WARNING: This is a permanent passive, and once learned, it cannot be turned off!",
+				dep: {MagiMastery:5},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 5,
+				coords: {x:1, y:0}
+			},
+			Fireball: 
+			{
+				name_en: "Fireball",
+				name_jp: "ファイアボール",
+				details: "Deals ranged INT-based fire damage to one enemy, with splash damage.<br>Has a 70% speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:1}
+			},
+			IcicleLance:
+			{
+				name_en: "Icicle Lance",
+				name_jp: "アイシクルランス",
+				details: "Deals ranged INT-based ice damage to one enemy, with piercing effect.<br>Has no speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			Lightning: 
+			{
+				name_en: "Lighning",
+				name_jp: "ライトニング",
+				details: "Deals ranged INT-based volt damage to one row of enemies.<br>Has a 130% speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:3}
+			},
+			MagicShield: 
+			{
+				name_en: "Magic Shield",
+				name_jp: "マジックシールド",
+				details: "Reduces magic damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
+				dep: {Amplifier:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			IncantationCompressionForm: 
+			{
+				name_en: "Incantation: Compression Form",
+				name_jp: "詠唱：圧縮術式",
+				details: "Next turn, the Warlock's Magi skills will only hit a single target, but their power is increased.<br>Has a 60% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			Invisible: 
+			{
+				name_en: "Invisible",
+				name_jp: "インビジブル",
+				details: "Reduces the encounter rate for a set number of steps.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:6}
+			},
+			ReserveMagic: 
+			{
+				name_en: "Reserve Magic",
+				name_jp: "リザーブマジック",
+				details: "If the Magi skill used on this turn is of a different element from the last one used, it gains the element of the last one used and has its damage increased.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:0}
+			},
+			Windstorm: 
+			{
+				name_en: "Windstorm",
+				name_jp: "ウィンドストーム",
+				details: "Deals ranged INT-based cut damage to all enemies.<br>Attempts to inflict arm bind on hit targets.<br>Has no speed modifier and 130 base accuracy at all levels.",
+				dep: {Fireball:3,IcicleLance:3,Lightning:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:1}
+			},
+			EarthSpike: 
+			{
+				name_en: "Earth Spike",
+				name_jp: "アーススパイク",
+				details: "Deals ranged INT-based stab damage to all enemies.<br>Reduces hit targets' magic attack for 3 turns.<br>Has no speed modifier and 130 base accuracy at all levels.",
+				dep: {Fireball:3,IcicleLance:3,Lightning:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:2}
+			},
+			Rockfall: 
+			{
+				name_en: "Rockfall",
+				name_jp: "ロックフォール",
+				details: "Deals ranged INT-based bash damage to all enemies.<br>Attempts to stun hit targets.<br>Has a 150% speed modifier and 130 base accuracy.",
+				dep: {Fireball:3,IcicleLance:3,Lightning:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:3}
+			},
+			AntiMagic: 
+			{
+				name_en: "Anti-Magic",
+				name_jp: "アンチマジック",
+				details: "Passively gives a chance for the Warlock to nullify magic attacks on their row.",
+				dep: {MagicShield:3},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:4}
+			},
+			IncantationMultistrikeForm: 
+			{
+				name_en: "Incantation: Multistrike Form",
+				name_jp: "詠唱：多段術式",
+				details: "On the next turn, Magi skills will become random-target that hits 2-6 times.<br>Each hit is a percentage of the skill's original damage.<br>Can hit the same target multiple times.<br>Has a 60% speed modifier at all levels.",
+				dep: {IncantationCompressionForm:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:5}
+			},
+			MagicDefenseBoost: 
+			{
+				name_en: "Magic Defense Boost",
+				name_jp: "魔法防御ブースト",
+				details: "Passively increases defense against magic attacks.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y:6}
+			},
+			TPBoost: 
+			{
+				name_en: "TP Boost",
+				name_jp: "ＴＰブースト",
+				details: "Increases the Warlock's maximum TP.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:0}
+			},
+			Alter: 
+			{
+				name_en: "Alter",
+				name_jp: "アルター",
+				details: "Three turns after casting, deals ranged INT-based bash damage to all enemies.<br>Attempts to inflict petrification on hit targets.<br>Initial cast has a 90% speed modifier.<br>Actual hit has an 80% speed modifier and 200 base accuracy.",
+				dep: {Windstorm:5,EarthSpike:5,Rockfall:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y:2}
+			},
+			LifeDrain: 
+			{
+				name_en: "Life Drain",
+				name_jp: "ライフドレイン",
+				details: "When the Warlock hits an enemy's weakness, the Union gauge is increased.",
+				dep: {AntiMagic:3},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 5,
+				coords: {x:3, y:4}
+			}
 		},
 		specB:
 		{
-			
+			MagiMastery: 
+			{
+				name_en: "Magi Mastery",
+				name_jp: "マギマスタリー",
+				details: "Increases the damage of the Warlock's Magi skills.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:0}
+			},
+			Amplifier: 
+			{
+				name_en: "Amplifier",
+				name_jp: "アンプリファー",
+				details: "Increases one row's magic attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:4}
+			},
+			Levitation: 
+			{
+				name_en: "Levitation",
+				name_jp: "レビテーション",
+				details: "For a set number of steps, negates damage taken from damage tiles, and increases the chance of preemptive attacks.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y:6}
+			},
+			HighSpeedIncantation: 
+			{
+				name_en: "High Speed Incantation",
+				name_jp: "高速詠唱",
+				details: "Enables the use of Incantation skills without using a turn, but increases the skill used's TP cost.<br>WARNING: This is a permanent passive, and once learned, it cannot be turned off!",
+				dep: {MagiMastery:5},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 5,
+				coords: {x:1, y:0}
+			},
+			Fireball: 
+			{
+				name_en: "Fireball",
+				name_jp: "ファイアボール",
+				details: "Deals ranged INT-based fire damage to one enemy, with splash damage.<br>Has a 70% speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:1}
+			},
+			IcicleLance:
+			{
+				name_en: "Icicle Lance",
+				name_jp: "アイシクルランス",
+				details: "Deals ranged INT-based ice damage to one enemy, with piercing effect.<br>Has no speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:2}
+			},
+			Lightning: 
+			{
+				name_en: "Lighning",
+				name_jp: "ライトニング",
+				details: "Deals ranged INT-based volt damage to one row of enemies.<br>Has a 130% speed modifier and 130 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:3}
+			},
+			MagicShield: 
+			{
+				name_en: "Magic Shield",
+				name_jp: "マジックシールド",
+				details: "Reduces magic damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
+				dep: {Amplifier:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:4}
+			},
+			IncantationCompressionForm: 
+			{
+				name_en: "Incantation: Compression Form",
+				name_jp: "詠唱：圧縮術式",
+				details: "Next turn, the Warlock's Magi skills will only hit a single target, but their power is increased.<br>Has a 60% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:5}
+			},
+			Invisible: 
+			{
+				name_en: "Invisible",
+				name_jp: "インビジブル",
+				details: "Reduces the encounter rate for a set number of steps.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y:6}
+			},
+			CommonMagic: 
+			{
+				name_en: "Common Magic",
+				name_jp: "コモンマジック",
+				details: "If another party member used an INT-based skill before the Warlock, the Warlock's damage is increased.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Explode: 
+			{
+				name_en: "Explode",
+				name_jp: "エクスプロード",
+				details: "Deals ranged INT-based fire/ice/volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				dep: {Fireball:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 1}
+			},
+			IceStream: 
+			{
+				name_en: "Ice Stream",
+				name_jp: "アイスストリーム",
+				details: "Deals ranged INT-based fire/ice/volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				dep: {IcicleLance:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 2}
+			},
+			ThunderBreak: 
+			{
+				name_en: "Thunder Break",
+				name_jp: "サンダーブレイク",
+				details: "Deals ranged INT-based fire/ice/volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				dep: {Lightning:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 3}
+			},
+			MagicWeapon: 
+			{
+				name_en: "Magic Weapon",
+				name_jp: "マジックウェポン",
+				details: "Deals melee INT-based damage to one target.<br>The element's based on the user's weapon.<br>Has no speed modifier at all levels.",
+				dep: {MagicShield:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 4}
+			},
+			IncantationReductionForm:
+			{
+				name_en: "Incantation: Reduction Form",
+				name_jp: "詠唱：減縮術式",
+				details: "On the next turn, Magi skills will have both reduced damage and TP cost.<br>Has a 60% speed modifier at all levels.",
+				dep: {IncantationCompressionForm:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 5}
+			},
+			ConstraintDefenseBoost: 
+			{
+				name_en: "Constraint Defense Boost",
+				name_jp: "抑制防御ブースト",
+				details: "Increases defense against ailments and binds.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 6}
+			},
+			MagicAttackBoost: 
+			{
+				name_en: "Magic Attack Boost",
+				name_jp: "魔法攻撃ブースト",
+				details: "Passively increases magic damage.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 0}
+			},
+			MagicLeak: 
+			{
+				name_en: "Magic Leak",
+				name_jp: "マジックリーク",
+				details: "For a set amount of turns, when using TP, a percentage of the used TP will be restored to one random party member.<br>Has no speed modifier at all levels.",
+				dep: {Explode:3,IceStream:3,ThunderBreak:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 1.5}
+			},
+			CostCut: 
+			{
+				name_en: "Cost Cut",
+				name_jp: "コストカット",
+				details: "Gives a chance to not expend TP when using a skill.",
+				dep: {Explode:3,IceStream:3,ThunderBreak:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 2.5}
+			}
 		}
 	},
 	necromancer:
