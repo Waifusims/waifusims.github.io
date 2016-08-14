@@ -1,5 +1,18 @@
 var classSkillLevels =
 {
+	/*
+				1: "",
+				2: "",
+				3: "",
+				4: "",
+				5: "",
+				6: "",
+				7: "",
+				8: "",
+				9: "",
+				10: ""
+	*/
+
 	fencer:
 	{
 		base:
@@ -256,6 +269,55 @@ var classSkillLevels =
 				8: "71% damage, 115% counter chance, max 3 counters",
 				9: "75% damage, 120% counter chance, max 3 counters",
 				10: "75% damage, 150% counter chance, max 4 counters"
+			},
+			RayofLight:
+			{
+				1: "+30 aggro per stack, +4% defense per stack, max 60 aggro, max 8% defense (2 stacks)",
+				2: "+30 aggro per stack, +4% defense per stack, max 90 aggro, max 12% defense (3 stacks)",
+				3: "+30 aggro per stack, +4% defense per stack, max 120 aggro, max 16% defense (4 stacks)",
+				4: "+30 aggro per stack, +4% defense per stack, max 150 aggro, max 20% defense (5 stacks)",
+				5: "+40 aggro per stack, +6% defense per stack, max 200 aggro, max 30% defense (5 stacks)",
+				6: "+40 aggro per stack, +6% defense per stack, max 240 aggro, max 36% defense (6 stacks)",
+				7: "+40 aggro per stack, +6% defense per stack, max 280 aggro, max 42% defense (7 stacks)",
+				8: "+40 aggro per stack, +6% defense per stack, max 320 aggro, max 48% defense (8 stacks)",
+				9: "+40 aggro per stack, +6% defense per stack, max 360 aggro, max 54% defense (9 stacks)",
+				10: "+50 aggro per stack, +8% defense per stack, max 450 aggro, max 72% defense (9 stacks)"
+			},
+			BewitchingSwordDance:
+			{
+
+			},
+			PreemptiveCurtain:
+			{
+
+			},
+			SharpThrust:
+			{
+
+			},
+			CounterBoost:
+			{
+
+			},
+			Unburdened:
+			{
+
+			},
+			PileOn:
+			{
+
+			},
+			AvoidAccel:
+			{
+
+			},
+			DivineWind:
+			{
+
+			},
+			RevengeThrust:
+			{
+				
 			}
 		},
 		specB:
@@ -384,6 +446,46 @@ var classSkillLevels =
 				8: "71% damage, 115% counter chance, max 3 counters",
 				9: "75% damage, 120% counter chance, max 3 counters",
 				10: "75% damage, 150% counter chance, max 4 counters"
+			},
+			SpeedofSoundBlade:
+			{
+
+			},
+			ChainKiller:
+			{
+
+			},
+			SylphScreen:
+			{
+
+			},
+			RandomStab:
+			{
+
+			},
+			SpeedBoost:
+			{
+
+			},
+			PhysicalAttackBoost:
+			{
+
+			},
+			ChainAll:
+			{
+
+			},
+			ChainPlus:
+			{
+
+			},
+			ChainDouble:
+			{
+
+			},
+			Resonance:
+			{
+
 			}
 		}
 	},
@@ -391,7 +493,46 @@ var classSkillLevels =
 	{
 		base:
 		{
+			ShieldMastery: 
+			{
 
+			},
+			LineGuard: 
+			{
+
+			},
+			MaterialGuard: 
+			{
+
+			},
+			HealingGuard: 
+			{
+
+			},
+			Bunker: 
+			{
+
+			},
+			ArtilleryMastery: 
+			{
+
+			},
+			GunMount: 
+			{
+
+			},
+			BarrageWall: 
+			{
+
+			},
+			DragonsRoar: 
+			{
+
+			},
+			DefensivePosition: 
+			{
+
+			}
 		},
 		specA:
 		{
