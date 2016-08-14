@@ -1861,7 +1861,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y:2}
 			},
 			FrailMiasma: 
@@ -1984,7 +1984,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y:2}
 			},
 			FrailMiasma: 
@@ -2227,7 +2227,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y:2}
 			},
 			FrailMiasma: 
@@ -2954,7 +2954,7 @@ var classSkills =
 			{
 				name_en: "Explode",
 				name_jp: "エクスプロード",
-				details: "Deals ranged INT-based fire/ice/volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				details: "Deals ranged INT-based fire damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 				dep: {Fireball:5},
 				active: true,
 				reqLevel: 20,
@@ -2966,7 +2966,7 @@ var classSkills =
 			{
 				name_en: "Ice Stream",
 				name_jp: "アイスストリーム",
-				details: "Deals ranged INT-based fire/ice/volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				details: "Deals ranged INT-based ice damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 				dep: {IcicleLance:5},
 				active: true,
 				reqLevel: 20,
@@ -2978,7 +2978,7 @@ var classSkills =
 			{
 				name_en: "Thunder Break",
 				name_jp: "サンダーブレイク",
-				details: "Deals ranged INT-based fire/ice/volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				details: "Deals ranged INT-based volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 				dep: {Lightning:5},
 				active: true,
 				reqLevel: 20,
@@ -4480,7 +4480,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y: 5}
 			},
 			FlyingSparrow: 
@@ -4723,7 +4723,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y: 5}
 			},
 			FlyingSparrow: 
@@ -5668,7 +5668,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y: 2}
 			},
 			PoisonSmoke: 
@@ -5911,7 +5911,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y: 2}
 			},
 			PoisonSmoke: 
