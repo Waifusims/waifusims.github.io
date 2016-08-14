@@ -3922,8 +3922,8 @@ var classSkills =
 			SkyPatrol: 
 			{
 				name_en: "Sky Patrol",
-				name_jp: "",
-				details: "",
+				name_jp: "高度巡回",
+				details: "When a Hawk is summoned, while walking in the field, there's an unknown chance of finding food.<br>The data block for this skill is completely empty -- specific numbers cannot be found.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -3934,8 +3934,8 @@ var classSkills =
 			FlyingTalonStrike: 
 			{
 				name_en: "Flying Talon Strike",
-				name_jp: "",
-				details: "",
+				name_jp: "飛来爪撃",
+				details: "Commands the Hawk to attack one target with a ranged cut attack.<br>Attempts to inflict head bind on the target.<br/>Has no speed modifier at all levels.<br>The Hawk's attack has 120 base accuracy.",
 				dep: {HawkArrow:3},
 				active: true,
 				reqLevel: 20,
@@ -3946,8 +3946,8 @@ var classSkills =
 			IcePeck: 
 			{
 				name_en: "Ice Peck",
-				name_jp: "",
-				details: "",
+				name_jp: "氷嘴撃",
+				details: "Deals ranged stab damage to all enemies.<br>After that, the Hawk will attack all enemies with ranged ice damage.<br/>Has a 70% speed modifier and -10 base accuracy at all levels.<br>The hawk attack has 95 base accuracy.",
 				dep: {FlashofBothWings:3},
 				active: true,
 				reqLevel: 20,
@@ -3958,8 +3958,8 @@ var classSkills =
 			PhysicalAttackBoost: 
 			{
 				name_en: "Physical Attack Boost",
-				name_jp: "",
-				details: "",
+				name_jp: "物理攻撃ブースト",
+				details: "Passively increases cut/stab/bash damage.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -3970,8 +3970,8 @@ var classSkills =
 			SpeedBoost: 
 			{
 				name_en: "Speed Boost",
-				name_jp: "",
-				details: "",
+				name_jp: "素早さブースト",
+				details: "Increases speed, evasion, and accuracy.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -3982,8 +3982,8 @@ var classSkills =
 			PowerShot: 
 			{
 				name_en: "Power Shot",
-				name_jp: "",
-				details: "",
+				name_jp: "パワーショット",
+				details: "Deals ranged stab damage to one enemy in the front row, and one in the back row.<br/>Has a 90% speed modifier and no base accuracy modifier at all levels.",
 				dep: {TargetArrow:5},
 				active: true,
 				reqLevel: 20,
@@ -3994,8 +3994,8 @@ var classSkills =
 			ScatterFeathers: 
 			{
 				name_en: "Scatter Feathers",
-				name_jp: "",
-				details: "",
+				name_jp: "舞い散る羽",
+				details: "Commands the Hawk to attempt to inflict blind on one row of enemies.<br/>Has a 120% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4006,8 +4006,8 @@ var classSkills =
 			FinishingArrow: 
 			{
 				name_en: "Finishing Arrow",
-				name_jp: "",
-				details: "",
+				name_jp: "仕留めの一矢",
+				details: "When an enemy's HP falls below a certain HP threshold, the Hound will attack with their equipped weapon.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4018,8 +4018,8 @@ var classSkills =
 			SkyDive: 
 			{
 				name_en: "Sky Dive",
-				name_jp: "",
-				details: "",
+				name_jp: "スカイダイブ",
+				details: "Commands the Hawk to, three turns later, deal ranged cut damage to one target.<br>Attempts to inflict head bind on the target.<br>While the Hawk is in the air, other Hawk skills cannot be used.<br/>Both the initial command and actual hit have no speed modifier.<br>The actual hit has 130 base accuracy.",
 				dep: {FlyingTalonStrike:5,IcePeck:5},
 				active: true,
 				reqLevel: 20,
@@ -4030,8 +4030,8 @@ var classSkills =
 			MillionShot: 
 			{
 				name_en: "Million Shot",
-				name_jp: "",
-				details: "",
+				name_jp: "ミリオンショット",
+				details: "On the turn after casting, deals multiple, very inaccurate, instances of ranged stab damage to random enemies.<br>Can hit the same target 4 times at most.<br/>Has no speed modifier and -50 base accuracy at all levels.",
 				dep: {PowerShot:5},
 				active: true,
 				reqLevel: 20,
@@ -4165,8 +4165,8 @@ var classSkills =
 			GroundPatrol: 
 			{
 				name_en: "Ground Patrol",
-				name_jp: "",
-				details: "",
+				name_jp: "地表巡回",
+				details: "When a Hound is summoned, while walking in the field, there's an unknown chance of finding materials.<br>The data block for this skill is completely empty -- specific numbers cannot be found.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4177,8 +4177,8 @@ var classSkills =
 			ConstraintAttackBoost: 
 			{
 				name_en: "Constraint Attack Boost",
-				name_jp: "",
-				details: "",
+				name_jp: "抑制攻撃ブースト",
+				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4189,8 +4189,8 @@ var classSkills =
 			MenacingHowl: 
 			{
 				name_en: "Menacing Howl",
-				name_jp: "",
-				details: "",
+				name_jp: "威嚇の咆哮",
+				details: "Commands the summoned Hound to attempt to inflict panic on all enemies.<br/>Has a 75% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4201,8 +4201,8 @@ var classSkills =
 			DefenseCommand: 
 			{
 				name_en: "Defense Command",
-				name_jp: "",
-				details: "",
+				name_jp: "防衛指示",
+				details: "Commands the summoned Hound to take all damage for one party member. At the end of the turn, the target's HP is restored.",
 				dep: {AidCommand:3},
 				active: true,
 				reqLevel: 20,
@@ -4213,8 +4213,8 @@ var classSkills =
 			FootPierce: 
 			{
 				name_en: "Foot Pierce",
-				name_jp: "",
-				details: "",
+				name_jp: "足甲貫き",
+				details: "Deals ranged stab damage to one row.<br>Attempts to inflict leg bind on hit targets.<br>After that, the summoned Hound will deal melee bash damage to any enemies that are afflicted with leg binds.<br/>Has no speed modifier and no base accuracy modifier at all levels. The summoned Hound's follow-up attack has 99 base accuracy.",
 				dep: {HunterShot:3},
 				active: true,
 				reqLevel: 20,
@@ -4225,8 +4225,8 @@ var classSkills =
 			DropShot: 
 			{
 				name_en: "Drop Shot",
-				name_jp: "",
-				details: "",
+				name_jp: "ドロップショット",
+				details: "Deals increased damage (2.5 multiplier?) to targets in the back row.<br/>Has no speed modifier and no base accuracy modifier at all levels.",
 				dep: {TargetArrow:5},
 				active: true,
 				reqLevel: 20,
@@ -4237,8 +4237,8 @@ var classSkills =
 			HealingBoost: 
 			{
 				name_en: "Healing Boost",
-				name_jp: "",
-				details: "",
+				name_jp: "回復ブースト",
+				details: "Increases the amount of static healing and % max HP healing from Hounds.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4249,8 +4249,8 @@ var classSkills =
 			TPBoost: 
 			{
 				name_en: "TP Boost",
-				name_jp: "",
-				details: "",
+				name_jp: "ＴＰブースト",
+				details: "Increases the Hound's maximum TP.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4261,8 +4261,8 @@ var classSkills =
 			MedicalLick: 
 			{
 				name_en: "Medical Lick",
-				name_jp: "",
-				details: "",
+				name_jp: "メディカルリック",
+				details: "The summoned Hound will heal random party members.<br>Each party member can be healed a maximum of 2 times.<br/>Has a 50% speed modifier.",
 				dep: {DefenseCommand:5,FootPierce:5},
 				active: true,
 				reqLevel: 20,
@@ -4273,8 +4273,8 @@ var classSkills =
 			StunShot: 
 			{
 				name_en: "Stun Shot",
-				name_jp: "",
-				details: "",
+				name_jp: "スタンショット",
+				details: "Deals ranged stab damage to one target.<br>After that, the summoned Hound will attempt to stun the target.<br/>Has a 200% speed modifier and no base accuracy modifier at all levels.",
 				dep: {DropShot:5},
 				active: true,
 				reqLevel: 20,
@@ -4534,7 +4534,7 @@ var classSkills =
 			MultiSwordTechnique: 
 			{
 				name_en: "Multi-Sword Technique",
-				name_jp: "",
+				name_jp: "多刀術",
 				details: "",
 				dep: {},
 				active: true,
@@ -4546,7 +4546,7 @@ var classSkills =
 			HPBoost: 
 			{
 				name_en: "HP Boost",
-				name_jp: "",
+				name_jp: "ＨＰブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -4558,7 +4558,7 @@ var classSkills =
 			CrossingtheSanzu: 
 			{
 				name_en: "Crossing the Sanzu",
-				name_jp: "",
+				name_jp: "三途渡し",
 				details: "",
 				dep: {FlyingSparrow:3},
 				active: true,
@@ -4570,7 +4570,7 @@ var classSkills =
 			FourGods: 
 			{
 				name_en: "Four Gods",
-				name_jp: "",
+				name_jp: "四神",
 				details: "",
 				dep: {Kamaitachi:3},
 				active: true,
@@ -4582,7 +4582,7 @@ var classSkills =
 			LayeredBlossoms: 
 			{
 				name_en: "Layered Blossoms",
-				name_jp: "",
+				name_jp: "八重の華",
 				details: "",
 				dep: {Kamaitachi:3},
 				active: true,
@@ -4594,7 +4594,7 @@ var classSkills =
 			PhysicalAttackBoost: 
 			{
 				name_en: "Physical Attack Boost",
-				name_jp: "",
+				name_jp: "物理攻撃ブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -4606,7 +4606,7 @@ var classSkills =
 			BrinkofDeathResuscitation: 
 			{
 				name_en: "Brink of Death Resuscitation",
-				name_jp: "",
+				name_jp: "仮死再生",
 				details: "",
 				dep: {HPBoost:3},
 				active: true,
@@ -4618,7 +4618,7 @@ var classSkills =
 			Reflower: 
 			{
 				name_en: "Reflower",
-				name_jp: "",
+				name_jp: "返り咲き",
 				details: "",
 				dep: {CrossingtheSanzu:3},
 				active: true,
@@ -4630,7 +4630,7 @@ var classSkills =
 			Hyakkaryouran: 
 			{
 				name_en: "Hyakkaryouran",
-				name_jp: "",
+				name_jp: "百華繚乱",
 				details: "",
 				dep: {FourGods:3,LayeredBlossoms:3},
 				active: true,
@@ -4642,7 +4642,7 @@ var classSkills =
 			Tenryuuransei: 
 			{
 				name_en: "Tenryuuransei",
-				name_jp: "",
+				name_jp: "天流乱星",
 				details: "",
 				dep: {PhysicalAttackBoost:3},
 				active: true,
@@ -4777,7 +4777,7 @@ var classSkills =
 			SwordGod: 
 			{
 				name_en: "Sword God",
-				name_jp: "",
+				name_jp: "剣神",
 				details: "",
 				dep: {},
 				active: true,
@@ -4789,7 +4789,7 @@ var classSkills =
 			TPBoost: 
 			{
 				name_en: "TP Boost",
-				name_jp: "",
+				name_jp: "ＴＰブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -4801,7 +4801,7 @@ var classSkills =
 			LegSweep: 
 			{
 				name_en: "Leg Sweep",
-				name_jp: "",
+				name_jp: "裾払い",
 				details: "",
 				dep: {MistSlice:3},
 				active: true,
@@ -4813,7 +4813,7 @@ var classSkills =
 			SwordsVigor: 
 			{
 				name_en: "Sword's Vigor",
-				name_jp: "",
+				name_jp: "剣の気迫",
 				details: "",
 				dep: {AdvantageousPosition:3},
 				active: true,
@@ -4825,7 +4825,7 @@ var classSkills =
 			SpeedBoost: 
 			{
 				name_en: "Speed Boost",
-				name_jp: "",
+				name_jp: "素早さブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -4837,7 +4837,7 @@ var classSkills =
 			ThunderSlash: 
 			{
 				name_en: "Thunder Slash",
-				name_jp: "",
+				name_jp: "雷切",
 				details: "",
 				dep: {TPBoost:5},
 				active: true,
@@ -4849,7 +4849,7 @@ var classSkills =
 			Suigetsu: 
 			{
 				name_en: "Suigetsu",
-				name_jp: "",
+				name_jp: "水月",
 				details: "",
 				dep: {TPBoost:5},
 				active: true,
@@ -4861,7 +4861,7 @@ var classSkills =
 			HelmDivide: 
 			{
 				name_en: "Helm Divide",
-				name_jp: "",
+				name_jp: "兜割り",
 				details: "",
 				dep: {LegSweep:5},
 				active: true,
@@ -4873,7 +4873,7 @@ var classSkills =
 			ThreeStageStrike: 
 			{
 				name_en: "Three Stage Strike",
-				name_jp: "",
+				name_jp: "三段討ち",
 				details: "",
 				dep: {SwordsVigor:5},
 				active: true,
@@ -4885,7 +4885,7 @@ var classSkills =
 			Sange: 
 			{
 				name_en: "Sange",
-				name_jp: "",
+				name_jp: "散華",
 				details: "",
 				dep: {SwordsVigor:5},
 				active: true,
@@ -5146,7 +5146,7 @@ var classSkills =
 			MemoriesofaPreviousLife: 
 			{
 				name_en: "Memories of a Previous Life",
-				name_jp: "",
+				name_jp: "前世の記憶",
 				details: "",
 				dep: {},
 				active: true,
@@ -5158,7 +5158,7 @@ var classSkills =
 			PrayerfortheSoul: 
 			{
 				name_en: "Prayer for the Soul",
-				name_jp: "",
+				name_jp: "魂の祈り",
 				details: "",
 				dep: {BlessingofHeaven:3},
 				active: true,
@@ -5170,7 +5170,7 @@ var classSkills =
 			ProtectionoftheOfferings: 
 			{
 				name_en: "Protection of the Offerings",
-				name_jp: "",
+				name_jp: "神供の加護",
 				details: "",
 				dep: {BlessingofHeaven:3},
 				active: true,
@@ -5182,7 +5182,7 @@ var classSkills =
 			MagicAttackBoost: 
 			{
 				name_en: "Magic Attack Boost",
-				name_jp: "",
+				name_jp: "魔法攻撃ブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5194,7 +5194,7 @@ var classSkills =
 			OracleThreeRuns: 
 			{
 				name_en: "Oracle: Three Runs",
-				name_jp: "",
+				name_jp: "神託：三走り",
 				details: "",
 				dep: {OracleDance:3},
 				active: true,
@@ -5206,7 +5206,7 @@ var classSkills =
 			OracleHalo: 
 			{
 				name_en: "Oracle: Halo",
-				name_jp: "",
+				name_jp: "神託：後光",
 				details: "",
 				dep: {OracleDance:3},
 				active: true,
@@ -5218,7 +5218,7 @@ var classSkills =
 			HPBoost: 
 			{
 				name_en: "HP Boost",
-				name_jp: "",
+				name_jp: "ＨＰブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5230,7 +5230,7 @@ var classSkills =
 			Purification: 
 			{
 				name_en: "Purification",
-				name_jp: "",
+				name_jp: "禊",
 				details: "",
 				dep: {PrayerfortheSoul:5,ProtectionoftheOfferings:5},
 				active: true,
@@ -5242,7 +5242,7 @@ var classSkills =
 			TPBoost: 
 			{
 				name_en: "TP Boost",
-				name_jp: "",
+				name_jp: "ＴＰブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5254,7 +5254,7 @@ var classSkills =
 			ChanneltheGods: 
 			{
 				name_en: "Channel the Gods",
-				name_jp: "",
+				name_jp: "神降ろし",
 				details: "",
 				dep: {OracleThreeRuns:5,OracleHalo:3},
 				active: true,
@@ -5389,7 +5389,7 @@ var classSkills =
 			ConsolingtheDead: 
 			{
 				name_en: "Consoling the Dead",
-				name_jp: "",
+				name_jp: "慰霊",
 				details: "",
 				dep: {},
 				active: true,
@@ -5401,7 +5401,7 @@ var classSkills =
 			PrayerExorcism: 
 			{
 				name_en: "Prayer: Exorcism",
-				name_jp: "",
+				name_jp: "祈祷：破邪",
 				details: "",
 				dep: {BlessingofHeaven:3},
 				active: true,
@@ -5413,7 +5413,7 @@ var classSkills =
 			PrayerEscape: 
 			{
 				name_en: "Prayer: Escape",
-				name_jp: "",
+				name_jp: "祈祷：脱兎",
 				details: "",
 				dep: {BlessingofHeaven:3},
 				active: true,
@@ -5425,7 +5425,7 @@ var classSkills =
 			PrayerLongevity: 
 			{
 				name_en: "Prayer Longevity",
-				name_jp: "",
+				name_jp: "祈祷：長寿",
 				details: "",
 				dep: {BlessingofHeaven:3},
 				active: true,
@@ -5437,7 +5437,7 @@ var classSkills =
 			PurifyingFlame: 
 			{
 				name_en: "Purifying Flame",
-				name_jp: "",
+				name_jp: "忌火",
 				details: "",
 				dep: {},
 				active: true,
@@ -5449,7 +5449,7 @@ var classSkills =
 			Bunrei: 
 			{
 				name_en: "Bunrei",
-				name_jp: "",
+				name_jp: "分霊",
 				details: "",
 				dep: {OracleDance:3},
 				active: true,
@@ -5461,7 +5461,7 @@ var classSkills =
 			MagicDefenseBoost: 
 			{
 				name_en: "Magic Defense Boost",
-				name_jp: "",
+				name_jp: "魔法防御ブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5473,7 +5473,7 @@ var classSkills =
 			ConstraintDefenseBoost: 
 			{
 				name_en: "Constraint Defense Boost",
-				name_jp: "",
+				name_jp: "抑制防御ブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5485,7 +5485,7 @@ var classSkills =
 			Sanctuary: 
 			{
 				name_en: "Sanctuary",
-				name_jp: "",
+				name_jp: "神域",
 				details: "",
 				dep: {PrayerExorcism:5,PrayerEscape:5,PrayerLongevity:5},
 				active: true,
@@ -5497,7 +5497,7 @@ var classSkills =
 			Affection: 
 			{
 				name_en: "Affection",
-				name_jp: "",
+				name_jp: "慈愛",
 				details: "",
 				dep: {PurifyingFlame:2,Bunrei:2},
 				active: true,
@@ -5758,7 +5758,7 @@ var classSkills =
 			HerbBoost: 
 			{
 				name_en: "Herb Boost",
-				name_jp: "",
+				name_jp: "ハーブブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5770,7 +5770,7 @@ var classSkills =
 			AreaHerb: 
 			{
 				name_en: "Area Herb",
-				name_jp: "",
+				name_jp: "エリアハーブ",
 				details: "",
 				dep: {LineHerb:5},
 				active: true,
@@ -5782,7 +5782,7 @@ var classSkills =
 			RecoveryHerb: 
 			{
 				name_en: "Recovery Herb",
-				name_jp: "",
+				name_jp: "リカバリーハーブ",
 				details: "",
 				dep: {ResurrectionHerb:3},
 				active: true,
@@ -5794,7 +5794,7 @@ var classSkills =
 			ConstraintDefenseBoost: 
 			{
 				name_en: "Constraint Defense Boost",
-				name_jp: "",
+				name_jp: "抑制防御ブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5806,7 +5806,7 @@ var classSkills =
 			SecretRemedyCompound: 
 			{
 				name_en: "Secret Remedy Compound",
-				name_jp: "",
+				name_jp: "秘薬調合",
 				details: "",
 				dep: {MedicinalKnowledge:5},
 				active: true,
@@ -5818,7 +5818,7 @@ var classSkills =
 			ChaseHerb: 
 			{
 				name_en: "Chase Herb",
-				name_jp: "",
+				name_jp: "チェイスハーブ",
 				details: "",
 				dep: {},
 				active: true,
@@ -5830,7 +5830,7 @@ var classSkills =
 			DelayHerb: 
 			{
 				name_en: "Delay Herb",
-				name_jp: "",
+				name_jp: "ディレイハーブ",
 				details: "",
 				dep: {},
 				active: true,
@@ -5842,7 +5842,7 @@ var classSkills =
 			HPBoost: 
 			{
 				name_en: "HP Boost",
-				name_jp: "",
+				name_jp: "ＨＰブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -5854,7 +5854,7 @@ var classSkills =
 			AutoResurrection: 
 			{
 				name_en: "Auto Resurrection",
-				name_jp: "",
+				name_jp: "オートリザレクト",
 				details: "",
 				dep: {RecoveryHerb:3},
 				active: true,
@@ -5866,7 +5866,7 @@ var classSkills =
 			LingeringScent: 
 			{
 				name_en: "Lingering Scent",
-				name_jp: "",
+				name_jp: "残り香",
 				details: "",
 				dep: {ChaseHerb:3,DelayHerb:3},
 				active: true,
@@ -6001,7 +6001,7 @@ var classSkills =
 			SmokeBoost: 
 			{
 				name_en: "Smoke Boost",
-				name_jp: "",
+				name_jp: "スモークブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -6013,7 +6013,7 @@ var classSkills =
 			ConstraintAttackBoost: 
 			{
 				name_en: "Constraint Attack Boost",
-				name_jp: "",
+				name_jp: "抑制攻撃ブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -6025,7 +6025,7 @@ var classSkills =
 			ParalyzeSmoke: 
 			{
 				name_en: "Paralyze Smoke",
-				name_jp: "",
+				name_jp: "パラライスモーク",
 				details: "",
 				dep: {Antibody:3},
 				active: true,
@@ -6037,7 +6037,7 @@ var classSkills =
 			BunglingSmoke: 
 			{
 				name_en: "Bungling Smoke",
-				name_jp: "",
+				name_jp: "マズルスモーク",
 				details: "",
 				dep: {Antibody:3},
 				active: true,
@@ -6049,7 +6049,7 @@ var classSkills =
 			SmokeSolid: 
 			{
 				name_en: "Smoke Solid",
-				name_jp: "",
+				name_jp: "スモークソリッド",
 				details: "",
 				dep: {SmokeRot:5},
 				active: true,
@@ -6061,7 +6061,7 @@ var classSkills =
 			SmokeSpark: 
 			{
 				name_en: "Smoke Spark",
-				name_jp: "",
+				name_jp: "スモークスパーク",
 				details: "",
 				dep: {SmokeRot:5},
 				active: true,
@@ -6073,7 +6073,7 @@ var classSkills =
 			TPBoost: 
 			{
 				name_en: "TP Boost",
-				name_jp: "",
+				name_jp: "ＴＰブースト",
 				details: "",
 				dep: {},
 				active: true,
@@ -6085,7 +6085,7 @@ var classSkills =
 			SmokeBomb: 
 			{
 				name_en: "Smoke Bomb",
-				name_jp: "",
+				name_jp: "スモークボム",
 				details: "",
 				dep: {ParalyzeSmoke:3,BunglingSmoke:3},
 				active: true,
@@ -6097,7 +6097,7 @@ var classSkills =
 			PersistingScent: 
 			{
 				name_en: "Persisting Scent",
-				name_jp: "",
+				name_jp: "移り香",
 				details: "",
 				dep: {SmokeSolid:3,SmokeSpark:3},
 				active: true,
@@ -6109,7 +6109,7 @@ var classSkills =
 			PreemptiveSmoke: 
 			{
 				name_en: "Preemptive Smoke",
-				name_jp: "",
+				name_jp: "先制スモーク",
 				details: "",
 				dep: {SmokeSolid:3,SmokeSpark:3},
 				active: true,
