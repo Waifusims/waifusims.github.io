@@ -4357,7 +4357,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y: 5}
 			},
 			FlyingSparrow: 
@@ -5212,7 +5212,7 @@ var classSkills =
 				active: true,
 				reqLevel: 20,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:2, y: 5.5}
 			},
 			HPBoost: 
@@ -5545,7 +5545,7 @@ var classSkills =
 				active: true,
 				reqLevel: 0,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:0, y: 2}
 			},
 			PoisonSmoke: 
@@ -5788,7 +5788,7 @@ var classSkills =
 				active: true,
 				reqLevel: 20,
 				level: 0,
-				max: 10,
+				max: 5,
 				coords: {x:2, y: 2}
 			},
 			ConstraintDefenseBoost: 
