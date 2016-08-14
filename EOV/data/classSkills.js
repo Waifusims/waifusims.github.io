@@ -3309,43 +3309,123 @@ var classSkills =
 			},
 			GhostSecretArts: 
 			{
-
+				name_en: "Ghost Secret Arts",
+				name_jp: "死霊の秘術",
+				details: "Gives a chance to summon a ghost when any party members, dogs, hawks, or enemies die.<br>Does not activate on Bunkers, Pillboxes, or other ghosts.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
 			},
 			CurseTransfer: 
 			{
-
+				name_en: "Curse Transfer",
+				name_jp: "呪詛移し",
+				details: "If a ghost is alive when the Necromancer takes fatal damage, there is a chance that both the ghost will be destroyed and the Necromancer will survive and have some HP restored.",
+				dep: {ThePriceofLife:5},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 1}
 			},
 			OpenGrave: 
 			{
-
+				name_en: "Open Grave",
+				name_jp: "墓穴",
+				details: "For one turn, ghosts will counterattack any enemy that hits a selected ally.<brr>The chance to counter starts at 100%, and is decreased by 9% for every counter.<br>Counterattacks attempt to inflict paralysis.<br/>Has a 300% speed modifier at all levels.<br>Counterattacks have 120 base accuracy.",
+				dep: {MercilessWall:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 2.5}
 			},
 			ConstraintAttackBoost: 
 			{
-
+				name_en: "Constraint Attack Boost",
+				name_jp: "抑制攻撃ブースト",
+				details: ">Increases the chance of inflicting ailments and binds.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 3.5}
 			},
 			CurseBomb: 
 			{
-
+				name_en: "Curse Bomb",
+				name_jp: "呪い爆弾",
+				details: "Destroys one ghost.<br>Attempts to inflict curse on all enemies.<br/>Has no speed modifier at all levels.",
+				dep: {PoisonBomb:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 5}
 			},
 			IceBomb: 
 			{
-
+				name_en: "Ice Bomb",
+				name_jp: "氷爆弾",
+				details: "Destroys one ghost.<br>Deals ranged ice damage to all enemies.<br/>Has no speed modifier and 150 base accuracy at all levels.",
+				dep: {FireBomb:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 6}
 			},
 			HPBoost: 
 			{
-
+				name_en: "HP Boost",
+				name_jp: "ＨＰブースト",
+				details: "Increases the Necromancer's maximum HP.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 0}
 			},
 			SoulTrade: 
 			{
-
+				name_en: "Soul Trade",
+				name_jp: "ソウルトレード",
+				details: "Destroys one ghost.<br>Attempts to revive all dead party members.<br>Revived party members will be healed.<br/>Has no speed modifier at all levels.",
+				dep: {CurseTransfer:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 1}
 			},
 			GhostDance: 
 			{
-
+				name_en: "Ghost Dance",
+				name_jp: "死霊乱舞",
+				details: "On the turn used, all ghosts will attack three times, with damage modifiers.",
+				dep: {OpenGrave:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 2.5}
 			},
 			GravestoneBinding: 
 			{
-
+				name_en: "Gravestone Binding",
+				name_jp: "石塔絞り",
+				details: "Destroys all ghosts.<br>Attempts to petrify one enemy.<br>The petrification chance is increased based on the number of ghosts destroyed.<br/>Has no speed modifier at all levels.",
+				dep: {CurseBomb:3,FireBomb:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 5.5}
 			}
 		},
 		specB:
@@ -3472,43 +3552,123 @@ var classSkills =
 			},
 			TheBeckoningofHades: 
 			{
-
+				name_en: "The Beckoning of Hades",
+				name_jp: "黄泉の手招き",
+				details: "Gives a chance to summon a ghost at the end of a turn if the Necromancer's HP is below a certain threshold.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
 			},
 			PreemptiveGhostSummoning: 
 			{
-
+				name_en: "Preemptive Ghost Summoning",
+				name_jp: "先制死霊召喚",
+				details: "Gives a chance to use Ghost Summoning at the start of battle.",
+				dep: {ThePriceofLife:3},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 1}
 			},
 			EquivalentExchange: 
 			{
-
+				name_en: "Equivalent Exchange",
+				name_jp: "等価交換",
+				details: "Destroys one ghost.<br>Deals a percentage of the HP it had before dying to one enemy.<br/>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				dep: {MercilessWall:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 2.5}
 			},
 			Sacrifice: 
 			{
-
+				name_en: "Sacrifice",
+				name_jp: "生贄",
+				details: "Destroys one ghost.<br>Increases the Necromancer's damage until the end of the next turn.",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 3.5}
 			},
 			MagicAttackBoost: 
 			{
-
+				name_en: "Magic Attack Boost",
+				name_jp: "魔法攻撃ブースト",
+				details: "Passively increases magic damage.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 4.5}
 			},
 			TheGatesofHell: 
 			{
-
+				name_en: "The Gates of Hell",
+				name_jp: "地獄門",
+				details: "Deals ranged bash damage to one enemy.<br>Summons a ghost with HP equal to damage dealt.<br/>Has an 80% speed modifier and 150 base accuracy at all levels.",
+				dep: {PoisonBomb:5,FireBomb:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 5.5}
 			},
 			TPBoost: 
 			{
-
+				name_en: "TP Boost",
+				name_jp: "ＴＰブースト",
+				details: "Increases the Necromancer's maximum TP.",
+				dep: {},
+				active: false,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 0}
 			},
 			GhostExplosion: 
 			{
-
+				name_en: "Ghost Explosion",
+				name_jp: "死霊大爆発",
+				details: "Destroys all ghosts.<br>Deals ranged bash+fire damage to all enemies. Damage is based on the number of ghosts destroyed.<br/>Has no speed modifier and 150 base accuracy at all levels.",
+				dep: {EquivalentExchange:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 2.5}
 			},
 			NegativeEnergy: 
 			{
-
+				name_en: "Negative Energy",
+				name_jp: "負の力",
+				details: "Deals ranged almighty damage to one enemy.<br>The damage has 150% added to it for every party member killed, enemy killed, and ghost killed before use.<br>There is no cap on how many times Negative Energy can have its damage increased.<br/>Has a -100% speed modifier.<br>Does not check for accuracy.",
+				dep: {Sacrifice:3},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 3.5}
 			},
 			ZombiePowder: 
 			{
-
+				name_en: "Zombie Powder",
+				name_jp: "ゾンビパウダー",
+				details: "Attempts to instantly kill one enemy.<br>If the instant death is successful, summons one ghost.<br/>Has a 50% speed modifier at all levels.",
+				dep: {TheGatesofHell:5},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:3, y: 5.5}
 			}
 		}
 	},
@@ -3639,49 +3799,489 @@ var classSkills =
 		},
 		specA:
 		{
-			BowMastery: {},
-			HawkWhistle: {},
-			DogWhistle: {},
-			Brushing: {},
-			AnimalTherapy: {},
-			HawkArrow: {},
-			FlashofBothWings: {},
-			AidCommand: {},
-			HunterShot: {},
-			TargetArrow: {},
-			SkyPatrol: {},
-			FlyingTalonStrike: {},
-			IcePeck: {},
-			PhysicalAttackBoost: {},
-			SpeedBoost: {},
-			PowerShot: {},
-			ScatterFeathers: {},
-			FinishingArrow: {},
-			SkyDive: {},
-			MillionShot: {}
+			BowMastery: 
+			{
+				name_en: "Bow Mastery",
+				name_jp: "弓マスタリー",
+				details: "Increases damage dealt with bows.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			HawkWhistle: 
+			{
+				name_en: "Hawk Whistle",
+				name_jp: "鷹笛",
+				details: "Summons a Hawk. The Hawk's base stats (HP, STR, INT, VIT, WIS, AGI, LUC) are multiplied by a level-dependent factor.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1.5}
+			},
+			DogWhistle: 
+			{
+				name_en: "Dog Whistle",
+				name_jp: "犬笛",
+				details: "Summons a Hound. The Hound's base stats (HP, STR, INT, VIT, WIS, AGI, LUC) are multiplied by a level-dependent factor.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 3.5}
+			},
+			Brushing: 
+			{
+				name_en: "Brushing",
+				name_jp: "ブラッシング",
+				details: "Restores the Hound or Hawk's HP at the end of every turn.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			AnimalTherapy: 
+			{
+				name_en: "Animal Therapy",
+				name_jp: "獣の癒し",
+				details: "When a Hound/Hawk is present, recovers HP to all allies at the end of a turn.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 0}
+			},
+			HawkArrow: 
+			{
+				name_en: "Hawk Arrow",
+				name_jp: "ホークアロー",
+				details: "Deals ranged stab damage to one enemy.<br>After that, the Hawk will target the enemies adjacent to the target with a ranged cut attack.<br>Has a 75% speed modifier and no base accuracy modifier at all levels.<br>The hawk's attack has 99 base accuracy.",
+				dep: {HawkWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 1}
+			},
+			FlashofBothWings: 
+			{
+				name_en: "Flash of Both Wings",
+				name_jp: "双翼閃",
+				details: "Deals ranged stab damage to one enemy.<br>After that, the Hawk will attack the target's row with a ranged cut attack.<br>Has a 200% speed modifier and no base accuracy modifier at all levels.<br>The hawk's attack has 99 base accuracy.",
+				dep: {HawkWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			AidCommand: 
+			{
+				name_en: "Aid Command",
+				name_jp: "救護指示",
+				details: "Commands the Hound to heal one ally.<br>The heal is a static amount plus a percentage of the target's max HP.<br>The command has an 85% speed modifier, the heal has no speed modifier.",
+				dep: {DogWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 3}
+			},
+			HunterShot: 
+			{
+				name_en: "Hunter Shot",
+				name_jp: "ハンターショット",
+				details: "Deals ranged stab damage to one target.<br>After using Hunter Shot, the Hound will perform a follow-up attack, which has a chance of inflicting arm and leg bind.<br>Hunter Shot itself has a 75% speed modifier and no base accuracy modifier.",
+				dep: {DogWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 4}
+			},
+			TargetArrow: 
+			{
+				name_en: "Target Arrow",
+				name_jp: "ターゲットアロー",
+				details: "Deals ranged stab damage to one target.<br>Lowers the target's physical defense for a set amount of turns.<br>The Hound's active Hound or Hawk will target the enemy that has the Target Arrow debuff while it's active.<br>Has no speed modifier and +20 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5}
+			},
+			SkyPatrol: 
+			{
+				name_en: "Sky Patrol",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			FlyingTalonStrike: 
+			{
+				name_en: "Flying Talon Strike",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			IcePeck: 
+			{
+				name_en: "Ice Peck",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PhysicalAttackBoost: 
+			{
+				name_en: "Physical Attack Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SpeedBoost: 
+			{
+				name_en: "Speed Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PowerShot: 
+			{
+				name_en: "Power Shot",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ScatterFeathers: 
+			{
+				name_en: "Scatter Feathers",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			FinishingArrow: 
+			{
+				name_en: "Finishing Arrow",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SkyDive: 
+			{
+				name_en: "Sky Dive",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			MillionShot: 
+			{
+				name_en: "Million Shot",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		},
 		specB:
 		{
-			BowMastery: {},
-			HawkWhistle: {},
-			DogWhistle: {},
-			Brushing: {},
-			AnimalTherapy: {},
-			HawkArrow: {},
-			FlashofBothWings: {},
-			AidCommand: {},
-			HunterShot: {},
-			TargetArrow: {},
-			GroundPatrol: {},
-			ConstraintAttackBoost: {},
-			MenacingHowl: {},
-			DefenseCommand: {},
-			FootPierce: {},
-			DropShot: {},
-			HealingBoost: {},
-			TPBoost: {},
-			MedicalLick: {},
-			StunShot: {}
+			BowMastery: 
+			{
+				name_en: "Bow Mastery",
+				name_jp: "弓マスタリー",
+				details: "Increases damage dealt with bows.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			HawkWhistle: 
+			{
+				name_en: "Hawk Whistle",
+				name_jp: "鷹笛",
+				details: "Summons a Hawk. The Hawk's base stats (HP, STR, INT, VIT, WIS, AGI, LUC) are multiplied by a level-dependent factor.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1.5}
+			},
+			DogWhistle: 
+			{
+				name_en: "Dog Whistle",
+				name_jp: "犬笛",
+				details: "Summons a Hound. The Hound's base stats (HP, STR, INT, VIT, WIS, AGI, LUC) are multiplied by a level-dependent factor.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 3.5}
+			},
+			Brushing: 
+			{
+				name_en: "Brushing",
+				name_jp: "ブラッシング",
+				details: "Restores the Hound or Hawk's HP at the end of every turn.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			AnimalTherapy: 
+			{
+				name_en: "Animal Therapy",
+				name_jp: "獣の癒し",
+				details: "When a Hound/Hawk is present, recovers HP to all allies at the end of a turn.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 0}
+			},
+			HawkArrow: 
+			{
+				name_en: "Hawk Arrow",
+				name_jp: "ホークアロー",
+				details: "Deals ranged stab damage to one enemy.<br>After that, the Hawk will target the enemies adjacent to the target with a ranged cut attack.<br>Has a 75% speed modifier and no base accuracy modifier at all levels.<br>The hawk's attack has 99 base accuracy.",
+				dep: {HawkWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 1}
+			},
+			FlashofBothWings: 
+			{
+				name_en: "Flash of Both Wings",
+				name_jp: "双翼閃",
+				details: "Deals ranged stab damage to one enemy.<br>After that, the Hawk will attack the target's row with a ranged cut attack.<br>Has a 200% speed modifier and no base accuracy modifier at all levels.<br>The hawk's attack has 99 base accuracy.",
+				dep: {HawkWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			AidCommand: 
+			{
+				name_en: "Aid Command",
+				name_jp: "救護指示",
+				details: "Commands the Hound to heal one ally.<br>The heal is a static amount plus a percentage of the target's max HP.<br>The command has an 85% speed modifier, the heal has no speed modifier.",
+				dep: {DogWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 3}
+			},
+			HunterShot: 
+			{
+				name_en: "Hunter Shot",
+				name_jp: "ハンターショット",
+				details: "Deals ranged stab damage to one target.<br>After using Hunter Shot, the Hound will perform a follow-up attack, which has a chance of inflicting arm and leg bind.<br>Hunter Shot itself has a 75% speed modifier and no base accuracy modifier.",
+				dep: {DogWhistle:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 4}
+			},
+			TargetArrow: 
+			{
+				name_en: "Target Arrow",
+				name_jp: "ターゲットアロー",
+				details: "Deals ranged stab damage to one target.<br>Lowers the target's physical defense for a set amount of turns.<br>The Hound's active Hound or Hawk will target the enemy that has the Target Arrow debuff while it's active.<br>Has no speed modifier and +20 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5}
+			},
+			GroundPatrol: 
+			{
+				name_en: "Ground Patrol",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ConstraintAttackBoost: 
+			{
+				name_en: "Constraint Attack Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			MenacingHowl: 
+			{
+				name_en: "Menacing Howl",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			DefenseCommand: 
+			{
+				name_en: "Defense Command",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			FootPierce: 
+			{
+				name_en: "Foot Pierce",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			DropShot: 
+			{
+				name_en: "Drop Shot",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			HealingBoost: 
+			{
+				name_en: "Healing Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			TPBoost: 
+			{
+				name_en: "TP Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			MedicalLick: 
+			{
+				name_en: "Medical Lick",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			StunShot: 
+			{
+				name_en: "Stun Shot",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		}
 	},
 	masurao:
@@ -3811,49 +4411,489 @@ var classSkills =
 		},
 		specA:
 		{
-			KatanaMastery: {},
-			PeerlessDemon: {},
-			TotheDeath: {},
-			ArmorPenetrate: {},
-			VacuumBlade: {},
-			NewChallenger: {},
-			FlyingSparrow: {},
-			MistSlice: {},
-			Kamaitachi: {},
-			AdvantageousPosition: {},
-			MultiSwordTechnique: {},
-			HPBoost: {},
-			CrossingtheSanzu: {},
-			FourGods: {},
-			LayeredBlossoms: {},
-			PhysicalAttackBoost: {},
-			BrinkofDeathResuscitation: {},
-			Reflower: {},
-			Hyakkaryouran: {},
-			Tenryuuransei: {}
+			KatanaMastery: 
+			{
+				name_en: "Katana Mastery",
+				name_jp: "刀マスタリー",
+				details: "Increases damage dealt with katanas.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			PeerlessDemon: 
+			{
+				name_en: "Peerless Demon",
+				name_jp: "鬼無双",
+				details: "Increases damage dealt based on how many hits the attack has.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1}
+			},
+			TotheDeath: 
+			{
+				name_en: "To the Death",
+				name_jp: "果し合い",
+				details: "Increases the Masauro's damage when hitting the same target as last turn.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 2}
+			},
+			ArmorPenetrate: 
+			{
+				name_en: "Armor Penetrate",
+				name_jp: "鎧通し",
+				details: "Deals melee stab damage to one enemy.<br>Reduces the target's physical defense for 4 turns.<br>Has a 75% speed modifier and +5 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 3}
+			},
+			VacuumBlade: 
+			{
+				name_en: "Vacuum Blade",
+				name_jp: "空刃",
+				details: "Deals ranged cut damage to one enemy.<br>Has no speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 4}
+			},
+			NewChallenger: 
+			{
+				name_en: "New Challenger",
+				name_jp: "新たな強敵",
+				details: "Immediately begins a battle.<br>Increases the chance of encountering rare breeds.<br>Upon ending one battle, there is an unknown chance of fighting a consecutive one.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			FlyingSparrow: 
+			{
+				name_en: "Flying Sparrow",
+				name_jp: "飛燕",
+				details: "Deals melee cut damage to one enemy.<br>After the enemy has taken their action, hits again.<br>Has a 500% speed modifier and +10 base accuracy at all levels.",
+				dep: {TotheDeath:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			MistSlice: 
+			{
+				name_en: "Mist Slice",
+				name_jp: "霞斬り",
+				details: "Deals melee cut damage to one enemy.<br>Attempts to inflict sleep on the target.<br>Has no base accuracy modifier at all levels.",
+				dep: {ArmorPenetrate:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 3}
+			},
+			Kamaitachi: 
+			{
+				name_en: "Kamaitachi",
+				name_jp: "鎌鼬",
+				details: "Deals several instances of melee cut damage to random targets.<br>Can hit the same target once at most.<br>Has an 85% speed modifier and no base accuracy modifier at all levels.",
+				dep: {VacuumBlade:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 4}
+			},
+			AdvantageousPosition: 
+			{
+				name_en: "Advantageous Position",
+				name_jp: "地の利",
+				details: "Increases the Masauro and allies in their same row's physical attack for a set amount of turns.<br>Has a 60% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5}
+			},
+			MultiSwordTechnique: 
+			{
+				name_en: "Multi-Sword Technique",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			HPBoost: 
+			{
+				name_en: "HP Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			CrossingtheSanzu: 
+			{
+				name_en: "Crossing the Sanzu",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			FourGods: 
+			{
+				name_en: "Four Gods",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			LayeredBlossoms: 
+			{
+				name_en: "Layered Blossoms",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PhysicalAttackBoost: 
+			{
+				name_en: "Physical Attack Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			BrinkofDeathResuscitation: 
+			{
+				name_en: "Brink of Death Resuscitation",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Reflower: 
+			{
+				name_en: "Reflower",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Hyakkaryouran: 
+			{
+				name_en: "Hyakkaryouran",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Tenryuuransei: 
+			{
+				name_en: "Tenryuuransei",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		},
 		specB:
 		{
-			KatanaMastery: {},
-			PeerlessDemon: {},
-			TotheDeath: {},
-			ArmorPenetrate: {},
-			VacuumBlade: {},
-			NewChallenger: {},
-			FlyingSparrow: {},
-			MistSlice: {},
-			Kamaitachi: {},
-			AdvantageousPosition: {},
-			SwordGod: {},
-			TPBoost: {},
-			LegSweep: {},
-			SwordsVigor: {},
-			SpeedBoost: {},
-			ThunderSlash: {},
-			Suigetsu: {},
-			HelmDivide: {},
-			ThreeStageStrike: {},
-			Sange: {}
+			KatanaMastery: 
+			{
+				name_en: "Katana Mastery",
+				name_jp: "刀マスタリー",
+				details: "Increases damage dealt with katanas.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			PeerlessDemon: 
+			{
+				name_en: "Peerless Demon",
+				name_jp: "鬼無双",
+				details: "Increases damage dealt based on how many hits the attack has.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1}
+			},
+			TotheDeath: 
+			{
+				name_en: "To the Death",
+				name_jp: "果し合い",
+				details: "Increases the Masauro's damage when hitting the same target as last turn.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 2}
+			},
+			ArmorPenetrate: 
+			{
+				name_en: "Armor Penetrate",
+				name_jp: "鎧通し",
+				details: "Deals melee stab damage to one enemy.<br>Reduces the target's physical defense for 4 turns.<br>Has a 75% speed modifier and +5 base accuracy at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 3}
+			},
+			VacuumBlade: 
+			{
+				name_en: "Vacuum Blade",
+				name_jp: "空刃",
+				details: "Deals ranged cut damage to one enemy.<br>Has no speed modifier and no base accuracy modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 4}
+			},
+			NewChallenger: 
+			{
+				name_en: "New Challenger",
+				name_jp: "新たな強敵",
+				details: "Immediately begins a battle.<br>Increases the chance of encountering rare breeds.<br>Upon ending one battle, there is an unknown chance of fighting a consecutive one.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			FlyingSparrow: 
+			{
+				name_en: "Flying Sparrow",
+				name_jp: "飛燕",
+				details: "Deals melee cut damage to one enemy.<br>After the enemy has taken their action, hits again.<br>Has a 500% speed modifier and +10 base accuracy at all levels.",
+				dep: {TotheDeath:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			MistSlice: 
+			{
+				name_en: "Mist Slice",
+				name_jp: "霞斬り",
+				details: "Deals melee cut damage to one enemy.<br>Attempts to inflict sleep on the target.<br>Has no base accuracy modifier at all levels.",
+				dep: {ArmorPenetrate:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 3}
+			},
+			Kamaitachi: 
+			{
+				name_en: "Kamaitachi",
+				name_jp: "鎌鼬",
+				details: "Deals several instances of melee cut damage to random targets.<br>Can hit the same target once at most.<br>Has an 85% speed modifier and no base accuracy modifier at all levels.",
+				dep: {VacuumBlade:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 4}
+			},
+			AdvantageousPosition: 
+			{
+				name_en: "Advantageous Position",
+				name_jp: "地の利",
+				details: "Increases the Masauro and allies in their same row's physical attack for a set amount of turns.<br>Has a 60% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5}
+			},
+			SwordGod: 
+			{
+				name_en: "Sword God",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			TPBoost: 
+			{
+				name_en: "TP Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			LegSweep: 
+			{
+				name_en: "Leg Sweep",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SwordsVigor: 
+			{
+				name_en: "Sword's Vigor",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SpeedBoost: 
+			{
+				name_en: "Speed Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ThunderSlash: 
+			{
+				name_en: "Thunder Slash",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Suigetsu: 
+			{
+				name_en: "Suigetsu",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			HelmDivide: 
+			{
+				name_en: "Helm Divide",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ThreeStageStrike: 
+			{
+				name_en: "Three Stage Strike",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Sange: 
+			{
+				name_en: "Sange",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		}
 	},
 	shaman:
@@ -3983,49 +5023,489 @@ var classSkills =
 		},
 		specA:
 		{
-			PrayerMastery: {},
-			PrayerEradication: {},
-			PrayerGuardian: {},
-			PrayerBullseye: {},
-			PrayerBlaze: {},
-			PrayerColdRain: {},
-			PrayerPurpleLightning: {},
-			Gospel: {},
-			BlessingofHeaven: {},
-			OracleDance: {},
-			MemoriesofaPreviousLife: {},
-			PrayerfortheSoul: {},
-			ProtectionoftheOfferings: {},
-			MagicAttackBoost: {},
-			OracleThreeRuns: {},
-			OracleHalo: {},
-			HPBoost: {},
-			Purification: {},
-			TPBoost: {},
-			ChanneltheGods: {}
+			PrayerMastery: 
+			{
+				name_en: "Prayer Mastery",
+				name_jp: "祈祷マスタリー",
+				details: "Increases the speed of Prayer skills. Reduces the TP cost of Prayer skills.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			PrayerEradication: 
+			{
+				name_en: "Prayer: Eradication",
+				name_jp: "祈祷：討滅",
+				details: "Increases all party members' attack for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1}
+			},
+			PrayerGuardian: 
+			{
+				name_en: "Prayer: Guardian",
+				name_jp: "祈祷：鎮守",
+				details: "Increase all party members' defense for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 2}
+			},
+			PrayerBullseye: 
+			{
+				name_en: "Prayer: Bullseye",
+				name_jp: "祈祷：適中",
+				details: "Increases all party members' accuracy for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 3}
+			},
+			PrayerBlaze: 
+			{
+				name_en: "Prayer: Blaze",
+				name_jp: "祈祷：焔",
+				details: "Increases all party members' resistance to fire for a set number of turns.<br>Also adds fire element to normal attacks for the same duration.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 4}
+			},
+			PrayerColdRain: 
+			{
+				name_en: "Prayer: Cold Rain",
+				name_jp: "祈祷：氷雨",
+				details: "Increases all party members' resistance to ice for a set number of turns.<br>Also adds ice element to normal attacks for the same duration.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			PrayerPurpleLightning: 
+			{
+				name_en: "Prayer: Purple Lightning",
+				name_jp: "祈祷：紫電",
+				details: "Increases all party members' resistance to volt for a set number of turns.<br>Also adds volt element to normal attacks for the same duration.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 6}
+			},
+			Gospel: 
+			{
+				name_en: "Gospel",
+				name_jp: "福音",
+				details: "Party members that receive buffs from the Shaman will have their HP restored.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 0}
+			},
+			BlessingofHeaven: 
+			{
+				name_en: "Blessing of Heaven",
+				name_jp: "天恵",
+				details: "Dispels one buff/debuff on one party member.<br>Restores the target's HP and increases their speed by 1.5x for the turn.<br>The heal amount is doubled if both a buff and debuff are dispelled.<br>Has a 2000% speed modifier at all levels.",
+				dep: {PrayerEradication:2,PrayerGuardian:2,PrayerBullseye:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			OracleDance: 
+			{
+				name_en: "Oracle: Dance",
+				name_jp: "神託：乱舞",
+				details: "Cancels Prayer: Blaze/Cold Rain/Purple Lightning on the Shaman.<br>Deals ranged damage of the element to all enemies.<br>Reduces hit targets' resistance to the element for a set number of turns.<br>Has a 200% speed modifier and 150 base accuracy at all levels.",
+				dep: {PrayerBlaze:3,PrayerColdRain:3,PrayerPurpleLightning:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5}
+			},
+			MemoriesofaPreviousLife: 
+			{
+				name_en: "Memories of a Previous Life",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PrayerfortheSoul: 
+			{
+				name_en: "Prayer for the Soul",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ProtectionoftheOfferings: 
+			{
+				name_en: "Protection of the Offerings",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			MagicAttackBoost: 
+			{
+				name_en: "Magic Attack Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			OracleThreeRuns: 
+			{
+				name_en: "Oracle: Three Runs",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			OracleHalo: 
+			{
+				name_en: "Oracle: Halo",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			HPBoost: 
+			{
+				name_en: "HP Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Purification: 
+			{
+				name_en: "Purification",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			TPBoost: 
+			{
+				name_en: "TP Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ChanneltheGods: 
+			{
+				name_en: "Channel the Gods",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		},
 		specB:
 		{
-			PrayerMastery: {},
-			PrayerEradication: {},
-			PrayerGuardian: {},
-			PrayerBullseye: {},
-			PrayerBlaze: {},
-			PrayerColdRain: {},
-			PrayerPurpleLightning: {},
-			Gospel: {},
-			BlessingofHeaven: {},
-			OracleDance: {},
-			ConsolingtheDead: {},
-			PrayerExorcism: {},
-			PrayerEscape: {},
-			PrayerLongevity: {},
-			PurifyingFlame: {},
-			Bunrei: {},
-			MagicDefenseBoost: {},
-			ConstraintDefenseBoost: {},
-			Sanctuary: {},
-			Affection: {}
+			PrayerMastery: 
+			{
+				name_en: "Prayer Mastery",
+				name_jp: "祈祷マスタリー",
+				details: "Increases the speed of Prayer skills. Reduces the TP cost of Prayer skills.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			PrayerEradication: 
+			{
+				name_en: "Prayer: Eradication",
+				name_jp: "祈祷：討滅",
+				details: "Increases all party members' attack for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1}
+			},
+			PrayerGuardian: 
+			{
+				name_en: "Prayer: Guardian",
+				name_jp: "祈祷：鎮守",
+				details: "Increase all party members' defense for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 2}
+			},
+			PrayerBullseye: 
+			{
+				name_en: "Prayer: Bullseye",
+				name_jp: "祈祷：適中",
+				details: "Increases all party members' accuracy for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 3}
+			},
+			PrayerBlaze: 
+			{
+				name_en: "Prayer: Blaze",
+				name_jp: "祈祷：焔",
+				details: "Increases all party members' resistance to fire for a set number of turns.<br>Also adds fire element to normal attacks for the same duration.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 4}
+			},
+			PrayerColdRain: 
+			{
+				name_en: "Prayer: Cold Rain",
+				name_jp: "祈祷：氷雨",
+				details: "Increases all party members' resistance to ice for a set number of turns.<br>Also adds ice element to normal attacks for the same duration.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			PrayerPurpleLightning: 
+			{
+				name_en: "Prayer: Purple Lightning",
+				name_jp: "祈祷：紫電",
+				details: "Increases all party members' resistance to volt for a set number of turns.<br>Also adds volt element to normal attacks for the same duration.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 6}
+			},
+			Gospel: 
+			{
+				name_en: "Gospel",
+				name_jp: "福音",
+				details: "Party members that receive buffs from the Shaman will have their HP restored.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 0}
+			},
+			BlessingofHeaven: 
+			{
+				name_en: "Blessing of Heaven",
+				name_jp: "天恵",
+				details: "Dispels one buff/debuff on one party member.<br>Restores the target's HP and increases their speed by 1.5x for the turn.<br>The heal amount is doubled if both a buff and debuff are dispelled.<br>Has a 2000% speed modifier at all levels.",
+				dep: {PrayerEradication:2,PrayerGuardian:2,PrayerBullseye:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			OracleDance: 
+			{
+				name_en: "Oracle: Dance",
+				name_jp: "神託：乱舞",
+				details: "Cancels Prayer: Blaze/Cold Rain/Purple Lightning on the Shaman.<br>Deals ranged damage of the element to all enemies.<br>Reduces hit targets' resistance to the element for a set number of turns.<br>Has a 200% speed modifier and 150 base accuracy at all levels.",
+				dep: {PrayerBlaze:3,PrayerColdRain:3,PrayerPurpleLightning:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5}
+			},
+			ConsolingtheDead: 
+			{
+				name_en: "Consoling the Dead",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PrayerExorcism: 
+			{
+				name_en: "Prayer: Exorcism",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PrayerEscape: 
+			{
+				name_en: "Prayer: Escape",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PrayerLongevity: 
+			{
+				name_en: "Prayer Longevity",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PurifyingFlame: 
+			{
+				name_en: "Purifying Flame",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Bunrei: 
+			{
+				name_en: "Bunrei",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			MagicDefenseBoost: 
+			{
+				name_en: "Magic Defense Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ConstraintDefenseBoost: 
+			{
+				name_en: "Constraint Defense Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Sanctuary: 
+			{
+				name_en: "Sanctuary",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			Affection: 
+			{
+				name_en: "Affection",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		}
 	},
 	herbalist:
@@ -4155,49 +5635,489 @@ var classSkills =
 		},
 		specA:
 		{
-			HerbMastery: {},
-			CureHerb: {},
-			RefreshHerb: {},
-			PoisonSmoke: {},
-			DarkSmoke: {},
-			LineHerb: {},
-			ResurrectionHerb: {},
-			Antibody: {},
-			MedicinalKnowledge: {},
-			SmokeRot: {},
-			HerbBoost: {},
-			AreaHerb: {},
-			RecoveryHerb: {},
-			ConstraintDefenseBoost: {},
-			SecretRemedyCompound: {},
-			ChaseHerb: {},
-			DelayHerb: {},
-			HPBoost: {},
-			AutoResurrection: {},
-			LingeringScent: {}
+			HerbMastery: 
+			{
+				name_en: "Herb Mastery",
+				name_jp: "ハーブマスタリー",
+				details: "Increases the amount of HP healed from Herb skills during battle. No effect on Herb skills outside of combat.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			CureHerb: 
+			{
+				name_en: "Cure Herb",
+				name_jp: "キュアハーブ",
+				details: "Heals one ally.<br>Healing is based on the Herbalist's WIS.<br>Has a 150% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1}
+			},
+			RefreshHerb: 
+			{
+				name_en: "Refresh Herb",
+				name_jp: "リフレシュハーブ",
+				details: "Dispels ailments from one ally.<br>Affects a row at max level.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 2}
+			},
+			PoisonSmoke: 
+			{
+				name_en: "Poison Smoke",
+				name_jp: "ポイズンスモーク",
+				details: "Attempts to inflict poison on one row.<br>Also lowers poison resistance for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			DarkSmoke: 
+			{
+				name_en: "Dark Smoke",
+				name_jp: "ダークスモーク",
+				details: "Attempts to inflict blind on one row.<br>Also lowers blind resistance for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 6}
+			},
+			LineHerb: 
+			{
+				name_en: "Line Herb",
+				name_jp: "ラインハーブ",
+				details: "Heals one row.<br>Healing is based on the Herbalist's WIS.<br>Has no speed modifier at all levels.",
+				dep: {CureHerb:5},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 1}
+			},
+			ResurrectionHerb: 
+			{
+				name_en: "Resurrection Herb",
+				name_jp: "リザレクトハーブ",
+				details: "Revives a dead ally.<br>Healing is based on the Herbalist's WIS.<br>Has a 70% speed modifier at all levels.",
+				dep: {RefreshHerb:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			Antibody: 
+			{
+				name_en: "Antibody",
+				name_jp: "抗体",
+				details: "Increases the recovery rate from ailments and binds.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 3}
+			},
+			MedicinalKnowledge: 
+			{
+				name_en: "Medicinal Knowledge",
+				name_jp: "薬草知識",
+				details: "The entire party recovers HP and TP every time they harvest, chop, or mine.<br>NOTE: While the HP and TP recovery values are known, the first and last values (activation rate and number of maximum activations) are only guesses. They may represent something else entirely.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 4}	
+			},
+			SmokeRot: 
+			{
+				name_en: "Smoke Rot",
+				name_jp: "スモークロット",
+				details: "Decreases one row's magic defense.<br>This includes defense against stun and instant death.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
+				dep: {PoisonSmoke:2,DarkSmoke:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5.5}	
+			},
+			HerbBoost: 
+			{
+				name_en: "Herb Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			AreaHerb: 
+			{
+				name_en: "Area Herb",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			RecoveryHerb: 
+			{
+				name_en: "Recovery Herb",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ConstraintDefenseBoost: 
+			{
+				name_en: "Constraint Defense Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SecretRemedyCompound: 
+			{
+				name_en: "Secret Remedy Compound",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ChaseHerb: 
+			{
+				name_en: "Chase Herb",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			DelayHerb: 
+			{
+				name_en: "Delay Herb",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			HPBoost: 
+			{
+				name_en: "HP Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			AutoResurrection: 
+			{
+				name_en: "Auto Resurrection",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			LingeringScent: 
+			{
+				name_en: "Lingering Scent",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		},
 		specB:
 		{
-			HerbMastery: {},
-			CureHerb: {},
-			RefreshHerb: {},
-			PoisonSmoke: {},
-			DarkSmoke: {},
-			LineHerb: {},
-			ResurrectionHerb: {},
-			Antibody: {},
-			MedicinalKnowledge: {},
-			SmokeRot: {},
-			SmokeBoost: {},
-			ConstraintAttackBoost: {},
-			ParalyzeSmoke: {},
-			BunglingSmoke: {},
-			SmokeSolid: {},
-			SmokeSpark: {},
-			TPBoost: {},
-			SmokeBomb: {},
-			PersistingScent: {},
-			PreemptiveSmoke: {}
+			HerbMastery: 
+			{
+				name_en: "Herb Mastery",
+				name_jp: "ハーブマスタリー",
+				details: "Increases the amount of HP healed from Herb skills during battle. No effect on Herb skills outside of combat.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 0}
+			},
+			CureHerb: 
+			{
+				name_en: "Cure Herb",
+				name_jp: "キュアハーブ",
+				details: "Heals one ally.<br>Healing is based on the Herbalist's WIS.<br>Has a 150% speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 1}
+			},
+			RefreshHerb: 
+			{
+				name_en: "Refresh Herb",
+				name_jp: "リフレシュハーブ",
+				details: "Dispels ailments from one ally.<br>Affects a row at max level.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 2}
+			},
+			PoisonSmoke: 
+			{
+				name_en: "Poison Smoke",
+				name_jp: "ポイズンスモーク",
+				details: "Attempts to inflict poison on one row.<br>Also lowers poison resistance for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 5}
+			},
+			DarkSmoke: 
+			{
+				name_en: "Dark Smoke",
+				name_jp: "ダークスモーク",
+				details: "Attempts to inflict blind on one row.<br>Also lowers blind resistance for a set amount of turns.<br>Has no speed modifier at all levels.",
+				dep: {},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:0, y: 6}
+			},
+			LineHerb: 
+			{
+				name_en: "Line Herb",
+				name_jp: "ラインハーブ",
+				details: "Heals one row.<br>Healing is based on the Herbalist's WIS.<br>Has no speed modifier at all levels.",
+				dep: {CureHerb:5},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 1}
+			},
+			ResurrectionHerb: 
+			{
+				name_en: "Resurrection Herb",
+				name_jp: "リザレクトハーブ",
+				details: "Revives a dead ally.<br>Healing is based on the Herbalist's WIS.<br>Has a 70% speed modifier at all levels.",
+				dep: {RefreshHerb:3},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 2}
+			},
+			Antibody: 
+			{
+				name_en: "Antibody",
+				name_jp: "抗体",
+				details: "Increases the recovery rate from ailments and binds.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 3}
+			},
+			MedicinalKnowledge: 
+			{
+				name_en: "Medicinal Knowledge",
+				name_jp: "薬草知識",
+				details: "The entire party recovers HP and TP every time they harvest, chop, or mine.<br>NOTE: While the HP and TP recovery values are known, the first and last values (activation rate and number of maximum activations) are only guesses. They may represent something else entirely.",
+				dep: {},
+				active: false,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 4}	
+			},
+			SmokeRot: 
+			{
+				name_en: "Smoke Rot",
+				name_jp: "スモークロット",
+				details: "Decreases one row's magic defense.<br>This includes defense against stun and instant death.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
+				dep: {PoisonSmoke:2,DarkSmoke:2},
+				active: true,
+				reqLevel: 0,
+				level: 0,
+				max: 10,
+				coords: {x:1, y: 5.5}	
+			},
+			SmokeBoost: 
+			{
+				name_en: "Smoke Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ConstraintAttackBoost: 
+			{
+				name_en: "Constraint Attack Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			ParalyzeSmoke: 
+			{
+				name_en: "Paralyze Smoke",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			BunglingSmoke: 
+			{
+				name_en: "Bungling Smoke",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SmokeSolid: 
+			{
+				name_en: "Smoke Solid",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SmokeSpark: 
+			{
+				name_en: "Smoke Spark",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			TPBoost: 
+			{
+				name_en: "TP Boost",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			SmokeBomb: 
+			{
+				name_en: "Smoke Bomb",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PersistingScent: 
+			{
+				name_en: "Persisting Scent",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			},
+			PreemptiveSmoke: 
+			{
+				name_en: "Preemptive Smoke",
+				name_jp: "",
+				details: "",
+				dep: {},
+				active: true,
+				reqLevel: 20,
+				level: 0,
+				max: 10,
+				coords: {x:2, y: 0}
+			}
 		}
 	}
 }
