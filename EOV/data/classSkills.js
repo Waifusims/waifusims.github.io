@@ -5147,7 +5147,7 @@ var classSkills =
 			{
 				name_en: "Memories of a Previous Life",
 				name_jp: "前世の記憶",
-				details: "",
+				details: "Gives the Shaman a chance to reapply a buff on themself when it wears off or is dispelled.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5159,7 +5159,7 @@ var classSkills =
 			{
 				name_en: "Prayer for the Soul",
 				name_jp: "魂の祈り",
-				details: "",
+				details: "Gives a chance for the Shaman to survive fatal damage if they have a buff on, in exchange for losing the buff.",
 				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
@@ -5171,7 +5171,7 @@ var classSkills =
 			{
 				name_en: "Protection of the Offerings",
 				name_jp: "神供の加護",
-				details: "",
+				details: "Dispels one buff/debuff on the Shaman.<br>Restores TP to party members in the same row.<br>Restore amount is doubled if both a buff and debuff are dispelled.<br/>Has an 80% speed modifier at all levels.<br>Costs 40 TP at all levels.",
 				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
@@ -5183,7 +5183,7 @@ var classSkills =
 			{
 				name_en: "Magic Attack Boost",
 				name_jp: "魔法攻撃ブースト",
-				details: "",
+				details: "Passively increases fire/ice/volt damage.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5195,7 +5195,7 @@ var classSkills =
 			{
 				name_en: "Oracle: Three Runs",
 				name_jp: "神託：三走り",
-				details: "",
+				details: "Cancels Prayer: Blaze/Prayer: Cold Rain/Prayer: Purple Lightning on all party members.<br>Deals five instances of ranged damage of the same element as the cancelled skill to random targets.<br>Can hit the same target multiple times.<br/>Has 150 base accuracy at all levels.",
 				dep: {OracleDance:3},
 				active: true,
 				reqLevel: 20,
@@ -5207,7 +5207,7 @@ var classSkills =
 			{
 				name_en: "Oracle: Halo",
 				name_jp: "神託：後光",
-				details: "",
+				details: "Cancels Prayer: Blaze/Prayer: Cold Rain/Prayer: Purple Lightning on all party members.<br>Until the end of the turn, affected party members will absorb all damage of the element of the Prayer that was cancelled.",
 				dep: {OracleDance:3},
 				active: true,
 				reqLevel: 20,
@@ -5219,7 +5219,7 @@ var classSkills =
 			{
 				name_en: "HP Boost",
 				name_jp: "ＨＰブースト",
-				details: "",
+				details: "Increases the Shaman's maximum HP.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5231,7 +5231,7 @@ var classSkills =
 			{
 				name_en: "Purification",
 				name_jp: "禊",
-				details: "",
+				details: "Cancels all buffs and debuffs on all party members and enemies.<br>Restores the Shaman's TP for an amount equal to buff types cancelled times the TP restore.<br>Buff types include: party member buff, party member debuff, enemy buff, enemy debuff.<br/>Has a 200% speed modifier at all levels.<br>Costs 40 TP at all levels.",
 				dep: {PrayerfortheSoul:5,ProtectionoftheOfferings:5},
 				active: true,
 				reqLevel: 20,
@@ -5243,7 +5243,7 @@ var classSkills =
 			{
 				name_en: "TP Boost",
 				name_jp: "ＴＰブースト",
-				details: "",
+				details: "Increases the Shaman's maximum TP.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5255,7 +5255,7 @@ var classSkills =
 			{
 				name_en: "Channel the Gods",
 				name_jp: "神降ろし",
-				details: "",
+				details: "Cancels one buff on the Shaman.<br>In exchange, the Shaman will attack an enemy with their equipped weapon, dealing melee STR-based damage and reducing the target's damage until the end of the turn.",
 				dep: {OracleThreeRuns:5,OracleHalo:3},
 				active: true,
 				reqLevel: 20,
@@ -5390,7 +5390,7 @@ var classSkills =
 			{
 				name_en: "Consoling the Dead",
 				name_jp: "慰霊",
-				details: "",
+				details: "When the Shaman is alive, party members with buffs will recover HP when they act.<br/>Not entirely sure if the restore is static or percent-based, but assuming static.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5402,7 +5402,7 @@ var classSkills =
 			{
 				name_en: "Prayer: Exorcism",
 				name_jp: "祈祷：破邪",
-				details: "",
+				details: "Increases all party members' resistance to ailments and binds for a set amount of turns.<br/>Has no speed modifier at all levels.",
 				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
@@ -5414,7 +5414,7 @@ var classSkills =
 			{
 				name_en: "Prayer: Escape",
 				name_jp: "祈祷：脱兎",
-				details: "",
+				details: "Increases all party members' evasion for a set amount of turns.<br/>Has no speed modifier at all levels.",
 				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
@@ -5424,9 +5424,9 @@ var classSkills =
 			},
 			PrayerLongevity: 
 			{
-				name_en: "Prayer Longevity",
+				name_en: "Prayer: Longevity",
 				name_jp: "祈祷：長寿",
-				details: "",
+				details: "Increases all party members' max HP for a set amount of turns.<br/>Has no speed modifier at all levels.",
 				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
@@ -5438,7 +5438,7 @@ var classSkills =
 			{
 				name_en: "Purifying Flame",
 				name_jp: "忌火",
-				details: "",
+				details: "Restores HP to all party members every 3 steps taken in the Labyrinth.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5450,7 +5450,7 @@ var classSkills =
 			{
 				name_en: "Bunrei",
 				name_jp: "分霊",
-				details: "",
+				details: "For one turn, all party members will recover HP based on a percentage of the damage they deal.",
 				dep: {OracleDance:3},
 				active: true,
 				reqLevel: 20,
@@ -5462,7 +5462,7 @@ var classSkills =
 			{
 				name_en: "Magic Defense Boost",
 				name_jp: "魔法防御ブースト",
-				details: "",
+				details: "Reduces magical damage taken.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5474,7 +5474,7 @@ var classSkills =
 			{
 				name_en: "Constraint Defense Boost",
 				name_jp: "抑制防御ブースト",
-				details: "",
+				details: "Increases defense against ailments and binds.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -5486,7 +5486,7 @@ var classSkills =
 			{
 				name_en: "Sanctuary",
 				name_jp: "神域",
-				details: "",
+				details: "For one turn, when an ally with a buff is supposed to become afflicted with an ailment or bind, there is a chance they will instead lose the Sanctuary buff instead of having the disable inflicted.<br/>Does not protect against instant death.<br>Protects against stun.",
 				dep: {PrayerExorcism:5,PrayerEscape:5,PrayerLongevity:5},
 				active: true,
 				reqLevel: 20,
@@ -5498,7 +5498,7 @@ var classSkills =
 			{
 				name_en: "Affection",
 				name_jp: "慈愛",
-				details: "",
+				details: "While the Shaman is alive, party members with buffs will recover HP when taking damage.",
 				dep: {PurifyingFlame:2,Bunrei:2},
 				active: true,
 				reqLevel: 20,
