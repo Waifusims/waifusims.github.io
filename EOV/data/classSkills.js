@@ -4535,7 +4535,7 @@ var classSkills =
 			{
 				name_en: "Multi-Sword Technique",
 				name_jp: "多刀術",
-				details: "",
+				details: "Lets the Masauro equip multiple katanas.<br>When using the Attack command, there is a chance that the Masauro will attack with all of their equipped swords.<br>Every hit past the first has reduced power -- the second hit has 80%, the third hit has 65%, and the fourth hit has 50%.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4547,7 +4547,7 @@ var classSkills =
 			{
 				name_en: "HP Boost",
 				name_jp: "ＨＰブースト",
-				details: "",
+				details: "Increases the Masauro's maximum HP.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4559,7 +4559,7 @@ var classSkills =
 			{
 				name_en: "Crossing the Sanzu",
 				name_jp: "三途渡し",
-				details: "",
+				details: "Chases all attacks made by allies and enemies this turn.<br>Deals melee cut damage to targets.<br>Number of max chases is (MaxChases * NumberOfKatanas).<br/>Has a 1000% speed modifier and no base accuracy modifier at all levels.",
 				dep: {FlyingSparrow:3},
 				active: true,
 				reqLevel: 20,
@@ -4571,7 +4571,7 @@ var classSkills =
 			{
 				name_en: "Four Gods",
 				name_jp: "四神",
-				details: "",
+				details: "Deals melee cut damage to one enemy.<br>Deals a number of hits equal to the number of katanas the Masauro has equipped.<br/>Has no speed modifier and +5 base accuracy at all levels.",
 				dep: {Kamaitachi:3},
 				active: true,
 				reqLevel: 20,
@@ -4583,7 +4583,7 @@ var classSkills =
 			{
 				name_en: "Layered Blossoms",
 				name_jp: "八重の華",
-				details: "",
+				details: "Deals 2-8 instances of melee cut damage to one row of enemies.<br>Can hit the same target multiple times.<br>The damage modifier has 25% added to it for 2 katanas, 50% for 3 katanas, and 75% for 4 katanas.<br/>Has a 70% speed modifier and -4 base accuracy at all levels.",
 				dep: {Kamaitachi:3},
 				active: true,
 				reqLevel: 20,
@@ -4595,7 +4595,7 @@ var classSkills =
 			{
 				name_en: "Physical Attack Boost",
 				name_jp: "物理攻撃ブースト",
-				details: "",
+				details: "Passively increases cut/stab/bash damage.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4607,7 +4607,7 @@ var classSkills =
 			{
 				name_en: "Brink of Death Resuscitation",
 				name_jp: "仮死再生",
-				details: "",
+				details: "Gives a chance for the Masauro to revive (at 1 HP) at the end of the turn they are killed.",
 				dep: {HPBoost:3},
 				active: true,
 				reqLevel: 20,
@@ -4619,7 +4619,7 @@ var classSkills =
 			{
 				name_en: "Reflower",
 				name_jp: "返り咲き",
-				details: "",
+				details: "Gives a chance to repeat katana skills.<br>The chance is modified in some unknown way by how many katanas the Masauro has equipped.",
 				dep: {CrossingtheSanzu:3},
 				active: true,
 				reqLevel: 20,
@@ -4631,7 +4631,7 @@ var classSkills =
 			{
 				name_en: "Hyakkaryouran",
 				name_jp: "百華繚乱",
-				details: "",
+				details: "Deals (NumberOfKatanas * NumberOfEnemies) instances of melee cut damage to random targets.<br>Can hit the same target multiple times.<br/>Has a 50% speed modifier and -8 base accuracy at all levels.",
 				dep: {FourGods:3,LayeredBlossoms:3},
 				active: true,
 				reqLevel: 20,
@@ -4643,7 +4643,7 @@ var classSkills =
 			{
 				name_en: "Tenryuuransei",
 				name_jp: "天流乱星",
-				details: "",
+				details: "Deals melee random-element damage to random enemies.<br>Number of hits is equal to number of katanas equipped.<br/>Has no speed modifier and -10 base accuracy at all levels.",
 				dep: {PhysicalAttackBoost:3},
 				active: true,
 				reqLevel: 20,
@@ -4778,7 +4778,7 @@ var classSkills =
 			{
 				name_en: "Sword God",
 				name_jp: "剣神",
-				details: "",
+				details: "Increases the Masauro's critical hit chance.<br>Lets katana skills crit.<br>Increases critical hit damage.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4790,7 +4790,7 @@ var classSkills =
 			{
 				name_en: "TP Boost",
 				name_jp: "ＴＰブースト",
-				details: "",
+				details: "Increases the Masauro's maximum TP.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4802,7 +4802,7 @@ var classSkills =
 			{
 				name_en: "Leg Sweep",
 				name_jp: "裾払い",
-				details: "",
+				details: "Deals melee cut damage to one row of enemies.<br>Reduces hit targets' evasion for a set amount of turns.<br/>Has a 120% speed modifier and +20 base accuracy at all levels.",
 				dep: {MistSlice:3},
 				active: true,
 				reqLevel: 20,
@@ -4814,7 +4814,7 @@ var classSkills =
 			{
 				name_en: "Sword's Vigor",
 				name_jp: "剣の気迫",
-				details: "",
+				details: "When the Masauro hits a target with a single-target attack, that target's damage is reduced for the rest of the turn.",
 				dep: {AdvantageousPosition:3},
 				active: true,
 				reqLevel: 20,
@@ -4826,7 +4826,7 @@ var classSkills =
 			{
 				name_en: "Speed Boost",
 				name_jp: "素早さブースト",
-				details: "",
+				details: "Increases speed, evasion, and accuracy.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -4838,7 +4838,7 @@ var classSkills =
 			{
 				name_en: "Thunder Slash",
 				name_jp: "雷切",
-				details: "",
+				details: "Deals melee cut+volt damage to one enemy.<br/>Has no speed modifier and no base accuracy modifier at all levels.",
 				dep: {TPBoost:5},
 				active: true,
 				reqLevel: 20,
@@ -4850,7 +4850,7 @@ var classSkills =
 			{
 				name_en: "Suigetsu",
 				name_jp: "水月",
-				details: "",
+				details: "On this turn, when the Masauro is attacked with physical damage, there is a chance they will counterattack the source.<br>Each time the Masauro counters, the chance to counter again is reduced by 35%.<br/>Has a 150% speed modifier and +20 base accuracy at all levels.",
 				dep: {TPBoost:5},
 				active: true,
 				reqLevel: 20,
@@ -4862,7 +4862,7 @@ var classSkills =
 			{
 				name_en: "Helm Divide",
 				name_jp: "兜割り",
-				details: "",
+				details: "Deals melee cut damage to one enemy.<br>Ignores the enemy's resistance to cut damage.<br/>Has a 70% speed modifier at all levels.",
 				dep: {LegSweep:5},
 				active: true,
 				reqLevel: 20,
@@ -4872,9 +4872,9 @@ var classSkills =
 			},
 			ThreeStageStrike: 
 			{
-				name_en: "Three Stage Strike",
+				name_en: "Three-Stage Strike",
 				name_jp: "三段討ち",
-				details: "",
+				details: "Deals melee cut damage to one enemy.<br>Can hit up to three times.<br>Each hit attempts to inflict head, arm, and leg bind.<br>If the target is bound by Three-Stage Strike, the skill ends.<br/>Has no speed modifier and no base accuracy modifier at all levels.",
 				dep: {SwordsVigor:5},
 				active: true,
 				reqLevel: 20,
@@ -4886,7 +4886,7 @@ var classSkills =
 			{
 				name_en: "Sange",
 				name_jp: "散華",
-				details: "",
+				details: "Deals ranged cut damage to all enemies.<br>Damage decreases based on the number of enemies.<br>The data suggests 65% damage for 2 enemies, 45% for 3 enemies, and 35% for 4+ enemies.<br/>Has a 90% speed modifier and no base accuracy modifier at all levels.",
 				dep: {SwordsVigor:5},
 				active: true,
 				reqLevel: 20,
