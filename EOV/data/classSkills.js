@@ -5624,7 +5624,7 @@ var classSkills =
 			{
 				name_en: "Smoke Rot",
 				name_jp: "スモークロット",
-				details: "Decreases one row's magic defense.<br>This includes defense against stun and instant death.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
+				details: "Decreases one row's magic defense.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
 				dep: {PoisonSmoke:2,DarkSmoke:2},
 				active: true,
 				reqLevel: 0,
@@ -5747,7 +5747,7 @@ var classSkills =
 			{
 				name_en: "Smoke Rot",
 				name_jp: "スモークロット",
-				details: "Decreases one row's magic defense.<br>This includes defense against stun and instant death.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
+				details: "Decreases one row's magic defense.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
 				dep: {PoisonSmoke:2,DarkSmoke:2},
 				active: true,
 				reqLevel: 0,
@@ -5990,7 +5990,7 @@ var classSkills =
 			{
 				name_en: "Smoke Rot",
 				name_jp: "スモークロット",
-				details: "Decreases one row's magic defense.<br>This includes defense against stun and instant death.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
+				details: "Decreases one row's magic defense.<br>The MDEF reduction increases (ie, 15%->50% at lvl 10) if the enemy is suffering from an Ailment Up debuff from a smoke skill.<br>Has no speed modifier at all levels.",
 				dep: {PoisonSmoke:2,DarkSmoke:2},
 				active: true,
 				reqLevel: 0,
