@@ -3519,43 +3519,133 @@ var classSkillLevels =
 			},
 			GhostSecretArts: 
 			{
-
+				1: "15% chance",
+				2: "16% chance",
+				3: "17% chance",
+				4: "18% chance",
+				5: "27% chance",
+				6: "28% chance",
+				7: "29% chance",
+				8: "30% chance",
+				9: "31% chance",
+				10:" 40% chance",
 			},
 			CurseTransfer: 
 			{
-
+				1: "20% chance, 1 HP restore",
+				2: "22% chance, 11 HP restore",
+				3: "24% chance, 21 HP restore",
+				4: "26% chance, 31 HP restore",
+				5: "34% chance, 91 HP restore",
+				6: "36% chance, 101 HP restore",
+				7: "38% chance, 111 HP restore",
+				8: "40% chance, 121 HP restore",
+				9: "42% chance, 131 HP restore",
+				10:" 50% chance, 200 HP restore",
 			},
 			OpenGrave: 
 			{
-
+				1: "5 TP, 300% damage, 30% base paralysis chance",
+				2: "5 TP, 310% damage, 32% base paralysis chance",
+				3: "5 TP, 320% damage, 34% base paralysis chance",
+				4: "5 TP, 330% damage, 36% base paralysis chance",
+				5: "8 TP, 410% damage, 42% base paralysis chance",
+				6: "8 TP, 425% damage, 44% base paralysis chance",
+				7: "8 TP, 440% damage, 46% base paralysis chance",
+				8: "8 TP, 455% damage, 48% base paralysis chance",
+				9: "8 TP, 470% damage, 50% base paralysis chance",
+				10:" 14 TP, 600% damage, 60% base paralysis chance",
 			},
 			ConstraintAttackBoost: 
 			{
-
+				1: "1.05x chance multiplier",
+				2: "1.06x chance multiplier",
+				3: "1.07x chance multiplier",
+				4: "1.08x chance multiplier",
+				5: "1.12x chance multiplier",
+				6: "1.13x chance multiplier",
+				7: "1.14x chance multiplier",
+				8: "1.15x chance multiplier",
+				9: "1.16x chance multiplier",
+				10:" 1.2x chance multiplier",
 			},
 			CurseBomb: 
 			{
-
+				1: "6 TP, 65% base curse chance",
+				2: "6 TP, 67% base curse chance",
+				3: "6 TP, 69% base curse chance",
+				4: "6 TP, 71% base curse chance",
+				5: "12 TP, 80% base curse chance",
+				6: "12 TP, 82% base curse chance",
+				7: "12 TP, 84% base curse chance",
+				8: "12 TP, 86% base curse chance",
+				9: "12 TP, 88% base curse chance",
+				10:" 20 TP, 100% base curse chance",
 			},
 			IceBomb: 
 			{
-
+				1: "15 TP, 120% damage",
+				2: "15 TP, 127% damage",
+				3: "15 TP, 134% damage",
+				4: "15 TP, 141% damage",
+				5: "22 TP, 181% damage",
+				6: "22 TP, 191% damage",
+				7: "22 TP, 201% damage",
+				8: "22 TP, 211% damage",
+				9: "22 TP, 221% damage",
+				10:" 30 TP, 280% damage",
 			},
 			HPBoost: 
 			{
-
+				1: "+5% max HP",
+				2: "+6% max HP",
+				3: "+7% max HP",
+				4: "+8% max HP",
+				5: "+12% max HP",
+				6: "+13% max HP",
+				7: "+14% max HP",
+				8: "+15% max HP",
+				9: "+16% max HP",
+				10:" +20% max HP",
 			},
 			SoulTrade: 
 			{
-
+				1: "20 TP, 50% revive chance, 1% healing power",
+				2: "20 TP, 51% revive chance, 11% healing power",
+				3: "20 TP, 52% revive chance, 21% healing power",
+				4: "20 TP, 53% revive chance, 31% healing power",
+				5: "25 TP, 62% revive chance, 90% healing power",
+				6: "25 TP, 63% revive chance, 100% healing power",
+				7: "25 TP, 64% revive chance, 110% healing power",
+				8: "25 TP, 65% revive chance, 120% healing power",
+				9: "25 TP, 66% revive chance, 130% healing power",
+				10:" 30 TP, 75% revive chance, 200% healing power",
 			},
 			GhostDance: 
 			{
-
+				1: "13 TP, 60% dmg per hit, 180% total dmg",
+				2: "13 TP, 63% dmg per hit, 189% total dmg",
+				3: "13 TP, 66% dmg per hit, 198% total dmg",
+				4: "13 TP, 69% dmg per hit, 207% total dmg",
+				5: "19 TP, 84% dmg per hit, 252% total dmg",
+				6: "19 TP, 88% dmg per hit, 264% total dmg",
+				7: "19 TP, 92% dmg per hit, 276% total dmg",
+				8: "19 TP, 96% dmg per hit, 288% total dmg",
+				9: "19 TP, 100% dmg per hit, 300% total dmg",
+				10:" 25 TP, 120% dmg per hit, 360% total dmg",
 			},
 			GravestoneBinding: 
 			{
-
+				1: "4 TP, 25% base petrify chance, 40% base chance w/ 2 ghosts, 55% base chance w/ 3 ghosts",
+				2: "4 TP, 26% base petrify chance, 42% base chance w/ 2 ghosts, 58% base chance w/ 3 ghosts",
+				3: "4 TP, 27% base petrify chance, 44% base chance w/ 2 ghosts, 61% base chance w/ 3 ghosts",
+				4: "4 TP, 28% base petrify chance, 46% base chance w/ 2 ghosts, 64% base chance w/ 3 ghosts",
+				5: "7 TP, 36% base petrify chance, 66% base chance w/ 2 ghosts, 66% base chance w/ 3 ghosts",
+				6: "7 TP, 38% base petrify chance, 70% base chance w/ 2 ghosts, 102% base chance w/ 3 ghosts",
+				7: "7 TP, 40% base petrify chance, 74% base chance w/ 2 ghosts, 108% base chance w/ 3 ghosts",
+				8: "7 TP, 42% base petrify chance, 78% base chance w/ 2 ghosts, 114% base chance w/ 3 ghosts",
+				9: "7 TP, 44% base petrify chance, 82% base chance w/ 2 ghosts, 122% base chance w/ 3 ghosts",
+				10:" 12 TP, 60% base petrify chance, 110% base chance w/ 2 ghosts, 160% base chance w/ 3 ghosts",
 			}
 		},
 		specB:
@@ -3692,43 +3782,133 @@ var classSkillLevels =
 			},
 			TheBeckoningofHades: 
 			{
-
+				1: "50% chance, 5% HP threshold",
+				2: "53% chance, 6% HP threshold",
+				3: "56% chance, 7% HP threshold",
+				4: "59% chance, 8% HP threshold",
+				5: "73% chance, 17% HP threshold",
+				6: "76% chance, 18% HP threshold",
+				7: "79% chance, 19% HP threshold",
+				8: "82% chance, 20% HP threshold",
+				9: "85% chance, 21% HP threshold",
+				10:" 100% chance, 30% HP threshold",
 			},
 			PreemptiveGhostSummoning: 
 			{
-
+				1: "30% chance",
+				2: "33% chance",
+				3: "36% chance",
+				4: "39% chance",
+				5: "59% chance",
+				6: "63% chance",
+				7: "67% chance",
+				8: "71% chance",
+				9: "75% chance",
+				10:" 100% chance",
 			},
 			EquivalentExchange: 
 			{
-
+				1: "2 TP, 50% HP as damage",
+				2: "2 TP, 52% HP as damage",
+				3: "2 TP, 54% HP as damage",
+				4: "2 TP, 56% HP as damage",
+				5: "5 TP, 68% HP as damage",
+				6: "5 TP, 71% HP as damage",
+				7: "5 TP, 74% HP as damage",
+				8: "5 TP, 77% HP as damage",
+				9: "5 TP, 80% HP as damage",
+				10:" 9 TP, 100% HP as damage",
 			},
 			Sacrifice: 
 			{
-
+				1: "2 TP, 1.5x damage",
+				2: "2 TP, 1.55x damage",
+				3: "2 TP, 1.6x damage",
+				4: "2 TP, 1.65x damage",
+				5: "10 TP, 1.8x damage",
+				6: "10 TP, 1.85x damage",
+				7: "10 TP, 1.9x damage",
+				8: "10 TP, 1.95x damage",
+				9: "10 TP, 2x damage",
+				10:" 25 TP, 2.5x damage",
 			},
 			MagicAttackBoost: 
 			{
-
+				1: "4% damage increase",
+				2: "5% damage increase",
+				3: "6% damage increase",
+				4: "7% damage increase",
+				5: "9% damage increase",
+				6: "10% damage increase",
+				7: "11% damage increase",
+				8: "12% damage increase",
+				9: "13% damage increase",
+				10:" 15% damage increase",
 			},
 			TheGatesofHell: 
 			{
-
+				1: "16 TP, 140% damage",
+				2: "16 TP, 146% damage",
+				3: "16 TP, 152% damage",
+				4: "16 TP, 158% damage",
+				5: "24 TP, 202% damage",
+				6: "24 TP, 209% damage",
+				7: "24 TP, 216% damage",
+				8: "24 TP, 223% damage",
+				9: "24 TP, 230% damage",
+				10:" 34 TP, 280% damage",
 			},
 			TPBoost: 
 			{
-
+				1: "+10% max TP",
+				2: "+11% max TP",
+				3: "+12% max TP",
+				4: "+13% max TP",
+				5: "+17% max TP",
+				6: "+19% max TP",
+				7: "+21% max TP",
+				8: "+23% max TP",
+				9: "+25% max TP",
+				10:" +30% max TP",
 			},
 			GhostExplosion: 
 			{
-
+				1: "20 TP, 100% dmg per ghost",
+				2: "20 TP, 103% dmg per ghost",
+				3: "20 TP, 106% dmg per ghost",
+				4: "20 TP, 109% dmg per ghost",
+				5: "30 TP, 139% dmg per ghost",
+				6: "30 TP, 143% dmg per ghost",
+				7: "30 TP, 147% dmg per ghost",
+				8: "30 TP, 151% dmg per ghost",
+				9: "30 TP, 155% dmg per ghost",
+				10:" 45 TP, 200% dmg per ghost",
 			},
 			NegativeEnergy: 
 			{
-
+				1: "5 TP, 100% base damage",
+				2: "5 TP, 104% base damage",
+				3: "5 TP, 108% base damage",
+				4: "5 TP, 112% base damage",
+				5: "8 TP, 144% base damage",
+				6: "8 TP, 149% base damage",
+				7: "8 TP, 154% base damage",
+				8: "8 TP, 159% base damage",
+				9: "8 TP, 164% base damage",
+				10:" 12 TP, 200% base damage",
 			},
 			ZombiePowder: 
 			{
-
+				1: "9 TP, 40% base instant death chance",
+				2: "9 TP, 42% base instant death chance",
+				3: "9 TP, 44% base instant death chance",
+				4: "9 TP, 46% base instant death chance",
+				5: "14 TP, 59% base instant death chance",
+				6: "14 TP, 61% base instant death chance",
+				7: "14 TP, 63% base instant death chance",
+				8: "14 TP, 65% base instant death chance",
+				9: "14 TP, 67% base instant death chance",
+				10:" 19 TP, 80% base instant death chance",
 			}
 		}
 	},
@@ -4001,23 +4181,68 @@ var classSkillLevels =
 			},
 			SkyPatrol: 
 			{
-
+				1: "9 TP, 200% damage",
+				2: "9 TP, 205% damage",
+				3: "9 TP, 210% damage",
+				4: "9 TP, 215% damage",
+				5: "15 TP, 250% damage",
+				6: "15 TP, 260% damage",
+				7: "15 TP, 270% damage",
+				8: "15 TP, 280% damage",
+				9: "15 TP, 290% damage",
+				10:" 21 TP, 340% damage",
 			},
 			FlyingTalonStrike: 
 			{
-
+				1: "7 TP, 200% damage, 25% base head bind chance",
+				2: "7 TP, 209% damage, 26% base head bind chance",
+				3: "7 TP, 218% damage, 27% base head bind chance",
+				4: "7 TP, 227% damage, 28% base head bind chance",
+				5: "12 TP, 282% damage, 37% base head bind chance",
+				6: "12 TP, 294% damage, 38% base head bind chance",
+				7: "12 TP, 306% damage, 39% base head bind chance",
+				8: "12 TP, 318% damage, 40% base head bind chance",
+				9: "12 TP, 330% damage, 41% base head bind chance",
+				10:" 17 TP, 400% damage, 50% base head bind chance",
 			},
 			IcePeck: 
 			{
-
+				1: "12 TP, 50% initial damage, 120% hawk damage",
+				2: "12 TP, 53% initial damage, 124% hawk damage",
+				3: "12 TP, 56% initial damage, 128% hawk damage",
+				4: "12 TP, 59% initial damage, 132% hawk damage",
+				5: "17 TP, 70% initial damage, 150% hawk damage",
+				6: "17 TP, 74% initial damage, 155% hawk damage",
+				7: "17 TP, 78% initial damage, 160% hawk damage",
+				8: "17 TP, 82% initial damage, 165% hawk damage",
+				9: "17 TP, 86% initial damage, 170% hawk damage",
+				10:" 24 TP, 100% initial damage, 200% hawk damage",
 			},
 			PhysicalAttackBoost: 
 			{
-
+				1: "4% damage increase",
+				2: "5% damage increase",
+				3: "6% damage increase",
+				4: "7% damage increase",
+				5: "9% damage increase",
+				6: "10% damage increase",
+				7: "11% damage increase",
+				8: "12% damage increase",
+				9: "13% damage increase",
+				10:" 15% damage increase",
 			},
 			SpeedBoost: 
 			{
-
+				1: "1.11x speed, +24 acc/evade",
+				2: "1.14x speed, +28 acc/evade",
+				3: "1.17x speed, +32 acc/evade",
+				4: "1.2x speed, +36 acc/evade",
+				5: "1.24x speed, +52 acc/evade",
+				6: "1.27x speed, +58 acc/evade",
+				7: "1.3x speed, +64 acc/evade",
+				8: "1.33x speed, +70 acc/evade",
+				9: "1.36x speed, +76 acc/evade",
+				10:" 1.4x speed, +100 acc/evade",
 			},
 			PowerShot: 
 			{
@@ -4025,19 +4250,55 @@ var classSkillLevels =
 			},
 			ScatterFeathers: 
 			{
-
+				1: "3 TP, 40% base blind chance",
+				2: "3 TP, 41% base blind chance",
+				3: "3 TP, 42% base blind chance",
+				4: "3 TP, 43% base blind chance",
+				5: "6 TP, 50% base blind chance",
+				6: "6 TP, 52% base blind chance",
+				7: "6 TP, 54% base blind chance",
+				8: "6 TP, 56% base blind chance",
+				9: "6 TP, 58% base blind chance",
+				10:" 9 TP, 70% base blind chance",
 			},
 			FinishingArrow: 
 			{
-
+				1: "10% HP threshold",
+				2: "11% HP threshold",
+				3: "12% HP threshold",
+				4: "13% HP threshold",
+				5: "19% HP threshold",
+				6: "20% HP threshold",
+				7: "21% HP threshold",
+				8: "22% HP threshold",
+				9: "23% HP threshold",
+				10:" 30% HP threshold",
 			},
 			SkyDive: 
 			{
-
+				1: "16 TP, 650% damage, 65% base head bind chance",
+				2: "16 TP, 680% damage, 68% base head bind chance",
+				3: "16 TP, 710% damage, 71% base head bind chance",
+				4: "16 TP, 740% damage, 74% base head bind chance",
+				5: "23 TP, 870% damage, 84% base head bind chance",
+				6: "23 TP, 920% damage, 88% base head bind chance",
+				7: "23 TP, 970% damage, 92% base head bind chance",
+				8: "23 TP, 1020% damage, 96% base head bind chance",
+				9: "23 TP, 1070% damage, 100% base head bind chance",
+				10:" 32 TP, 1300% damage, 120% base head bind chance",
 			},
 			MillionShot: 
 			{
-
+				1: "13 TP, 100% dmg per hit, 4-16 total hits",
+				2: "13 TP, 112% dmg per hit, 4-16 total hits",
+				3: "13 TP, 124% dmg per hit, 4-16 total hits",
+				4: "13 TP, 136% dmg per hit, 4-16 total hits",
+				5: "19 TP, 136% dmg per hit, 6-16 total hits",
+				6: "19 TP, 152% dmg per hit, 6-16 total hits",
+				7: "19 TP, 168% dmg per hit, 6-16 total hits",
+				8: "19 TP, 184% dmg per hit, 6-16 total hits",
+				9: "19 TP, 200% dmg per hit, 6-16 total hits",
+				10:" 27 TP, 200% dmg per hit, 8-16 total hits",
 			}
 		},
 		specB:
@@ -4174,43 +4435,133 @@ var classSkillLevels =
 			},
 			GroundPatrol: 
 			{
-
+				1: "7 TP, 160% damage",
+				2: "7 TP, 165% damage",
+				3: "7 TP, 170% damage",
+				4: "7 TP, 175% damage",
+				5: "12 TP, 215% damage",
+				6: "12 TP, 220% damage",
+				7: "12 TP, 225% damage",
+				8: "12 TP, 230% damage",
+				9: "12 TP, 235% damage",
+				10:" 18 TP, 280% damage",
 			},
 			ConstraintAttackBoost: 
 			{
-
+				1: "1.05x chance multiplier",
+				2: "1.06x chance multiplier",
+				3: "1.07x chance multiplier",
+				4: "1.08x chance multiplier",
+				5: "1.12x chance multiplier",
+				6: "1.13x chance multiplier",
+				7: "1.14x chance multiplier",
+				8: "1.15x chance multiplier",
+				9: "1.16x chance multiplier",
+				10:" 1.2x chance multiplier",
 			},
 			MenacingHowl: 
 			{
-
+				1: "6 TP, 25% base panic chance",
+				2: "6 TP, 26% base panic chance",
+				3: "6 TP, 27% base panic chance",
+				4: "6 TP, 28% base panic chance",
+				5: "9 TP, 32% base panic chance",
+				6: "9 TP, 33% base panic chance",
+				7: "9 TP, 34% base panic chance",
+				8: "9 TP, 35% base panic chance",
+				9: "9 TP, 36% base panic chance",
+				10:" 13 TP, 40% base panic chance",
 			},
 			DefenseCommand: 
 			{
-
+				1: "4 TP, 1.5x damage taken, 45 static restore, 14% max HP restore",
+				2: "4 TP, 1.46x damage taken, 45 static restore, 15% max HP restore",
+				3: "4 TP, 1.42x damage taken, 45 static restore, 16% max HP restore",
+				4: "4 TP, 1.38x damage taken, 45 static restore, 17% max HP restore",
+				5: "7 TP, 1.25x damage taken, 60 static restore, 19% max HP restore",
+				6: "7 TP, 1.22x damage taken, 60 static restore, 20% max HP restore",
+				7: "7 TP, 1.19x damage taken, 60 static restore, 21% max HP restore",
+				8: "7 TP, 1.16x damage taken, 60 static restore, 22% max HP restore",
+				9: "7 TP, 1.13x damage taken, 60 static restore, 23% max HP restore",
+				10:" 10 TP, 1x damage taken, 80 static restore, 25% max HP restore",
 			},
 			FootPierce: 
 			{
-
+				1: "10 TP, 100% initial damage, 25% base leg bind chance, 300% Hound damage",
+				2: "10 TP, 106% initial damage, 25% base leg bind chance, 340% Hound damage",
+				3: "10 TP, 112% initial damage, 25% base leg bind chance, 380% Hound damage",
+				4: "10 TP, 118% initial damage, 25% base leg bind chance, 420% Hound damage",
+				5: "15 TP, 118% initial damage, 35% base leg bind chance, 420% Hound damage",
+				6: "15 TP, 126% initial damage, 35% base leg bind chance, 465% Hound damage",
+				7: "15 TP, 134% initial damage, 35% base leg bind chance, 510% Hound damage",
+				8: "15 TP, 142% initial damage, 35% base leg bind chance, 555% Hound damage",
+				9: "15 TP, 150% initial damage, 35% base leg bind chance, 600% Hound damage",
+				10:" 20 TP, 150% initial damage, 50% base leg bind chance, 600% Hound damage",
 			},
 			DropShot: 
 			{
-
+				1: "7 TP, 160% damage",
+				2: "7 TP, 165% damage",
+				3: "7 TP, 170% damage",
+				4: "7 TP, 175% damage",
+				5: "12 TP, 215% damage",
+				6: "12 TP, 220% damage",
+				7: "12 TP, 225% damage",
+				8: "12 TP, 230% damage",
+				9: "12 TP, 235% damage",
+				10:" 18 TP, 280% damage",
 			},
 			HealingBoost: 
 			{
-
+				1: "+6 static heal, +2% max HP heal",
+				2: "+9 static heal, +2% max HP heal",
+				3: "+12 static heal, +2% max HP heal",
+				4: "+15 static heal, +2% max HP heal",
+				5: "+19 static heal, +4% max HP heal",
+				6: "+22 static heal, +4% max HP heal",
+				7: "+25 static heal, +4% max HP heal",
+				8: "+28 static heal, +4% max HP heal",
+				9: "+31 static heal, +4% max HP heal",
+				10:" +35 static heal, +7% max HP heal",
 			},
 			TPBoost: 
 			{
-
+				1: "+10% max TP",
+				2: "+11% max TP",
+				3: "+12% max TP",
+				4: "+13% max TP",
+				5: "+17% max TP",
+				6: "+19% max TP",
+				7: "+21% max TP",
+				8: "+23% max TP",
+				9: "+25% max TP",
+				10:" +30% max TP",
 			},
 			MedicalLick: 
 			{
-
+				1: "10 TP, 45 static restore, 9% max HP heal, 5 heals",
+				2: "10 TP, 48 static restore, 10% max HP heal, 5 heals",
+				3: "10 TP, 51 static restore, 11% max HP heal, 5 heals",
+				4: "10 TP, 54 static restore, 12% max HP heal, 5 heals",
+				5: "17 TP, 54 static restore, 12% max HP heal, 7 heals",
+				6: "17 TP, 58 static restore, 14% max HP heal, 7 heals",
+				7: "17 TP, 62 static restore, 16% max HP heal, 7 heals",
+				8: "17 TP, 66 static restore, 18% max HP heal, 7 heals",
+				9: "17 TP, 70 static restore, 20% max HP heal, 7 heals",
+				10:" 25 TP, 70 static restore, 20% max HP heal, 9 heals",
 			},
 			StunShot: 
 			{
-
+				1: "9 TP, 200% damage, 35% base stun chance",
+				2: "9 TP, 220% damage, 35% base stun chance",
+				3: "9 TP, 240% damage, 35% base stun chance",
+				4: "9 TP, 260% damage, 35% base stun chance",
+				5: "13 TP, 260% damage, 50% base stun chance",
+				6: "13 TP, 285% damage, 50% base stun chance",
+				7: "13 TP, 310% damage, 50% base stun chance",
+				8: "13 TP, 335% damage, 50% base stun chance",
+				9: "13 TP, 360% damage, 50% base stun chance",
+				10:" 18 TP, 360% damage, 65% base stun chance",
 			}
 		}
 	},
@@ -4473,43 +4824,133 @@ var classSkillLevels =
 			},
 			MultiSwordTechnique: 
 			{
-
+				1: "15% chance",
+				2: "17% chance",
+				3: "19% chance",
+				4: "21% chance",
+				5: "28% chance",
+				6: "31% chance",
+				7: "34% chance",
+				8: "37% chance",
+				9: "40% chance",
+				10:" 50% chance",
 			},
 			HPBoost: 
 			{
-
+				1: "+5% max HP",
+				2: "+6% max HP",
+				3: "+7% max HP",
+				4: "+8% max HP",
+				5: "+12% max HP",
+				6: "+13% max HP",
+				7: "+14% max HP",
+				8: "+15% max HP",
+				9: "+16% max HP",
+				10:" +20% max HP",
 			},
 			CrossingtheSanzu: 
 			{
-
+				1: "4 TP, 1 max chases, 300% damage to party members, 100% damage to enemies",
+				2: "4 TP, 1 max chases, 270% damage to party members, 105% damage to enemies",
+				3: "4 TP, 1 max chases, 240% damage to party members, 110% damage to enemies",
+				4: "4 TP, 1 max chases, 210% damage to party members, 115% damage to enemies",
+				5: "12 TP, 2 max chases, 100% damage to party members, 138% damage to enemies",
+				6: "12 TP, 2 max chases, 93% damage to party members, 145% damage to enemies",
+				7: "12 TP, 2 max chases, 86% damage to party members, 152% damage to enemies",
+				8: "12 TP, 2 max chases, 79% damage to party members, 159% damage to enemies",
+				9: "12 TP, 2 max chases, 72% damage to party members, 166% damage to enemies",
+				10:" 35 TP, 3 max chases, 34% damage to party members, 200% damage to enemies ",
 			},
 			FourGods: 
 			{
-
+				1: "4 TP, 60% dmg per hit",
+				2: "4 TP, 61% dmg per hit",
+				3: "4 TP, 62% dmg per hit",
+				4: "4 TP, 63% dmg per hit",
+				5: "7 TP, 73% dmg per hit",
+				6: "7 TP, 74% dmg per hit",
+				7: "7 TP, 75% dmg per hit",
+				8: "7 TP, 76% dmg per hit",
+				9: "7 TP, 77% dmg per hit",
+				10:" 10 TP, 90% dmg per hit",
 			},
 			LayeredBlossoms: 
 			{
-
+				1: "9 TP, 30% base dmg per hit, 55% dmg per hit w/ 2, 80% dmg per hit w/ 3, 105% dmg per hit w/ 4",
+				2: "9 TP, 31% base dmg per hit, 56% dmg per hit w/ 2, 81% dmg per hit w/ 3, 106% dmg per hit w/ 4",
+				3: "9 TP, 32% base dmg per hit, 57% dmg per hit w/ 2, 82% dmg per hit w/ 3, 107% dmg per hit w/ 4",
+				4: "9 TP, 33% base dmg per hit, 58% dmg per hit w/ 2, 83% dmg per hit w/ 3, 108% dmg per hit w/ 4",
+				5: "14 TP, 39% base dmg per hit, 64% dmg per hit w/ 2, 89% dmg per hit w/ 3, 114% dmg per hit w/ 4",
+				6: "14 TP, 40% base dmg per hit, 65% dmg per hit w/ 2, 90% dmg per hit w/ 3, 115% dmg per hit w/ 4",
+				7: "14 TP, 41% base dmg per hit, 66% dmg per hit w/ 2, 91% dmg per hit w/ 3, 116% dmg per hit w/ 4",
+				8: "14 TP, 42% base dmg per hit, 67% dmg per hit w/ 2, 92% dmg per hit w/ 3, 117% dmg per hit w/ 4",
+				9: "14 TP, 43% base dmg per hit, 68% dmg per hit w/ 2, 93% dmg per hit w/ 3, 118% dmg per hit w/ 4",
+				10:" 21 TP, 50% base dmg per hit, 75% dmg per hit w/ 2, 100% dmg per hit w/ 3, 125% dmg per hit w/ 4",
 			},
 			PhysicalAttackBoost: 
 			{
-
+				1: "4% damage increase",
+				2: "5% damage increase",
+				3: "6% damage increase",
+				4: "7% damage increase",
+				5: "9% damage increase",
+				6: "10% damage increase",
+				7: "11% damage increase",
+				8: "12% damage increase",
+				9: "13% damage increase",
+				10:" 15% damage increase",
 			},
 			BrinkofDeathResuscitation: 
 			{
-
+				1: "10% chance",
+				2: "11% chance",
+				3: "12% chance",
+				4: "13% chance",
+				5: "17% chance",
+				6: "18% chance",
+				7: "19% chance",
+				8: "20% chance",
+				9: "21% chance",
+				10:" 25% chance",
 			},
 			Reflower: 
 			{
-
+				1: "15% chance",
+				2: "16% chance",
+				3: "17% chance",
+				4: "18% chance",
+				5: "24% chance",
+				6: "25% chance",
+				7: "26% chance",
+				8: "27% chance",
+				9: "28% chance",
+				10:" 34% chance",
 			},
 			Hyakkaryouran: 
 			{
-
+				1: "14 TP, 25% dmg per hit",
+				2: "14 TP, 26% dmg per hit",
+				3: "14 TP, 27% dmg per hit",
+				4: "14 TP, 28% dmg per hit",
+				5: "21 TP, 31% dmg per hit",
+				6: "21 TP, 32% dmg per hit",
+				7: "21 TP, 33% dmg per hit",
+				8: "21 TP, 34% dmg per hit",
+				9: "21 TP, 35% dmg per hit",
+				10:" 30 TP, 40% dmg per hit",
 			},
 			Tenryuuransei: 
 			{
-
+				1: "7 TP, 80% dmg per hit",
+				2: "7 TP, 82% dmg per hit",
+				3: "7 TP, 84% dmg per hit",
+				4: "7 TP, 86% dmg per hit",
+				5: "11 TP, 95% dmg per hit",
+				6: "11 TP, 98% dmg per hit",
+				7: "11 TP, 101% dmg per hit",
+				8: "11 TP, 104% dmg per hit",
+				9: "11 TP, 107% dmg per hit",
+				10:" 16 TP, 120% dmg per hit",
 			}
 		},
 		specB:
@@ -4641,43 +5082,133 @@ var classSkillLevels =
 			},
 			SwordGod: 
 			{
-
+				1: "No crit rate increase, 172% crit damage",
+				2: "1.1x crit rate, 174% crit damage",
+				3: "1.2x crit rate, 175% crit damage",
+				4: "1.3x crit rate, 177% crit damage",
+				5: "1.9x crit rate, 186% crit damage",
+				6: "2x crit rate, 187% crit damage",
+				7: "2.1x crit rate, 189% crit damage",
+				8: "2.2x crit rate, 190% crit damage",
+				9: "2.3x crit rate, 192% crit damage",
+				10:" 3x crit rate, 202% crit damage",
 			},
 			TPBoost: 
 			{
-
+				1: "+10% max TP",
+				2: "+11% max TP",
+				3: "+12% max TP",
+				4: "+13% max TP",
+				5: "+17% max TP",
+				6: "+19% max TP",
+				7: "+21% max TP",
+				8: "+23% max TP",
+				9: "+25% max TP",
+				10:" +30% max TP",
 			},
 			LegSweep: 
 			{
-
+				1: "12 TP, 111% damage, -160 evade, lasts for 4 turns",
+				2: "12 TP, 119% damage, -180 evade, lasts for 4 turns",
+				3: "12 TP, 127% damage, -200 evade, lasts for 4 turns",
+				4: "12 TP, 135% damage, -220 evade, lasts for 4 turns",
+				5: "16 TP, 135% damage, -220 evade, lasts for 5 turns",
+				6: "16 TP, 145% damage, -240 evade, lasts for 5 turns",
+				7: "16 TP, 155% damage, -260 evade, lasts for 5 turns",
+				8: "16 TP, 165% damage, -280 evade, lasts for 5 turns",
+				9: "16 TP, 175% damage, -300 evade, lasts for 5 turns",
+				10:" 22 TP, 175% damage, -300 evade, lasts for 6 turns",
 			},
 			SwordsVigor: 
 			{
-
+				1: "5% damage reduction",
+				2: "6% damage reduction",
+				3: "7% damage reduction",
+				4: "8% damage reduction",
+				5: "12% damage reduction",
+				6: "13% damage reduction",
+				7: "14% damage reduction",
+				8: "15% damage reduction",
+				9: "16% damage reduction",
+				10:" 20% damage reduction",
 			},
 			SpeedBoost: 
 			{
-
+				1: "1.11x speed, +24 acc/evade",
+				2: "1.14x speed, +28 acc/evade",
+				3: "1.17x speed, +32 acc/evade",
+				4: "1.2x speed, +36 acc/evade",
+				5: "1.24x speed, +52 acc/evade",
+				6: "1.27x speed, +58 acc/evade",
+				7: "1.3x speed, +64 acc/evade",
+				8: "1.33x speed, +70 acc/evade",
+				9: "1.36x speed, +76 acc/evade",
+				10:" 1.4x speed, +100 acc/evade",
 			},
 			ThunderSlash: 
 			{
-
+				1: "10 TP, 220% damage",
+				2: "10 TP, 225% damage",
+				3: "10 TP, 230% damage",
+				4: "10 TP, 235% damage",
+				5: "16 TP, 270% damage",
+				6: "16 TP, 276% damage",
+				7: "16 TP, 282% damage",
+				8: "16 TP, 288% damage",
+				9: "16 TP, 294% damage",
+				10:" 24 TP, 340% damage",
 			},
 			Suigetsu: 
 			{
-
+				1: "5 TP, 300% damage, 67% starting chance",
+				2: "5 TP, 310% damage, 70% starting chance",
+				3: "5 TP, 320% damage, 73% starting chance",
+				4: "5 TP, 330% damage, 76% starting chance",
+				5: "15 TP, 380% damage, 100% starting chance",
+				6: "15 TP, 390% damage, 103% starting chance",
+				7: "15 TP, 400% damage, 106% starting chance",
+				8: "15 TP, 410% damage, 109% starting chance",
+				9: "15 TP, 420% damage, 112% starting chance",
+				10:" 22 TP, 500% damage, 135% starting chance",
 			},
 			HelmDivide: 
 			{
-
+				1: "7 TP, 260% damage, -20 base accuracy",
+				2: "7 TP, 270% damage, -20 base accuracy",
+				3: "7 TP, 280% damage, -20 base accuracy",
+				4: "7 TP, 290% damage, -20 base accuracy",
+				5: "12 TP, 390% damage, -40 base accuracy",
+				6: "12 TP, 405% damage, -40 base accuracy",
+				7: "12 TP, 420% damage, -40 base accuracy",
+				8: "12 TP, 435% damage, -40 base accuracy",
+				9: "12 TP, 450% damage, -40 base accuracy",
+				10:" 17 TP, 600% damage, -60 base accuracy",
 			},
 			ThreeStageStrike: 
 			{
-
+				1: "12 TP, 65% dmg per hit, 6% base bind chance",
+				2: "12 TP, 67% dmg per hit, 6% base bind chance",
+				3: "12 TP, 69% dmg per hit, 6% base bind chance",
+				4: "12 TP, 71% dmg per hit, 6% base bind chance",
+				5: "16 TP, 81% dmg per hit, 9% base bind chance",
+				6: "16 TP, 83% dmg per hit, 9% base bind chance",
+				7: "16 TP, 85% dmg per hit, 9% base bind chance",
+				8: "16 TP, 87% dmg per hit, 9% base bind chance",
+				9: "16 TP, 89% dmg per hit, 9% base bind chance",
+				10:" 20 TP, 100% dmg per hit, 12% base bind chance",
 			},
 			Sange: 
 			{
-
+				1: "16 TP, 240% base damage",
+				2: "16 TP, 247% base damage",
+				3: "16 TP, 254% base damage",
+				4: "16 TP, 261% base damage",
+				5: "24 TP, 320% base damage",
+				6: "24 TP, 330% base damage",
+				7: "24 TP, 340% base damage",
+				8: "24 TP, 350% base damage",
+				9: "24 TP, 360% base damage",
+				10:" 34 TP, 450% base damage",
 			}
 		}
 	},
@@ -4950,43 +5481,128 @@ var classSkillLevels =
 			},
 			MemoriesofaPreviousLife: 
 			{
-
+				1: "15% chance",
+				2: "16% chance",
+				3: "18% chance",
+				4: "19% chance",
+				5: "29% chance",
+				6: "31% chance",
+				7: "33% chance",
+				8: "35% chance",
+				9: "37% chance",
+				10:" 50% chance",
 			},
 			PrayerfortheSoul: 
 			{
-
+				1: "5% chance",
+				2: "6% chance",
+				3: "7% chance",
+				4: "8% chance",
+				5: "12% chance",
+				6: "13% chance",
+				7: "14% chance",
+				8: "15% chance",
+				9: "16% chance",
+				10:" 20% chance",
 			},
 			ProtectionoftheOfferings: 
 			{
-
+				1: "10 base TP restored",
+				2: "11 base TP restored",
+				3: "12 base TP restored",
+				4: "13 base TP restored",
+				5: "19 base TP restored",
+				6: "20 base TP restored",
+				7: "21 base TP restored",
+				8: "22 base TP restored",
+				9: "23 base TP restored",
+				10:" 30 base TP restored",
 			},
 			MagicAttackBoost: 
 			{
-
+				1: "4% damage increase",
+				2: "5% damage increase",
+				3: "6% damage increase",
+				4: "7% damage increase",
+				5: "9% damage increase",
+				6: "10% damage increase",
+				7: "11% damage increase",
+				8: "12% damage increase",
+				9: "13% damage increase",
+				10:" 15% damage increase",
 			},
 			OracleThreeRuns: 
 			{
-
+				1: "10 TP, 100% dmg per hit",
+				2: "10 TP, 105% dmg per hit",
+				3: "10 TP, 110% dmg per hit",
+				4: "10 TP, 115% dmg per hit",
+				5: "16 TP, 140% dmg per hit",
+				6: "16 TP, 146% dmg per hit",
+				7: "16 TP, 152% dmg per hit",
+				8: "16 TP, 158% dmg per hit",
+				9: "16 TP, 164% dmg per hit",
+				10:" 24 TP, 200% dmg per hit",
 			},
 			OracleHalo: 
 			{
-
+				1: "15 TP, 1% damage as restore",
+				2: "15 TP, 34% damage as restore",
+				3: "15 TP, 67% damage as restore",
+				4: "15 TP, 100% damage as restore",
+				5: "20 TP, 250% damage as restore",
 			},
 			HPBoost: 
 			{
-
+				1: "+5% max HP",
+				2: "+6% max HP",
+				3: "+7% max HP",
+				4: "+8% max HP",
+				5: "+12% max HP",
+				6: "+13% max HP",
+				7: "+14% max HP",
+				8: "+15% max HP",
+				9: "+16% max HP",
+				10:" +20% max HP",
 			},
 			Purification: 
 			{
-
+				1: "10 base TP restore",
+				2: "12 base TP restore",
+				3: "14 base TP restore",
+				4: "16 base TP restore",
+				5: "20 base TP restore",
+				6: "20 base TP restore",
+				7: "20 base TP restore",
+				8: "20 base TP restore",
+				9: "20 base TP restore",
+				10:" 20 base TP restore",
 			},
 			TPBoost: 
 			{
-
+				1: "+10% max TP",
+				2: "+11% max TP",
+				3: "+12% max TP",
+				4: "+13% max TP",
+				5: "+17% max TP",
+				6: "+19% max TP",
+				7: "+21% max TP",
+				8: "+23% max TP",
+				9: "+25% max TP",
+				10:" +30% max TP",
 			},
 			ChanneltheGods: 
 			{
-
+				1: "20 TP, 750% damage, 50% damage reduction",
+				2: "20 TP, 790% damage, 52% damage reduction",
+				3: "20 TP, 830% damage, 54% damage reduction",
+				4: "20 TP, 870% damage, 56% damage reduction",
+				5: "32 TP, 1050% damage, 66% damage reduction",
+				6: "32 TP, 1100% damage, 67% damage reduction",
+				7: "32 TP, 1150% damage, 68% damage reduction",
+				8: "32 TP, 1200% damage, 69% damage reduction",
+				9: "32 TP, 1250% damage, 70% damage reduction",
+				10:" 45 TP, 1500% damage, 80% damage reduction",
 			}
 		},
 		specB:
@@ -5123,43 +5739,133 @@ var classSkillLevels =
 			},
 			ConsolingtheDead: 
 			{
-
+				1: "5 HP restored",
+				2: "6 HP restored",
+				3: "7 HP restored",
+				4: "8 HP restored",
+				5: "12 HP restored",
+				6: "14 HP restored",
+				7: "16 HP restored",
+				8: "18 HP restored",
+				9: "20 HP restored",
+				10:" 25 HP restored",
 			},
 			PrayerExorcism: 
 			{
-
+				1: "20 TP, 25% disable res increase, lasts for 4 turns",
+				2: "20 TP, 30% disable res increase, lasts for 4 turns",
+				3: "20 TP, 35% disable res increase, lasts for 4 turns",
+				4: "20 TP, 40% disable res increase, lasts for 4 turns",
+				5: "28 TP, 40% disable res increase, lasts for 5 turns",
+				6: "28 TP, 44% disable res increase, lasts for 5 turns",
+				7: "28 TP, 48% disable res increase, lasts for 5 turns",
+				8: "28 TP, 52% disable res increase, lasts for 5 turns",
+				9: "28 TP, 56% disable res increase, lasts for 5 turns",
+				10:" 40 TP, 56% disable res increase, lasts for 6 turns",
 			},
 			PrayerEscape: 
 			{
-
+				1: "12 TP, 105 evade increase, lasts for 4 turns",
+				2: "12 TP, 120 evade increase, lasts for 4 turns",
+				3: "12 TP, 135 evade increase, lasts for 4 turns",
+				4: "12 TP, 150 evade increase, lasts for 4 turns",
+				5: "18 TP, 150 evade increase, lasts for 5 turns",
+				6: "18 TP, 165 evade increase, lasts for 5 turns",
+				7: "18 TP, 180 evade increase, lasts for 5 turns",
+				8: "18 TP, 195 evade increase, lasts for 5 turns",
+				9: "18 TP, 210 evade increase, lasts for 5 turns",
+				10:" 24 TP, 210 evade increase, lasts for 6 turns",
 			},
 			PrayerLongevity: 
 			{
-
+				1: "16 TP, 19% max HP increase, lasts for 6 turns",
+				2: "16 TP, 22% max HP increase, lasts for 6 turns",
+				3: "16 TP, 25% max HP increase, lasts for 6 turns",
+				4: "16 TP, 28% max HP increase, lasts for 6 turns",
+				5: "24 TP, 28% max HP increase, lasts for 6 turns",
+				6: "24 TP, 31% max HP increase, lasts for 6 turns",
+				7: "24 TP, 34% max HP increase, lasts for 6 turns",
+				8: "24 TP, 37% max HP increase, lasts for 6 turns",
+				9: "24 TP, 40% max HP increase, lasts for 6 turns",
+				10:" 32 TP, 40% max HP increase, lasts for 6 turns",
 			},
 			PurifyingFlame: 
 			{
-
+				1: "4 HP restored",
+				2: "5 HP restored",
+				3: "6 HP restored",
+				4: "7 HP restored",
+				5: "12 HP restored",
+				6: "14 HP restored",
+				7: "16 HP restored",
+				8: "18 HP restored",
+				9: "20 HP restored",
+				10:" 30 HP restored",
 			},
 			Bunrei: 
 			{
-
+				1: "3 TP, 25% damage as restore",
+				2: "3 TP, 28% damage as restore",
+				3: "3 TP, 31% damage as restore",
+				4: "3 TP, 34% damage as restore",
+				5: "6 TP, 50% damage as restore",
+				6: "6 TP, 54% damage as restore",
+				7: "6 TP, 58% damage as restore",
+				8: "6 TP, 62% damage as restore",
+				9: "6 TP, 66% damage as restore",
+				10:" 10 TP, 100% damage as restore",
 			},
 			MagicDefenseBoost: 
 			{
-
+				1: "4% reduction",
+				2: "5% reduction",
+				3: "6% reduction",
+				4: "7% reduction",
+				5: "9% reduction",
+				6: "10% reduction",
+				7: "11% reduction",
+				8: "12% reduction",
+				9: "13% reduction",
+				10:" 15% reduction",
 			},
 			ConstraintDefenseBoost: 
 			{
-
+				1: "8% resistance",
+				2: "10% resistance",
+				3: "12% resistance",
+				4: "14% resistance",
+				5: "18% resistance",
+				6: "20% resistance",
+				7: "22% resistance",
+				8: "24% resistance",
+				9: "26% resistance",
+				10:" 30% resistance",
 			},
 			Sanctuary: 
 			{
-
+				1: "3 TP, 60% chance, 4 max blocks",
+				2: "3 TP, 63% chance, 4 max blocks",
+				3: "3 TP, 66% chance, 4 max blocks",
+				4: "3 TP, 69% chance, 4 max blocks",
+				5: "5 TP, 80% chance, 7 max blocks",
+				6: "5 TP, 82% chance, 7 max blocks",
+				7: "5 TP, 84% chance, 7 max blocks",
+				8: "5 TP, 86% chance, 7 max blocks",
+				9: "5 TP, 88% chance, 7 max blocks",
+				10:" 8 TP, 95% chance, 10 max blocks",
 			},
 			Affection: 
 			{
-
+				1: "10 static HP restore, 2% max HP restore",
+				2: "12 static HP restore, 2% max HP restore",
+				3: "14 static HP restore, 2% max HP restore",
+				4: "16 static HP restore, 2% max HP restore",
+				5: "16 static HP restore, 4% max HP restore",
+				6: "18 static HP restore, 4% max HP restore",
+				7: "20 static HP restore, 4% max HP restore",
+				8: "22 static HP restore, 4% max HP restore",
+				9: "24 static HP restore, 4% max HP restore",
+				10:" 25 static HP restore, 6% max HP restore",
 			}
 		}
 	},
@@ -5422,43 +6128,128 @@ var classSkillLevels =
 			},
 			HerbBoost: 
 			{
-
+				1: "Max HP increases to 110%",
+				2: "Max HP increases to 111%",
+				3: "Max HP increases to 112%",
+				4: "Max HP increases to 113%",
+				5: "Max HP increases to 119%",
+				6: "Max HP increases to 120%",
+				7: "Max HP increases to 121%",
+				8: "Max HP increases to 122%",
+				9: "Max HP increases to 123%",
+				10:" Max HP increases to 133%",
 			},
 			AreaHerb: 
 			{
-
+				1: "15 TP, 80% healing power",
+				2: "15 TP, 84% healing power",
+				3: "15 TP, 88% healing power",
+				4: "15 TP, 92% healing power",
+				5: "22 TP, 142% healing power",
+				6: "22 TP, 147% healing power",
+				7: "22 TP, 152% healing power",
+				8: "22 TP, 157% healing power",
+				9: "22 TP, 162% healing power",
+				10:" 30 TP, 220% healing power",
 			},
 			RecoveryHerb: 
 			{
-
+				1: "10 TP, dispels 1 bind",
+				2: "7 TP, dispels 1 bind",
+				3: "7 TP, dispels 2 binds",
+				4: "4 TP, dispels 2 binds",
+				5: "15 TP, dispels 3 binds, target type changed to row",
 			},
 			ConstraintDefenseBoost: 
 			{
-
+				1: "+8% resistance",
+				2: "+10% resistance",
+				3: "+12% resistance",
+				4: "+14% resistance",
+				5: "+18% resistance",
+				6: "+20% resistance",
+				7: "+22% resistance",
+				8: "+24% resistance",
+				9: "+26% resistance",
+				10:" +30% resistance",
 			},
 			SecretRemedyCompound: 
 			{
-
+				1: "20 TP, 33% heal and speed reduction, lasts 4 turns",
+				2: "20 TP, 28% heal and speed reduction, lasts 4 turns",
+				3: "20 TP, 25% heal and speed reduction, lasts 4 turns",
+				4: "20 TP, 21% heal and speed reduction, lasts 4 turns",
+				5: "30 TP, 21% heal and speed reduction, lasts 5 turns",
+				6: "30 TP, 17% heal and speed reduction, lasts 5 turns",
+				7: "30 TP, 13% heal and speed reduction, lasts 5 turns",
+				8: "30 TP, 9% heal and speed reduction, lasts 5 turns",
+				9: "30 TP, 5% heal and speed reduction, lasts 5 turns",
+				10:" 40 TP, 5% heal and speed reduction, lasts 6 turns",
 			},
 			ChaseHerb: 
 			{
-
+				1: "4 TP, 65% healing power, max 2 heals, -50% chance per heal",
+				2: "4 TP, 72% healing power, max 2 heals, -50% chance per heal",
+				3: "4 TP, 79% healing power, max 2 heals, -50% chance per heal",
+				4: "4 TP, 86% healing power, max 2 heals, -50% chance per heal",
+				5: "7 TP, 86% healing power, max 3 heals, -25% chance per heal",
+				6: "7 TP, 97% healing power, max 3 heals, -25% chance per heal",
+				7: "7 TP, 108% healing power, max 3 heals, -25% chance per heal",
+				8: "7 TP, 119% healing power, max 3 heals, -25% chance per heal",
+				9: "7 TP, 130% healing power, max 3 heals, -25% chance per heal",
+				10:" 12 TP, 130% healing power, max 4 heals, -10% chance per heal",
 			},
 			DelayHerb: 
 			{
-
+				1: "10 TP, 60% healing power",
+				2: "10 TP, 64% healing power",
+				3: "10 TP, 68% healing power",
+				4: "10 TP, 72% healing power",
+				5: "15 TP, 112% healing power",
+				6: "15 TP, 117% healing power",
+				7: "15 TP, 122% healing power",
+				8: "15 TP, 127% healing power",
+				9: "15 TP, 132% healing power",
+				10:" 20 TP, 180% healing power",
 			},
 			HPBoost: 
 			{
-
+				1: "+5% max HP",
+				2: "+6% max HP",
+				3: "+7% max HP",
+				4: "+8% max HP",
+				5: "+12% max HP",
+				6: "+13% max HP",
+				7: "+14% max HP",
+				8: "+15% max HP",
+				9: "+16% max HP",
+				10:" +20% max HP",
 			},
 			AutoResurrection: 
 			{
-
+				1: "8 TP, revives with 10 HP, 2% chance",
+				2: "8 TP, revives with 16 HP, 3% chance",
+				3: "8 TP, revives with 22 HP, 4% chance",
+				4: "8 TP, revives with 28 HP, 5% chance",
+				5: "12 TP, revives with 68 HP, 8% chance",
+				6: "12 TP, revives with 76 HP, 9% chance",
+				7: "12 TP, revives with 84 HP, 10% chance",
+				8: "12 TP, revives with 92 HP, 11% chance",
+				9: "12 TP, revives with 100 HP, 12% chance",
+				10:" 16 TP, revives with 150 HP, 15% chance",
 			},
 			LingeringScent: 
 			{
-
+				1: "5 TP, 85% heal reduction, lasts 6 turns",
+				2: "5 TP, 82% heal reduction, lasts 6 turns",
+				3: "5 TP, 79% heal reduction, lasts 6 turns",
+				4: "5 TP, 75% heal reduction, lasts 6 turns",
+				5: "7 TP, 75% heal reduction, lasts 8 turns",
+				6: "7 TP, 72% heal reduction, lasts 8 turns",
+				7: "7 TP, 68% heal reduction, lasts 8 turns",
+				8: "7 TP, 64% heal reduction, lasts 8 turns",
+				9: "7 TP, 60% heal reduction, lasts 8 turns",
+				10:" 9 TP, 60% heal reduction, lasts 10 turns",
 			}
 		},
 		specB:
@@ -5590,43 +6381,133 @@ var classSkillLevels =
 			},
 			SmokeBoost: 
 			{
-
+				1: "1.1x speed, TP Reduction = TP Cost - 1",
+				2: "1.16x speed, TP Reduction = TP Cost - 1",
+				3: "1.22x speed, TP Reduction = TP Cost - 1",
+				4: "1.28x speed, TP Reduction = TP Cost - 1",
+				5: "1.28x speed, TP Reduction = (TP Cost * 0.85) - 2",
+				6: "1.36x speed, TP Reduction = (TP Cost * 0.85) - 2",
+				7: "1.44x speed, TP Reduction = (TP Cost * 0.85) - 2",
+				8: "1.52x speed, TP Reduction = (TP Cost * 0.85) - 2",
+				9: "1.60x speed, TP Reduction = (TP Cost * 0.85) - 2",
+				10:" 1.60x speed, TP Reduction = (TP Cost * 0.7) - 3",
 			},
 			ConstraintAttackBoost: 
 			{
-
+				1: "1.05x infliction rate",
+				2: "1.06x infliction rate",
+				3: "1.07x infliction rate",
+				4: "1.08x infliction rate",
+				5: "1.12x infliction rate",
+				6: "1.13x infliction rate",
+				7: "1.14x infliction rate",
+				8: "1.15x infliction rate",
+				9: "1.16x infliction rate",
+				10:" 1.20x infliction rate",
 			},
 			ParalyzeSmoke: 
 			{
-
+				1: "6 TP, 35% base paralyze chance, 1.19x paralyze infliction, lasts 4 turns",
+				2: "6 TP, 35% base paralyze chance, 1.22x paralyze infliction, lasts 4 turns",
+				3: "6 TP, 35% base paralyze chance, 1.25x paralyze infliction, lasts 4 turns",
+				4: "6 TP, 35% base paralyze chance, 1.28x paralyze infliction, lasts 4 turns",
+				5: "10 TP, 44% base paralyze chance, 1.28x paralyze infliction, lasts 5 turns",
+				6: "10 TP, 44% base paralyze chance, 1.31x paralyze infliction, lasts 5 turns",
+				7: "10 TP, 44% base paralyze chance, 1.34x paralyze infliction, lasts 5 turns",
+				8: "10 TP, 44% base paralyze chance, 1.37x paralyze infliction, lasts 5 turns",
+				9: "10 TP, 44% base paralyze chance, 1.4x paralyze infliction, lasts 5 turns",
+				10:" 14 TP, 55% base paralyze chance, 1.4x paralyze infliction, lasts 6 turns",
 			},
 			BunglingSmoke: 
 			{
-
+				1: "9 TP, 27% base panic chance, 1.16x panic infliction, lasts 4 turns",
+				2: "9 TP, 27% base panic chance, 1.18x panic infliction, lasts 4 turns",
+				3: "9 TP, 27% base panic chance, 1.20x panic infliction, lasts 4 turns",
+				4: "9 TP, 27% base panic chance, 1.22x panic infliction, lasts 4 turns",
+				5: "15 TP, 33% base panic chance, 1.22x panic infliction, lasts 5 turns",
+				6: "15 TP, 33% base panic chance, 1.24x panic infliction, lasts 5 turns",
+				7: "15 TP, 33% base panic chance, 1.26x panic infliction, lasts 5 turns",
+				8: "15 TP, 33% base panic chance, 1.28x panic infliction, lasts 5 turns",
+				9: "15 TP, 33% base panic chance, 1.3x panic infliction, lasts 5 turns",
+				10:" 21 TP, 40% base panic chance, 1.3x panic infliction, lasts 6 turns",
 			},
 			SmokeSolid: 
 			{
-
+				1: "4 TP, 45% base petrify chance",
+				2: "4 TP, 46% base petrify chance",
+				3: "4 TP, 47% base petrify chance",
+				4: "4 TP, 48% base petrify chance",
+				5: "8 TP, 54% base petrify chance",
+				6: "8 TP, 56% base petrify chance",
+				7: "8 TP, 58% base petrify chance",
+				8: "8 TP, 60% base petrify chance",
+				9: "8 TP, 62% base petrify chance",
+				10:" 12 TP, 75% base petrify chance",
 			},
 			SmokeSpark: 
 			{
-
+				1: "3 TP, 50% base stun chance",
+				2: "3 TP, 52% base stun chance",
+				3: "3 TP, 54% base stun chance",
+				4: "3 TP, 56% base stun chance",
+				5: "5 TP, 65% base stun chance",
+				6: "5 TP, 67% base stun chance",
+				7: "5 TP, 69% base stun chance",
+				8: "5 TP, 71% base stun chance",
+				9: "5 TP, 73% base stun chance",
+				10:" 7 TP, 85% base stun chance",
 			},
 			TPBoost: 
 			{
-
+				1: "+10% max TP",
+				2: "+11% max TP",
+				3: "+12% max TP",
+				4: "+13% max TP",
+				5: "+17% max TP",
+				6: "+19% max TP",
+				7: "+21% max TP",
+				8: "+23% max TP",
+				9: "+25% max TP",
+				10:" +30% max TP",
 			},
 			SmokeBomb: 
 			{
-
+				1: "20 TP, 600% damage",
+				2: "20 TP, 630% damage",
+				3: "20 TP, 660% damage",
+				4: "20 TP, 690% damage",
+				5: "28 TP, 840% damage",
+				6: "28 TP, 880% damage",
+				7: "28 TP, 920% damage",
+				8: "28 TP, 960% damage",
+				9: "28 TP, 1000% damage",
+				10:" 36 TP, 1200% damage",
 			},
 			PersistingScent: 
 			{
-
+				1: "5 TP, lasts 6 turns",
+				2: "5 TP, lasts 6 turns",
+				3: "5 TP, lasts 6 turns",
+				4: "5 TP, lasts 6 turns",
+				5: "7 TP, lasts 8 turns",
+				6: "7 TP, lasts 8 turns",
+				7: "7 TP, lasts 8 turns",
+				8: "7 TP, lasts 8 turns",
+				9: "7 TP, lasts 8 turns",
+				10:" 9 TP, lasts 10 turns",
 			},
 			PreemptiveSmoke: 
 			{
-
+				1: "7%/14%/24%/30% activation rate",
+				2: "8%/16%/26%/33% activation rate",
+				3: "9%/18%/28%/36% activation rate",
+				4: "10%/20%/30%/39% activation rate",
+				5: "15%/30%/45%/59% activation rate",
+				6: "16%/32%/48%/63% activation rate",
+				7: "17%/34%/51%/67% activation rate",
+				8: "18%/36%/54%/71% activation rate",
+				9: "19%/38%57%/75% activation rate",
+				10:" 25%/50%/75%/100% activation rate",
 			}
 		}
 	}
