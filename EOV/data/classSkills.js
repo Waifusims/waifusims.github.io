@@ -3936,24 +3936,24 @@ var classSkills =
 				name_en: "Flying Talon Strike",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {HawkArrow:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1}
 			},
 			IcePeck: 
 			{
 				name_en: "Ice Peck",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {FlashofBothWings:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 2}
 			},
 			PhysicalAttackBoost: 
 			{
@@ -3965,7 +3965,7 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3}
 			},
 			SpeedBoost: 
 			{
@@ -3977,19 +3977,19 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 4}
 			},
 			PowerShot: 
 			{
 				name_en: "Power Shot",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {TargetArrow:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5}
 			},
 			ScatterFeathers: 
 			{
@@ -4001,7 +4001,7 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 6}
 			},
 			FinishingArrow: 
 			{
@@ -4013,31 +4013,31 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 0}
 			},
 			SkyDive: 
 			{
 				name_en: "Sky Dive",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {FlyingTalonStrike:5,IcePeck:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 1.5}
 			},
 			MillionShot: 
 			{
 				name_en: "Million Shot",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {PowerShot:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 5}
 			}
 		},
 		specB:
@@ -4184,7 +4184,7 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1}
 			},
 			MenacingHowl: 
 			{
@@ -4196,43 +4196,43 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 2}
 			},
 			DefenseCommand: 
 			{
 				name_en: "Defense Command",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {AidCommand:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3}
 			},
 			FootPierce: 
 			{
 				name_en: "Foot Pierce",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {HunterShot:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 4}
 			},
 			DropShot: 
 			{
 				name_en: "Drop Shot",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {TargetArrow:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5}
 			},
 			HealingBoost: 
 			{
@@ -4244,7 +4244,7 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 0}
 			},
 			TPBoost: 
 			{
@@ -4256,31 +4256,31 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 1}
 			},
 			MedicalLick: 
 			{
 				name_en: "Medical Lick",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {DefenseCommand:5,FootPierce:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 3.5}
 			},
 			StunShot: 
 			{
 				name_en: "Stun Shot",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {DropShot:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 5}
 			}
 		}
 	},
@@ -4553,43 +4553,43 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1}
 			},
 			CrossingtheSanzu: 
 			{
 				name_en: "Crossing the Sanzu",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {FlyingSparrow:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 2}
 			},
 			FourGods: 
 			{
 				name_en: "Four Gods",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {Kamaitachi:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3.5}
 			},
 			LayeredBlossoms: 
 			{
 				name_en: "Layered Blossoms",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {Kamaitachi:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 4.5}
 			},
 			PhysicalAttackBoost: 
 			{
@@ -4601,55 +4601,55 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5.5}
 			},
 			BrinkofDeathResuscitation: 
 			{
 				name_en: "Brink of Death Resuscitation",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {HPBoost:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 1}
 			},
 			Reflower: 
 			{
 				name_en: "Reflower",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {CrossingtheSanzu:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 2}
 			},
 			Hyakkaryouran: 
 			{
 				name_en: "Hyakkaryouran",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {FourGods:3,LayeredBlossoms:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 4}
 			},
 			Tenryuuransei: 
 			{
 				name_en: "Tenryuuransei",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {PhysicalAttackBoost:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 5.5}
 			}
 		},
 		specB:
@@ -4796,31 +4796,31 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1.5}
 			},
 			LegSweep: 
 			{
 				name_en: "Leg Sweep",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {MistSlice:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3}
 			},
 			SwordsVigor: 
 			{
 				name_en: "Sword's Vigor",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {AdvantageousPosition:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5}
 			},
 			SpeedBoost: 
 			{
@@ -4832,67 +4832,67 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 0}
 			},
 			ThunderSlash: 
 			{
 				name_en: "Thunder Slash",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {TPBoost:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 1}
 			},
 			Suigetsu: 
 			{
 				name_en: "Suigetsu",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {TPBoost:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 2}
 			},
 			HelmDivide: 
 			{
 				name_en: "Helm Divide",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {LegSweep:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 3}
 			},
 			ThreeStageStrike: 
 			{
 				name_en: "Three Stage Strike",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {SwordsVigor:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 4.5}
 			},
 			Sange: 
 			{
 				name_en: "Sange",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {SwordsVigor:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 5.5}
 			}
 		}
 	},
@@ -5160,24 +5160,24 @@ var classSkills =
 				name_en: "Prayer for the Soul",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1.5}
 			},
 			ProtectionoftheOfferings: 
 			{
 				name_en: "Protection of the Offerings",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 2.5}
 			},
 			MagicAttackBoost: 
 			{
@@ -5189,31 +5189,31 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3.5}
 			},
 			OracleThreeRuns: 
 			{
 				name_en: "Oracle: Three Runs",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {OracleDance:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 4.5}
 			},
 			OracleHalo: 
 			{
 				name_en: "Oracle: Halo",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {OracleDance:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5.5}
 			},
 			HPBoost: 
 			{
@@ -5225,19 +5225,19 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 0}
 			},
 			Purification: 
 			{
 				name_en: "Purification",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {PrayerfortheSoul:5,ProtectionoftheOfferings:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 2}
 			},
 			TPBoost: 
 			{
@@ -5249,19 +5249,19 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 3.5}
 			},
 			ChanneltheGods: 
 			{
 				name_en: "Channel the Gods",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {OracleThreeRuns:5,OracleHalo:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 5}
 			}
 		},
 		specB:
@@ -5403,36 +5403,36 @@ var classSkills =
 				name_en: "Prayer: Exorcism",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1}
 			},
 			PrayerEscape: 
 			{
 				name_en: "Prayer: Escape",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 2}
 			},
 			PrayerLongevity: 
 			{
 				name_en: "Prayer Longevity",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {BlessingofHeaven:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3}
 			},
 			PurifyingFlame: 
 			{
@@ -5444,19 +5444,19 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 4}
 			},
 			Bunrei: 
 			{
 				name_en: "Bunrei",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {OracleDance:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5}
 			},
 			MagicDefenseBoost: 
 			{
@@ -5468,7 +5468,7 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 6}
 			},
 			ConstraintDefenseBoost: 
 			{
@@ -5480,31 +5480,31 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 0}
 			},
 			Sanctuary: 
 			{
 				name_en: "Sanctuary",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {PrayerExorcism:5,PrayerEscape:5,PrayerLongevity:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 2}
 			},
 			Affection: 
 			{
 				name_en: "Affection",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {PurifyingFlame:2,Bunrei:2},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 4.5}
 			}
 		}
 	},
@@ -5772,24 +5772,24 @@ var classSkills =
 				name_en: "Area Herb",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {LineHerb:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1}
 			},
 			RecoveryHerb: 
 			{
 				name_en: "Recovery Herb",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {ResurrectionHerb:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 2}
 			},
 			ConstraintDefenseBoost: 
 			{
@@ -5801,19 +5801,19 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3}
 			},
 			SecretRemedyCompound: 
 			{
 				name_en: "Secret Remedy Compound",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {MedicinalKnowledge:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 4}
 			},
 			ChaseHerb: 
 			{
@@ -5825,7 +5825,7 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5}
 			},
 			DelayHerb: 
 			{
@@ -5837,7 +5837,7 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 6}
 			},
 			HPBoost: 
 			{
@@ -5849,31 +5849,31 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 0}
 			},
 			AutoResurrection: 
 			{
 				name_en: "Auto Resurrection",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {RecoveryHerb:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 2}
 			},
 			LingeringScent: 
 			{
 				name_en: "Lingering Scent",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {ChaseHerb:3,DelayHerb:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 5.5}
 			}
 		},
 		specB:
@@ -6020,55 +6020,55 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 1}
 			},
 			ParalyzeSmoke: 
 			{
 				name_en: "Paralyze Smoke",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {Antibody:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 2.5}
 			},
 			BunglingSmoke: 
 			{
 				name_en: "Bungling Smoke",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {Antibody:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 3.5}
 			},
 			SmokeSolid: 
 			{
 				name_en: "Smoke Solid",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {SmokeRot:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 5}
 			},
 			SmokeSpark: 
 			{
 				name_en: "Smoke Spark",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {SmokeRot:5},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:2, y: 6}
 			},
 			TPBoost: 
 			{
@@ -6080,43 +6080,43 @@ var classSkills =
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 0}
 			},
 			SmokeBomb: 
 			{
 				name_en: "Smoke Bomb",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {ParalyzeSmoke:3,BunglingSmoke:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 3}
 			},
 			PersistingScent: 
 			{
 				name_en: "Persisting Scent",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {SmokeSolid:3,SmokeSpark:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 5}
 			},
 			PreemptiveSmoke: 
 			{
 				name_en: "Preemptive Smoke",
 				name_jp: "",
 				details: "",
-				dep: {},
+				dep: {SmokeSolid:3,SmokeSpark:3},
 				active: true,
 				reqLevel: 20,
 				level: 0,
 				max: 10,
-				coords: {x:2, y: 0}
+				coords: {x:3, y: 6}
 			}
 		}
 	}

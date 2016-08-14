@@ -465,7 +465,7 @@ var classSkillForwardReqs =
 			HPBoost: {BrinkofDeathResuscitation:3},
 			CrossingtheSanzu: {Reflower:3},
 			FourGods: {Hyakkaryouran:3},
-			LayeredBlossom: {Hyakkaryouran:3},
+			LayeredBlossoms: {Hyakkaryouran:3},
 			PhysicalAttackBoost: {Tenryuuransei:3},
 			BrinkofDeathResuscitation: {},
 			Reflower: {},
