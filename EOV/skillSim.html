@@ -428,9 +428,9 @@ function populateLevelDropdown()
 function changeLevel()
 {
 	var oldLevel = level;
-	level = +levelDropdown.value;
+	level = +(levelDropdown.value);
 
-	if(level < 20)
+	if(level < 20 && specializationDropdown.selectedIndex > 0)
 	{
 		specializationDropdown.selectedIndex = 0;
 		changeSpecialization();
