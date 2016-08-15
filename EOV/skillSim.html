@@ -872,8 +872,8 @@ function onSkillMouseEnter(skillName, e)
 	tooltip.style.top = y + "px";	
 
 	// constrain tooltip to visible window
-	var roomx = tooltip.getBoundingClientRect().left + tooltip.getBoundingClientRect().width - (window.innerWidth - 50);
-	var roomy = tooltip.getBoundingClientRect().top + tooltip.getBoundingClientRect().height - (window.innerHeight - 50);
+	var roomx = tooltip.getBoundingClientRect().left + tooltip.getBoundingClientRect().width - (window.innerWidth - 20);
+	var roomy = tooltip.getBoundingClientRect().top + tooltip.getBoundingClientRect().height - (window.innerHeight - 20);
 
 	if(roomx > 0)
 	{
