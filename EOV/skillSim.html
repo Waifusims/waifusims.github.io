@@ -20,13 +20,20 @@
 	#header
 	{
 		background-color: #002B2A;
-		justify-content: center;
         display: flex;
         flex-direction: row;
         padding: 10px 10px 10px 10px;
 	}
 
-	#header div
+	#headermain
+	{
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		justify-content: center;
+	}
+
+	#headermain div
 	{
         display: flex;
         flex-direction: column;
@@ -87,10 +94,7 @@
 	{
 		color: #E7FDBD;
 		font-size: 10px;
-		position: absolute;
-		left: 0;
-		top: 0;
-		margin: 10px;
+		margin-right: auto;
 	}
 
 	.skillBox
@@ -219,9 +223,7 @@
 
 	.ad
 	{	
-		position: absolute;
-		top: 0;
-		right: 0;
+		margin-left: auto;
 	}
 
 	p
@@ -251,67 +253,71 @@
 			TODO:<br>
 			&ensp;&ensp;&ensp;&ensp;- Add race skills<br>
 			&ensp;&ensp;&ensp;&ensp;- Add retiring
-		</p>
+		</p>			
+		
+		<div id="headermain">
+			<div>
+				<div>
+					<strong>Level:</strong>
+					<select id="levelDropdown" onchange="changeLevel()"></select>
+				</div>
+			</div>
+	
+			<div>
+				<div>
+					<strong>Race:</strong>
+					<select id="raceDropdown" onchange="changeRace()">
+						<option value="earthrun">Earthrun</option>
+						<option value="lunaria">Lunaria</option>
+						<option value="therian">Therian</option>
+						<option value="brownie">Brownie</option>
+					</select>
+				</div>
+			</div>
+	
+			<div>
+				<div>
+					<strong>Class:</strong>
+					<select id="classDropdown" onchange="changeClass()">
+						<option value="fencer">Fencer</option>
+						<option value="dragoon">Dragoon</option>
+						<option value="cestus">Cestus</option>
+						<option value="reaper">Reaper</option>
+						<option value="warlock">Warlock</option>
+						<option value="necromancer">Necromancer</option>
+						<option value="hound">Hound</option>
+						<option value="masurao">Masurao</option>
+						<option value="shaman">Shaman</option>
+						<option value="herbalist">Herbalist</option>
+					</select>
+				</div>
+	
+				<br>
+	
+				<div>
+					<strong>Specialization:</strong>
+					<select id="specializationDropdown" onchange="changeSpecialization()">
+						<option value="base">N/A</option>
+						<option value="specA">Type A</option>
+						<option value="specB">Type B</option>
+					</select>
+				</div>
+			</div>
+	
+			<div>
+				<strong>Points Remaining: <p id="remainingPointsLabel"></p>/<p id="maxPointsLabel"></p></strong>
+				<br>
+				<button onclick="resetSkillPoints()">Reset Skill Points</button>
+			</div>
+		</div>
+
 		<div class="ad">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- Skillsim Header -->
+			
 			<ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-0696701846108353" data-ad-slot="2485608538"></ins>
 			<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
-		</div>
-		<div>
-			<div>
-				<strong>Level:</strong>
-				<select id="levelDropdown" onchange="changeLevel()"></select>
-			</div>
-		</div>
-
-		<div>
-			<div>
-				<strong>Race:</strong>
-				<select id="raceDropdown" onchange="changeRace()">
-					<option value="earthrun">Earthrun</option>
-					<option value="lunaria">Lunaria</option>
-					<option value="therian">Therian</option>
-					<option value="brownie">Brownie</option>
-				</select>
-			</div>
-		</div>
-
-		<div>
-			<div>
-				<strong>Class:</strong>
-				<select id="classDropdown" onchange="changeClass()">
-					<option value="fencer">Fencer</option>
-					<option value="dragoon">Dragoon</option>
-					<option value="cestus">Cestus</option>
-					<option value="reaper">Reaper</option>
-					<option value="warlock">Warlock</option>
-					<option value="necromancer">Necromancer</option>
-					<option value="hound">Hound</option>
-					<option value="masurao">Masurao</option>
-					<option value="shaman">Shaman</option>
-					<option value="herbalist">Herbalist</option>
-				</select>
-			</div>
-
-			<br>
-
-			<div>
-				<strong>Specialization:</strong>
-				<select id="specializationDropdown" onchange="changeSpecialization()">
-					<option value="base">N/A</option>
-					<option value="specA">Type A</option>
-					<option value="specB">Type B</option>
-				</select>
-			</div>
-		</div>
-
-		<div>
-			<strong>Points Remaining: <p id="remainingPointsLabel"></p>/<p id="maxPointsLabel"></p></strong>
-			<br>
-			<button onclick="resetSkillPoints()">Reset Skill Points</button>
 		</div>
 	</div>
 
