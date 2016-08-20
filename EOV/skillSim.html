@@ -201,7 +201,7 @@
 	.tooltip
 	{
 		min-width: 450px;
-		max-width: 550px;
+		max-width: 800px;
 		text-align: center;
 		font-size: 12px;
 		background-color: #E7FDBD;
@@ -872,8 +872,8 @@ function onSkillMouseEnter(skillName, e)
 	tooltip.style.top = y + "px";	
 
 	// constrain tooltip to visible window
-	var roomx = tooltip.getBoundingClientRect().left + tooltip.getBoundingClientRect().width - (window.innerWidth - 20);
-	var roomy = tooltip.getBoundingClientRect().top + tooltip.getBoundingClientRect().height - (window.innerHeight - 20);
+	var roomx = tooltip.getBoundingClientRect().left + tooltip.getBoundingClientRect().width - (window.innerWidth - 5);
+	var roomy = tooltip.getBoundingClientRect().top + tooltip.getBoundingClientRect().height - (window.innerHeight - 5);
 
 	if(roomx > 0)
 	{
