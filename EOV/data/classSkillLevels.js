@@ -4181,16 +4181,6 @@ var classSkillLevels =
 			},
 			SkyPatrol: 
 			{
-				1: "9 TP, 200% damage",
-				2: "9 TP, 205% damage",
-				3: "9 TP, 210% damage",
-				4: "9 TP, 215% damage",
-				5: "15 TP, 250% damage",
-				6: "15 TP, 260% damage",
-				7: "15 TP, 270% damage",
-				8: "15 TP, 280% damage",
-				9: "15 TP, 290% damage",
-				10:" 21 TP, 340% damage",
 			},
 			FlyingTalonStrike: 
 			{
