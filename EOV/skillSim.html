@@ -93,7 +93,7 @@
 	#info
 	{
 		color: #E7FDBD;
-		font-size: 10px;
+		font-size: 12px;
 		margin-right: auto;
 	}
 
@@ -248,10 +248,10 @@
 <body onload="init()">
 	<div id="header">
 		<p id="info">
-			Latest Update (2016.08.14):<br>
-			&ensp;&ensp;&ensp;&ensp;- Finished all class skills with per-level details<br><br>
+			Latest Update (2016.10.02):<br>
+			&ensp;&ensp;&ensp;&ensp;- Added Earthrun race skills<br><br>
 			TODO:<br>
-			&ensp;&ensp;&ensp;&ensp;- Add race skills<br>
+			&ensp;&ensp;&ensp;&ensp;- Finish additional race skills<br>
 			&ensp;&ensp;&ensp;&ensp;- Add retiring
 		</p>			
 		
@@ -323,11 +323,11 @@
 
 	<div id="treeSelector">
 		<div id="raceTreeButton" onclick="selectTree(event)">
-			<strong>Race Skills</strong>
+			<strong style="pointer-events: none;">Race Skills</strong>
 		</div>
 
 		<div id="classTreeButton" onclick="selectTree(event)">
-		<strong>Class Skills</strong>
+			<strong style="pointer-events: none;">Class Skills</strong>
 		</div>
 	</div>
 
@@ -344,6 +344,7 @@
 <script type="text/javascript" src="data/classSkills.js"></script>
 <script type="text/javascript" src="data/classSkillLevels.js"></script>
 <script type="text/javascript" src="data/classSkillForwardReqs.js"></script>
+<script type="text/javascript" src="data/raceSkills.js"></script>
 
 <script type="text/javascript">
 
@@ -386,6 +387,7 @@ var activeClassSkills;
 var activeClassSkillLevels;
 var activeClassSkillForwards;
 var activeRaceSkills;
+var activeTree = 0; // which tree are we looking at? (0 for class, 1 for race)
 
 function init()
 {
@@ -418,7 +420,8 @@ function init()
 	showClassSkillTree();
 	
 	calculateSkillPoints();
-	resetSkillPoints();
+	remainingPoints = maxPoints;
+	updatePointsLabels();
 }
 
 function populateLevelDropdown()
@@ -434,34 +437,62 @@ function populateLevelDropdown()
 
 function changeLevel()
 {
+	// store old level for comparison to new level
 	var oldLevel = level;
+
+	// count the number of points we used
+	var pointsUsed = maxPoints - remainingPoints;
+
+	// update to new level
 	level = +(levelDropdown.value);
 
+	// if we had a specialization, but are lowering to a level below 20, reset to no specialization and remove class skill points
 	if(level < 20 && specializationDropdown.selectedIndex > 0)
 	{
 		specializationDropdown.selectedIndex = 0;
 		changeSpecialization();
 	}
 	
+	// if we are lowering our level, we need to reset skill points if we placed more than we should have	
 	if(level < oldLevel)
 	{
-		resetSkillPoints();
+		// calculate max points for our new level
+		calculateSkillPoints();
+
+		// if we used more points than the new level has available, reset skill points
+		if(pointsUsed > maxPoints)
+		{
+			resetSkillPoints();
+		}
+		else
+		{
+			remainingPoints = maxPoints - pointsUsed;
+			updatePointsLabels();
+		}
 	}
 	else
 	{
+		// our level is higher than (or equal to) the level we were previously at, just add more skill points
 		calculateSkillPoints();
-
 		remainingPoints += (level - oldLevel);
-
 		updatePointsLabels();
 	}
 
-	showClassSkillTree();
+	// redraw the skill tree to account for skills we may now meet the level prereq for
+	redrawCurrentSkillTree();
 }
 
 function changeRace()
 {
+	var oldRace = race;
 	race = raceDropdown.value;
+
+	if(oldRace != race)
+	{
+		// we selected another race, take back race skill points and draw new tree
+		resetRaceSkillPoints();
+		showRaceSkillTree();
+	}
 }
 
 function changeClass()
@@ -471,9 +502,9 @@ function changeClass()
 
 	if(oldClass != className)
 	{
-		// we selected another class, take back skill points and draw new skill tree		
-		showClassSkillTree();
-		resetSkillPoints();
+		// we selected another class, take back skill points and draw new skill tree
+		resetClassSkillPoints();		
+		showClassSkillTree();		
 	}
 }
 
@@ -492,9 +523,10 @@ function changeSpecialization()
 
 	calculateSkillPoints();
 	showClassSkillTree();
-	resetSkillPoints();
+	resetClassSkillPoints();
 }
 
+// sets max skill points to appropriate value for current level/retirement
 function calculateSkillPoints()
 {
 	var points = 2;
@@ -507,22 +539,25 @@ function calculateSkillPoints()
 	maxPoints = points;	
 }
 
-function resetSkillPoints()
-{
-	calculateSkillPoints();
-	remainingPoints = maxPoints;
-
+function resetClassSkillPoints()
+{	
 	if(activeClassSkills != undefined)
 	{
 		Object.keys(activeClassSkills).forEach(function(skill)
 		{
+			remainingPoints = Math.min(maxPoints, remainingPoints + activeClassSkills[skill].level);
+
 			activeClassSkills[skill].level = 0;
 
-			var levelBoxes = document.getElementById(skill + "Levels").children;
-			for(var i = 0; i < levelBoxes.length; i++)
-			{
-				levelBoxes[i].className = "levelBox";
-			}
+			// if we're looking at the class skill tree, redraw the level boxes for the skills as we remove points
+			if(activeTree == 0)
+			{	
+				var levelBoxes = document.getElementById(skill + "Levels").children;
+				for(var i = 0; i < levelBoxes.length; i++)
+				{
+					levelBoxes[i].className = "levelBox";
+				}
+			}			
 		});
 	}
 
@@ -534,6 +569,39 @@ function resetSkillPoints()
 	updatePointsLabels();
 }
 
+function resetRaceSkillPoints()
+{
+	if(activeRaceSkills != undefined)
+	{
+		Object.keys(activeRaceSkills).forEach(function(skill)
+		{
+			remainingPoints = Math.min(maxPoints, remainingPoints + activeRaceSkills[skill].level);
+
+			activeRaceSkills[skill].level = 0;
+
+			if(activeTree == 1 && activeRaceSkills[skill].max > 0)
+			{
+				var levelBoxes = document.getElementById(skill + "Levels").children;
+				for(var i = 0; i < levelBoxes.length; i++)
+				{
+					levelBoxes[i].className = "levelBox";
+				}
+			}
+		});
+	}
+
+	updatePointsLabels();	
+}
+
+function resetSkillPoints()
+{
+	if(remainingPoints == maxPoints)
+		return;
+
+	resetClassSkillPoints();
+	resetRaceSkillPoints();
+}
+
 function updatePointsLabels()
 {
 	remainingPointsLabel.innerHTML = remainingPoints;
@@ -542,20 +610,31 @@ function updatePointsLabels()
 
 function canLearn(skillName)
 {
-	if(activeClassSkills[skillName].reqLevel > level)
+	if(activeClassSkills[skillName])
 	{
-		return false;
-	}
-
-	var deps = Object.keys(activeClassSkills[skillName].dep);
-
-	for(var i = 0; i < deps.length; i++)
-	{
-		if(!(activeClassSkills[deps[i]].level >= activeClassSkills[skillName].dep[deps[i]]))
+		if(activeClassSkills[skillName].reqLevel > level)
 		{
 			return false;
 		}
+
+		var deps = Object.keys(activeClassSkills[skillName].dep);
+
+		for(var i = 0; i < deps.length; i++)
+		{
+			if(!(activeClassSkills[deps[i]].level >= activeClassSkills[skillName].dep[deps[i]]))
+			{
+				return false;
+			}
+		}
 	}
+	else if(activeRaceSkills[skillName])
+	{
+		return !(activeRaceSkills[skillName].reqLevel > level);
+	}
+	else
+	{
+		return false;
+	}	
 
 	return true;
 }
@@ -609,56 +688,116 @@ function addPoint(skillName)
 	if(remainingPoints == 0)
 		return;
 
-	if(activeClassSkills[skillName].level == activeClassSkills[skillName].max)
-		return;
-
-	activeClassSkills[skillName].level++;
-
-	var levelBoxes = document.getElementById(skillName + "Levels").children;
-	for(var i = 0; i < levelBoxes.length; i++)
+	if(activeClassSkills[skillName])
 	{
-		if(i < activeClassSkills[skillName].level)
+		if(activeClassSkills[skillName].level == activeClassSkills[skillName].max)
+				return;
+
+		activeClassSkills[skillName].level++;
+
+		// update level boxes
+		var levelBoxes = document.getElementById(skillName + "Levels").children;
+		for(var i = 0; i < levelBoxes.length; i++)
 		{
-			levelBoxes[i].className = "activeLevelBox";
+			if(i < activeClassSkills[skillName].level)
+			{
+				levelBoxes[i].className = "activeLevelBox";
+			}
+			else
+			{
+				levelBoxes[i].className = "levelBox";
+			}
 		}
-		else
+
+		// update to see if we unlocked any other skills
+		updateReqs(skillName);
+	}
+	else if(activeRaceSkills[skillName])
+	{
+		if(activeRaceSkills[skillName].level == activeRaceSkills[skillName].max)
+				return;
+
+		activeRaceSkills[skillName].level++;
+
+		// update level boxes
+		var levelBoxes = document.getElementById(skillName + "Levels").children;
+		for(var i = 0; i < levelBoxes.length; i++)
 		{
-			levelBoxes[i].className = "levelBox";
+			if(i < activeRaceSkills[skillName].level)
+			{
+				levelBoxes[i].className = "activeLevelBox";
+			}
+			else
+			{
+				levelBoxes[i].className = "levelBox";
+			}
 		}
 	}
+	else
+	{
+		return;
+	}	
 
-	remainingPoints--;
+	// subtract used skill point
+	remainingPoints--;	
 
-	updateReqs(skillName);
-
+	// update tooltip text to highlight the info for the new level
 	updateTooltipText(skillName);
+
+	// update display of # of points we have left
 	updatePointsLabels();
 }
 
 function subtractPoint(skillName)
 {
-	if(activeClassSkills[skillName].level == 0)
-		return;
-
-	activeClassSkills[skillName].level--;
-
-	var levelBoxes = document.getElementById(skillName + "Levels").children;
-	for(var i = 0; i < levelBoxes.length; i++)
+	if(activeClassSkills[skillName])
 	{
-		if(i < activeClassSkills[skillName].level)
+		if(activeClassSkills[skillName].level == 0)
+			return;
+
+		activeClassSkills[skillName].level--;
+
+		var levelBoxes = document.getElementById(skillName + "Levels").children;
+		for(var i = 0; i < levelBoxes.length; i++)
 		{
-			levelBoxes[i].className = "activeLevelBox";
-		}
-		else
+			if(i < activeClassSkills[skillName].level)
+			{
+				levelBoxes[i].className = "activeLevelBox";
+			}
+			else
+			{
+				levelBoxes[i].className = "levelBox";
+			}
+		}		
+
+		updateReqs(skillName);
+	}
+	else if(activeRaceSkills[skillName])
+	{
+		if(activeRaceSkills[skillName].level == 0)
+			return;
+
+		activeRaceSkills[skillName].level--;
+
+		var levelBoxes = document.getElementById(skillName + "Levels").children;
+		for(var i = 0; i < levelBoxes.length; i++)
 		{
-			levelBoxes[i].className = "levelBox";
+			if(i < activeRaceSkills[skillName].level)
+			{
+				levelBoxes[i].className = "activeLevelBox";
+			}
+			else
+			{
+				levelBoxes[i].className = "levelBox";
+			}
 		}
+	}	
+	else
+	{
+		return;
 	}
 
 	remainingPoints++;
-
-	updateReqs(skillName);
-
 	updateTooltipText(skillName);
 	updatePointsLabels();
 }
@@ -671,7 +810,7 @@ function selectTree(e)
 	{
 		showRaceSkillTree();
 	}
-	else
+	else if(clicked == classTreeButton)
 	{
 		showClassSkillTree();
 	}
@@ -679,6 +818,9 @@ function selectTree(e)
 
 function showClassSkillTree()
 {
+	// we are looking at the class skill tree
+	activeTree = 0;
+
 	// clear tree canvas
 	while (treeDiv.firstChild) 
 	{
@@ -794,6 +936,9 @@ function showClassSkillTree()
 
 function showRaceSkillTree()
 {
+	// we are looking at the race skill tree
+	activeTree = 1;
+
 	// clear tree canvas
 	while (treeDiv.firstChild) 
 	{
@@ -802,6 +947,53 @@ function showRaceSkillTree()
 
 	raceTreeButton.className = "selected";
 	classTreeButton.className = "";
+
+	// grab data for the race
+	activeRaceSkills = raceSkills[race];
+
+	// create and place node divs for each skill
+
+	Object.keys(activeRaceSkills).forEach(function(skillName)
+	{
+		var currentSkill = activeRaceSkills[skillName];
+
+		// create skillbox
+		var skillDiv = document.createElement("div");
+
+		skillDiv.innerHTML = "<strong>" + currentSkill.name_en + "</strong>&ensp;(" + currentSkill.name_jp + ")";
+
+		// TODO: Draw Union Skills as different from normal skills
+		skillDiv.className = canLearn(skillName) ? "skillBox" : "inactive";
+
+		skillDiv.id = skillName;
+		skillDiv.style.width = SKILLBOX_WIDTH + "px";
+		skillDiv.style.height = SKILLBOX_HEIGHT + "px";
+		skillDiv.style.left = treeDiv.getBoundingClientRect().left + (+currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) + "px";
+		skillDiv.style.top = treeDiv.getBoundingClientRect().top +  window.scrollY + (+currentSkill.coords.y) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + "px";
+
+		// add event handler
+		skillDiv.onmouseenter = function(e){onSkillMouseEnter(skillName, e);};
+		skillDiv.onmouseleave = function(e){onSkillMouseLeave(skillName, e);};
+		skillDiv.onclick = function(e){onSkillClick(skillName, e);};
+		skillDiv.oncontextmenu = function(e){onSkillRightClick(skillName, e); return false;};
+
+		// add level indicator
+		if(currentSkill.max > 0)
+		{
+			var levelBoxContainer = document.createElement("div");
+			levelBoxContainer.className = "levelBoxContainer";
+			levelBoxContainer.id = skillName + "Levels";
+
+			var levelBox = document.createElement("div");
+			levelBox.className = activeRaceSkills[skillName].level > 0 ? "activeLevelBox" : "levelBox";
+			levelBoxContainer.appendChild(levelBox);
+
+			skillDiv.appendChild(levelBoxContainer);
+		}
+
+		// draw skillbox
+		treeDiv.appendChild(skillDiv);
+	});
 }
 
 function drawVerticalLine(x, y, length)
@@ -828,29 +1020,59 @@ function drawHorizontalLine(x, y, length)
 
 function updateTooltipText(skillName)
 {
-	// add skill name
-	tooltip.innerHTML = "<strong>" + activeClassSkills[skillName].name_en;
+	var skill = undefined;
 
-	// add passive/active indicator
-	tooltip.innerHTML += ":&ensp;" + (activeClassSkills[skillName].active ? "Active" : "Passive") + "<br>- - -<br>";
+	// check if class or race skill
+	if(activeClassSkills[skillName])
+	{	
+		skill = activeClassSkills[skillName];
 
-	// add skill description
-	tooltip.innerHTML += "<p>" + activeClassSkills[skillName].details + "</p><br>";
+		// add skill name
+		tooltip.innerHTML = "<strong>" + skill.name_en;
 
-	if(!activeClassSkillLevels[skillName])
-		return;
+		// add passive/active indicator
+		tooltip.innerHTML += ":&ensp;" + (skill.active ? "Active" : "Passive") + "<br>- - -<br>";
 
-	Object.keys(activeClassSkillLevels[skillName]).forEach(function(level)
-	{		
-		if(level == activeClassSkills[skillName].level)
+		// add skill description
+		tooltip.innerHTML += "<p>" + skill.details + "</p><br>";
+		
+		// add per-level details
+		if(!activeClassSkillLevels[skillName])
+			return;
+
+		Object.keys(activeClassSkillLevels[skillName]).forEach(function(level)
+		{		
+			if(level == activeClassSkills[skillName].level)
+			{
+				tooltip.innerHTML += "<br><strong><span>Lv" + level + ": " + activeClassSkillLevels[skillName][level] + "</span></strong>";
+			}
+			else
+			{
+				tooltip.innerHTML += "<br><span>Lv" + level + ": " + activeClassSkillLevels[skillName][level] + "</span>";
+			}
+		});
+	}
+	else if(activeRaceSkills[skillName])
+	{
+		skill = activeRaceSkills[skillName];
+
+		tooltip.innerHTML = "";
+
+		// add required level if the skill can't yet be learned
+		if(!canLearn(skillName))
 		{
-			tooltip.innerHTML += "<br><strong><span>Lv" + level + ": " + activeClassSkillLevels[skillName][level] + "</span></strong>";
+			tooltip.innerHTML += "<strong>Required Level: " + skill.reqLevel +"<br><br>";
 		}
-		else
-		{
-			tooltip.innerHTML += "<br><span>Lv" + level + ": " + activeClassSkillLevels[skillName][level] + "</span>";
-		}
-	});
+
+		// add skill name
+		tooltip.innerHTML += "<strong>" + skill.name_en;
+
+		// add passive/union skill indicator
+		tooltip.innerHTML += ":&ensp;" + (skill.active ? "Union Skill" : "Passive") + "<br>- - -<br>";
+
+		// add skill description
+		tooltip.innerHTML += "<p>" + skill.details + "</p><br>";
+	}	
 }
 
 // event handlers
@@ -916,9 +1138,22 @@ function onSkillRightClick(skillName, e)
 	}
 }
 
+function redrawCurrentSkillTree()
+{
+	// redraw the skill tree we were looking at
+	if(activeTree == 0)
+	{
+		showClassSkillTree();
+	}
+	else if(activeTree == 1)
+	{
+		showRaceSkillTree();
+	}
+}
+
 function onResize()
 {
-	showClassSkillTree();
+	redrawCurrentSkillTree();
 }
 
 </script>
