@@ -97,6 +97,36 @@
 		margin-right: auto;
 	}
 
+	.unionSkillBox
+	{
+		color: #016C84;
+		border: 2px solid;
+		border-radius: 30px;
+		border-color: #016C84;
+		position: absolute;
+		text-align: center;
+		background-color: #ACD8E5;	
+		display: flex;	
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 16px;
+	}
+
+	.unionSkillBox:hover
+	{
+		color: #E7FDBD;
+		background-color: #E5885B;	
+		border-color: #E7FDBD;
+	}
+
+	.unionSkillBox:active
+	{
+		color: #E5885B;
+		background-color: #E7FDBD;
+		border-color: #E5885B;
+	}
+
 	.skillBox
 	{
 		color: #ACFFE5;
@@ -248,11 +278,12 @@
 <body onload="init()">
 	<div id="header">
 		<p id="info">
+			By <a href="https://www.twitter.com/PSIDefenseUp/" style="color: #ACFFE5;" target="_blank">PSIDefenseUp</a><br><br>
 			Latest Update (2016.10.02):<br>
-			&ensp;&ensp;&ensp;&ensp;- Added Earthrun race skills<br><br>
+			&ensp;&ensp;- Finished adding race skills<br><br>
 			TODO:<br>
-			&ensp;&ensp;&ensp;&ensp;- Finish additional race skills<br>
-			&ensp;&ensp;&ensp;&ensp;- Add retiring
+			&ensp;&ensp;- Add retiring<br>
+			&ensp;&ensp;- Style and rendering improvements
 		</p>			
 		
 		<div id="headermain">
@@ -952,7 +983,6 @@ function showRaceSkillTree()
 	activeRaceSkills = raceSkills[race];
 
 	// create and place node divs for each skill
-
 	Object.keys(activeRaceSkills).forEach(function(skillName)
 	{
 		var currentSkill = activeRaceSkills[skillName];
@@ -962,8 +992,21 @@ function showRaceSkillTree()
 
 		skillDiv.innerHTML = "<strong>" + currentSkill.name_en + "</strong>&ensp;(" + currentSkill.name_jp + ")";
 
-		// TODO: Draw Union Skills as different from normal skills
-		skillDiv.className = canLearn(skillName) ? "skillBox" : "inactive";
+		if(canLearn(skillName))
+		{
+			if(currentSkill.active)
+			{
+				skillDiv.className = "unionSkillBox";
+			}
+			else
+			{
+				skillDiv.className = "skillBox";
+			}
+		}
+		else
+		{
+			skillDiv.className = "inactive";
+		}
 
 		skillDiv.id = skillName;
 		skillDiv.style.width = SKILLBOX_WIDTH + "px";
