@@ -497,7 +497,28 @@ function changeLevel()
 		}
 		else
 		{
-			remainingPoints = maxPoints - pointsUsed;
+			remainingPoints = maxPoints - pointsUsed;			
+
+			// loop through all race skills and remove points from those that we are too low level to have learned
+			Object.keys(activeRaceSkills).forEach(function(skill)
+			{
+				if(activeRaceSkills[skill].reqLevel > level && activeRaceSkills[skill].level > 0)
+				{					
+					remainingPoints = Math.min(maxPoints, remainingPoints + activeRaceSkills[skill].level);
+
+					activeRaceSkills[skill].level = 0;
+				}
+
+				if(activeTree == 1 && activeRaceSkills[skill].max > 0)
+				{
+					var levelBoxes = document.getElementById(skill + "Levels").children;
+					for(var i = 0; i < levelBoxes.length; i++)
+					{
+						levelBoxes[i].className = "levelBox";
+					}
+				}
+			});
+
 			updatePointsLabels();
 		}
 	}
@@ -541,20 +562,35 @@ function changeClass()
 
 function changeSpecialization()
 {
+	var oldSpec = specName;
 	specName = specializationDropdown.value;
 
 	if(specName != "base")
 	{
+		// if below level 20 and selecting a specialization, upgrade to level 20
 		if(level < 20)
 		{
+			resetClassSkillPoints();
 			levelDropdown.selectedIndex = 19;
 			changeLevel();
 		}
+
+		// add extra points if switching from no specialization to having a specialization
+		if(oldSpec == "base")
+		{
+			remainingPoints += 5;
+		}
+	}
+	else
+	{
+		// remove extra points if switching from having a specialization to having none
+		if(oldSpec != "base")
+			remainingPoints -= 5;
 	}
 
 	calculateSkillPoints();
-	showClassSkillTree();
 	resetClassSkillPoints();
+	showClassSkillTree();	
 }
 
 // sets max skill points to appropriate value for current level/retirement
