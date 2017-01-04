@@ -92,7 +92,7 @@ var classSkills =
 			{
 				name_en: "Wind Curtain",
 				name_jp: "ウィンドカーテン",
-				details: "For a set amount of turns, make a row of allies avoid a physical attack, only once.",
+				details: "Places a buff on a row of allies that allows them to dodge the next incoming physical attack.<br>When this attack is dodged, the buff is removed.",
 				dep: {Predict:3},
 				active: true,
 				reqLevel: 0,
@@ -104,7 +104,7 @@ var classSkills =
 			{
 				name_en: "Vision Thrust",
 				name_jp: "ビジョンスラスト",
-				details: "Performs a STR-based stab attack to one target.<br>This attack has a chance to inflict the blind ailment.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
+				details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -215,7 +215,7 @@ var classSkills =
 			{
 				name_en: "Wind Curtain",
 				name_jp: "ウィンドカーテン",
-				details: "For a set amount of turns, make a row of allies avoid a physical attack, only once.",
+				details: "Places a buff on a row of allies that allows them to dodge the next incoming physical attack.<br>When this attack is dodged, the buff is removed.",
 				dep: {Predict:3},
 				active: true,
 				reqLevel: 0,
@@ -227,7 +227,7 @@ var classSkills =
 			{
 				name_en: "Vision Thrust",
 				name_jp: "ビジョンスラスト",
-				details: "Performs a STR-based stab attack to one target.<br>This attack has a chance to inflict the blind ailment.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
+				details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -287,7 +287,7 @@ var classSkills =
 			{
 				name_en: "Sharp Thrust",
 				name_jp: "シャープスラスト",
-				details: "Deals melee STR-based stab damage to one target.<br>For the rest of the turn, the Fencer's chance of beign targeted and evasion will be increased.<br>Has a 500% speed modifier and +20 base accuracy at all levels.",
+				details: "Melee, STR-based stab attack to one enemy.<br>For the rest of the turn, the Fencer's evasion and chance to be targeted are increased.<br>Has a 500% speed modifier and +20 base accuracy at all levels.",
 				dep: {VisionThrust:3},
 				active: true,
 				reqLevel: 20,
@@ -323,7 +323,7 @@ var classSkills =
 			{
 				name_en: "Pile On",
 				name_jp: "誘い込み",
-				details: "On this turn, when the fencer dodges an attack, all other party members in their row will counter-attack the source of the attack.<br>The damage is based on the party members' stats, not the Fencer's.<br>Has a 300% speed modifier at all levels.",
+				details: "On this turn, when the fencer dodges an attack, all other party members in their row will counter-attack the source of the attack.<br>The counterattacks are based on the attacking party members' individual stats/equipment/abilities.<br>Has a 300% speed modifier at all levels.<br>Counter-attacks have +5 base accuracy at all levels.",
 				dep: {BewitchingSwordDance:3},
 				active: true,
 				reqLevel: 20,
@@ -335,7 +335,7 @@ var classSkills =
 			{
 				name_en: "Avoid Accel",
 				name_jp: "アボイドアクセラ",
-				details: "Each time the Fencer dodges an attack, the Union gauge increases.",
+				details: "Each time the Fencer dodges an attack, their Union gauge increases.",
 				dep: {BewitchingSwordDance:3},
 				active: true,
 				reqLevel: 20,
@@ -345,7 +345,7 @@ var classSkills =
 			},
 			DivineWind:
 			{
-				name_en: "Divine Wind",
+				name_en: "Divine Gust",
 				name_jp: "ディバインガスト",
 				details: "Increases all party members' evasion for one turn.<br>Each time a party member dodges, the bonus provided by Divine Wind is reduced.<br>Has a 150% speed modifier at all levels.",
 				dep: {PreemptiveCurtain:3},
@@ -359,7 +359,7 @@ var classSkills =
 			{
 				name_en: "Revenge Thrust",
 				name_jp: "リベンジスラスト",
-				details: "Deals melee STR-based stab+volt damage to one enemy.<br>Damage starts at 100%, and is multiplied by a damage bonus times the number of times the Fencer has dodged.<br>Has a 75% speed modifier and +10 base accuracy at all levels.",
+				details: "Melee, STR-based stab+volt attack to one enemy.<br>Damage is equal to a modifier multiplied by the number of times the Fencer has dodged since the last use of Revenge Thrust, but has a maximum value.<br>Has a 75% speed modifier and +10 base accuracy at all levels.",
 				dep: {SharpThrust:5},
 				active: true,
 				reqLevel: 20,
@@ -458,7 +458,7 @@ var classSkills =
 			{
 				name_en: "Wind Curtain",
 				name_jp: "ウィンドカーテン",
-				details: "For a set amount of turns, make a row of allies avoid a physical attack, only once.",
+				details: "Places a buff on a row of allies that allows them to dodge the next incoming physical attack.<br>When this attack is dodged, the buff is removed.",
 				dep: {Predict:3},
 				active: true,
 				reqLevel: 0,
@@ -470,7 +470,7 @@ var classSkills =
 			{
 				name_en: "Vision Thrust",
 				name_jp: "ビジョンスラスト",
-				details: "Performs a STR-based stab attack to one target.<br>This attack has a chance to inflict the blind ailment.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
+				details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -506,7 +506,7 @@ var classSkills =
 			{
 				name_en: "Chain Killer",
 				name_jp: "チェインキラー",
-				details: "Targets one enemy.<br>For one turn, if that enemy becomes afflicted with an ailment, bind, or stun, the Fencer will attack.<br>Has no base accuracy modifier at all levels.",
+				details: "Targets one enemy.<br>For one turn, if that enemy becomes afflicted with an ailment, bind, or stun, the Fencer will attack.",
 				dep: {ChainBoost:3, ChainBurst:3},
 				active: true,
 				reqLevel: 20,
@@ -530,7 +530,7 @@ var classSkills =
 			{
 				name_en: "Random Stab",
 				name_jp: "乱れ突き",
-				details: "Deals melee STR-based Stab damage to random targets.<br>Can hit the same target multiple times.<br>Has no speed modifier and -5 base accuracy at all levels.",
+				details: "Melee, STR-based Stab attack to random enemies.<br>Can hit the same target multiple times.<br>Has -5 base accuracy at all levels.",
 				dep: {VisionThrust:3},
 				active: true,
 				reqLevel: 20,
@@ -552,9 +552,9 @@ var classSkills =
 			},
 			PhysicalAttackBoost:
 			{
-				name_en: "Physical Attack Boost",
+				name_en: "Phys ATK Up",
 				name_jp: "物理攻撃ブースト",
-				details: "Passively increases cut/stab/bash damage.",
+				details: "Increases physical damage.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -566,7 +566,7 @@ var classSkills =
 			{
 				name_en: "Chain All",
 				name_jp: "チェインオール",
-				details: "On the next turn, Chain skills will target all enemies.<br>Also increases the maximum number of activations.<br>Has no speed modifier at all levels.",
+				details: "On the next turn, Chain skills will target all enemies.<br>Also increases the maximum number of activations.",
 				dep: {ChainKiller:5},
 				active: true,
 				reqLevel: 20,
@@ -578,7 +578,7 @@ var classSkills =
 			{
 				name_en: "Chain Plus",
 				name_jp: "チェインプラス",
-				details: "For a set amount of turns, both the chance of Chain skills activating and their damage are increased.<br>Note: Currently, which values correspond to the damage boost, and which coorespond to the chance are guesswork, since they both scale in standard ways.<br>Has no speed modifier at all levels.",
+				details: "For a set amount of turns, both the chance of Chain skills activating and their damage are increased.",
 				dep: {ChainKiller:5},
 				active: true,
 				reqLevel: 20,
@@ -590,7 +590,7 @@ var classSkills =
 			{
 				name_en: "Chain Double",
 				name_jp: "チェインダブル",
-				details: "Gives a chance for Chain skills to activate twice.",
+				details: "Gives a chance for Chain attacks to activate twice.",
 				dep: {ChainKiller:5},
 				active: false,
 				reqLevel: 20,
@@ -602,7 +602,7 @@ var classSkills =
 			{
 				name_en: "Resonance",
 				name_jp: "レゾナンス",
-				details: "Deals melee STR-based stab damage to one target.<br>The damage starts at 100%, and is increased by the bonus damage times the number of times the Fencer attacked last turn.<br>There is a maximum of 9 stacks of bonus damage.<br>Has an 80% speed modifier and +10 base accuracy at all levels.",
+				details: "Melee, STR-based stab attack to one enemy.<br>Damage is equal to a modifier multiplied by the number of times the Fencer attacked last turn, but has a maximum value.<br>Maximum damage is achieved with 9 attacks in the previous turn.<br>Has an 80% speed modifier and +10 base accuracy at all levels.",
 				dep: {RandomStab:5},
 				active: true,
 				reqLevel: 20,
@@ -632,7 +632,7 @@ var classSkills =
 			{
 				name_en: "Line Guard",
 				name_jp: "ラインガード",
-				details: "Reduces physical damage taken to one row for one turn.",
+				details: "Reduces physical damage taken by one row for one turn.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -644,7 +644,7 @@ var classSkills =
 			{
 				name_en: "Material Guard",
 				name_jp: "マテリアルガード",
-				details: "Reduces magical damage taken by all allies this turn.",
+				details: "Reduces elemental damage taken by all allies this turn.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -668,7 +668,7 @@ var classSkills =
 			{
 				name_en: "Bunker",
 				name_jp: "バンカー",
-				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>Has a 125% speed modifier at all levels.",
+				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>In addition to reduction via its DEF value, the bunker only takes a set percent of any damage.<br>Has a 125% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -692,7 +692,7 @@ var classSkills =
 			{
 				name_en: "Gun Mount",
 				name_jp: "ガンマウント",
-				details: "Preserves the effect of last turn's guard skill while making a ranged Bash attack to 1 enemy.",
+				details: "Preserves the effect of last turn's guard skill while making a ranged, STR-based Bash attack to 1 enemy.",
 				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
 				active: true,
 				reqLevel: 0,
@@ -704,7 +704,7 @@ var classSkills =
 			{
 				name_en: "Barrage Wall",
 				name_jp: "バラージウォール",
-				details: "Deals ranged bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged, STR-based Bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -716,7 +716,7 @@ var classSkills =
 			{
 				name_en: "Dragon's Roar",
 				name_jp: "竜の咆哮",
-				details: "Increases one party member's defense and chance of being targeted for a set amount of turns.",
+				details: "Increases one party member's defense and chance to be targeted for a set amount of turns.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -755,7 +755,7 @@ var classSkills =
 			{
 				name_en: "Line Guard",
 				name_jp: "ラインガード",
-				details: "Reduces physical damage taken to one row for one turn.",
+				details: "Reduces physical damage taken by one row for one turn.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -767,7 +767,7 @@ var classSkills =
 			{
 				name_en: "Material Guard",
 				name_jp: "マテリアルガード",
-				details: "Reduces magical damage taken by all allies this turn.",
+				details: "Reduces elemental damage taken by all allies this turn.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -791,7 +791,7 @@ var classSkills =
 			{
 				name_en: "Bunker",
 				name_jp: "バンカー",
-				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>Has a 125% speed modifier at all levels.",
+				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>In addition to reduction via its DEF value, the bunker only takes a set percent of any damage.<br>Has a 125% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -815,7 +815,7 @@ var classSkills =
 			{
 				name_en: "Gun Mount",
 				name_jp: "ガンマウント",
-				details: "Preserves the effect of last turn's guard skill while making a ranged Bash attack to 1 enemy.",
+				details: "Preserves the effect of last turn's guard skill while making a ranged, STR-based Bash attack to 1 enemy.",
 				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
 				active: true,
 				reqLevel: 0,
@@ -827,7 +827,7 @@ var classSkills =
 			{
 				name_en: "Barrage Wall",
 				name_jp: "バラージウォール",
-				details: "Deals ranged bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged, STR-based Bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -839,7 +839,7 @@ var classSkills =
 			{
 				name_en: "Dragon's Roar",
 				name_jp: "竜の咆哮",
-				details: "Increases one party member's defense and chance of being targeted for a set amount of turns.",
+				details: "Increases one party member's defense and chance to be targeted for a set amount of turns.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -861,7 +861,7 @@ var classSkills =
 			},
 			HPBoost:
 			{
-				name_en: "HP Boost",
+				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
 				details: "Increases the Dragoon's maximum HP.",
 				dep: {},
@@ -875,7 +875,7 @@ var classSkills =
 			{
 				name_en: "Recovery Guard",
 				name_jp: "リカバリーガード",
-				details: "Reduces cut/stab/bash damage to one row for one turn.<br>If a party member under the effect of Recovery Guard has binds, there is a chance the binds will be removed.",
+				details: "Reduces physical damage to one row of allies for one turn.<br>If a party member under the effect of Recovery Guard has binds, there is a chance the binds will be removed.<br>If a party member has more binds than Recovery Guard removes, the removed binds will be chosen at random.",
 				dep: {GunMount:3},
 				active: true,
 				reqLevel: 0,
@@ -887,7 +887,7 @@ var classSkills =
 			{
 				name_en: "Counter Guard",
 				name_jp: "カウンターガード",
-				details: "Reduces cut/stab/bash damage to one row for one turn.<br>If Counter Guard is activated by enemy damage, the Dragoon will counter with a ranged stab attack to the source of damage.<br>The chance for countering starts at 100%, and from levels 1-9, will be reduced with each counter.<br>Level 10 will always counter.",
+				details: "Reduces physical damage to one row of allies for one turn.<br>If Counter Guard is activated by enemy damage, the Dragoon will use their equipped weapon to counter with a ranged stab attack to the source of the damage.<br>Any modifiers to the Dragoon's normal attacks are applied for counter-attacks.<br>The chance for countering starts at 100%, and from levels 1-9, will be reduced with each counter.<br>Level 10 will always counter.",
 				dep: {GunMount:3},
 				active: true,
 				reqLevel: 0,
@@ -899,7 +899,7 @@ var classSkills =
 			{
 				name_en: "Divide Guard",
 				name_jp: "ディバイドガード",
-				details: "The Dragoon takes all damage for one party member for one turn.<br>Reduces damage taken by the Dragoon while in effect.",
+				details: "The Dragoon takes all damage in place of a selected party member for one turn.<br>Redirected damage taken by the Dragoon is reduced.",
 				dep: {GunMount:3},
 				active: true,
 				reqLevel: 0,
@@ -911,7 +911,7 @@ var classSkills =
 			{
 				name_en: "Shield Throw",
 				name_jp: "シールドスロー",
-				details: "Deals ranged cut damage to one row of enemies.<br>Has a 60% speed modifier and 75 base accuracy at all levels.",
+				details: "Ranged, STR-based cut attack to a row of enemies.<br>Uses some function of the equipped shield's DEF as a substitute for weapon ATK.<br>Has a 60% speed modifier and 75 base accuracy at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -923,7 +923,7 @@ var classSkills =
 			{
 				name_en: "Preemptive Roar",
 				name_jp: "先制咆哮",
-				details: "Gives a chance for the Dragoon to use Dragon's Roar on themself immediately at the start of battle.",
+				details: "Gives a chance for the Dragoon to use Dragon's Roar on themselves at the start of battle.",
 				dep: {DragonsRoar:3},
 				active: false,
 				reqLevel: 0,
@@ -935,7 +935,7 @@ var classSkills =
 			{
 				name_en: "Preemptive Bunker",
 				name_jp: "先制バンカー",
-				details: "Gives a chance to use Bunker immediately at the start of battle.",
+				details: "Gives a chance for the Dragoon to use Bunker at the start of battle.",
 				dep: {DefensivePosition:3},
 				active: false,
 				reqLevel: 0,
@@ -947,7 +947,7 @@ var classSkills =
 			{
 				name_en: "Full Guard",
 				name_jp: "フルガード",
-				details: "The Dragoon takes all damage for the party for one turn.<br>Reduces damage taken by the Dragoon while in effect.<br>The protection chance starts at 100%.<br>Every time Full Guard activates, the chance of it activating again goes down.",
+				details: "Reduces all damage taken by the party for one turn.<br>After use, Full Guard goes on cooldown for a set number of turns.",
 				dep: {RecoveryGuard:3,CounterGuard:3,DivideGuard:3},
 				active: true,
 				reqLevel: 0,
@@ -959,7 +959,7 @@ var classSkills =
 			{
 				name_en: "Soul Guard",
 				name_jp: "ソウルガード",
-				details: "Reduces cut/stab/bash damage to one row for one turn.<br>Party members under the effect of Soul Guard have a chance to survive fatal damage.",
+				details: "Reduces physical damage taken by one row for one turn.<br>Allies under the effect of Soul Guard have a chance to survive fatal damage, leaving them with 1 HP.",
 				dep: {RecoveryGuard:3,CounterGuard:3,DivideGuard:3},
 				active: true,
 				reqLevel: 0,
@@ -971,7 +971,7 @@ var classSkills =
 			{
 				name_en: "Dragon Force",
 				name_jp: "竜圧",
-				details: "Gives a chance to nullify attacks on party members in the row that the Dragoon is not in.",
+				details: "Gives a chance to nullify physical attacks on party members in the same row as the Dragoon.",
 				dep: {PreemptiveRoar:3},
 				active: false,
 				reqLevel: 20,
@@ -998,7 +998,7 @@ var classSkills =
 			{
 				name_en: "Line Guard",
 				name_jp: "ラインガード",
-				details: "Reduces physical damage taken to one row for one turn.",
+				details: "Reduces physical damage taken by one row for one turn.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1010,7 +1010,7 @@ var classSkills =
 			{
 				name_en: "Material Guard",
 				name_jp: "マテリアルガード",
-				details: "Reduces magical damage taken by all allies this turn.",
+				details: "Reduces elemental damage taken by all allies this turn.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1034,7 +1034,7 @@ var classSkills =
 			{
 				name_en: "Bunker",
 				name_jp: "バンカー",
-				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>Has a 125% speed modifier at all levels.",
+				details:  "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>In addition to reduction via its DEF value, the bunker only takes a set percent of any damage.<br>Has a 125% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1058,7 +1058,7 @@ var classSkills =
 			{
 				name_en: "Gun Mount",
 				name_jp: "ガンマウント",
-				details: "Preserves the effect of last turn's guard skill while making a ranged Bash attack to 1 enemy.",
+				details: "Preserves the effect of last turn's guard skill while making a ranged, STR-based Bash attack to 1 enemy.",
 				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
 				active: true,
 				reqLevel: 0,
@@ -1070,7 +1070,7 @@ var classSkills =
 			{
 				name_en: "Barrage Wall",
 				name_jp: "バラージウォール",
-				details: "Deals ranged bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals ranged, STR-based Bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1082,7 +1082,7 @@ var classSkills =
 			{
 				name_en: "Dragon's Roar",
 				name_jp: "竜の咆哮",
-				details: "Increases one party member's defense and chance of being targeted for a set amount of turns.",
+				details: "Increases one party member's defense and chance to be targeted for a set amount of turns.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1106,7 +1106,7 @@ var classSkills =
 			{
 				name_en: "Gun Revenge",
 				name_jp: "ガンリベンジ",
-				details: "Increases the damage of artillery skills after either activating a Guard skill, or when the Bunker (possibly Pillbox too?) is attacked.",
+				details: "Increases the damage of artillery skills after either activating a Guard skill, or a Bunker or Pillbox is attacked.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1116,7 +1116,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Dragoon's maximum TP.",
 				dep: {},
@@ -1130,7 +1130,7 @@ var classSkills =
 			{
 				name_en: "Rapid Cannon",
 				name_jp: "ラピッドカノン",
-				details: "Deals ranged bash damage to one enemy at the start of the turn.<br>Has +20 base accuracy at all levels.",
+				details: "Ranged, STR-based bash attack to one enemy at the start of the turn.<br>Has +20 base accuracy at all levels.",
 				dep: {BarrageWall:3},
 				active: true,
 				reqLevel: 20,
@@ -1142,7 +1142,7 @@ var classSkills =
 			{
 				name_en: "Curse Cannon",
 				name_jp: "カースカノン",
-				details: "Deals ranged bash damage to one enemy.<br>Attempts to inflict curse on the target.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Ranged, STR-based bash attack to one enemy, may curse.<br>Has a 60% speed modifier at all levels.",
 				dep: {BarrageWall:3},
 				active: true,
 				reqLevel: 20,
@@ -1154,7 +1154,7 @@ var classSkills =
 			{
 				name_en: "Hypno Cannon",
 				name_jp: "ヒュプノカノン",
-				details: "Deals ranged bash damage to one enemy.<br>Attempts to inflict sleep on the target.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Ranged, STR-based Bash attack to one enemy, may sleep.<br>Has a 60% speed modifier at all levels.",
 				dep: {BarrageWall:3},
 				active: true,
 				reqLevel: 20,
@@ -1166,7 +1166,7 @@ var classSkills =
 			{
 				name_en: "Pillbox",
 				name_jp: "トーチカ",
-				details: "Creates a pillbox that can take hits.<br>The pillbox will counter whoever attacks it.<br>The pillbox has 10 HP at all levels.<br>Has no speed modifier at all levels.",
+				details: "Creates a pillbox that draws enemy attacks.<br>When attacked, the pillbox will counter-attack the source of the damage.<br>The pillbox has 10 HP at all levels.<br>In addition to reduction via its DEF value, the pillbox only takes a set percent of any damage.",
 				dep: {DefensivePosition:3},
 				active: true,
 				reqLevel: 20,
@@ -1176,9 +1176,9 @@ var classSkills =
 			},
 			PhysicalAttackBoost: 
 			{
-				name_en: "Physical Attack Boost",
+				name_en: "Phys ATK Up",
 				name_jp: "物理攻撃ブースト",
-				details: "Passively increases cut/stab/bash damage.",
+				details: "Increases physical damage.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1190,7 +1190,7 @@ var classSkills =
 			{
 				name_en: "Bombardment Prep",
 				name_jp: "砲撃準備",
-				details: "Increases the damage, accuracy, and speed of the artillery skill used on the next turn.<br>Has no speed modifier at all levels.",
+				details: "Increases the damage, accuracy, and speed of the artillery skill used on the next turn.",
 				dep: {TPBoost:3},
 				active: true,
 				reqLevel: 20,
@@ -1202,7 +1202,7 @@ var classSkills =
 			{
 				name_en: "Buster Cannon",
 				name_jp: "バスターカノン",
-				details: "One turn after casting, deals ranged bash+fire damage to one enemy.<br>Damage is multiplied by 2x if both the Dragoon and their target are in the front row, 1.5x if the Dragoon is in the back row and the target is in the front and vice versa, and 1x if both the Dragoon and their target are in the back row.<br>Cannot be recasted until it has gone off.<br>Initial prepration has a 90% speed modifier, actual hit has a 1000% speed modifier.<br>Actual hit has no base accuracy modifier.",
+				details: "On the next turn, the Dragoon performs a ranged Bash+Fire attack to one enemy.<br>Damage is multiplied by 2x if both the Dragoon and their target are in the front row, 1.5x if the Dragoon is in the back row and the target is in the front and vice versa, and 1x if both the Dragoon and their target are in the back row.<br>The Dragoon cannot choose another action on the turn the attack is made.<br>If the Dragoon becomes incapacitated or Arm Bound, the attack will not occur.<br>Initial prepration has a 90% speed modifier, actual hit has a 1000% speed modifier.",
 				dep: {RapidCannon:3,CurseCannon:3,HypnoCannon:3},
 				active: true,
 				reqLevel: 20,
@@ -1214,7 +1214,7 @@ var classSkills =
 			{
 				name_en: "Gun Support",
 				name_jp: "ガンサポート",
-				details: "Gives a chance to automatically use Pillbox when the Dragoon reduces damage dealt to them, or negates an attack.",
+				details: "Gives a chance to automatically use Pillbox when the Dragoon reduces damage being taken themselves, or negates an attack.",
 				dep: {Pillbox:3},
 				active: false,
 				reqLevel: 20,
@@ -1302,9 +1302,9 @@ var classSkills =
 			},
 			PhysicalAttackBoost:
 			{
-				name_en: "Physical Attack Boost",
+				name_en: "Phys ATK Up",
 				name_jp: "物理攻撃ブースト",
-				details: "Passively increases cut/stab/bash damage.",
+				details: "Increases physical damage.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1425,9 +1425,9 @@ var classSkills =
 			},
 			PhysicalAttackBoost:
 			{
-				name_en: "Physical Attack Boost",
+				name_en: "Phys ATK Up",
 				name_jp: "物理攻撃ブースト",
-				details: "Passively increases cut/stab/bash damage.",
+				details: "Increases physical damage.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1545,7 +1545,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost:
 			{
-				name_en: "Constraint Attack Boost",
+				name_en: "Curb ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -1668,9 +1668,9 @@ var classSkills =
 			},
 			PhysicalAttackBoost:
 			{
-				name_en: "Physical Attack Boost",
+				name_en: "Phys ATK Up",
 				name_jp: "物理攻撃ブースト",
-				details: "Passively increases cut/stab/bash damage.",
+				details: "Increases physical damage.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1788,7 +1788,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost:
 			{
-				name_en: "Constraint Defense Boost",
+				name_en: "Curb DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -1800,7 +1800,7 @@ var classSkills =
 			},
 			HPBoost:
 			{
-				name_en: "HP Boost",
+				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
 				details: "Increases the Cestus' maximum HP.",
 				dep: {},
@@ -2097,7 +2097,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Reaper's maximum TP.",
 				dep: {},
@@ -2169,7 +2169,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Constraint Attack Boost",
+				name_en: "Curb ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -2340,9 +2340,9 @@ var classSkills =
 			},
 			MagicDefenseBoost: 
 			{
-				name_en: "Magic Defense Boost",
+				name_en: "Elem DEF Up",
 				name_jp: "魔法防御ブースト",
-				details: "Passively increases defense against magic attacks.",
+				details: "Increases defense against elemental attacks.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -2388,7 +2388,7 @@ var classSkills =
 			},
 			HPBoost: 
 			{
-				name_en: "HP Boost",
+				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
 				details: "Increases the Reaper's maximum HP.",
 				dep: {},
@@ -2540,7 +2540,7 @@ var classSkills =
 			{
 				name_en: "Magic Shield",
 				name_jp: "マジックシールド",
-				details: "Reduces magic damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
+				details: "Reduces elemental damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
 				dep: {Amplifier:2},
 				active: true,
 				reqLevel: 0,
@@ -2663,7 +2663,7 @@ var classSkills =
 			{
 				name_en: "Magic Shield",
 				name_jp: "マジックシールド",
-				details: "Reduces magic damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
+				details: "Reduces elemental damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
 				dep: {Amplifier:2},
 				active: true,
 				reqLevel: 0,
@@ -2769,9 +2769,9 @@ var classSkills =
 			},
 			MagicDefenseBoost: 
 			{
-				name_en: "Magic Defense Boost",
+				name_en: "Elem DEF Up",
 				name_jp: "魔法防御ブースト",
-				details: "Passively increases defense against magic attacks.",
+				details: "Increases defense against magic attacks.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -2781,7 +2781,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Warlock's maximum TP.",
 				dep: {},
@@ -2906,7 +2906,7 @@ var classSkills =
 			{
 				name_en: "Magic Shield",
 				name_jp: "マジックシールド",
-				details: "Reduces magic damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
+				details: "Reduces elemental damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
 				dep: {Amplifier:2},
 				active: true,
 				reqLevel: 0,
@@ -3012,7 +3012,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost: 
 			{
-				name_en: "Constraint Defense Boost",
+				name_en: "Curb DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -3024,9 +3024,9 @@ var classSkills =
 			},
 			MagicAttackBoost: 
 			{
-				name_en: "Magic Attack Boost",
+				name_en: "Elem ATK Up",
 				name_jp: "魔法攻撃ブースト",
-				details: "Passively increases magic damage.",
+				details: "Increases elemental damage.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -3345,7 +3345,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Constraint Attack Boost",
+				name_en: "Curb ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: ">Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -3381,7 +3381,7 @@ var classSkills =
 			},
 			HPBoost: 
 			{
-				name_en: "HP Boost",
+				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
 				details: "Increases the Necromancer's maximum HP.",
 				dep: {},
@@ -3600,9 +3600,9 @@ var classSkills =
 			},
 			MagicAttackBoost: 
 			{
-				name_en: "Magic Attack Boost",
+				name_en: "Elem ATK Up",
 				name_jp: "魔法攻撃ブースト",
-				details: "Passively increases magic damage.",
+				details: "Increases elemental damage.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -3624,7 +3624,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Necromancer's maximum TP.",
 				dep: {},
@@ -3957,9 +3957,9 @@ var classSkills =
 			},
 			PhysicalAttackBoost: 
 			{
-				name_en: "Physical Attack Boost",
+				name_en: "Phys ATK Up",
 				name_jp: "物理攻撃ブースト",
-				details: "Passively increases cut/stab/bash damage.",
+				details: "Increases physical damage.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -4176,7 +4176,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Constraint Attack Boost",
+				name_en: "Curb ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -4248,7 +4248,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Hound's maximum TP.",
 				dep: {},
@@ -4545,7 +4545,7 @@ var classSkills =
 			},
 			HPBoost: 
 			{
-				name_en: "HP Boost",
+				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
 				details: "Increases the Masauro's maximum HP.",
 				dep: {},
@@ -4593,9 +4593,9 @@ var classSkills =
 			},
 			PhysicalAttackBoost: 
 			{
-				name_en: "Physical Attack Boost",
+				name_en: "Phys ATK Up",
 				name_jp: "物理攻撃ブースト",
-				details: "Passively increases cut/stab/bash damage.",
+				details: "Increases physical damage.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -4788,7 +4788,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Masauro's maximum TP.",
 				dep: {},
@@ -5181,9 +5181,9 @@ var classSkills =
 			},
 			MagicAttackBoost: 
 			{
-				name_en: "Magic Attack Boost",
+				name_en: "Elem ATK Up",
 				name_jp: "魔法攻撃ブースト",
-				details: "Passively increases fire/ice/volt damage.",
+				details: "Increases elemental damage.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -5217,7 +5217,7 @@ var classSkills =
 			},
 			HPBoost: 
 			{
-				name_en: "HP Boost",
+				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
 				details: "Increases the Shaman's maximum HP.",
 				dep: {},
@@ -5241,7 +5241,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Shaman's maximum TP.",
 				dep: {},
@@ -5460,7 +5460,7 @@ var classSkills =
 			},
 			MagicDefenseBoost: 
 			{
-				name_en: "Magic Defense Boost",
+				name_en: "Elem DEF Up",
 				name_jp: "魔法防御ブースト",
 				details: "Reduces magical damage taken.",
 				dep: {},
@@ -5472,7 +5472,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost: 
 			{
-				name_en: "Constraint Defense Boost",
+				name_en: "Curb DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -5793,7 +5793,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost: 
 			{
-				name_en: "Constraint Defense Boost",
+				name_en: "Curb DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -5841,7 +5841,7 @@ var classSkills =
 			},
 			HPBoost: 
 			{
-				name_en: "HP Boost",
+				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
 				details: "Increases the Herbalist's maximum HP.",
 				dep: {},
@@ -6012,7 +6012,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Constraint Attack Boost",
+				name_en: "Curb ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -6072,7 +6072,7 @@ var classSkills =
 			},
 			TPBoost: 
 			{
-				name_en: "TP Boost",
+				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
 				details: "Increases the Herbalist's maximum TP.",
 				dep: {},

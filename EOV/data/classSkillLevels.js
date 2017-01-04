@@ -379,7 +379,7 @@ var classSkillLevels =
 			},
 			RevengeThrust:
 			{
-				1: "12 TP, 160% damage per dodge, 320% max damage (2 dodgse)",
+				1: "12 TP, 160% damage per dodge, 320% max damage (2 dodges)",
 				2: "12 TP, 160% damage per dodge, 480% max damage (3 dodges)",
 				3: "12 TP, 160% damage per dodge, 640% max damage (4 dodges)",
 				4: "12 TP, 160% damage per dodge, 800% max damage (5 dodges)",
@@ -606,16 +606,16 @@ var classSkillLevels =
 			},
 			ChainPlus:
 			{
-				1: "6 TP, +41% damage, +25% chance, lasts 4 turns",
-				2: "6 TP, +46% damage, +28% chance, lasts 4 turns",
-				3: "6 TP, +51% damage, +31% chance, lasts 4 turns",
-				4: "6 TP, +56% damage, +34% chance, lasts 4 turns",
-				5: "9 TP, +56% damage, +34% chance, lasts 5 turns",
-				6: "9 TP, +62% damage, +38% chance, lasts 5 turns",
-				7: "9 TP, +68% damage, +42% chance, lasts 5 turns",
-				8: "9 TP, +74% damage, +46% chance, lasts 5 turns",
-				9: "9 TP, +80% damage, +50% chance, lasts 5 turns",
-				10:"14 TP, +80% damage, +50% chance, lasts 6 turns"
+				1: "6 TP, +41% chance, +25% damage, lasts 4 turns",
+				2: "6 TP, +46% chance, +28% damage, lasts 4 turns",
+				3: "6 TP, +51% chance, +31% damage, lasts 4 turns",
+				4: "6 TP, +56% chance, +34% damage, lasts 4 turns",
+				5: "9 TP, +56% chance, +34% damage, lasts 5 turns",
+				6: "9 TP, +62% chance, +38% damage, lasts 5 turns",
+				7: "9 TP, +68% chance, +42% damage, lasts 5 turns",
+				8: "9 TP, +74% chance, +46% damage, lasts 5 turns",
+				9: "9 TP, +80% chance, +50% damage, lasts 5 turns",
+				10:"14 TP, +80% chance, +50% damage, lasts 6 turns"
 			},
 			ChainDouble:
 			{
@@ -703,16 +703,16 @@ var classSkillLevels =
 			},
 			Bunker: 
 			{
-				1: "6 TP, 35 DEF, +2000 aggro",
-				2: "6 TP, 55 DEF, +2000 aggro",
-				3: "6 TP, 75 DEF, +2000 aggro",
-				4: "6 TP, 95 DEF, +2000 aggro",
-				5: "10 TP, 95 DEF, +2750 aggro",
-				6: "10 TP, 135 DEF, +2750 aggro",
-				7: "10 TP, 175 DEF, +2750 aggro",
-				8: "10 TP, 215 DEF, +2750 aggro",
-				9: "10 TP, 255 DEF, +2750 aggro",
-				10:" 16 TP, 255 DEF, +3500 aggro"
+				1: "6 TP, 35 DEF, 6% damage taken, +2000 aggro",
+				2: "6 TP, 55 DEF, 6% damage taken, +2000 aggro",
+				3: "6 TP, 75 DEF, 6% damage taken, +2000 aggro",
+				4: "6 TP, 95 DEF, 6% damage taken, +2000 aggro",
+				5: "10 TP, 95 DEF, 4% damage taken, +2750 aggro",
+				6: "10 TP, 135 DEF, 4% damage taken, +2750 aggro",
+				7: "10 TP, 175 DEF, 4% damage taken, +2750 aggro",
+				8: "10 TP, 215 DEF, 4% damage taken, +2750 aggro",
+				9: "10 TP, 255 DEF, 4% damage taken, +2750 aggro",
+				10:" 16 TP, 255 DEF, 1% damage taken, +3500 aggro"
 			},
 			ArtilleryMastery: 
 			{
@@ -836,16 +836,16 @@ var classSkillLevels =
 			},
 			Bunker: 
 			{
-				1: "6 TP, 35 DEF, +2000 aggro",
-				2: "6 TP, 55 DEF, +2000 aggro",
-				3: "6 TP, 75 DEF, +2000 aggro",
-				4: "6 TP, 95 DEF, +2000 aggro",
-				5: "10 TP, 95 DEF, +2750 aggro",
-				6: "10 TP, 135 DEF, +2750 aggro",
-				7: "10 TP, 175 DEF, +2750 aggro",
-				8: "10 TP, 215 DEF, +2750 aggro",
-				9: "10 TP, 255 DEF, +2750 aggro",
-				10:" 16 TP, 255 DEF, +3500 aggro"
+				1: "6 TP, 35 DEF, 6% damage taken, +2000 aggro",
+				2: "6 TP, 55 DEF, 6% damage taken, +2000 aggro",
+				3: "6 TP, 75 DEF, 6% damage taken, +2000 aggro",
+				4: "6 TP, 95 DEF, 6% damage taken, +2000 aggro",
+				5: "10 TP, 95 DEF, 4% damage taken, +2750 aggro",
+				6: "10 TP, 135 DEF, 4% damage taken, +2750 aggro",
+				7: "10 TP, 175 DEF, 4% damage taken, +2750 aggro",
+				8: "10 TP, 215 DEF, 4% damage taken, +2750 aggro",
+				9: "10 TP, 255 DEF, 4% damage taken, +2750 aggro",
+				10:" 16 TP, 255 DEF, 1% damage taken, +3500 aggro"
 			},
 			ArtilleryMastery: 
 			{
@@ -996,16 +996,16 @@ var classSkillLevels =
 			},
 			FullGuard:
 			{
-				1: "25 TP, 25% reduction",
-				2: "25 TP, 26% reduction",
-				3: "25 TP, 27% reduction",
-				4: "25 TP, 28% reduction",
-				5: "35 TP, 36% reduction",
-				6: "35 TP, 37% reduction",
-				7: "35 TP, 38% reduction",
-				8: "35 TP, 39% reduction",
-				9: "35 TP, 40% reduction",
-				10:" 50 TP, 50% reduction",
+				1: "25 TP, 25% reduction, 7 turn cooldown",
+				2: "25 TP, 26% reduction, 7 turn cooldown",
+				3: "25 TP, 27% reduction, 7 turn cooldown",
+				4: "25 TP, 28% reduction, 7 turn cooldown",
+				5: "35 TP, 36% reduction, 6 turn cooldown",
+				6: "35 TP, 37% reduction, 6 turn cooldown",
+				7: "35 TP, 38% reduction, 6 turn cooldown",
+				8: "35 TP, 39% reduction, 6 turn cooldown",
+				9: "35 TP, 40% reduction, 6 turn cooldown",
+				10:" 50 TP, 50% reduction, 5 turn cooldown",
 			},
 			SoulGuard:
 			{
@@ -1091,16 +1091,16 @@ var classSkillLevels =
 			},
 			Bunker: 
 			{
-				1: "6 TP, 35 DEF, +2000 aggro",
-				2: "6 TP, 55 DEF, +2000 aggro",
-				3: "6 TP, 75 DEF, +2000 aggro",
-				4: "6 TP, 95 DEF, +2000 aggro",
-				5: "10 TP, 95 DEF, +2750 aggro",
-				6: "10 TP, 135 DEF, +2750 aggro",
-				7: "10 TP, 175 DEF, +2750 aggro",
-				8: "10 TP, 215 DEF, +2750 aggro",
-				9: "10 TP, 255 DEF, +2750 aggro",
-				10:" 16 TP, 255 DEF, +3500 aggro"
+				1: "6 TP, 35 DEF, 6% damage taken, +2000 aggro",
+				2: "6 TP, 55 DEF, 6% damage taken, +2000 aggro",
+				3: "6 TP, 75 DEF, 6% damage taken, +2000 aggro",
+				4: "6 TP, 95 DEF, 6% damage taken, +2000 aggro",
+				5: "10 TP, 95 DEF, 4% damage taken, +2750 aggro",
+				6: "10 TP, 135 DEF, 4% damage taken, +2750 aggro",
+				7: "10 TP, 175 DEF, 4% damage taken, +2750 aggro",
+				8: "10 TP, 215 DEF, 4% damage taken, +2750 aggro",
+				9: "10 TP, 255 DEF, 4% damage taken, +2750 aggro",
+				10:" 16 TP, 255 DEF, 1% damage taken, +3500 aggro"
 			},
 			ArtilleryMastery: 
 			{
@@ -1234,16 +1234,16 @@ var classSkillLevels =
 			},
 			Pillbox:
 			{
-				1: "6 TP, 205 ATK, 75 DEF, +1500 aggro",
-				2: "6 TP, 230 ATK, 90 DEF, +1500 aggro",
-				3: "6 TP, 255 ATK, 105 DEF, +1500 aggro",
-				4: "6 TP, 280 ATK, 120 DEF, +1500 aggro",
-				5: "10 TP, 280 ATK, 120 DEF, +2000 aggro",
-				6: "10 TP, 335 ATK, 140 DEF, +2000 aggro",
-				7: "10 TP, 390 ATK, 160 DEF, +2000 aggro",
-				8: "10 TP, 445 ATK, 180 DEF, +2000 aggro",
-				9: "10 TP, 500 ATK, 200 DEF, +2000 aggro",
-				10:" 16 TP, 500 ATK, 200 DEF, +2500 aggro",
+				1: "6 TP, 205 ATK, 75 DEF, 6% damage taken, +1500 aggro",
+				2: "6 TP, 230 ATK, 90 DEF, 6% damage taken, +1500 aggro",
+				3: "6 TP, 255 ATK, 105 DEF, 6% damage taken, +1500 aggro",
+				4: "6 TP, 280 ATK, 120 DEF, 6% damage taken, +1500 aggro",
+				5: "10 TP, 280 ATK, 120 DEF, 4% damage taken, +2000 aggro",
+				6: "10 TP, 335 ATK, 140 DEF, 4% damage taken, +2000 aggro",
+				7: "10 TP, 390 ATK, 160 DEF, 4% damage taken, +2000 aggro",
+				8: "10 TP, 445 ATK, 180 DEF, 4% damage taken, +2000 aggro",
+				9: "10 TP, 500 ATK, 200 DEF, 4% damage taken, +2000 aggro",
+				10:" 16 TP, 500 ATK, 200 DEF, 1% damage taken, +2500 aggro",
 			},
 			PhysicalAttackBoost:
 			{
@@ -1260,16 +1260,16 @@ var classSkillLevels =
 			},
 			BombardmentPrep:
 			{
-				1: "10 TP, 2x damage, 2x acc, 1.5x speed",
-				2: "10 TP, 2x damage, 2.4x acc, 1.6x speed",
-				3: "10 TP, 2x damage, 2.8x acc, 1.7x speed",
-				4: "10 TP, 2x damage, 3.2x acc, 1.8x speed",
-				5: "15 TP, 2.25x damage, 3.2x acc, 1.8x speed",
-				6: "15 TP, 2.25x damage, 3.8x acc, 2.1x speed",
-				7: "15 TP, 2.25x damage, 4.4x acc, 2.4x speed",
-				8: "15 TP, 2.25x damage, 5x acc, 2.7x speed",
-				9: "15 TP, 2.25x damage, 5.6x acc, 3x speed",
-				10:" 20 TP, 2.5x damage, 5.6x acc, 3x speed",
+				1: "10 TP, 2x damage, +200 acc, 1.5x speed",
+				2: "10 TP, 2x damage, +240 acc, 1.6x speed",
+				3: "10 TP, 2x damage, +280 acc, 1.7x speed",
+				4: "10 TP, 2x damage, +320 acc, 1.8x speed",
+				5: "15 TP, 2.25x damage, +320 acc, 1.8x speed",
+				6: "15 TP, 2.25x damage, +380 acc, 2.1x speed",
+				7: "15 TP, 2.25x damage, +440 acc, 2.4x speed",
+				8: "15 TP, 2.25x damage, +500 acc, 2.7x speed",
+				9: "15 TP, 2.25x damage, +560 acc, 3x speed",
+				10:" 20 TP, 2.5x damage, +560 acc, 3x speed",
 			},
 			BusterCannon:
 			{
