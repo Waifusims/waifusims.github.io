@@ -90,7 +90,7 @@ var raceSkills =
 		{
 			name_en: "Woodland Search Skills",
 			name_jp: "樹海探索術",
-			details: "Enables the party to initiate certain Adventure Episodes and gain items from those.<br>Also increases the user's AGI by 3 from levels 1 to 10.",
+			details: "Enables the party to initiate certain Adventure Episodes and gain items from those.<br>Also increases the user's AGI.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -114,7 +114,7 @@ var raceSkills =
 		{
 			name_en: "Organizational Skills",
 			name_jp: "整頓術",
-			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT by 3 from levels 1 to 10.",
+			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -210,7 +210,7 @@ var raceSkills =
 		{
 			name_en: "Body Improvement",
 			name_jp: "肉体強化",
-			details: "Increases the user's STR and VIT by 3 from levels 1 to 10.",
+			details: "Increases the user's STR and VIT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -222,7 +222,7 @@ var raceSkills =
 		{
 			name_en: "Athletic Training",
 			name_jp: "走力鍛錬",
-			details: "Increases the user's AGI and LUC by 3 from levels 1 to 10.",
+			details: "Increases the user's AGI and LUC.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -234,7 +234,7 @@ var raceSkills =
 		{
 			name_en: "Self Study",
 			name_jp: "自学自習",
-			details: "Increases the user's INT and WIS by 3 from levels 1 to 10.",
+			details: "Increases the user's INT and WIS.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -270,7 +270,7 @@ var raceSkills =
 		{
 			name_en: "Anatomy",
 			name_jp: "解剖学",
-			details: "Drop rate is increased by +10% for every party member that has this skill.<br>Also increases the user's INT by 3 from levels 1 to 10.",
+			details: "Drop rate is increased by +10% for every party member that has this skill.<br>Also increases the user's INT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -381,7 +381,7 @@ var raceSkills =
 		{
 			name_en: "Sense Mana",
 			name_jp: "魔力感知",
-			details: "Enables the party to initiate certain Adventure Episodes.<br>Also increases the user's INT by 3 from levels 1 to 10.",
+			details: "Enables the party to initiate certain Adventure Episodes.<br>Also increases the user's INT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -405,7 +405,7 @@ var raceSkills =
 		{
 			name_en: "Anatomy",
 			name_jp: "解剖学",
-			details: "Drop rate is increased by +10% for every party member that has this skill.<br>Also increases the user's INT by 3 from levels 1 to 10.",
+			details: "Drop rate is increased by +10% for every party member that has this skill.<br>Also increases the user's INT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -453,7 +453,7 @@ var raceSkills =
 		{
 			name_en: "Bestow Mana",
 			name_jp: "魔力付与",
-			details: "Increases the damage of attack items by 30%.<br>Also increases the user's INT by 3 from levels 1 to 10.",
+			details: "Increases the damage of attack items by 30%.<br>Also increases the user's INT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -501,7 +501,7 @@ var raceSkills =
 		{
 			name_en: "Body Improvement",
 			name_jp: "肉体強化",
-			details: "Increases the user's STR and VIT by 3 from levels 1 to 10.",
+			details: "Increases the user's STR and VIT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -513,7 +513,7 @@ var raceSkills =
 		{
 			name_en: "Athletic Training",
 			name_jp: "走力鍛錬",
-			details: "Increases the user's AGI and LUC by 3 from levels 1 to 10.",
+			details: "Increases the user's AGI and LUC.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -525,7 +525,7 @@ var raceSkills =
 		{
 			name_en: "Self Study",
 			name_jp: "自学自習",
-			details: "Increases the user's INT and WIS by 3 from levels 1 to 10.",
+			details: "Increases the user's INT and WIS.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -660,7 +660,7 @@ var raceSkills =
 		{
 			name_en: "Hunting Skills",
 			name_jp: "狩猟術",
-			details: "Enables the party to initiate certain Adventure Episodes and acquire edible animals in the woodlands.<br>Also increases the user's STR by 3 from levels 1 to 10.",
+			details: "Enables the party to initiate certain Adventure Episodes and acquire edible animals in the woodlands.<br>Also increases the user's STR.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -708,7 +708,7 @@ var raceSkills =
 		{
 			name_en: "Vigilance",
 			name_jp: "警戒",
-			details: "Preemptive attack rate increases by +30% for every character with this skill.<br>Also increases the user's WIS by 3 from levels 1 to 10.",
+			details: "Preemptive attack rate increases by +30% for every character with this skill.<br>Also increases the user's WIS.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -720,7 +720,7 @@ var raceSkills =
 		{
 			name_en: "Feats of Strength",
 			name_jp: "力技",
-			details: "Can move or carry things in the woodlands.<br>Also increases the user's STR by 3 from levels 1 to 10.",
+			details: "Can move or carry things in the woodlands.<br>Also increases the user's STR.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -744,7 +744,7 @@ var raceSkills =
 		{
 			name_en: "Woodland Search Skills",
 			name_jp: "樹海探索術",
-			details: "Enables the party to initiate certain Adventure Episodes and gain items from those.<br>Also increases the user's AGI by 3 from levels 1 to 10.",
+			details: "Enables the party to initiate certain Adventure Episodes and gain items from those.<br>Also increases the user's AGI.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -792,7 +792,7 @@ var raceSkills =
 		{
 			name_en: "Body Improvement",
 			name_jp: "肉体強化",
-			details: "Increases the user's STR and VIT by 3 from levels 1 to 10.",
+			details: "Increases the user's STR and VIT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -804,7 +804,7 @@ var raceSkills =
 		{
 			name_en: "Athletic Training",
 			name_jp: "走力鍛錬",
-			details: "Increases the user's AGI and LUC by 3 from levels 1 to 10.",
+			details: "Increases the user's AGI and LUC.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -816,7 +816,7 @@ var raceSkills =
 		{
 			name_en: "Self Study",
 			name_jp: "自学自習",
-			details: "Increases the user's INT and WIS by 3 from levels 1 to 10.",
+			details: "Increases the user's INT and WIS.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -864,7 +864,7 @@ var raceSkills =
 		{
 			name_en: "Organizational Skills",
 			name_jp: "整頓術",
-			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT by 3 from levels 1 to 10.",
+			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -1035,7 +1035,7 @@ var raceSkills =
 		{
 			name_en: "Organizational Skills",
 			name_jp: "整頓術",
-			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT by 3 from levels 1 to 10.",
+			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -1083,7 +1083,7 @@ var raceSkills =
 		{
 			name_en: "Body Improvement",
 			name_jp: "肉体強化",
-			details: "Increases the user's STR and VIT by 3 from levels 1 to 10.",
+			details: "Increases the user's STR and VIT.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -1095,7 +1095,7 @@ var raceSkills =
 		{
 			name_en: "Athletic Training",
 			name_jp: "走力鍛錬",
-			details: "Increases the user's AGI and LUC by 3 from levels 1 to 10.",
+			details: "Increases the user's AGI and LUC.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -1107,7 +1107,7 @@ var raceSkills =
 		{
 			name_en: "Self Study",
 			name_jp: "自学自習",
-			details: "Increases the user's INT and WIS by 3 from levels 1 to 10.",
+			details: "Increases the user's INT and WIS.",
 			dep: {},
 			active: false,
 			level: 0,
@@ -1143,7 +1143,7 @@ var raceSkills =
 		{
 			name_en: "Haggling",
 			name_jp: "値切り",
-			details: "Lowers the shop's prices by 5%.<br>This effect does not stack with any other characters that know this skill.<br>Also increases the user's WIS by 3 from levels 1 to 10.",
+			details: "Lowers the shop's prices by 5%.<br>This effect does not stack with any other characters that know this skill.<br>Also increases the user's WIS.",
 			dep: {},
 			active: false,
 			level: 0,

@@ -1,0 +1,256 @@
+body
+{
+	background-color: #185F51;
+	font-family: Helvetica, Arial;
+	color: #E7FDBD;
+	margin: 0px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-o-user-select: none;
+}
+
+#header
+{
+	background-color: #002B2A;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+}
+
+#headermain
+{
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+#headermain div
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 0px 15px;
+}
+
+#treeSelector
+{
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	background-color: #033B3A;
+	height: 40px;
+}
+
+#treeSelector div
+{
+	text-align: center;
+	display: flex;
+	background-color: #033B3A;
+	flex-grow: 1;
+	font-size: 24px;
+	align-items: center;
+	justify-content: center;	
+}
+
+#treeSelector div .selected
+{
+	background-color: #185F51;
+}
+
+#treeSelector div:hover
+{
+	background-color: #E7FDBD;
+	color: #033B3A;
+}
+
+#treeSelector .selected
+{
+	background-color: #185F51;
+}
+
+#skillTreeContainer
+{
+	background-color: #185F51;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	height: 720px;
+}
+
+#skillTree
+{
+	background-color: none;		
+}
+
+#info
+{
+	color: #E7FDBD;
+	font-size: 12px;
+	margin-right: auto;
+}
+
+.unionSkillBox
+{
+	color: #016C84;
+	border: 2px solid;
+	border-radius: 30px;
+	border-color: #016C84;
+	position: absolute;
+	text-align: center;
+	background-color: #ACD8E5;	
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+}
+
+.unionSkillBox:hover
+{
+	color: #E7FDBD;
+	background-color: #E5885B;	
+	border-color: #E7FDBD;
+}
+
+.unionSkillBox:active
+{
+	color: #E5885B;
+	background-color: #E7FDBD;
+	border-color: #E5885B;
+}
+
+.skillBox
+{
+	color: #ACFFE5;
+	border: 2px solid;
+	border-radius: 30px;
+	border-color: #ACFFE5;
+	position: absolute;
+	text-align: center;
+	background-color: #019484;	
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;		
+}
+
+.skillBox:hover
+{
+	color: #E7FDBD;
+	background-color: #E5885B;	
+	border-color: #E7FDBD;
+}
+
+.skillBox:active
+{
+	color: #E5885B;
+	background-color: #E7FDBD;
+	border-color: #E5885B;
+}
+
+.inactive
+{
+	border: 2px solid;
+	border-radius: 30px;
+	position: absolute;
+	text-align: center;
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;	
+	color: #D8DFD8;
+	background-color: #586F68;
+	border-color: #D8DFD8;
+}	
+
+.inactive:hover
+{
+	color: #586F68;
+	background-color: #D8DFD8;
+	border-color: #586F68;
+}
+
+.levelBoxContainer
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.levelBox
+{
+	display: flex;
+	width: 8px;
+	height: 8px;
+	margin: 2px;
+	background-color: #002B2A;
+}
+
+.activeLevelBox
+{
+	display: flex;
+	width: 8px;
+	height: 8px;
+	margin: 2px;
+	background-color: #E7FDBD;
+}
+
+.line
+{
+	position: absolute;
+	background-color: #ACFFE5;
+}
+
+.levelReq
+{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffff99;
+	text-shadow: -1px -1px 0 #105068, 1px -1px 0 #105068, -1px 1px 0 #105068, 1px 1px 0 #105068;
+	text-align: center;
+	width: 30px;
+	height: 20px;
+	margin: 2px;
+}
+
+.tooltip
+{
+	min-width: 450px;
+	max-width: 800px;
+	text-align: center;
+	font-size: 12px;
+	background-color: #E7FDBD;
+	color: black;
+	opacity: .9;
+    position: absolute;
+    height: auto;
+    padding: 4px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.ad
+{	
+	margin-left: auto;
+}
+
+p
+{
+	display: inline;
+}
