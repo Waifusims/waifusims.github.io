@@ -728,7 +728,7 @@ var classSkills =
 			{
 				name_en: "Defensive Position",
 				name_jp: "防衛陣地",
-				details: "Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
+				details: "Can only be cast when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
 				active: true,
 				reqLevel: 0,
@@ -851,7 +851,7 @@ var classSkills =
 			{
 				name_en: "Defensive Position",
 				name_jp: "防衛陣地",
-				details: "Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
+				details: "Can only be cast when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
 				active: true,
 				reqLevel: 0,
@@ -1094,7 +1094,7 @@ var classSkills =
 			{
 				name_en: "Defensive Position",
 				name_jp: "防衛陣地",
-				details: "Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
+				details: "Can only be cast when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
 				active: true,
 				reqLevel: 0,
