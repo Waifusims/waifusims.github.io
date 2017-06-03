@@ -1856,7 +1856,7 @@ var classSkills =
 			{
 				name_en: "Miasma Weapon",
 				name_jp: "瘴気の兵装",
-				details: "Sacrifices a percentage of the Reaper's maximum (or current?) HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				details: "Sacrifices a percentage of the Reaper's current HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1979,7 +1979,7 @@ var classSkills =
 			{
 				name_en: "Miasma Weapon",
 				name_jp: "瘴気の兵装",
-				details: "Sacrifices a percentage of the Reaper's maximum (or current?) HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				details: "Sacrifices a percentage of the Reaper's current HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -2111,7 +2111,7 @@ var classSkills =
 			{
 				name_en: "Fresh Blood Slash",
 				name_jp: "鮮血の斬撃",
-				details: "This skill can only be used when Miasma Weapon is active.<br>The Reaper sacrifices a portion of their maximum maximum (or current?) HP to deal 2 to 4 STR based melee cut attacks to random enemies.<br>Has a 50% speed modifier and -10 accuracy modifier at all levels.",
+				details: "This skill can only be used when Miasma Weapon is active.<br>The Reaper sacrifices a portion of their current HP to deal 2 to 4 STR based melee cut attacks to random enemies.<br>Has a 50% speed modifier and -10 accuracy modifier at all levels.",
 				dep: {DeathsJudgment:3},
 				active: true,
 				reqLevel: 20,
@@ -2222,7 +2222,7 @@ var classSkills =
 			{
 				name_en: "Miasma Weapon",
 				name_jp: "瘴気の兵装",
-				details: "Sacrifices a percentage of the Reaper's maximum (or current?) HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				details: "Sacrifices a percentage of the Reaper's current HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
