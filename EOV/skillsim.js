@@ -56,7 +56,7 @@ function init()
 	treeDiv.style.height = CLASSTREE_HEIGHT + "px";
 
 	document.body.style.minWidth = CLASSTREE_WIDTH + "px";
-	
+	//document.getElementById("header").style.minWidth = CLASSTREE_WIDTH + "px";
 
 	tooltip = document.getElementById("tooltip");
 
