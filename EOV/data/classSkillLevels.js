@@ -1980,11 +1980,11 @@ var classSkillLevels =
 			},
 			MiasmaWeapon: 
 			{
-				1: "2 TP, -40% max HP, 1.2x speed",
-				2: "2 TP, -35% max HP, 1.4x speed",
-				3: "2 TP, -30% max HP, 1.6x speed",
-				4: "2 TP, -25% max HP, 1.8x speed",
-				5: "3 TP, -5% max HP, 2.5x speed",
+				1: "2 TP, -40% current HP, 1.2x speed",
+				2: "2 TP, -35% current HP, 1.4x speed",
+				3: "2 TP, -30% current HP, 1.6x speed",
+				4: "2 TP, -25% current HP, 1.8x speed",
+				5: "3 TP, -5% current HP, 2.5x speed",
 			},
 			FrailMiasma: 
 			{
@@ -2108,11 +2108,11 @@ var classSkillLevels =
 			},
 			MiasmaWeapon: 
 			{
-				1: "2 TP, -40% max HP, 1.2x speed",
-				2: "2 TP, -35% max HP, 1.4x speed",
-				3: "2 TP, -30% max HP, 1.6x speed",
-				4: "2 TP, -25% max HP, 1.8x speed",
-				5: "3 TP, -5% max HP, 2.5x speed",
+				1: "2 TP, -40% current HP, 1.2x speed",
+				2: "2 TP, -35% current HP, 1.4x speed",
+				3: "2 TP, -30% current HP, 1.6x speed",
+				4: "2 TP, -25% current HP, 1.8x speed",
+				5: "3 TP, -5% current HP, 2.5x speed",
 			},
 			FrailMiasma: 
 			{
@@ -2366,11 +2366,11 @@ var classSkillLevels =
 			},
 			MiasmaWeapon: 
 			{
-				1: "2 TP, -40% max HP, 1.2x speed",
-				2: "2 TP, -35% max HP, 1.4x speed",
-				3: "2 TP, -30% max HP, 1.6x speed",
-				4: "2 TP, -25% max HP, 1.8x speed",
-				5: "3 TP, -5% max HP, 2.5x speed",
+				1: "2 TP, -40% current HP, 1.2x speed",
+				2: "2 TP, -35% current HP, 1.4x speed",
+				3: "2 TP, -30% current HP, 1.6x speed",
+				4: "2 TP, -25% current HP, 1.8x speed",
+				5: "3 TP, -5% current HP, 2.5x speed",
 			},
 			FrailMiasma: 
 			{
