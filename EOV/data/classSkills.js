@@ -18,7 +18,7 @@ var classSkills =
 			},
 			ChainFire:
 			{
-				name_en: "Chain Fire",
+				name_en: "Chain Flame",
 				name_jp: "チェインファイア",
 				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -30,7 +30,7 @@ var classSkills =
 			},
 			ChainIce:
 			{
-				name_en: "Chain Ice",
+				name_en: "Chain Freeze",
 				name_jp: "チェインフリーズ",
 				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -42,7 +42,7 @@ var classSkills =
 			},
 			ChainVolt:
 			{
-				name_en: "Chain Volt",
+				name_en: "Chain Shock",
 				name_jp: "チェインショック",
 				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -102,7 +102,7 @@ var classSkills =
 			},
 			VisionThrust:
 			{
-				name_en: "Vision Thrust",
+				name_en: "Optic Thrust",
 				name_jp: "ビジョンスラスト",
 				details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
@@ -141,7 +141,7 @@ var classSkills =
 			},
 			ChainFire:
 			{
-				name_en: "Chain Fire",
+				name_en: "Chain Flame",
 				name_jp: "チェインファイア",
 				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -153,7 +153,7 @@ var classSkills =
 			},
 			ChainIce:
 			{
-				name_en: "Chain Ice",
+				name_en: "Chain Freeze",
 				name_jp: "チェインフリーズ",
 				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -165,7 +165,7 @@ var classSkills =
 			},
 			ChainVolt:
 			{
-				name_en: "Chain Volt",
+				name_en: "Chain Shock",
 				name_jp: "チェインショック",
 				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -225,7 +225,7 @@ var classSkills =
 			},
 			VisionThrust:
 			{
-				name_en: "Vision Thrust",
+				name_en: "Optic Thrust",
 				name_jp: "ビジョンスラスト",
 				details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
@@ -261,7 +261,7 @@ var classSkills =
 			},
 			BewitchingSwordDance:
 			{
-				name_en: "Bewitching Sword Dance",
+				name_en: "Phantom Swords",
 				name_jp: "幻惑の剣舞",
 				details: "Reduces the accuracy of one row of enemies for a set amount of turns.<br>Has a 90% speed modifier at all levels.",
 				dep: {},
@@ -273,7 +273,7 @@ var classSkills =
 			},
 			PreemptiveCurtain:
 			{
-				name_en: "Preemptive Curtain",
+				name_en: "Auto-Curtain",
 				name_jp: "先制カーテン",
 				details: "Gives a chance to automatically use Wind Curtain on the row the Fencer is in at the start of battle.",
 				dep: {WindCurtain:3},
@@ -285,7 +285,7 @@ var classSkills =
 			},
 			SharpThrust:
 			{
-				name_en: "Sharp Thrust",
+				name_en: "Deft Thrust",
 				name_jp: "シャープスラスト",
 				details: "Melee, STR-based stab attack to one enemy.<br>For the rest of the turn, the Fencer's evasion and chance to be targeted are increased.<br>Has a 500% speed modifier and +20 base accuracy at all levels.",
 				dep: {VisionThrust:3},
@@ -309,7 +309,7 @@ var classSkills =
 			},
 			Unburdened:
 			{
-				name_en: "Unburdened",
+				name_en: "Lightweight",
 				name_jp: "持たざる者",
 				details: "Increases the Fencer's evasion based on the number of empty equipment slots.<br>The format of evasion bonuses is: 1 empty slot, 2 empty slots, 3 empty slots, no equipment.",
 				dep: {},
@@ -321,7 +321,7 @@ var classSkills =
 			},
 			PileOn:
 			{
-				name_en: "Pile On",
+				name_en: "Lure",
 				name_jp: "誘い込み",
 				details: "On this turn, when the fencer dodges an attack, all other party members in their row will counter-attack the source of the attack.<br>The counterattacks are based on the attacking party members' individual stats/equipment/abilities.<br>Has a 300% speed modifier at all levels.<br>Counter-attacks have +5 base accuracy at all levels.",
 				dep: {BewitchingSwordDance:3},
@@ -333,7 +333,7 @@ var classSkills =
 			},
 			AvoidAccel:
 			{
-				name_en: "Avoid Accel",
+				name_en: "Dodge Boon",
 				name_jp: "アボイドアクセラ",
 				details: "Each time the Fencer dodges an attack, their Union gauge increases.",
 				dep: {BewitchingSwordDance:3},
@@ -384,7 +384,7 @@ var classSkills =
 			},
 			ChainFire:
 			{
-				name_en: "Chain Fire",
+				name_en: "Chain Flame",
 				name_jp: "チェインファイア",
 				details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -396,7 +396,7 @@ var classSkills =
 			},
 			ChainIce:
 			{
-				name_en: "Chain Ice",
+				name_en: "Chain Freeze",
 				name_jp: "チェインフリーズ",
 				details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -408,7 +408,7 @@ var classSkills =
 			},
 			ChainVolt:
 			{
-				name_en: "Chain Volt",
+				name_en: "Chain Shock",
 				name_jp: "チェインショック",
 				details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 				dep: {},
@@ -468,7 +468,7 @@ var classSkills =
 			},
 			VisionThrust:
 			{
-				name_en: "Vision Thrust",
+				name_en: "Optic Thrust",
 				name_jp: "ビジョンスラスト",
 				details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 				dep: {},
@@ -492,7 +492,7 @@ var classSkills =
 			},
 			SpeedofSoundBlade:
 			{
-				name_en: "Speed of Sound Blade",
+				name_en: "Sonic Blade",
 				name_jp: "音速剣",
 				details: "Passively gives normal attacks a chance to add an extra cut attack.<br>The extra attack has the same damage as a normal attack.",
 				dep: {RapierMastery:3},
@@ -516,7 +516,7 @@ var classSkills =
 			},
 			SylphScreen:
 			{
-				name_en: "Sylph Screen",
+				name_en: "Sylphscreen",
 				name_jp: "シルフスクリーン",
 				details: "Each time the Fencer attacks or uses an attack skill, their evasion and defense increase for that turn.",
 				dep: {},
@@ -528,7 +528,7 @@ var classSkills =
 			},
 			RandomStab:
 			{
-				name_en: "Random Stab",
+				name_en: "Multi-Stab",
 				name_jp: "乱れ突き",
 				details: "Melee, STR-based Stab attack to random enemies.<br>Can hit the same target multiple times.<br>Has -5 base accuracy at all levels.",
 				dep: {VisionThrust:3},
@@ -540,7 +540,7 @@ var classSkills =
 			},
 			SpeedBoost:
 			{
-				name_en: "Speed Boost",
+				name_en: "Speed Up",
 				name_jp: "素早さブースト",
 				details: "Increases speed, accuracy, and evasion.",
 				dep: {},
@@ -642,7 +642,7 @@ var classSkills =
 			},
 			MaterialGuard:
 			{
-				name_en: "Material Guard",
+				name_en: "Mana Guard",
 				name_jp: "マテリアルガード",
 				details: "Reduces elemental damage taken by all allies this turn.",
 				dep: {},
@@ -666,7 +666,7 @@ var classSkills =
 			},
 			Bunker:
 			{
-				name_en: "Bunker",
+				name_en: "Decoy Bunker",
 				name_jp: "バンカー",
 				details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>In addition to reduction via its DEF value, the bunker only takes a set percent of any damage.<br>Has a 125% speed modifier at all levels.",
 				dep: {},
@@ -678,9 +678,9 @@ var classSkills =
 			},
 			ArtilleryMastery:
 			{
-				name_en: "Artillery Mastery",
+				name_en: "Cannon Mastery",
 				name_jp: "重砲マスタリー",
-				details: "Increases physical attack when equipped with artillery.",
+				details: "Increases physical attack when equipped with Cannon.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -690,7 +690,7 @@ var classSkills =
 			},
 			GunMount:
 			{
-				name_en: "Gun Mount",
+				name_en: "Gunmount",
 				name_jp: "ガンマウント",
 				details: "Preserves the effect of last turn's guard skill while making a ranged, STR-based Bash attack to 1 enemy.",
 				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
@@ -714,7 +714,7 @@ var classSkills =
 			},
 			DragonsRoar:
 			{
-				name_en: "Dragon's Roar",
+				name_en: "Dragon Roar",
 				name_jp: "竜の咆哮",
 				details: "Increases one party member's defense and chance to be targeted for a set amount of turns.",
 				dep: {},
@@ -726,7 +726,7 @@ var classSkills =
 			},
 			DefensivePosition:
 			{
-				name_en: "Defensive Position",
+				name_en: "Defense Form",
 				name_jp: "防衛陣地",
 				details: "Can only be cast when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
@@ -765,7 +765,7 @@ var classSkills =
 			},
 			MaterialGuard:
 			{
-				name_en: "Material Guard",
+				name_en: "Mana Guard",
 				name_jp: "マテリアルガード",
 				details: "Reduces elemental damage taken by all allies this turn.",
 				dep: {},
@@ -801,9 +801,9 @@ var classSkills =
 			},
 			ArtilleryMastery:
 			{
-				name_en: "Artillery Mastery",
+				name_en: "Cannon Mastery",
 				name_jp: "重砲マスタリー",
-				details: "Increases physical attack when equipped with artillery.",
+				details: "Increases physical attack when equipped with Cannon.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -813,7 +813,7 @@ var classSkills =
 			},
 			GunMount:
 			{
-				name_en: "Gun Mount",
+				name_en: "Gunmount",
 				name_jp: "ガンマウント",
 				details: "Preserves the effect of last turn's guard skill while making a ranged, STR-based Bash attack to 1 enemy.",
 				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
@@ -837,7 +837,7 @@ var classSkills =
 			},
 			DragonsRoar:
 			{
-				name_en: "Dragon's Roar",
+				name_en: "Dragon Roar",
 				name_jp: "竜の咆哮",
 				details: "Increases one party member's defense and chance to be targeted for a set amount of turns.",
 				dep: {},
@@ -849,7 +849,7 @@ var classSkills =
 			},
 			DefensivePosition:
 			{
-				name_en: "Defensive Position",
+				name_en: "Defense Form",
 				name_jp: "防衛陣地",
 				details: "Can only be cast when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
@@ -921,9 +921,9 @@ var classSkills =
 			},
 			PreemptiveRoar:
 			{
-				name_en: "Preemptive Roar",
+				name_en: "Auto-Roar",
 				name_jp: "先制咆哮",
-				details: "Gives a chance for the Dragoon to use Dragon's Roar on themselves at the start of battle.",
+				details: "Gives a chance for the Dragoon to use Dragon Roar on themselves at the start of battle.",
 				dep: {DragonsRoar:3},
 				active: false,
 				reqLevel: 0,
@@ -933,7 +933,7 @@ var classSkills =
 			},
 			PreemptiveBunker:
 			{
-				name_en: "Preemptive Bunker",
+				name_en: "Auto-Bunker",
 				name_jp: "先制バンカー",
 				details: "Gives a chance for the Dragoon to use Bunker at the start of battle.",
 				dep: {DefensivePosition:3},
@@ -1008,7 +1008,7 @@ var classSkills =
 			},
 			MaterialGuard:
 			{
-				name_en: "Material Guard",
+				name_en: "Mana Guard",
 				name_jp: "マテリアルガード",
 				details: "Reduces elemental damage taken by all allies this turn.",
 				dep: {},
@@ -1044,9 +1044,9 @@ var classSkills =
 			},
 			ArtilleryMastery:
 			{
-				name_en: "Artillery Mastery",
+				name_en: "Cannon Mastery",
 				name_jp: "重砲マスタリー",
-				details: "Increases physical attack when equipped with artillery.",
+				details: "Increases physical attack when equipped with Cannon.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1056,7 +1056,7 @@ var classSkills =
 			},
 			GunMount:
 			{
-				name_en: "Gun Mount",
+				name_en: "Gunmount",
 				name_jp: "ガンマウント",
 				details: "Preserves the effect of last turn's guard skill while making a ranged, STR-based Bash attack to 1 enemy.",
 				dep: {LineGuard:2, MaterialGuard:2, HealingGuard:2},
@@ -1080,7 +1080,7 @@ var classSkills =
 			},
 			DragonsRoar:
 			{
-				name_en: "Dragon's Roar",
+				name_en: "Dragon Roar",
 				name_jp: "竜の咆哮",
 				details: "Increases one party member's defense and chance to be targeted for a set amount of turns.",
 				dep: {},
@@ -1092,7 +1092,7 @@ var classSkills =
 			},
 			DefensivePosition:
 			{
-				name_en: "Defensive Position",
+				name_en: "Defense Form",
 				name_jp: "防衛陣地",
 				details: "Can only be cast when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 				dep: {Bunker:2},
@@ -1106,7 +1106,7 @@ var classSkills =
 			{
 				name_en: "Gun Revenge",
 				name_jp: "ガンリベンジ",
-				details: "Increases the damage of artillery skills after either activating a Guard skill, or a Bunker or Pillbox is attacked.",
+				details: "Increases the damage of Cannon skills after either activating a Guard skill, or a Bunker or Decoy Turret is attacked.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1164,9 +1164,9 @@ var classSkills =
 			},
 			Pillbox: 
 			{
-				name_en: "Pillbox",
+				name_en: "Decoy Turret",
 				name_jp: "トーチカ",
-				details: "Creates a pillbox that draws enemy attacks.<br>When attacked, the pillbox will counter-attack the source of the damage.<br>The pillbox has 10 HP at all levels.<br>In addition to reduction via its DEF value, the pillbox only takes a set percent of any damage.",
+				details: "Creates a Decoy Turret that draws enemy attacks.<br>When attacked, the Decoy Turret will counter-attack the source of the damage.<br>The Decoy Turret has 10 HP at all levels.<br>In addition to reduction via its DEF value, the Decoy Turret only takes a set percent of any damage.",
 				dep: {DefensivePosition:3},
 				active: true,
 				reqLevel: 20,
@@ -1188,9 +1188,9 @@ var classSkills =
 			},
 			BombardmentPrep: 
 			{
-				name_en: "Bombardment Prep",
+				name_en: "Prep Artillery",
 				name_jp: "砲撃準備",
-				details: "Increases the damage, accuracy, and speed of the artillery skill used on the next turn.",
+				details: "Increases the damage, accuracy, and speed of the Cannon skill used on the next turn.",
 				dep: {TPBoost:3},
 				active: true,
 				reqLevel: 20,
@@ -1214,7 +1214,7 @@ var classSkills =
 			{
 				name_en: "Gun Support",
 				name_jp: "ガンサポート",
-				details: "Gives a chance to automatically use Pillbox when the Dragoon reduces damage being taken themselves, or negates an attack.",
+				details: "Gives a chance to automatically use Decoy Turret when the Dragoon reduces damage being taken themselves, or negates an attack.",
 				dep: {Pillbox:3},
 				active: false,
 				reqLevel: 20,
@@ -1230,7 +1230,7 @@ var classSkills =
 		{
 			GauntletMastery:
 			{
-				name_en: "Gauntlet Mastery",
+				name_en: "Brawl Mastery",
 				name_jp: "拳甲マスタリー",
 				details: "Increases physical attack when equipped with gauntlets.",
 				dep: {},
@@ -1242,7 +1242,7 @@ var classSkills =
 			},
 			Flicker:
 			{
-				name_en: "Flicker",
+				name_en: "Concussion",
 				name_jp: "フリッカー",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1254,7 +1254,7 @@ var classSkills =
 			},
 			ArmBreak:
 			{
-				name_en: "Arm Break",
+				name_en: "Arm Crusher",
 				name_jp: "アームブレイク",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1266,7 +1266,7 @@ var classSkills =
 			},
 			LiverBlow:
 			{
-				name_en: "Liver Blow",
+				name_en: "Low Blow",
 				name_jp: "リバーブロー",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1278,9 +1278,9 @@ var classSkills =
 			},
 			RushingBlood:
 			{
-				name_en: "Rushing Blood",
+				name_en: "Blood Wrath",
 				name_jp: "血の暴走",
-				details: "Every time the Cestus' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier at all levels.",
+				details: "Every time the Pugilist' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier at all levels.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1290,9 +1290,9 @@ var classSkills =
 			},
 			ThunderGodFist:
 			{
-				name_en: "Thunder God Fist",
+				name_en: "Thunder Fist",
 				name_jp: "雷神拳",
-				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Cestus takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
+				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Pugilist takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1314,9 +1314,9 @@ var classSkills =
 			},
 			OneTwo:
 			{
-				name_en: "One-Two",
+				name_en: "One-Two Punch",
 				name_jp: "ワンツー",
-				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Cestus knows (Flicker, Arm Break, or Liver Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
+				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Pugilist knows (Concussion, Arm Crusher, or Low Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
 				active: true,
 				reqLevel: 0,
@@ -1326,7 +1326,7 @@ var classSkills =
 			},
 			GivingitEverything:
 			{
-				name_en: "Giving it Everything",
+				name_en: "Overexertion",
 				name_jp: "粉骨砕身",
 				details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP every time they act (This means that the HP loss from this buff cannot kill them no matter what).<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier at all levels.",
 				dep: {RushingBlood:1},
@@ -1338,9 +1338,9 @@ var classSkills =
 			},
 			DemonFist:
 			{
-				name_en: "Demon Fist",
+				name_en: "Devil's Fist",
 				name_jp: "鬼人拳",
-				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
+				details: "The Pugilist spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 				dep: {ThunderGodFist:2},
 				active: true,
 				reqLevel: 0,
@@ -1353,7 +1353,7 @@ var classSkills =
 		{
 			GauntletMastery:
 			{
-				name_en: "Gauntlet Mastery",
+				name_en: "Brawl Mastery",
 				name_jp: "拳甲マスタリー",
 				details: "Increases physical attack when equipped with gauntlets.",
 				dep: {},
@@ -1365,7 +1365,7 @@ var classSkills =
 			},
 			Flicker:
 			{
-				name_en: "Flicker",
+				name_en: "Concussion",
 				name_jp: "フリッカー",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1377,7 +1377,7 @@ var classSkills =
 			},
 			ArmBreak:
 			{
-				name_en: "Arm Break",
+				name_en: "Arm Crusher",
 				name_jp: "アームブレイク",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1389,7 +1389,7 @@ var classSkills =
 			},
 			LiverBlow:
 			{
-				name_en: "Liver Blow",
+				name_en: "Low Blow",
 				name_jp: "リバーブロー",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1401,9 +1401,9 @@ var classSkills =
 			},
 			RushingBlood:
 			{
-				name_en: "Rushing Blood",
+				name_en: "Blood Wrath",
 				name_jp: "血の暴走",
-				details: "Every time the Cestus' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier at all levels.",
+				details: "Every time the Pugilist' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier at all levels.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1413,9 +1413,9 @@ var classSkills =
 			},
 			ThunderGodFist:
 			{
-				name_en: "Thunder God Fist",
+				name_en: "Thunder Fist",
 				name_jp: "雷神拳",
-				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Cestus takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
+				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Pugilist takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1437,9 +1437,9 @@ var classSkills =
 			},
 			OneTwo:
 			{
-				name_en: "One-Two",
+				name_en: "One-Two Punch",
 				name_jp: "ワンツー",
-				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Cestus knows (Flicker, Arm Break, or Liver Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
+				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Pugilist knows (Concussion, Arm Crusher, or Low Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
 				active: true,
 				reqLevel: 0,
@@ -1449,7 +1449,7 @@ var classSkills =
 			},
 			GivingitEverything:
 			{
-				name_en: "Giving it Everything",
+				name_en: "Overexertion",
 				name_jp: "粉骨砕身",
 				details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP every time they act (This means that the HP loss from this buff cannot kill them no matter what).<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier at all levels.",
 				dep: {RushingBlood:1},
@@ -1461,9 +1461,9 @@ var classSkills =
 			},
 			DemonFist:
 			{
-				name_en: "Demon Fist",
+				name_en: "Devil's Fist",
 				name_jp: "鬼人拳",
-				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
+				details: "The Pugilist spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 				dep: {ThunderGodFist:2},
 				active: true,
 				reqLevel: 0,
@@ -1497,7 +1497,7 @@ var classSkills =
 			},
 			SpeedBoost:
 			{
-				name_en: "Speed Boost",
+				name_en: "Speed Up",
 				name_jp: "素早さブースト",
 				details: "Increases speed, accuracy, and evasion.",
 				dep: {},
@@ -1511,7 +1511,7 @@ var classSkills =
 			{
 				name_en: "Cross Counter",
 				name_jp: "クロスカウンター",
-				details: "When an ally on the same row takes physical damage, the Cestus counters with a STR-based melee attack that attempts to bind the body part used to attack. Only activates once per turn.<br>Has a 1500% speed modifier and an accuracy modifier of +50 at all levels.",
+				details: "When an ally on the same row takes physical damage, the Pugilist counters with a STR-based melee attack that attempts to bind the body part used to attack. Only activates once per turn.<br>Has a 1500% speed modifier and an accuracy modifier of +50 at all levels.",
 				dep: {GivingitEverything:5},
 				active: true,
 				reqLevel: 20,
@@ -1521,9 +1521,9 @@ var classSkills =
 			},
 			Interval:
 			{
-				name_en: "Interval",
+				name_en: "Breather",
 				name_jp: "インターバル",
-				details: "Dispels all ailments and binds on the Cestus and increases their attack power for the next turn.<br>Does not work if you don't have any binds/ailments.<br>Will not increase the damage output of Union skills.<br>The charge lasts until the end of the next turn (This means that the charge will not get used up on the very next attack).<br>Has a 200% speed modifier at all levels.",
+				details: "Dispels all ailments and binds on the Pugilist and increases their attack power for the next turn.<br>Does not work if you don't have any binds/ailments.<br>Will not increase the damage output of Union skills.<br>The charge lasts until the end of the next turn (This means that the charge will not get used up on the very next attack).<br>Has a 200% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1533,9 +1533,9 @@ var classSkills =
 			},
 			ArmBlock:
 			{
-				name_en: "Arm Block",
+				name_en: "Fault Blocker",
 				name_jp: "アームブロック",
-				details: "Raises ailment and bind resistance for allies in the same row as the Cestus for a set number of turns (This buff may follow EO4's Dancer buff rules).<br>Has a speed modifier of 70% at all levels.",
+				details: "Raises ailment and bind resistance for allies in the same row as the Pugilist for a set number of turns (This buff may follow EO4's Dancer buff rules).<br>Has a speed modifier of 70% at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1545,7 +1545,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost:
 			{
-				name_en: "Curb ATK Up",
+				name_en: "Status ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -1557,9 +1557,9 @@ var classSkills =
 			},
 			LeadBlow:
 			{
-				name_en: "Lead Blow",
+				name_en: "Leading Blow",
 				name_jp: "リードブロー",
-				details: "Deals STR-based melee bash damage to one enemy.<br>If they have any binds or ailments, follow up with any skills that inflict those binds (Flicker, Arm Break, or Liver Blow).<br>For ailments, Corkscrew will be used, no matter what ailment the target has.<br>Has a 90% speed modifier and no accuracy modifier at all levels.",
+				details: "Deals STR-based melee bash damage to one enemy.<br>If they have any binds or ailments, follow up with any skills that inflict those binds (Concussion, Arm Crusher, or Low Blow).<br>For ailments, Corkscrew will be used, no matter what ailment the target has.<br>Has a 90% speed modifier and no accuracy modifier at all levels.",
 				dep: {Corkscrew:2,OneTwo:5},
 				active: true,
 				reqLevel: 20,
@@ -1569,9 +1569,9 @@ var classSkills =
 			},
 			RushOut:
 			{
-				name_en: "Rush Out",
+				name_en: "Lash Out",
 				name_jp: "ラッシュアウト",
-				details: "Attacks one enemy with STR-based melee bash damage multiple times.<br>The number of attacks is equal to the number of times the Cestus attacked on the previous turn. Maximum number of hits is 9.<br>Any Union skills that got cast does not count toward the hit total.<br>Has an 80% speed modifier and an accuracy modifier of -10 at all levels.",
+				details: "Attacks one enemy with STR-based melee bash damage multiple times.<br>The number of attacks is equal to the number of times the Pugilist attacked on the previous turn. Maximum number of hits is 9.<br>Any Union skills that got cast does not count toward the hit total.<br>Has an 80% speed modifier and an accuracy modifier of -10 at all levels.",
 				dep: {SpeedBoost:5},
 				active: true,
 				reqLevel: 20,
@@ -1583,7 +1583,7 @@ var classSkills =
 			{
 				name_en: "Clinch",
 				name_jp: "クリンチ",
-				details: "Chance to bind the head, arms, and legs of the Cestus and one enemy.<br>Attempts to bind the enemy before binding the Cestus.<br>Has an 80% speed modifier at all levels.",
+				details: "Chance to bind the head, arms, and legs of the Pugilist and one enemy.<br>Attempts to bind the enemy before binding the Pugilist.<br>Has an 80% speed modifier at all levels.",
 				dep: {Interval:3,ArmBlock:3},
 				active: true,
 				reqLevel: 20,
@@ -1596,7 +1596,7 @@ var classSkills =
 		{
 			GauntletMastery:
 			{
-				name_en: "Gauntlet Mastery",
+				name_en: "Brawl Mastery",
 				name_jp: "拳甲マスタリー",
 				details: "Increases physical attack when equipped with gauntlets.",
 				dep: {},
@@ -1608,7 +1608,7 @@ var classSkills =
 			},
 			Flicker:
 			{
-				name_en: "Flicker",
+				name_en: "Concussion",
 				name_jp: "フリッカー",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1620,7 +1620,7 @@ var classSkills =
 			},
 			ArmBreak:
 			{
-				name_en: "Arm Break",
+				name_en: "Arm Crusher",
 				name_jp: "アームブレイク",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1632,7 +1632,7 @@ var classSkills =
 			},
 			LiverBlow:
 			{
-				name_en: "Liver Blow",
+				name_en: "Low Blow",
 				name_jp: "リバーブロー",
 				details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {},
@@ -1644,9 +1644,9 @@ var classSkills =
 			},
 			RushingBlood:
 			{
-				name_en: "Rushing Blood",
+				name_en: "Blood Wrath",
 				name_jp: "血の暴走",
-				details: "Every time the Cestus' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit.)<br>Has a +5 accuracy modifier at all levels.",
+				details: "Every time the Pugilist' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit.)<br>Has a +5 accuracy modifier at all levels.",
 				dep: {},
 				active: false,
 				reqLevel: 0,
@@ -1656,9 +1656,9 @@ var classSkills =
 			},
 			ThunderGodFist:
 			{
-				name_en: "Thunder God Fist",
+				name_en: "Thunder Fist",
 				name_jp: "雷神拳",
-				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Cestus takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
+				details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Pugilist takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1680,9 +1680,9 @@ var classSkills =
 			},
 			OneTwo:
 			{
-				name_en: "One-Two",
+				name_en: "One-Two Punch",
 				name_jp: "ワンツー",
-				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Cestus knows (Flicker, Arm Break, or Liver Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
+				details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Pugilist knows (Concussion, Arm Crusher, or Low Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 				dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
 				active: true,
 				reqLevel: 0,
@@ -1692,7 +1692,7 @@ var classSkills =
 			},
 			GivingitEverything:
 			{
-				name_en: "Giving it Everything",
+				name_en: "Overexertion",
 				name_jp: "粉骨砕身",
 				details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP every time they act. (This means that the HP loss from this buff cannot kill them no matter what.)<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier at all levels.",
 				dep: {RushingBlood:1},
@@ -1704,9 +1704,9 @@ var classSkills =
 			},
 			DemonFist:
 			{
-				name_en: "Demon Fist",
+				name_en: "Devil's Fist",
 				name_jp: "鬼人拳",
-				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
+				details: "The Pugilist spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 				dep: {ThunderGodFist:2},
 				active: true,
 				reqLevel: 0,
@@ -1716,9 +1716,9 @@ var classSkills =
 			},
 			Grit:
 			{
-				name_en: "Grit",
+				name_en: "Fortitude",
 				name_jp: "不屈",
-				details: "Increases the Cestus' damage output when their HP is below a certain percentage.",
+				details: "Increases the Pugilist' damage output when their HP is below a certain percentage.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1730,7 +1730,7 @@ var classSkills =
 			{
 				name_en: "Vajra Stance",
 				name_jp: "金剛の構え",
-				details: "Raises physical defense for allies in the same row as the Cestus for a set number of turns (This buff may follow EO4's Dancer buff rules).<br>Has a speed modifier of 70% at all levels.",
+				details: "Raises physical defense for allies in the same row as the Pugilist for a set number of turns (This buff may follow EO4's Dancer buff rules).<br>Has a speed modifier of 70% at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1740,9 +1740,9 @@ var classSkills =
 			},
 			SoulSmash:
 			{
-				name_en: "Soul Smash",
+				name_en: "Soul Crusher",
 				name_jp: "魂砕き",
-				details: "Deals STR-based melee bash damage to all enemies, and heals the Cestus for a portion of the damage they dealt.<br>Has an 80% speed modifier and an accuracy modifier of -5 at all levels.",
+				details: "Deals STR-based melee bash damage to all enemies, and heals the Pugilist for a portion of the damage they dealt.<br>Has an 80% speed modifier and an accuracy modifier of -5 at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1752,9 +1752,9 @@ var classSkills =
 			},
 			GiantKiller:
 			{
-				name_en: "Giant Killer",
+				name_en: "Titan Killer",
 				name_jp: "大物殺し",
-				details: "Deals STR-based melee bash damage to one enemy.<br>Deals even more damage as long as the target has at least 1% more remaining HP% than the Cestus' current HP pool.<br>Has a 150% speed modifier and no accuracy modifier at all levels.",
+				details: "Deals STR-based melee bash damage to one enemy.<br>Deals even more damage as long as the target has at least 1% more remaining HP% than the Pugilist' current HP pool.<br>Has a 150% speed modifier and no accuracy modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 20,
@@ -1764,7 +1764,7 @@ var classSkills =
 			},
 			BackFromtheDead:
 			{
-				name_en: "Back From the Dead",
+				name_en: "Death's Edge",
 				name_jp: "黄泉返し",
 				details: "Deals STR-based melee bash damage to one enemy.<br>Deals more damage the less HP the entire party has. How this works is that each % of HP missing is added onto a 1x multiplier (dead party members do not count for this), up to a maximum of a 5.95x multiplier (each party member has only 1% HP remaining).<br>Has a 20% speed modifier and an accuracy modifier of +50 at all levels.",
 				dep: {GivingitEverything:3},
@@ -1776,9 +1776,9 @@ var classSkills =
 			},
 			DemonGodFist:
 			{
-				name_en: "Demon God Fist",
+				name_en: "Satan's Fist",
 				name_jp: "鬼神拳",
-				details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
+				details: "The Pugilist spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 				dep: {DemonFist:3},
 				active: true,
 				reqLevel: 20,
@@ -1788,7 +1788,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost:
 			{
-				name_en: "Curb DEF Up",
+				name_en: "Status DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -1802,7 +1802,7 @@ var classSkills =
 			{
 				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
-				details: "Increases the Cestus' maximum HP.",
+				details: "Increases the Pugilist' maximum HP.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -1812,9 +1812,9 @@ var classSkills =
 			},
 			OugiRengokusatsu:
 			{
-				name_en: "Ougi Rengokusatsu",
+				name_en: "Abyssal Killer",
 				name_jp: "奥義 煉獄殺",
-				details: "When cast, places the Cestus under the Endure status (not a buff, lasts one turn), which lets them survive a fatal blow and increases the amount of damage they deal on the next turn when the Endure activates.<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.",
+				details: "When cast, places the Pugilist under the Endure status (not a buff, lasts one turn), which lets them survive a fatal blow and increases the amount of damage they deal on the next turn when the Endure activates.<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.",
 				dep: {VajraStance:5,SoulSmash:5},
 				active: true,
 				reqLevel: 20,
@@ -1824,9 +1824,9 @@ var classSkills =
 			},
 			OugiTenchihaten:
 			{
-				name_en: "Ougi Tenchihaten",
+				name_en: "Heavenly Aid",
 				name_jp: "奥義 天地破天",
-				details: "When cast, this lets the Cestus deal even more damage on the next turn the more HP they recover on the previous turn (Not a buff, lasts one turn).<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.<br>NOTE: How much HP recovery is needed to reach the max damage boost is currently unknown at this time.",
+				details: "When cast, this lets the Pugilist deal even more damage on the next turn the more HP they recover on the previous turn (Not a buff, lasts one turn).<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.<br>NOTE: How much HP recovery is needed to reach the max damage boost is currently unknown at this time.",
 				dep: {GiantKiller:3,BackFromtheDead:3},
 				active: true,
 				reqLevel: 20,
@@ -1854,9 +1854,9 @@ var classSkills =
 			},
 			MiasmaWeapon: 
 			{
-				name_en: "Miasma Weapon",
+				name_en: "Miasma Armor",
 				name_jp: "瘴気の兵装",
-				details: "Sacrifices a percentage of the Reaper's current HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				details: "Sacrifices a percentage of the Harbinger's current HP to apply the Miasma Armor buff to the Harbinger for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1866,7 +1866,7 @@ var classSkills =
 			},
 			FrailMiasma: 
 			{
-				name_en: "Frail Miasma",
+				name_en: "Stifling Miasma",
 				name_jp: "繊弱の瘴気",
 				details: "Lowers all enemies' physical and elemental attack for a set amount of turns.",
 				dep: {},
@@ -1878,9 +1878,9 @@ var classSkills =
 			},
 			ScytheofNumbStasis: 
 			{
-				name_en: "Scythe of Numb Stasis",
+				name_en: "Paralyzing Reap",
 				name_jp: "痺止の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1890,7 +1890,7 @@ var classSkills =
 			},
 			GatherSouls: 
 			{
-				name_en: "Gather Souls",
+				name_en: "Soul Gather",
 				name_jp: "魂寄せ",
 				details: "Increases the encounter rate and increases the amount of exp gained from battles for a set number of steps.",
 				dep: {},
@@ -1902,9 +1902,9 @@ var classSkills =
 			},
 			PreemptiveWeapon: 
 			{
-				name_en: "Preemptive Weapon",
+				name_en: "Auto-Miasma",
 				name_jp: "先制兵装",
-				details: "Gives a chance to use Miasma Weapon immediately at the start of battle.<br>Does not activate if someone already used this.",
+				details: "Gives a chance to use Miasma Armor immediately at the start of battle.<br>Does not activate if someone already used this.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -1916,7 +1916,7 @@ var classSkills =
 			{
 				name_en: "Endless Shroud",
 				name_jp: "終わりなき衣",
-				details: "Chance to apply Miasma Weapon when using a debuff skill.",
+				details: "Chance to apply Miasma Armor when using a debuff skill.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -1928,7 +1928,7 @@ var classSkills =
 			{
 				name_en: "Death's Judgment",
 				name_jp: "死の審判",
-				details: "If Miasma Weapon is active, the Reaper has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
+				details: "If Miasma Armor is active, the Harbinger has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -1938,7 +1938,7 @@ var classSkills =
 			},
 			FeebleMiasma: 
 			{
-				name_en: "Feeble Miasma",
+				name_en: "Shriveling Miasma",
 				name_jp: "虚弱の瘴気",
 				details: "Increases the chance of inflicting ailments and binds on all enemies for a set amount of turns.",
 				dep: {FrailMiasma:3},
@@ -1950,9 +1950,9 @@ var classSkills =
 			},
 			ScytheofExorcism: 
 			{
-				name_en: "Scythe of Exorcism",
+				name_en: "Cursed Reap",
 				name_jp: "呪禁の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {ScytheofNumbStasis:3},
 				active: true,
 				reqLevel: 0,
@@ -1977,9 +1977,9 @@ var classSkills =
 			},
 			MiasmaWeapon: 
 			{
-				name_en: "Miasma Weapon",
+				name_en: "Miasma Armor",
 				name_jp: "瘴気の兵装",
-				details: "Sacrifices a percentage of the Reaper's current HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				details: "Sacrifices a percentage of the Harbinger's current HP to apply the Miasma Armor buff to the Harbinger for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -1989,7 +1989,7 @@ var classSkills =
 			},
 			FrailMiasma: 
 			{
-				name_en: "Frail Miasma",
+				name_en: "Stifling Miasma",
 				name_jp: "繊弱の瘴気",
 				details: "Lowers all enemies' physical and elemental attack for a set amount of turns.",
 				dep: {},
@@ -2001,9 +2001,9 @@ var classSkills =
 			},
 			ScytheofNumbStasis: 
 			{
-				name_en: "Scythe of Numb Stasis",
+				name_en: "Paralyzing Reap",
 				name_jp: "痺止の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -2013,7 +2013,7 @@ var classSkills =
 			},
 			GatherSouls: 
 			{
-				name_en: "Gather Souls",
+				name_en: "Soul Gather",
 				name_jp: "魂寄せ",
 				details: "Increases the encounter rate and increases the amount of exp gained from battles for a set number of steps.",
 				dep: {},
@@ -2025,9 +2025,9 @@ var classSkills =
 			},
 			PreemptiveWeapon: 
 			{
-				name_en: "Preemptive Weapon",
+				name_en: "Auto-Miasma",
 				name_jp: "先制兵装",
-				details: "Gives a chance to use Miasma Weapon immediately at the start of battle.<br>Does not activate if someone already used this.",
+				details: "Gives a chance to use Miasma Armor immediately at the start of battle.<br>Does not activate if someone already used this.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -2039,7 +2039,7 @@ var classSkills =
 			{
 				name_en: "Endless Shroud",
 				name_jp: "終わりなき衣",
-				details: "Chance to apply Miasma Weapon when using a debuff skill.",
+				details: "Chance to apply Miasma Armor when using a debuff skill.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -2051,7 +2051,7 @@ var classSkills =
 			{
 				name_en: "Death's Judgment",
 				name_jp: "死の審判",
-				details: "If Miasma Weapon is active, the Reaper has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
+				details: "If Miasma Armor is active, the Harbinger has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -2061,7 +2061,7 @@ var classSkills =
 			},
 			FeebleMiasma: 
 			{
-				name_en: "Feeble Miasma",
+				name_en: "Shriveling Miasma",
 				name_jp: "虚弱の瘴気",
 				details: "Increases the chance of inflicting ailments and binds on all enemies for a set amount of turns.",
 				dep: {FrailMiasma:3},
@@ -2073,9 +2073,9 @@ var classSkills =
 			},
 			ScytheofExorcism: 
 			{
-				name_en: "Scythe of Exorcism",
+				name_en: "Cursed Reap",
 				name_jp: "呪禁の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {ScytheofNumbStasis:3},
 				active: true,
 				reqLevel: 0,
@@ -2087,7 +2087,7 @@ var classSkills =
 			{
 				name_en: "Black Blade",
 				name_jp: "黒き刃",
-				details: "If Miasma Weapon is active, the Reaper's attack power increases every time they inflict an ailment.<br>Lasts until the Reaper dies, or until the battle ends.<br>Affects all damage types.",
+				details: "If Miasma Armor is active, the Harbinger's attack power increases every time they inflict an ailment.<br>Lasts until the Harbinger dies, or until the battle ends.<br>Affects all damage types.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -2099,7 +2099,7 @@ var classSkills =
 			{
 				name_en: "TP Up",
 				name_jp: "ＴＰブースト",
-				details: "Increases the Reaper's maximum TP.",
+				details: "Increases the Harbinger's maximum TP.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -2109,9 +2109,9 @@ var classSkills =
 			},
 			FreshBloodSlash: 
 			{
-				name_en: "Fresh Blood Slash",
+				name_en: "Bloody Reap",
 				name_jp: "鮮血の斬撃",
-				details: "This skill can only be used when Miasma Weapon is active.<br>The Reaper sacrifices a portion of their current HP to deal 2 to 4 STR based melee cut attacks to random enemies.<br>Has a 50% speed modifier and -10 accuracy modifier at all levels.",
+				details: "This skill can only be used when Miasma Armor is active.<br>The Harbinger sacrifices a portion of their current HP to deal 2 to 4 STR based melee cut attacks to random enemies.<br>Has a 50% speed modifier and -10 accuracy modifier at all levels.",
 				dep: {DeathsJudgment:3},
 				active: true,
 				reqLevel: 20,
@@ -2121,7 +2121,7 @@ var classSkills =
 			},
 			GreateScytheofColdAsh: 
 			{
-				name_en: "Great Scythe of Cold Ash",
+				name_en: "Frigid Reap",
 				name_jp: "冷灰の大鎌",
 				details: "Deals STR based melee cut + ice damage to one row.<br>Deals a follow-up attack on enemies that have ailments.<br>The follow-up attack deals double damage.<br>Has a 75% speed modifier and no base accuracy modifier at all levels.",
 				dep: {DeathsJudgment:3},
@@ -2133,9 +2133,9 @@ var classSkills =
 			},
 			ScytheofCruelPoison: 
 			{
-				name_en: "Scythe of Cruel Poison",
+				name_en: "Toxic Reap",
 				name_jp: "惨毒の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If the Reaper has Miasma Weapon active, it has a chance to inflict poison.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If the Harbinger has Miasma Armor active, it has a chance to inflict poison.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {ScytheofExorcism:3},
 				active: true,
 				reqLevel: 20,
@@ -2145,9 +2145,9 @@ var classSkills =
 			},
 			ScytheofWickedChaos: 
 			{
-				name_en: "Scythe of Wicked Chaos",
+				name_en: "Chaos Reap",
 				name_jp: "禍乱の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If the Reaper has Miasma Weapon active, it has a chance to inflict panic.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If the Harbinger has Miasma Armor active, it has a chance to inflict panic.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {ScytheofExorcism:3},
 				active: true,
 				reqLevel: 20,
@@ -2159,7 +2159,7 @@ var classSkills =
 			{
 				name_en: "Black Shroud",
 				name_jp: "黒き衣",
-				details: "If Miasma Weapon is active, the Reaper's defense increases every time they inflict an ailment.<br>Lasts until the Reaper dies, or until the battle ends. Affects all damage types.",
+				details: "If Miasma Armor is active, the Harbinger's defense increases every time they inflict an ailment.<br>Lasts until the Harbinger dies, or until the battle ends. Affects all damage types.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -2169,7 +2169,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Curb ATK Up",
+				name_en: "Status ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -2181,9 +2181,9 @@ var classSkills =
 			},
 			ShroudofReality: 
 			{
-				name_en: "Shroud of Reality",
+				name_en: "Temporal Shroud",
 				name_jp: "空蝉の衣",
-				details: "This skill can only be used when Miasma Weapon is active.<br>Dispels the Miasma Weapon buff from the Reaper and hides them from the battle for the current turn, and puts a scapegoat in their place.<br>If the scapegoat is still alive at the end of the turn, the Reaper will reenter battle and deal STR based melee cut damage to one enemy.<br>If the scapegoat dies, the Reaper reenters the battle immediately without attacking.<br>Has an +50 accuracy modifier at all levels.<br>The initial cast has a variable speed modifier, while the actual attack has a 1% speed modifier at all levels.",
+				details: "This skill can only be used when Miasma Armor is active.<br>Dispels the Miasma Armor buff from the Harbinger and hides them from the battle for the current turn, and puts a scapegoat in their place.<br>If the scapegoat is still alive at the end of the turn, the Harbinger will reenter battle and deal STR based melee cut damage to one enemy.<br>If the scapegoat dies, the Harbinger reenters the battle immediately without attacking.<br>Has an +50 accuracy modifier at all levels.<br>The initial cast has a variable speed modifier, while the actual attack has a 1% speed modifier at all levels.",
 				dep: {FreshBloodSlash:3,GreateScytheofColdAsh:3},
 				active: true,
 				reqLevel: 20,
@@ -2193,7 +2193,7 @@ var classSkills =
 			},
 			ScytheofDeath: 
 			{
-				name_en: "Scythe of Death",
+				name_en: "Fatal Reap",
 				name_jp: "死の鎌",
 				details: "Deals STR based melee cut damage to one enemy and has a chance to inflict instant death.<br>If the target is asleep, the damage and instant death chance rises.<br>Has a 20% speed modifier and -10 accuracy modifier at all levels.<br>NOTE: The data does not include the damage multiplier from attacking a sleeping enemy (which is usually 1.5x in the other EO games). Also, it is possible that the damage and success rate multipliers may be flipped.",
 				dep: {ScytheofCruelPoison:3,ScytheofWickedChaos:3},
@@ -2220,9 +2220,9 @@ var classSkills =
 			},
 			MiasmaWeapon: 
 			{
-				name_en: "Miasma Weapon",
+				name_en: "Miasma Armor",
 				name_jp: "瘴気の兵装",
-				details: "Sacrifices a percentage of the Reaper's current HP to apply the Miasma Weapon buff to the Reaper for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
+				details: "Sacrifices a percentage of the Harbinger's current HP to apply the Miasma Armor buff to the Harbinger for 4 turns, which enables certain skills to have additional effects and increases all action speed (including normal attacks).<br>Has a 30% speed modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -2232,7 +2232,7 @@ var classSkills =
 			},
 			FrailMiasma: 
 			{
-				name_en: "Frail Miasma",
+				name_en: "Stifling Miasma",
 				name_jp: "繊弱の瘴気",
 				details: "Lowers all enemies' physical and elemental attack for a set amount of turns.",
 				dep: {},
@@ -2244,9 +2244,9 @@ var classSkills =
 			},
 			ScytheofNumbStasis: 
 			{
-				name_en: "Scythe of Numb Stasis",
+				name_en: "Paralyzing Reap",
 				name_jp: "痺止の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {},
 				active: true,
 				reqLevel: 0,
@@ -2256,7 +2256,7 @@ var classSkills =
 			},
 			GatherSouls: 
 			{
-				name_en: "Gather Souls",
+				name_en: "Soul Gather",
 				name_jp: "魂寄せ",
 				details: "Increases the encounter rate and increases the amount of exp gained from battles for a set number of steps.",
 				dep: {},
@@ -2268,9 +2268,9 @@ var classSkills =
 			},
 			PreemptiveWeapon: 
 			{
-				name_en: "Preemptive Weapon",
+				name_en: "Auto-Miasma",
 				name_jp: "先制兵装",
-				details: "Gives a chance to use Miasma Weapon immediately at the start of battle.<br>Does not activate if someone already used this.",
+				details: "Gives a chance to use Miasma Armor immediately at the start of battle.<br>Does not activate if someone already used this.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -2282,7 +2282,7 @@ var classSkills =
 			{
 				name_en: "Endless Shroud",
 				name_jp: "終わりなき衣",
-				details: "Chance to apply Miasma Weapon when using a debuff skill.",
+				details: "Chance to apply Miasma Armor when using a debuff skill.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -2294,7 +2294,7 @@ var classSkills =
 			{
 				name_en: "Death's Judgment",
 				name_jp: "死の審判",
-				details: "If Miasma Weapon is active, the Reaper has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
+				details: "If Miasma Armor is active, the Harbinger has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
 				dep: {MiasmaWeapon:2},
 				active: false,
 				reqLevel: 0,
@@ -2304,7 +2304,7 @@ var classSkills =
 			},
 			FeebleMiasma: 
 			{
-				name_en: "Feeble Miasma",
+				name_en: "Shriveling Miasma",
 				name_jp: "虚弱の瘴気",
 				details: "Increases the chance of inflicting ailments and binds on all enemies for a set amount of turns.",
 				dep: {FrailMiasma:3},
@@ -2316,9 +2316,9 @@ var classSkills =
 			},
 			ScytheofExorcism: 
 			{
-				name_en: "Scythe of Exorcism",
+				name_en: "Cursed Reap",
 				name_jp: "呪禁の鎌",
-				details: "Deals STR based melee cut damage to one row.<br>If Miasma Weapon is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
+				details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 				dep: {ScytheofNumbStasis:3},
 				active: true,
 				reqLevel: 0,
@@ -2328,9 +2328,9 @@ var classSkills =
 			},
 			AbsorbVitality: 
 			{
-				name_en: "Absorb Vitality",
+				name_en: "Spirit Absorb",
 				name_jp: "生気吸収",
-				details: "When the Reaper debuffs an enemy, the reaper is healed.<br>The heal can bring the Reaper's HP above the Reaper's maximum HP pool, but any extra HP will go away at the end of the turn.",
+				details: "When the Harbinger debuffs an enemy, the Harbinger is healed.<br>The heal can bring the Harbinger's HP above the Harbinger's maximum HP pool, but any extra HP will go away at the end of the turn.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -2340,7 +2340,7 @@ var classSkills =
 			},
 			MagicDefenseBoost: 
 			{
-				name_en: "Elem DEF Up",
+				name_en: "Magic DEF Up",
 				name_jp: "魔法防御ブースト",
 				details: "Increases defense against elemental attacks.",
 				dep: {},
@@ -2352,9 +2352,9 @@ var classSkills =
 			},
 			DeathResistance: 
 			{
-				name_en: "Death Resistance",
+				name_en: "Death's Asylum",
 				name_jp: "死の耐性",
-				details: "Gives the Reaper a chance to nullify the effects of debuffs and ailments enemies attempt to apply to them.",
+				details: "Gives the Harbinger a chance to nullify the effects of debuffs and ailments enemies attempt to apply to them.",
 				dep: {EndlessShroud:5},
 				active: false,
 				reqLevel: 20,
@@ -2364,7 +2364,7 @@ var classSkills =
 			},
 			BrittleMiasma: 
 			{
-				name_en: "Brittle Miasma",
+				name_en: "Eroding Miasma",
 				name_jp: "削弱の瘴気",
 				details: "Lowers all enemies' physical and elemental defense for a set amount of turns.<br>Has an 85% speed modifier at all levels.",
 				dep: {FeebleMiasma:3},
@@ -2376,7 +2376,7 @@ var classSkills =
 			},
 			DimMiasma: 
 			{
-				name_en: "Dim Miasma",
+				name_en: "Masking Miasma",
 				name_jp: "闇弱の瘴気",
 				details: "Lowers all enemies' accuracy for a set amount of turns.<br>Has an 85% speed modifier at all levels.",
 				dep: {FeebleMiasma:3},
@@ -2390,7 +2390,7 @@ var classSkills =
 			{
 				name_en: "HP Up",
 				name_jp: "ＨＰブースト",
-				details: "Increases the Reaper's maximum HP.",
+				details: "Increases the Harbinger's maximum HP.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -2400,9 +2400,9 @@ var classSkills =
 			},
 			BloodofAtonement: 
 			{
-				name_en: "Blood of Atonement",
+				name_en: "Atonement",
 				name_jp: "贖いの血",
-				details: "This skill can only be used when Miasma Weapon is active.<br>Dispels Miasma Weapon to heal all allies HP, with a chance of dispelling all ailments on the party as well.<br>Has an 85% speed modifier at all levels.",
+				details: "This skill can only be used when Miasma Armor is active.<br>Dispels Miasma Armor to heal all allies HP, with a chance of dispelling all ailments on the party as well.<br>Has an 85% speed modifier at all levels.",
 				dep: {DeathResistance:5},
 				active: true,
 				reqLevel: 20,
@@ -2412,9 +2412,9 @@ var classSkills =
 			},
 			WallofMiasma: 
 			{
-				name_en: "Wall of Miasma",
+				name_en: "Miasma Wall",
 				name_jp: "瘴気の防壁",
-				details: "This skill can only be used when Miasma Weapon is active.<br>Dispels Miasma Weapon to give all allies a chance to defend against ailments and binds for the current turn.<br>Activates at the start of the turn.",
+				details: "This skill can only be used when Miasma Armor is active.<br>Dispels Miasma Armor to give all allies a chance to defend against ailments and binds for the current turn.<br>Activates at the start of the turn.",
 				dep: {DeathResistance:5},
 				active: true,
 				reqLevel: 20,
@@ -2769,7 +2769,7 @@ var classSkills =
 			},
 			MagicDefenseBoost: 
 			{
-				name_en: "Elem DEF Up",
+				name_en: "Magic DEF Up",
 				name_jp: "魔法防御ブースト",
 				details: "Increases defense against magic attacks.",
 				dep: {},
@@ -3012,7 +3012,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost: 
 			{
-				name_en: "Curb DEF Up",
+				name_en: "Status DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -3311,7 +3311,7 @@ var classSkills =
 			{
 				name_en: "Ghost Secret Arts",
 				name_jp: "死霊の秘術",
-				details: "Gives a chance to summon a ghost when any party members, dogs, hawks, or enemies die.<br>Does not activate on Bunkers, Pillboxes, or other ghosts.",
+				details: "Gives a chance to summon a ghost when any party members, dogs, hawks, or enemies die.<br>Does not activate on Bunkers, Decoy Turretes, or other ghosts.",
 				dep: {},
 				active: false,
 				reqLevel: 20,
@@ -3345,7 +3345,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Curb ATK Up",
+				name_en: "Status ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: ">Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -3969,7 +3969,7 @@ var classSkills =
 			},
 			SpeedBoost: 
 			{
-				name_en: "Speed Boost",
+				name_en: "Speed Up",
 				name_jp: "素早さブースト",
 				details: "Increases speed, evasion, and accuracy.",
 				dep: {},
@@ -4176,7 +4176,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Curb ATK Up",
+				name_en: "Status ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
@@ -4824,7 +4824,7 @@ var classSkills =
 			},
 			SpeedBoost: 
 			{
-				name_en: "Speed Boost",
+				name_en: "Speed Up",
 				name_jp: "素早さブースト",
 				details: "Increases speed, evasion, and accuracy.",
 				dep: {},
@@ -5460,7 +5460,7 @@ var classSkills =
 			},
 			MagicDefenseBoost: 
 			{
-				name_en: "Elem DEF Up",
+				name_en: "Magic DEF Up",
 				name_jp: "魔法防御ブースト",
 				details: "Reduces magical damage taken.",
 				dep: {},
@@ -5472,7 +5472,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost: 
 			{
-				name_en: "Curb DEF Up",
+				name_en: "Status DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -5793,7 +5793,7 @@ var classSkills =
 			},
 			ConstraintDefenseBoost: 
 			{
-				name_en: "Curb DEF Up",
+				name_en: "Status DEF Up",
 				name_jp: "抑制防御ブースト",
 				details: "Increases defense against ailments and binds.",
 				dep: {},
@@ -6012,7 +6012,7 @@ var classSkills =
 			},
 			ConstraintAttackBoost: 
 			{
-				name_en: "Curb ATK Up",
+				name_en: "Status ATK Up",
 				name_jp: "抑制攻撃ブースト",
 				details: "Increases the chance of inflicting ailments and binds.",
 				dep: {},
