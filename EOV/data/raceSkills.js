@@ -28,7 +28,7 @@ var raceSkills =
 		},
 		FullSpeedEscape:
 		{
-			name_en: "Full Speed Escape",
+			name_en: "Full Retreat",
 			name_jp: "全力逃走",
 			details: "Participants Required: 3<br>100% chance of escaping from battle when used.<br>Sends the party back to the start of the floor. Only works if the battle can even be escaped from.<br>Usable even if the initiator's legs are bound.",
 			dep: {},
@@ -40,7 +40,7 @@ var raceSkills =
 		},
 		MagicHeal:
 		{
-			name_en: "Magic Heal",
+			name_en: "Mana Heal",
 			name_jp: "マジックヒール",
 			details: "Participants Required: 4<br>Restores the party's TP.<br>TP restoration is equal to 3% of max TP + 6.",
 			dep: {},
@@ -52,7 +52,7 @@ var raceSkills =
 		},
 		LightofBlessing:
 		{
-			name_en: "Light of Blessing",
+			name_en: "Blessing",
 			name_jp: "祝福の光",
 			details: "Participants Required: 1<br>All allies recover 15% to 30% of their max HP.<br>Heal scales with levels.",
 			dep: {},
@@ -64,7 +64,7 @@ var raceSkills =
 		},
 		GraceoftheEarth:
 		{
-			name_en: "Grace of the Earth",
+			name_en: "Gaia's Grace",
 			name_jp: "大地の恩寵",
 			details: "Whenever the character uses a basic skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -88,7 +88,7 @@ var raceSkills =
 		},
 		WoodlandSearchSkills:
 		{
-			name_en: "Woodland Search Skills",
+			name_en: "Forage Skills",
 			name_jp: "樹海探索術",
 			details: "Enables the party to initiate certain Adventure Episodes and gain items from those.<br>Also increases the user's AGI.",
 			dep: {},
@@ -100,7 +100,7 @@ var raceSkills =
 		},
 		BasicResuscitation:
 		{
-			name_en: "Basic Resuscitation",
+			name_en: "Resusciate",
 			name_jp: "簡易蘇生",
 			details: "Participants Required: 2<br>Revives one dead party member.<br>Unknown if the amount healed scales with the characters' levels.<br>Listing the data just in case.<br><br>Threshold 1: 1% healing power<br>Threshold 2: 11% healing power<br>Threshold 3: 21% healing power<br>Threshold 4: 31% healing power<br>Threshold 5: 90% healing power<br>Threshold 6: 110% healing power<br>Threshold 7: 130% healing power<br>Threshold 8: 150% healing power<br>Threshold 9: 170% healing power<br>Threshold 10: 270% healing power",
 			dep: {},
@@ -112,7 +112,7 @@ var raceSkills =
 		},
 		OrganizationalSkills:
 		{
-			name_en: "Organizational Skills",
+			name_en: "Sorting Skill",
 			name_jp: "整頓術",
 			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT.",
 			dep: {},
@@ -124,7 +124,7 @@ var raceSkills =
 		},
 		WoodlandGatheringSkills:
 		{
-			name_en: "Woodland Gathering Skills",
+			name_en: "Gathering Skill",
 			name_jp: "樹海採集術",
 			details: "Enables the party to get additional materials from gathering, chopping, and mining points.<br>Exact data unknown.",
 			dep: {},
@@ -136,7 +136,7 @@ var raceSkills =
 		},
 		AnimalHusbandry:
 		{
-			name_en: "Animal Husbandry",
+			name_en: "Animal Care",
 			name_jp: "飼育術",
 			details: "Enables the party to raise livestock acquired from events.",
 			dep: {},
@@ -160,7 +160,7 @@ var raceSkills =
 		},
 		MartialArts:
 		{
-			name_en: "Martial Arts",
+			name_en: "Nimble Arts",
 			name_jp: "体術",
 			details: "Increases the user's resistance to all binds by 10%.",
 			dep: {},
@@ -172,7 +172,7 @@ var raceSkills =
 		},
 		ServingPower:
 		{
-			name_en: "Serving Power",
+			name_en: "Resilience",
 			name_jp: "セービングパワー",
 			details: "Increases the user's resistance to petrify, curse, sleep, panic, paralyze, poison, and blind by 10%.",
 			dep: {},
@@ -184,7 +184,7 @@ var raceSkills =
 		},
 		ArmorMastery:
 		{
-			name_en: "Armor Mastery",
+			name_en: "Bulwark",
 			name_jp: "重装マスタリー",
 			details: "Increases the user's resistance to Cut, Bash, and Stab attacks by 5%.",
 			dep: {},
@@ -208,7 +208,7 @@ var raceSkills =
 		},
 		BodyImprovement:
 		{
-			name_en: "Body Improvement",
+			name_en: "Bodybuilding",
 			name_jp: "肉体強化",
 			details: "Increases the user's STR and VIT.",
 			dep: {},
@@ -220,7 +220,7 @@ var raceSkills =
 		},
 		AthleticTraining:
 		{
-			name_en: "Athletic Training",
+			name_en: "Cardio",
 			name_jp: "走力鍛錬",
 			details: "Increases the user's AGI and LUC.",
 			dep: {},
@@ -232,7 +232,7 @@ var raceSkills =
 		},
 		SelfStudy:
 		{
-			name_en: "Self Study",
+			name_en: "Talent",
 			name_jp: "自学自習",
 			details: "Increases the user's INT and WIS.",
 			dep: {},
@@ -244,7 +244,7 @@ var raceSkills =
 		},
 		IndomitableSpirit:
 		{
-			name_en: "Indomitable Spirit",
+			name_en: "Determination",
 			name_jp: "不屈の闘志",
 			details: "Participants Required: 5<br>Nullifies all binds and ailments the enemy tries to inflict, and gives the party a chance to 50% survive any fatal blows, leaving them with 10% of their max HP.<br>(Or it could be a 10% chance to survive, leaving them with 50% of their max HP. Or the chance to survive scales with levels, from 10% to 50%.)",
 			dep: {},
@@ -256,7 +256,7 @@ var raceSkills =
 		},
 		EarthsFavor:
 		{
-			name_en: "Earth's Favor",
+			name_en: "Gaia's Gift",
 			name_jp: "大地の寵愛",
 			details: "Whenever the character uses a master skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -319,7 +319,7 @@ var raceSkills =
 		},
 		FullSpeedEscape:
 		{
-			name_en: "Full Speed Escape",
+			name_en: "Full Retreat",
 			name_jp: "全力逃走",
 			details: "Participants Required: 3<br>100% chance of escaping from battle when used.<br>Sends the party back to the start of the floor. Only works if the battle can even be escaped from.<br>Usable even if the initiator's legs are bound.",
 			dep: {},
@@ -331,7 +331,7 @@ var raceSkills =
 		},
 		MagicHeal:
 		{
-			name_en: "Magic Heal",
+			name_en: "Mana Heal",
 			name_jp: "マジックヒール",
 			details: "Participants Required: 4<br>Restores the party's TP.<br>TP restoration is equal to 3% of max TP + 6.",
 			dep: {},
@@ -355,7 +355,7 @@ var raceSkills =
 		},
 		GraceoftheMoon:
 		{
-			name_en: "Grace of the Moon",
+			name_en: "Lunar Grace",
 			name_jp: "月の恩寵",
 			details: "Whenever the character uses a basic skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -367,7 +367,7 @@ var raceSkills =
 		},
 		Chopping:
 		{
-			name_en: "Chopping",
+			name_en: "Chop",
 			name_jp: "伐採",
 			details: "Enables the party to get additional materials from chopping points.",
 			dep: {},
@@ -379,7 +379,7 @@ var raceSkills =
 		},
 		SenseMana:
 		{
-			name_en: "Sense Mana",
+			name_en: "Detect Mana",
 			name_jp: "魔力感知",
 			details: "Enables the party to initiate certain Adventure Episodes.<br>Also increases the user's INT.",
 			dep: {},
@@ -391,7 +391,7 @@ var raceSkills =
 		},
 		ParadigmShift:
 		{
-			name_en: "Paradigm Shift",
+			name_en: "Game Changer",
 			name_jp: "パラダイムシフト",
 			details: "Participants Required: 2<br>Has a 50% chance of transferring all of an ally's ailments and binds (petrify, curse, sleep, panic, paralyze, poison, blind, head bind, arm bind, and leg bind) to an enemy.",
 			dep: {},
@@ -439,7 +439,7 @@ var raceSkills =
 		},
 		CurseMagic:
 		{
-			name_en: "Curse Magic",
+			name_en: "Hex",
 			name_jp: "カースマジック",
 			details: "Participants Required: 3<br>For the current turn, whenever anyone deals Fire, Ice, or Volt damage, they have a chance of inflicting a random ailment to their targets.",
 			dep: {},
@@ -451,7 +451,7 @@ var raceSkills =
 		},
 		BestowMana:
 		{
-			name_en: "Bestow Mana",
+			name_en: "Imbue",
 			name_jp: "魔力付与",
 			details: "Increases the damage of attack items by 30%.<br>Also increases the user's INT.",
 			dep: {},
@@ -463,7 +463,7 @@ var raceSkills =
 		},
 		ServingPower:
 		{
-			name_en: "Serving Power",
+			name_en: "Resilience",
 			name_jp: "セービングパワー",
 			details: "Increases the user's resistance to petrify, curse, sleep, panic, paralyze, poison, and blind by 10%.",
 			dep: {},
@@ -475,7 +475,7 @@ var raceSkills =
 		},
 		BarrierofSelflessness:
 		{
-			name_en: "Barrier of Selflessness",
+			name_en: "Anatta Barrier",
 			name_jp: "無我の結界",
 			details: "Increases the user's resistance to Fire, Ice, and Volt attacks by 5%.",
 			dep: {},
@@ -487,7 +487,7 @@ var raceSkills =
 		},
 		TripleMagic:
 		{
-			name_en: "Triple Magic",
+			name_en: "Tri-Magic",
 			name_jp: "トリプルマジック",
 			details: "Participants Required: 4<br>Deals ranged INT-based Fire+Ice+Volt damage to all enemies 3 times.<br>Damage scales with the characters' levels.<br>The Union Gauges of the participants otehr than the initiator are left at 40% after use.<br>Has a base accuracy of 110.<br><br>Threshold 1: 100% damage per hit, total 300% damage<br>Threshold 2: 150% damage per hit, total 450% damage<br>Threshold 3: 200% damage per hit, total 600% damage",
 			dep: {},
@@ -499,7 +499,7 @@ var raceSkills =
 		},
 		BodyImprovement:
 		{
-			name_en: "Body Improvement",
+			name_en: "Bodybuilding",
 			name_jp: "肉体強化",
 			details: "Increases the user's STR and VIT.",
 			dep: {},
@@ -511,7 +511,7 @@ var raceSkills =
 		},
 		AthleticTraining:
 		{
-			name_en: "Athletic Training",
+			name_en: "Cardio",
 			name_jp: "走力鍛錬",
 			details: "Increases the user's AGI and LUC.",
 			dep: {},
@@ -523,7 +523,7 @@ var raceSkills =
 		},
 		SelfStudy:
 		{
-			name_en: "Self Study",
+			name_en: "Talent",
 			name_jp: "自学自習",
 			details: "Increases the user's INT and WIS.",
 			dep: {},
@@ -547,7 +547,7 @@ var raceSkills =
 		},
 		MoonsFavor:
 		{
-			name_en: "Moon's Favor",
+			name_en: "Lunar Gift",
 			name_jp: "月の寵愛",
 			details: "Whenever the character uses a master skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -559,7 +559,7 @@ var raceSkills =
 		},
 		AnimalHusbandry:
 		{
-			name_en: "Animal Husbandry",
+			name_en: "Animal Care",
 			name_jp: "飼育術",
 			details: "Enables the party to raise livestock acquired from events.",
 			dep: {},
@@ -571,7 +571,7 @@ var raceSkills =
 		},
 		Concentration:
 		{
-			name_en: "Concentration",
+			name_en: "Focus",
 			name_jp: "集中",
 			details: "Chance to nullify sleep when enemies attempt to inflict it on the user.<br>The nullification chance scales with the user's level.<br><br>Threshold 1: 15% chance<br>Threshold 2: 20% chance<br>Threshold 3: 40% chance",
 			dep: {},
@@ -610,7 +610,7 @@ var raceSkills =
 		},
 		FullSpeedEscape:
 		{
-			name_en: "Full Speed Escape",
+			name_en: "Full Retreat",
 			name_jp: "全力逃走",
 			details: "Participants Required: 3<br>100% chance of escaping from battle when used.<br>Sends the party back to the start of the floor. Only works if the battle can even be escaped from.<br>Usable even if the initiator's legs are bound.",
 			dep: {},
@@ -622,7 +622,7 @@ var raceSkills =
 		},
 		MagicHeal:
 		{
-			name_en: "Magic Heal",
+			name_en: "Mana Heal",
 			name_jp: "マジックヒール",
 			details: "Participants Required: 4<br>Restores the party's TP.<br>TP restoration is equal to 3% of max TP + 6.",
 			dep: {},
@@ -634,7 +634,7 @@ var raceSkills =
 		},
 		GiantSwing:
 		{
-			name_en: "Giant Swing",
+			name_en: "Wide Swing",
 			name_jp: "大振り",
 			details: "Participants Required: 1<br>User attacks all enemies with the equipped weapon.<br>Deals STR-based damage.<br>Attack range depends on the equipped weapon.<br>Damage scales with the characters' levels.<br>The Union Gauges of the participants other than the initiator are left at 40% after use.<br><br>Threshold 1: 100% damage<br>Threshold 2: 175% damage<br>Threshold 3: 250% damage",
 			dep: {},
@@ -646,7 +646,7 @@ var raceSkills =
 		},
 		GraceoftheBattlefield:
 		{
-			name_en: "Grace of the Battlefield",
+			name_en: "Ares' Grace",
 			name_jp: "戦塵の恩寵",
 			details: "Whenever the character uses a basic skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -658,7 +658,7 @@ var raceSkills =
 		},
 		HuntingSkills:
 		{
-			name_en: "Hunting Skills",
+			name_en: "Hunting Skill",
 			name_jp: "狩猟術",
 			details: "Enables the party to initiate certain Adventure Episodes and acquire edible animals in the woodlands.<br>Also increases the user's STR.",
 			dep: {},
@@ -670,7 +670,7 @@ var raceSkills =
 		},
 		Mining:
 		{
-			name_en: "Mining",
+			name_en: "Mine",
 			name_jp: "採掘",
 			details: "Enables the party to get additional materials from mining points.",
 			dep: {},
@@ -682,7 +682,7 @@ var raceSkills =
 		},
 		BondofSpirit:
 		{
-			name_en: "Bond of Spirit",
+			name_en: "Binding Force",
 			name_jp: "気魄の楔",
 			details: "Participants Required: 3<br>For the current turn, whenever anyone deals Cut, Bash, or Stab damage, they have a chance of inflicting a random ailment to their targets.",
 			dep: {},
@@ -694,7 +694,7 @@ var raceSkills =
 		},
 		Acrobatics:
 		{
-			name_en: "Acrobatics",
+			name_en: "Reflexes",
 			name_jp: "軽業",
 			details: "Enables the user to respond with agility to deal with crises, enabling certain Adventure Episodes.<br>Also increases the user's evasion by +30.",
 			dep: {},
@@ -706,7 +706,7 @@ var raceSkills =
 		},
 		Vigilance:
 		{
-			name_en: "Vigilance",
+			name_en: "Precaution",
 			name_jp: "警戒",
 			details: "Preemptive attack rate increases by +30% for every character with this skill.<br>Also increases the user's WIS.",
 			dep: {},
@@ -718,7 +718,7 @@ var raceSkills =
 		},
 		FeatsofStrength:
 		{
-			name_en: "Feats of Strength",
+			name_en: "Brute Strength",
 			name_jp: "力技",
 			details: "Can move or carry things in the woodlands.<br>Also increases the user's STR.",
 			dep: {},
@@ -730,7 +730,7 @@ var raceSkills =
 		},
 		AttackHeal:
 		{
-			name_en: "Attack Heal",
+			name_en: "Life Drain",
 			name_jp: "アタックヒール",
 			details: "Participants Required: 3<br>For the current turn, all party members heal 30% of their max HP every time the initiator deals damage.",
 			dep: {},
@@ -742,7 +742,7 @@ var raceSkills =
 		},
 		WoodlandSearchSkills:
 		{
-			name_en: "Woodland Search Skills",
+			name_en: "Forage Skill",
 			name_jp: "樹海探索術",
 			details: "Enables the party to initiate certain Adventure Episodes and gain items from those.<br>Also increases the user's AGI.",
 			dep: {},
@@ -766,7 +766,7 @@ var raceSkills =
 		},
 		MindsEye:
 		{
-			name_en: "Mind's Eye",
+			name_en: "Third Eye",
 			name_jp: "心眼",
 			details: "Chance to nullify blind when enemies attempt to inflict it on the user.<br>The nullification chance scales with the user's level.<br><br>Threshold 1: 15% chance<br>Threshold 2: 40% chance",
 			dep: {},
@@ -778,7 +778,7 @@ var raceSkills =
 		},
 		TripleAttack:
 		{
-			name_en: "Triple Attack",
+			name_en: "Tri-Attack",
 			name_jp: "トリプルアタック",
 			details: "Participants Required: 4<br>Deals ranged STR-based Cut+Bash+Stab damage to one enemy. Damage scales with the characters levels.<br>The Union Gauges of the participants other than the initiator are left at 40% after use.<br>Has a base accuracy of 110.<br><br>Thershold 1: 200% damage<br>Threshold 2: 325% damage<br>Threshold 3: 450% damage",
 			dep: {},
@@ -790,7 +790,7 @@ var raceSkills =
 		},
 		BodyImprovement:
 		{
-			name_en: "Body Improvement",
+			name_en: "Bodybuilding",
 			name_jp: "肉体強化",
 			details: "Increases the user's STR and VIT.",
 			dep: {},
@@ -802,7 +802,7 @@ var raceSkills =
 		},
 		AthleticTraining:
 		{
-			name_en: "Athletic Training",
+			name_en: "Cardio",
 			name_jp: "走力鍛錬",
 			details: "Increases the user's AGI and LUC.",
 			dep: {},
@@ -814,7 +814,7 @@ var raceSkills =
 		},
 		SelfStudy:
 		{
-			name_en: "Self Study",
+			name_en: "Talent",
 			name_jp: "自学自習",
 			details: "Increases the user's INT and WIS.",
 			dep: {},
@@ -826,7 +826,7 @@ var raceSkills =
 		},
 		SimultaneousAttack:
 		{
-			name_en: "Simultaneous Attack",
+			name_en: "All-Out Attack",
 			name_jp: "一斉攻撃",
 			details: "Participants Required: 5<br>Participants deal STR-based damage to all enemies with their equipped weapons 5 times.<br>Each attack has a 200% chance to inflict stun.<br>Damage scales with the characters levels.<br>Has an accuracy modifier of +10<br><br>Threshold 1: 100% damage, 500% total damage<br>Threshold 2: 110% damage, 550% total damage<br>Threshold 3: 120% damage, 600% total damage<br>Threshold 4: 130% damage, 650% total damage<br>Threshold 5: 140% damage, 700% total damage<br>Threshold 6: 150% damage, 750% total damage<br>Threshold 7: 160% damage, 800% total damage<br>Threshold 8: 170% damage, 850% total damage<br>Threshold 9: 180% damage, 900% total damage<br>Threshold 10: 190% damage, 950% total damage",
 			dep: {},
@@ -838,7 +838,7 @@ var raceSkills =
 		},
 		BattlefieldsFavor:
 		{
-			name_en: "Battlefield's Favor",
+			name_en: "Ares' Gift",
 			name_jp: "戦塵の寵愛",
 			details: "Whenever the character uses a master skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -850,7 +850,7 @@ var raceSkills =
 		},
 		ArmorMastery:
 		{
-			name_en: "Armor Mastery",
+			name_en: "Bulwark",
 			name_jp: "重装マスタリー",
 			details: "Increases the user's resistance to Cut, Bash, and Stab attacks by 5%.",
 			dep: {},
@@ -862,7 +862,7 @@ var raceSkills =
 		},
 		OrganizationalSkills:
 		{
-			name_en: "Organizational Skills",
+			name_en: "Sorting Skill",
 			name_jp: "整頓術",
 			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT.",
 			dep: {},
@@ -901,7 +901,7 @@ var raceSkills =
 		},
 		FullSpeedEscape:
 		{
-			name_en: "Full Speed Escape",
+			name_en: "Full Retreat",
 			name_jp: "全力逃走",
 			details: "Participants Required: 3<br>100% chance of escaping from battle when used.<br>Sends the party back to the start of the floor. Only works if the battle can even be escaped from.<br>Usable even if the initiator's legs are bound.",
 			dep: {},
@@ -913,7 +913,7 @@ var raceSkills =
 		},
 		MagicHeal:
 		{
-			name_en: "Magic Heal",
+			name_en: "Mana Heal",
 			name_jp: "マジックヒール",
 			details: "Participants Required: 4<br>Restores the party's TP.<br>TP restoration is equal to 3% of max TP + 6.",
 			dep: {},
@@ -925,7 +925,7 @@ var raceSkills =
 		},
 		DefenseOrder:
 		{
-			name_en: "Defense Order",
+			name_en: "Guard Order",
 			name_jp: "守備の号令",
 			details: "Participants Required: 2<br>Reduces the damage that all allies take by 50% for the current turn.",
 			dep: {},
@@ -937,7 +937,7 @@ var raceSkills =
 		},
 		GraceoftheWind:
 		{
-			name_en: "Grace of the Wind",
+			name_en: "Zephyr's Grace",
 			name_jp: "風の恩寵",
 			details: "Whenever the character uses a basic skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -949,7 +949,7 @@ var raceSkills =
 		},
 		Gathering:
 		{
-			name_en: "Gathering",
+			name_en: "Take",
 			name_jp: "採取",
 			details: "Enables the party to get additional materials from gathering points.",
 			dep: {},
@@ -961,7 +961,7 @@ var raceSkills =
 		},
 		AnimalHusbandry:
 		{
-			name_en: "Animal Husbandry",
+			name_en: "Animal Care",
 			name_jp: "飼育術",
 			details: "Enables the party to raise livestock acquired from events.",
 			dep: {},
@@ -973,7 +973,7 @@ var raceSkills =
 		},
 		FastasLightning:
 		{
-			name_en: "Fast as Lightning",
+			name_en: "Superspeed",
 			name_jp: "電光石火",
 			details: "Participants Required: 3<br>Gives the party priority for the current turn.",
 			dep: {},
@@ -985,7 +985,7 @@ var raceSkills =
 		},
 		ServingPower:
 		{
-			name_en: "Serving Power",
+			name_en: "Resilience",
 			name_jp: "セービングパワー",
 			details: "Increases the user's resistance to petrify, curse, sleep, panic, paralyze, poison, and blind by 10%.",
 			dep: {},
@@ -1009,7 +1009,7 @@ var raceSkills =
 		},
 		MedicinalPlantKnowledge:
 		{
-			name_en: "Medicinal Plant Knowledge",
+			name_en: "Herbology",
 			name_jp: "薬草学",
 			details: "Increases healing done by recovery items in battle by 50%.",
 			dep: {},
@@ -1021,7 +1021,7 @@ var raceSkills =
 		},
 		TabooMethod:
 		{
-			name_en: "Taboo Method",
+			name_en: "Forbidden Rite",
 			name_jp: "禁忌の法",
 			details: "Participants Required: 3<br>Buffs and debuffs on everyone (both allies and enemies) are forced to last for one more turn.",
 			dep: {},
@@ -1033,7 +1033,7 @@ var raceSkills =
 		},
 		OrganizationalSkills:
 		{
-			name_en: "Organizational Skills",
+			name_en: "Sorting Skill",
 			name_jp: "整頓術",
 			details: "Max item capacity increases by 5 for each character with this skill.<br>Also increases the user's VIT.",
 			dep: {},
@@ -1045,7 +1045,7 @@ var raceSkills =
 		},
 		BarrierofSelflessness:
 		{
-			name_en: "Barrier of Selflessness",
+			name_en: "Anatta Barrier",
 			name_jp: "無我の結界",
 			details: "Increases the user's resistance to Fire, Ice, and Volt attacks by 5%.",
 			dep: {},
@@ -1057,7 +1057,7 @@ var raceSkills =
 		},
 		Acrobatics:
 		{
-			name_en: "Acrobatics",
+			name_en: "Reflexes",
 			name_jp: "軽業",
 			details: "Enables the user to respond with agility to deal with crises, enabling certain Adventure Episodes<br>Also increases the user's evasion by +30.",
 			dep: {},
@@ -1069,7 +1069,7 @@ var raceSkills =
 		},
 		BowlofHygieia:
 		{
-			name_en: "Bowl of Hygieia",
+			name_en: "Hygieia's Bowl",
 			name_jp: "ヒギエイアの杯",
 			details: "Participants Required: 4<br>Fully heals the party, dispels all ailments and binds, and revives any dead party members.",
 			dep: {},
@@ -1081,7 +1081,7 @@ var raceSkills =
 		},
 		BodyImprovement:
 		{
-			name_en: "Body Improvement",
+			name_en: "Bodybuilding",
 			name_jp: "肉体強化",
 			details: "Increases the user's STR and VIT.",
 			dep: {},
@@ -1093,7 +1093,7 @@ var raceSkills =
 		},
 		AthleticTraining:
 		{
-			name_en: "Athletic Training",
+			name_en: "Cardio",
 			name_jp: "走力鍛錬",
 			details: "Increases the user's AGI and LUC.",
 			dep: {},
@@ -1105,7 +1105,7 @@ var raceSkills =
 		},
 		SelfStudy:
 		{
-			name_en: "Self Study",
+			name_en: "Talent",
 			name_jp: "自学自習",
 			details: "Increases the user's INT and WIS.",
 			dep: {},
@@ -1129,7 +1129,7 @@ var raceSkills =
 		},
 		WindsFavor:
 		{
-			name_en: "Wind's Favor",
+			name_en: "Zephyr's Gift",
 			name_jp: "風の寵愛",
 			details: "Whenever the character uses a master skill in combat, they have a small chance to recover some TP.<br>TP restoration is equal to (TP cost of skill used / 5) + 1.",
 			dep: {},
@@ -1141,7 +1141,7 @@ var raceSkills =
 		},
 		Haggling:
 		{
-			name_en: "Haggling",
+			name_en: "Haggle",
 			name_jp: "値切り",
 			details: "Lowers the shop's prices by 5%.<br>This effect does not stack with any other characters that know this skill.<br>Also increases the user's WIS.",
 			dep: {},
