@@ -13,6 +13,7 @@ const CLASSTREE_HEIGHT =  7 * SKILLBOX_HEIGHT + 6 * SKILLBOX_PADDING.y + 5;
 var levelDropdown;
 var raceDropdown;
 var classDropdown;
+var retireDropdown;
 var specializationDropdown;
 
 var remainingPointsLabel;
@@ -26,6 +27,7 @@ var tooltip;
 var level;
 var race;
 var className;
+var retire;
 var specName;
 
 // Skill points
@@ -46,6 +48,7 @@ function init()
 	levelDropdown = document.getElementById("levelDropdown");
 	raceDropdown = document.getElementById("raceDropdown");
 	classDropdown = document.getElementById("classDropdown");
+	retireDropdown = document.getElementById("retireDropdown");
 	specializationDropdown = document.getElementById("specializationDropdown");
 
 	remainingPointsLabel = document.getElementById("remainingPointsLabel");
@@ -65,6 +68,7 @@ function init()
 	specName = specializationDropdown.value;
 	className = classDropdown.value;
 	level = +levelDropdown.value;
+	retire = +retireDropdown.value;
 	race = raceDropdown.value;
 
 	showClassSkillTree();
@@ -179,6 +183,34 @@ function changeClass()
 	}
 }
 
+function changeRetirement()
+{
+	var oldRetire = retire;
+	var pointsUsed = maxPoints - remainingPoints;
+	retire = +(retireDropdown.value);
+	
+	if(retire < oldRetire)
+	{
+		calculateSkillPoints();
+		
+		if(pointsUsed > maxPoints)
+		{
+			resetSkillPoints();
+		}
+		else
+		{
+			remainingPoints = maxPoints - pointsUsed;
+			updatePointsLabels();
+		}	
+	}
+	else
+	{
+		calculateSkillPoints();
+		remainingPoints += (retire - oldRetire);
+		updatePointsLabels();
+	}
+}
+
 function changeSpecialization()
 {
 	var oldSpec = specName;
@@ -218,6 +250,7 @@ function calculateSkillPoints()
 	var points = 2;
 
 	points += level;
+	points += retire;
 
 	if(specName !== "base")
 		points += 5;
