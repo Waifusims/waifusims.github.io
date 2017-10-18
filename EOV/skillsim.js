@@ -27,6 +27,7 @@ var level;
 var race;
 var className;
 var specName;
+var retirementBonus;
 
 // Skill points
 var remainingPoints;
@@ -56,7 +57,6 @@ function init()
 	treeDiv.style.height = CLASSTREE_HEIGHT + "px";
 
 	document.body.style.minWidth = CLASSTREE_WIDTH + "px";
-	//document.getElementById("header").style.minWidth = CLASSTREE_WIDTH + "px";
 
 	tooltip = document.getElementById("tooltip");
 
@@ -65,13 +65,22 @@ function init()
 	specName = specializationDropdown.value;
 	className = classDropdown.value;
 	level = +levelDropdown.value;
-	race = raceDropdown.value;
-
-	showClassSkillTree();
+	race = raceDropdown.value;	
+	retirementBonus = +retirementDropdown.value;
 	
 	calculateSkillPoints();
 	remainingPoints = maxPoints;
 	updatePointsLabels();
+
+	// grab data for the race skills
+	activeRaceSkills = raceSkills[race];
+
+	// grab data for the class skills
+	activeClassSkills = classSkills[className];
+	activeClassSkillLevels = classSkillLevels[className];
+	activeClassSkillForwards = classSkillForwardReqs[className][specName];
+
+	showClassSkillTree();
 }
 
 function populateLevelDropdown()
@@ -88,20 +97,20 @@ function populateLevelDropdown()
 function changeLevel()
 {
 	// store old level for comparison to new level
-	var oldLevel = level;
-
-	// count the number of points we used
-	var pointsUsed = maxPoints - remainingPoints;
+	var oldLevel = level;	
 
 	// update to new level
 	level = +(levelDropdown.value);
 
-	// if we had a specialization, but are lowering to a level below 20, reset to no specialization and remove class skill points
+	// if level drops below 20, reset specialization if we had one
 	if(level < 20 && specializationDropdown.selectedIndex > 0)
 	{
 		specializationDropdown.selectedIndex = 0;
 		changeSpecialization();
 	}
+
+	// count the number of points we used
+	var pointsUsed = maxPoints - remainingPoints;
 	
 	// if we are lowering our level, we need to reset skill points if we placed more than we should have	
 	if(level < oldLevel)
@@ -145,12 +154,40 @@ function changeLevel()
 	{
 		// our level is higher than (or equal to) the level we were previously at, just add more skill points
 		calculateSkillPoints();
-		remainingPoints += (level - oldLevel);
+		remainingPoints = maxPoints - pointsUsed;
 		updatePointsLabels();
 	}
 
 	// redraw the skill tree to account for skills we may now meet the level prereq for
 	redrawCurrentSkillTree();
+}
+
+function changeRetirement()
+{
+	var oldRetirementBonus = retirementBonus;
+	retirementBonus = +(retirementDropdown.value);
+
+	// count the number of points we used
+	var pointsUsed = maxPoints - remainingPoints;	
+
+	// calculate max skill points for new retirement bracket
+	calculateSkillPoints();
+
+	// if we are lowering our level, we need to reset skill points if we placed more than we should have
+	if(oldRetirementBonus > retirementBonus)
+	{	
+		// if we used more points than are now available, reset skill points
+		if(pointsUsed > maxPoints)
+		{
+			resetSkillPoints();
+			remainingPoints = maxPoints;
+			updatePointsLabels();
+			return;
+		}
+	}
+
+	remainingPoints = maxPoints - pointsUsed;
+	updatePointsLabels();
 }
 
 function changeRace()
@@ -162,6 +199,11 @@ function changeRace()
 	{
 		// we selected another race, take back race skill points and draw new tree
 		resetRaceSkillPoints();
+
+		// set new set of race skills
+		activeRaceSkills = raceSkills[race];
+
+		// draw race skill tree
 		showRaceSkillTree();
 	}
 }
@@ -175,61 +217,70 @@ function changeClass()
 	{
 		// we selected another class, take back skill points and draw new skill tree
 		resetClassSkillPoints();		
+
+		// set new set of class skills
+		activeClassSkills = classSkills[className];
+		activeClassSkillLevels = classSkillLevels[className];
+		activeClassSkillForwards = classSkillForwardReqs[className][specName];
+
+		// draw class skill tree
 		showClassSkillTree();		
 	}
 }
 
 function changeSpecialization()
 {
+	// track previous specialization, get new one
 	var oldSpec = specName;
-	specName = specializationDropdown.value;
+	specName = specializationDropdown.value;	
+	
+	if(oldSpec != "base")
+	{
+		// if we had a specialization, remove skill points assigned to previous specialization )
+		resetSpecializationSkillPoints();
+	}
 
+	// grab new set of class skills
+	activeClassSkills = classSkills[className];
+	activeClassSkillLevels = classSkillLevels[className];
+	activeClassSkillForwards = classSkillForwardReqs[className][specName];
+
+	// if we've actually selected a specialization, we need to be at least level 20
 	if(specName != "base")
 	{
 		// if below level 20 and selecting a specialization, upgrade to level 20
 		if(level < 20)
-		{
-			resetClassSkillPoints();
+		{	
+			// raise level to 20 (changelevel will update skill point display)
 			levelDropdown.selectedIndex = 19;
-			changeLevel();
-		}
-
-		// add extra points if switching from no specialization to having a specialization
-		if(oldSpec == "base")
-		{
-			remainingPoints += 5;
 		}
 	}
-	else
-	{
-		// remove extra points if switching from having a specialization to having none
-		if(oldSpec != "base")
-			remainingPoints -= 5;
-	}
 
-	calculateSkillPoints();
-	resetClassSkillPoints();
+	changeLevel();	
+
+	// draw class skill tree
 	showClassSkillTree();	
 }
 
 // sets max skill points to appropriate value for current level/retirement
 function calculateSkillPoints()
 {
-	var points = 2;
-
-	points += level;
+	var points = 2 + level + retirementBonus;
 
 	if(specName !== "base")
 		points += 5;
 
 	maxPoints = points;	
+
+	// constrain spendable points to the maximum available
+	remainingPoints = Math.min(maxPoints, remainingPoints);
 }
 
 function resetClassSkillPoints()
 {	
 	if(activeClassSkills != undefined)
 	{
-		Object.keys(activeClassSkills).forEach(function(skill)
+		Object.keys(activeClassSkillForwards).forEach(function(skill)
 		{
 			remainingPoints = Math.min(maxPoints, remainingPoints + activeClassSkills[skill].level);
 
@@ -247,12 +298,43 @@ function resetClassSkillPoints()
 		});
 	}
 
-	Object.keys(activeClassSkills).forEach(function(skillName)
+	// check levels of skills to make sure prerequisites are met
+	Object.keys(activeClassSkillForwards).forEach(function(skillName)
 	{
 		updateReqs(skillName);
 	});
 	
 	updatePointsLabels();
+}
+
+function resetSpecializationSkillPoints()
+{
+	if(activeClassSkills != undefined)
+	{
+		// only loop through skills available with the current specialization (and base)
+		Object.keys(activeClassSkillForwards).forEach(function(skill)
+		{
+			// only reset specialization skill levels
+			if(activeClassSkills[skill].reqLevel != 0)
+			{
+				// add points back into remaining pool
+				remainingPoints = Math.min(maxPoints, remainingPoints + activeClassSkills[skill].level);
+
+				// remove points from skill
+				activeClassSkills[skill].level = 0;
+
+				// if we're looking at the class skill tree, redraw the level boxes for the skills as we remove points
+				if(activeTree == 0)
+				{	
+					var levelBoxes = document.getElementById(skill + "Levels").children;
+					for(var i = 0; i < levelBoxes.length; i++)
+					{
+						levelBoxes[i].className = "levelBox";
+					}
+				}	
+			}
+		});
+	}
 }
 
 function resetRaceSkillPoints()
@@ -281,9 +363,6 @@ function resetRaceSkillPoints()
 
 function resetSkillPoints()
 {
-	if(remainingPoints == maxPoints)
-		return;
-
 	resetClassSkillPoints();
 	resetRaceSkillPoints();
 }
@@ -514,20 +593,11 @@ function showClassSkillTree()
 	}
 
 	raceTreeButton.className = "";
-	classTreeButton.className = "selected";
-
-	// grab data for the class
-	activeClassSkills = classSkills[className][specName];
-	activeClassSkillLevels = classSkillLevels[className][specName];
-	activeClassSkillForwards = classSkillForwardReqs[className][specName];
-
-	/*
-	activeRaceSkills = raceSkills[race];
-	*/
+	classTreeButton.className = "selected";	
 
 	// create and place node divs for each skill in the active tree
 
-	Object.keys(activeClassSkills).forEach(function(skillName)
+	Object.keys(activeClassSkillForwards).forEach(function(skillName)
 	{		
 		var currentSkill = activeClassSkills[skillName];
 		var currentForwards = activeClassSkillForwards[skillName];
@@ -555,7 +625,7 @@ function showClassSkillTree()
 			if(Object.keys(currentForwards).length > 1)
 			{
 				var ox = (currentSkill.coords.x + 1) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2
-				var oy = classSkills[className][specName][Object.keys(currentForwards)[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
+				var oy = classSkills[className][Object.keys(currentForwards)[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
 
 				drawVerticalLine(ox, oy, (Object.keys(currentForwards).length - 1) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y));
 			}
@@ -579,7 +649,7 @@ function showClassSkillTree()
 			// if there were multiple prereqs draw a connecting line
 			if(prereqNames.length > 1)
 			{
-				var starty = classSkills[className][specName][prereqNames[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
+				var starty = classSkills[className][prereqNames[0]].coords.y * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y) + SKILLBOX_HEIGHT/2;
 
 				drawVerticalLine((currentSkill.coords.x) * (SKILLBOX_WIDTH + SKILLBOX_PADDING.x) - SKILLBOX_PADDING.x/2, starty, (prereqNames.length - 1) * (SKILLBOX_HEIGHT + SKILLBOX_PADDING.y));
 			}			
@@ -632,10 +702,7 @@ function showRaceSkillTree()
 	}
 
 	raceTreeButton.className = "selected";
-	classTreeButton.className = "";
-
-	// grab data for the race
-	activeRaceSkills = raceSkills[race];
+	classTreeButton.className = "";	
 
 	// create and place node divs for each skill
 	Object.keys(activeRaceSkills).forEach(function(skillName)
