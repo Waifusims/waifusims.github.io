@@ -3737,7 +3737,7 @@ var classSkills =
 		{
 			name_en: "Auto-Smoke",
 			name_jp: "先制スモーク",
-			details: "Has a chance to apply a random Smoke skill that the Herbalist knows to the enemy front line at the start of battle.<br>The chance to activate depends on the number of Smoke skills the Herbalist knows."
+			details: "Has a chance to apply a random Smoke skill that the Herbalist knows to the enemy front line at the start of battle.<br>The chance to activate depends on the number of Smoke skills the Herbalist knows.",
 			dep: {SmokeSolid:3,SmokeSpark:3},
 			active: false,
 			reqLevel: 20,
