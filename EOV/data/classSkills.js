@@ -3026,7 +3026,7 @@ var classSkills =
 		{
 			name_en: "Prayer Mastery",
 			name_jp: "祈祷マスタリー",
-			details: "Increases the speed of Prayer skills. Reduces the TP cost of Prayer skills.",
+			details: "Increases the speed and reduces the TP cost of Prayer skills.<br>The TP cost reduction is calculated by subtracting a static amount from the base cost, then multiplying by a percentage.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -3074,7 +3074,7 @@ var classSkills =
 		{
 			name_en: "Blaze Prayer",
 			name_jp: "祈祷：焔",
-			details: "Increases all party members' resistance to fire for a set number of turns.<br>Also adds fire element to normal attacks for the same duration.",
+			details: "Increases all party members' resistance to Fire for a set number of turns.<br>Adds Fire to buffed allies' normal attacks for the same duration.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -3086,7 +3086,7 @@ var classSkills =
 		{
 			name_en: "Hail Prayer",
 			name_jp: "祈祷：氷雨",
-			details: "Increases all party members' resistance to ice for a set number of turns.<br>Also adds ice element to normal attacks for the same duration.",
+			details: "Increases all party members' resistance to Ice for a set number of turns.<br>Adds Ice to buffed allies' normal attacks for the same duration.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -3098,7 +3098,7 @@ var classSkills =
 		{
 			name_en: "Bolt Prayer",
 			name_jp: "祈祷：紫電",
-			details: "Increases all party members' resistance to volt for a set number of turns.<br>Also adds volt element to normal attacks for the same duration.",
+			details: "Increases all party members' resistance to Volt for a set number of turns.<br>Adds Volt to buffed allies' normal attacks for the same duration.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -3110,7 +3110,7 @@ var classSkills =
 		{
 			name_en: "Gospel",
 			name_jp: "福音",
-			details: "Party members that receive buffs from the Shaman will have their HP restored.",
+			details: "Party members that receive buffs from the Shaman will have a percentage of their max HP restored.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -3122,7 +3122,7 @@ var classSkills =
 		{
 			name_en: "Heaven's Gift",
 			name_jp: "天恵",
-			details: "Dispels one buff/debuff on one party member.<br>Restores the target's HP and increases their speed by 1.5x for the turn.<br>The heal amount is doubled if both a buff and debuff are dispelled.<br>Has a 2000% speed modifier at all levels.",
+			details: "Cancels one buff and one debuff on a party member.<br>Restores the target's HP and increases their speed for one turn.<br>The heal amount is doubled if both a buff and debuff are canceled.<br>Has a 2000% speed modifier at all levels.",
 			dep: {PrayerEradication:2,PrayerGuardian:2,PrayerBullseye:2},
 			active: true,
 			reqLevel: 0,
@@ -3134,7 +3134,7 @@ var classSkills =
 		{
 			name_en: "Dance Oracle",
 			name_jp: "神託：乱舞",
-			details: "Cancels Prayer: Blaze/Cold Rain/Purple Lightning on the Shaman.<br>Deals ranged damage of the element to all enemies.<br>Reduces hit targets' resistance to the element for a set number of turns.<br>Has a 200% speed modifier and 150 base accuracy at all levels.",
+			details: "Cancels Blaze Prayer, Hail Prayer, or Bolt Prayer on the Shaman.<br>Deals ranged INT-based damage of the canceled Prayer's element to all enemies.<br>On hit, reduces targets' resistance to the element for a set number of turns.<br>Has a 200% speed modifier and 150% base accuracy at all levels.<br>The Prayer buff canceled will be the first one encountered on the first affected party member.",
 			dep: {PrayerBlaze:3,PrayerColdRain:3,PrayerPurpleLightning:3},
 			active: true,
 			reqLevel: 0,
@@ -3146,7 +3146,7 @@ var classSkills =
 		{
 			name_en: "Ancient Memory",
 			name_jp: "前世の記憶",
-			details: "Gives the Shaman a chance to reapply a buff on themself when it wears off or is dispelled.",
+			details: "When a buff on the Shaman expires or is canceled, gives a chance to reapply it.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3170,7 +3170,7 @@ var classSkills =
 		{
 			name_en: "Offering",
 			name_jp: "神供の加護",
-			details: "Dispels one buff/debuff on the Shaman.<br>Restores TP to party members in the same row.<br>Restore amount is doubled if both a buff and debuff are dispelled.<br>Has an 80% speed modifier at all levels.<br>Costs 40 TP at all levels.",
+			details: "Cancels one buff and one debuff on the user.<br>Restores TP to other party members in the same Line.<br>The restore amount is doubled if both a buff and debuff are dispelled.<br>Has an 80% speed modifier at all levels.<br>Costs 40 TP at all levels.",
 			dep: {BlessingofHeaven:3},
 			active: true,
 			reqLevel: 20,
@@ -3182,7 +3182,7 @@ var classSkills =
 		{
 			name_en: "Magic ATK Up",
 			name_jp: "魔法攻撃ブースト",
-			details: "Increases elemental damage.",
+			details: "Increases the Shaman's Magical damage dealt.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3194,7 +3194,7 @@ var classSkills =
 		{
 			name_en: "Mana Oracle",
 			name_jp: "神託：三走り",
-			details: "Cancels Prayer: Blaze/Prayer: Cold Rain/Prayer: Purple Lightning on all party members.<br>Deals five instances of ranged damage of the same element as the cancelled skill to random targets.<br>Can hit the same target multiple times.<br>Has 150 base accuracy at all levels.",
+			details: "Cancels Blaze Prayer, Hail Prayer, or Bolt Prayer on all party members.<br>Deals 5 instances of ranged INT-based damage of the canceled Prayer's element to random targets.<br>Can hit the same target multiple times.<br>Has 150% base accuracy at all levels.<br>The Prayer buff canceled will be the first one encountered on the first affected party member.",
 			dep: {OracleDance:3},
 			active: true,
 			reqLevel: 20,
@@ -3206,7 +3206,7 @@ var classSkills =
 		{
 			name_en: "Aureole Oracle",
 			name_jp: "神託：後光",
-			details: "Cancels Prayer: Blaze/Prayer: Cold Rain/Prayer: Purple Lightning on all party members.<br>Until the end of the turn, affected party members will absorb all damage of the element of the Prayer that was cancelled.",
+			details: "Cancels Blaze Prayer, Hail Prayer, or Bolt Prayer on all party members.<br>Until the end of the turn, affected party members will absorb all damage of the canceled Prayer's element.<br>The Prayer buff canceled will be the first one encountered on the first affected party member.",
 			dep: {OracleDance:3},
 			active: true,
 			reqLevel: 20,
@@ -3230,7 +3230,7 @@ var classSkills =
 		{
 			name_en: "Purification",
 			name_jp: "禊",
-			details: "Cancels all buffs and debuffs on all party members and enemies.<br>Restores the Shaman's TP for an amount equal to buff types cancelled times the TP restore.<br>Buff types include: party member buff, party member debuff, enemy buff, enemy debuff.<br>Has a 200% speed modifier at all levels.<br>Costs 40 TP at all levels.",
+			details: "Cancels all buffs and debuffs on all party members and enemies.<br>Restores the Shaman's TP for an amount equal to the number of buff types cancelled times the base TP restore amount.<br>Buff types include: party member buff, party member debuff, enemy buff, enemy debuff.<br>Has a 200% speed modifier at all levels.<br>Costs 40 TP at all levels.",
 			dep: {PrayerfortheSoul:5,ProtectionoftheOfferings:5},
 			active: true,
 			reqLevel: 20,
@@ -3254,7 +3254,7 @@ var classSkills =
 		{
 			name_en: "Invoke Gods",
 			name_jp: "神降ろし",
-			details: "Cancels one buff on the Shaman.<br>In exchange, the Shaman will attack an enemy with their equipped weapon, dealing melee STR-based damage and reducing the target's damage until the end of the turn.",
+			details: "Requires 3 buffs on the user.<br>Cancels all buffs on the Shaman.<br>In exchange, the Shaman will attack an enemy with their equipped weapon, dealing melee STR-based damage and reducing the target's damage until the end of the turn.",
 			dep: {OracleThreeRuns:5,OracleHalo:3},
 			active: true,
 			reqLevel: 20,
@@ -3278,7 +3278,7 @@ var classSkills =
 		{
 			name_en: "Exorcism Prayer",
 			name_jp: "祈祷：破邪",
-			details: "Increases all party members' resistance to ailments and binds for a set amount of turns.",
+			details: "Increases all party members' resistance to Ailments and Binds for a set amount of turns.",
 			dep: {BlessingofHeaven:3},
 			active: true,
 			reqLevel: 20,
@@ -3314,7 +3314,7 @@ var classSkills =
 		{
 			name_en: "Holy Flame",
 			name_jp: "忌火",
-			details: "Restores HP to all party members every 3 steps taken in the Labyrinth.",
+			details: "Restores HP to all party members for every 3 steps taken in the Labyrinth.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3338,7 +3338,7 @@ var classSkills =
 		{
 			name_en: "Magic DEF Up",
 			name_jp: "魔法防御ブースト",
-			details: "Reduces magical damage taken.",
+			details: "Reduces Magical damage taken.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3350,7 +3350,7 @@ var classSkills =
 		{
 			name_en: "Status DEF Up",
 			name_jp: "抑制防御ブースト",
-			details: "Increases defense against ailments and binds.",
+			details: "Increases the Shaman's defense against Ailments and Binds.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3362,7 +3362,7 @@ var classSkills =
 		{
 			name_en: "Sanctuary",
 			name_jp: "神域",
-			details: "For one turn, when an ally with a buff is supposed to become afflicted with an ailment or bind, there is a chance they will instead lose the Sanctuary buff instead of having the disable inflicted.<br>Does not protect against instant death.<br>Protects against stun.",
+			details: "For one turn, when an ally with a buff is supposed to become afflicted with an Ailment or Bind, there is a chance they will lose a buff instead.",
 			dep: {PrayerExorcism:5,PrayerEscape:5,PrayerLongevity:5},
 			active: true,
 			reqLevel: 20,
@@ -3389,7 +3389,7 @@ var classSkills =
 		{
 			name_en: "Herb Mastery",
 			name_jp: "ハーブマスタリー",
-			details: "Increases the amount of HP healed from Herb skills during battle. No effect on Herb skills outside of combat.",
+			details: "Increases the amount of HP restored by Herb skills.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -3413,7 +3413,7 @@ var classSkills =
 		{
 			name_en: "Refreshing Herb",
 			name_jp: "リフレシュハーブ",
-			details: "Dispels ailments from one ally.<br>Affects a row at max level.",
+			details: "Dispels Ailments from one ally.<br>Targets a line at max level.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -3425,7 +3425,7 @@ var classSkills =
 		{
 			name_en: "Toxic Smoke",
 			name_jp: "ポイズンスモーク",
-			details: "Attempts to inflict poison on one row.<br>Also lowers poison resistance for a set amount of turns.",
+			details: "Attempts to Poison an enemy Line.<br>Lowers the targets' Poison resistance for a set amount of turns.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -3437,7 +3437,7 @@ var classSkills =
 		{
 			name_en: "Dark Smoke",
 			name_jp: "ダークスモーク",
-			details: "Attempts to inflict blind on one row.<br>Also lowers blind resistance for a set amount of turns.",
+			details: "Attempts to Blind an enemy Line.<br>Lowers the targets' Blind resistance for a set amount of turns.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -3449,7 +3449,7 @@ var classSkills =
 		{
 			name_en: "Sweeping Herb",
 			name_jp: "ラインハーブ",
-			details: "Heals one row.<br>Healing is based on the Herbalist's WIS.",
+			details: "Heals one Line of allies.<br>Healing is based on the Herbalist's WIS.",
 			dep: {CureHerb:5},
 			active: true,
 			reqLevel: 0,
@@ -3461,7 +3461,7 @@ var classSkills =
 		{
 			name_en: "Revival Herb",
 			name_jp: "リザレクトハーブ",
-			details: "Revives a dead ally.<br>Healing is based on the Herbalist's WIS.<br>Has a 70% speed modifier at all levels.",
+			details: "Revives a dead ally.<br>Has a 70% speed modifier at all levels.",
 			dep: {RefreshHerb:3},
 			active: true,
 			reqLevel: 0,
@@ -3473,7 +3473,7 @@ var classSkills =
 		{
 			name_en: "Antibodies",
 			name_jp: "抗体",
-			details: "Increases the recovery rate from ailments and binds.",
+			details: "Increases the Herbalist's chance to recover from Ailments and Binds.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -3485,7 +3485,7 @@ var classSkills =
 		{
 			name_en: "Herb Foraging",
 			name_jp: "薬草知識",
-			details: "The entire party recovers HP and TP every time they harvest, chop, or mine.<br>NOTE: While the HP and TP recovery values are known, the first and last values (activation rate and number of maximum activations) are only guesses. They may represent something else entirely.",
+			details: "The entire party recovers HP and TP when using a Take, Chop, or Mine point.<br>The restore amount is a static number plus a percentage of the party member's maximum HP/TP.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -3497,7 +3497,7 @@ var classSkills =
 		{
 			name_en: "Smokeblight",
 			name_jp: "スモークロット",
-			details: "Decreases one row's magic defense.<br>The MDEF reduction increases if the enemy is suffering from an Smoke skill debuff.",
+			details: "Decreases one enemy Line's magic defense.<br>The MDEF reduction increases if the enemy is has a Smoke skill debuff.",
 			dep: {PoisonSmoke:2,DarkSmoke:2},
 			active: true,
 			reqLevel: 0,
@@ -3509,7 +3509,7 @@ var classSkills =
 		{
 			name_en: "Herb Boost",
 			name_jp: "ハーブブースト",
-			details: "When healing with an Herb skill during battle, allows healing to increase the targets' maximum HP pool for the current turn.",
+			details: "Allows Herb skills to increase the targets' HP beyond their maximum HP for the one turn.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3533,7 +3533,7 @@ var classSkills =
 		{
 			name_en: "Freeing Herb",
 			name_jp: "リカバリーハーブ",
-			details: "Dispels binds from one ally.<br>Affects a row at max level.",
+			details: "Dispels Binds from one ally.<br>The number of binds removed depends on the level of Freeing Herb.<br>Targets a line at max level.",
 			dep: {ResurrectionHerb:3},
 			active: true,
 			reqLevel: 20,
@@ -3545,7 +3545,7 @@ var classSkills =
 		{
 			name_en: "Status DEF Up",
 			name_jp: "抑制防御ブースト",
-			details: "Increases defense against ailments and binds.",
+			details: "Increases defense against Ailments and Binds.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3557,7 +3557,7 @@ var classSkills =
 		{
 			name_en: "Shared Nostrum",
 			name_jp: "秘薬調合",
-			details: "Reduces the action speed and amount recovered from Herb skills in exchange for increased coverage for a set number of turns.<br>Single target skills become row target, and row target skills become AOEs.<br>Already AOE skills will be affected by the negative effects.<br>Has a 70% speed modifier at all levels.",
+			details: "Reduces the action speed and amount restored by Herb skills in exchange for increased coverage for a set number of turns.<br>Single target skills become Line target, and Line target skills become Party target.<br>Party target skills will still be affected by the negative effects.<br>Has a 70% speed modifier at all levels.",
 			dep: {MedicinalKnowledge:5},
 			active: true,
 			reqLevel: 20,
@@ -3605,7 +3605,7 @@ var classSkills =
 		{
 			name_en: "Auto-Revive",
 			name_jp: "オートリザレクト",
-			details: "When an ally dies, the Herbalist has a chance to automatically revive them.<br>Healing is based on the Herbalist's WIS.<br>Has a 70% speed modifier at all levels.",
+			details: "When an ally dies, the Herbalist has a chance to automatically revive them.<br>Has a 70% speed modifier at all levels.",
 			dep: {RecoveryHerb:3},
 			active: true,
 			reqLevel: 20,
@@ -3617,7 +3617,7 @@ var classSkills =
 		{
 			name_en: "Lingering Scent",
 			name_jp: "残り香",
-			details: "For a set number of turns, the last used Herb skill will affect all allies again at the end of the turn.<br>The effectiveness of the follow-up Herb will be reduced if it is a healing skill.<br>Has a 40% speed modifier at all levels.",
+			details: "For a set number of turns, the last used Herb skill will activate again at the end of the turn.<br>The effectiveness of the follow-up Herb will be reduced if it is a healing skill.<br>Has a 40% speed modifier at all levels.",
 			dep: {ChaseHerb:3,DelayHerb:3},
 			active: true,
 			reqLevel: 20,
@@ -3629,7 +3629,7 @@ var classSkills =
 		{
 			name_en: "Smoke Boost",
 			name_jp: "スモークブースト",
-			details: "Increases the action speed and decreases the TP cost of Smoke skills.",
+			details: "Increases the action speed and decreases the TP cost of Smoke skills.<br>The TP cost decrease is calculated by subtrating a static amount from the base cost, then multiplying by a percentage.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3641,7 +3641,7 @@ var classSkills =
 		{
 			name_en: "Status ATK Up",
 			name_jp: "抑制攻撃ブースト",
-			details: "Increases the chance of inflicting ailments and binds.",
+			details: "Increases the chance of inflicting Ailments and Binds.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3653,7 +3653,7 @@ var classSkills =
 		{
 			name_en: "Numbing Smoke",
 			name_jp: "パラライスモーク",
-			details: "Attempts to inflict paralysis on one row.<br>Also lowers paralysis resistance for a set amount of turns.",
+			details: "Attempts to Paralyze an enemy line.<br>Lowers the targets' Paralysis resistance for a set amount of turns.",
 			dep: {Antibody:3},
 			active: true,
 			reqLevel: 20,
@@ -3665,7 +3665,7 @@ var classSkills =
 		{
 			name_en: "Chaos Smoke",
 			name_jp: "マズルスモーク",
-			details: "Attempts to inflict panic on one row.<br>Also lowers panic resistance for a set amount of turns.",
+			details: "Attempts to Panic an enemy Line.<br>Lowers the targets' Panic resistance for a set amount of turns.",
 			dep: {Antibody:3},
 			active: true,
 			reqLevel: 20,
@@ -3677,7 +3677,7 @@ var classSkills =
 		{
 			name_en: "Smokestone",
 			name_jp: "スモークソリッド",
-			details: "Attempts to petrify one enemy that is under the effects of a Smoke related debuff.",
+			details: "Attempts to Petrify one enemy that is affected by a Smoke debuff.",
 			dep: {SmokeRot:5},
 			active: true,
 			reqLevel: 20,
@@ -3689,7 +3689,7 @@ var classSkills =
 		{
 			name_en: "Smokeflash",
 			name_jp: "スモークスパーク",
-			details: "Attempts to stun one enemy that is under the effects of a Smoke related debuff.<br>Has a 300% speed modifier at all levels.",
+			details: "Attempts to Stun one enemy if it is affected by a Smoke debuff.<br>Has a 300% speed modifier at all levels.",
 			dep: {SmokeRot:5},
 			active: true,
 			reqLevel: 20,
@@ -3713,7 +3713,7 @@ var classSkills =
 		{
 			name_en: "Smoke Bomb",
 			name_jp: "スモークボム",
-			details: "Can only be used on enemies with ailments. Deals ranged INT-based fire damage to one enemy.<br>Removes 1 debuff after the attack if the target has any.<br>The initial cast has no speed modifier, while the attack itself has a speed modifier of 80% (No idea how that works, but pretty sure the attack is supposed to happen at the initial cast. Dummy value?) and 150 base accuracy at all levels.",
+			details: "Only effective on enemies with both an Ailment and Debuff applied.<br>Removes 1 Debuff and deals ranged INT-based Fire damage to target enemy.",
 			dep: {ParalyzeSmoke:3,BunglingSmoke:3},
 			active: true,
 			reqLevel: 20,
@@ -3725,7 +3725,7 @@ var classSkills =
 		{
 			name_en: "Passing Scent",
 			name_jp: "移り香",
-			details: "For a set number of turns, the last used Smoke skill has a chance to affect all enemies at the end of the turn.<br>The version of the Smoke skill used is dependent upon this skill's level (As in if you had a level 7 Poison Smoke active, but only have Persisting Scent at level 4, a level 4 Poison Smoke will be cast at the end of the turn).<br>This still works even if Persisting Scent is at a higher level than the currently applied Smoke skill.<br>Has a 70% speed modifier at all levels.",
+			details: "For a set number of turns, the last used Smoke skill has a chance to affect all enemies at the end of the turn.<br>The version of the Smoke skill used is dependent upon this skill's level (As in if you had a level 7 Toxic Smoke active, but only have Passing Scent at level 4, a level 4 Toxic Smoke will be cast at the end of the turn).<br>This still works even if Passing Scent is at a higher level than the currently applied Smoke skill.<br>Has a 70% speed modifier at all levels.",
 			dep: {SmokeSolid:3,SmokeSpark:3},
 			active: true,
 			reqLevel: 20,
@@ -3737,7 +3737,7 @@ var classSkills =
 		{
 			name_en: "Auto-Smoke",
 			name_jp: "先制スモーク",
-			details: "Has a chance to apply a random Smoke skill that the Herbalist knows to the front row when the battle starts.<br>Preemptive Smoke is only 100% (at max) activation if the Herbalist knows all 4 Smoke skills (Paralyze, Bungling, Dark, Poison).",
+			details: "Has a chance to apply a random Smoke skill that the Herbalist knows to the enemy front line at the start of battle.<br>The chance to activate depends on the number of Smoke skills the Herbalist knows."
 			dep: {SmokeSolid:3,SmokeSpark:3},
 			active: false,
 			reqLevel: 20,
