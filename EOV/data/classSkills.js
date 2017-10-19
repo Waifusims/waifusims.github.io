@@ -653,7 +653,7 @@ var classSkills =
 		{
 			name_en: "Shield Throw",
 			name_jp: "シールドスロー",
-			details: "Ranged, STR-based cut attack to a row of enemies.<br>Uses some function of the equipped shield's DEF as a substitute for weapon ATK.<br>Has a 60% speed modifier and 75 base accuracy at all levels.",
+			details: "Ranged, STR-based cut attack to an enemy Line.<br>Uses some function of the equipped shield's DEF as a substitute for weapon ATK.<br>Has a 60% speed modifier and 75 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1646,7 +1646,7 @@ var classSkills =
 		{
 			name_en: "Lighning",
 			name_jp: "ライトニング",
-			details: "Deals ranged INT-based volt damage to one row of enemies.<br>Has a 130% speed modifier and 130 base accuracy at all levels.",
+			details: "Deals ranged INT-based volt damage to an enemy Line.<br>Has a 130% speed modifier and 130 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -2492,7 +2492,7 @@ var classSkills =
 		{
 			name_en: "Feather Storm",
 			name_jp: "舞い散る羽",
-			details: "Commands the Hawk to attempt to inflict blind on one row of enemies.<br>Has a 120% speed modifier at all levels.",
+			details: "Commands the Hawk to attempt to inflict blind on an enemy Line.<br>Has a 120% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -2663,7 +2663,7 @@ var classSkills =
 		{
 			name_en: "Katana Mastery",
 			name_jp: "刀マスタリー",
-			details: "Increases damage dealt with katanas.",
+			details: "Increases damage dealt with Katanas.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -2675,7 +2675,7 @@ var classSkills =
 		{
 			name_en: "Peerless Demon",
 			name_jp: "鬼無双",
-			details: "Increases damage dealt based on how many hits the attack has.",
+			details: "Increases damage dealt based on the number of hits an attack makes.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -2699,7 +2699,7 @@ var classSkills =
 		{
 			name_en: "Armor Pierce",
 			name_jp: "鎧通し",
-			details: "Deals melee stab damage to one enemy.<br>Reduces the target's physical defense for 4 turns.<br>Has a 75% speed modifier and +5 base accuracy at all levels.",
+			details: "Deals melee, STR-based Stab damage to one enemy.<br>Reduces the target's physical defense for 4 turns.<br>Has a 75% speed modifier and 101% base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -2711,7 +2711,7 @@ var classSkills =
 		{
 			name_en: "Air Blade",
 			name_jp: "空刃",
-			details: "Deals ranged cut damage to one enemy.",
+			details: "Deals ranged, STR-based Cut damage to one enemy.<br>Has 96% base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -2723,7 +2723,7 @@ var classSkills =
 		{
 			name_en: "New Challenger",
 			name_jp: "新たな強敵",
-			details: "Immediately begins a battle.<br>Increases the chance of encountering rare breeds.<br>Upon ending one battle, there is an unknown chance of fighting a consecutive one.",
+			details: "Immediately begins a battle.<br>Increases the chance of encountering rare breeds.<br>Upon ending one battle, there is a chance to start another.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -2735,7 +2735,7 @@ var classSkills =
 		{
 			name_en: "Swallow Soar",
 			name_jp: "飛燕",
-			details: "Deals melee cut damage to one enemy.<br>After the enemy has taken their action, hits again.<br>Has a 500% speed modifier and +10 base accuracy at all levels.",
+			details: "Deals melee, STR-based Cut damage to one enemy.<br>After the target has taken their turn, the Masurao will attack again.<br>Has a 500% speed modifier and +10 base accuracy at all levels.<br>If the target acts before this skill is used, the second attack will not be made.",
 			dep: {TotheDeath:3},
 			active: true,
 			reqLevel: 0,
@@ -2747,7 +2747,7 @@ var classSkills =
 		{
 			name_en: "Haze Slash",
 			name_jp: "霞斬り",
-			details: "Deals melee cut damage to one enemy.<br>Attempts to inflict sleep on the target.<br>Has no base accuracy modifier at all levels.",
+			details: "Deals melee, STR-based Cut damage to one enemy.<br>Attempts to inflict Sleep on the target.<br>Has a base accuracy of 96% at all levels.",
 			dep: {ArmorPenetrate:2},
 			active: true,
 			reqLevel: 0,
@@ -2759,7 +2759,7 @@ var classSkills =
 		{
 			name_en: "Whirlwind",
 			name_jp: "鎌鼬",
-			details: "Deals several instances of melee cut damage to random targets.<br>Can hit the same target once at most.<br>Has an 85% speed modifier and no base accuracy modifier at all levels.",
+			details: "Deals several instances of melee Cut damage to random targets.<br>Can hit the same target once at most.<br>Has an 85% speed modifier at all levels.",
 			dep: {VacuumBlade:3},
 			active: true,
 			reqLevel: 0,
@@ -2771,7 +2771,7 @@ var classSkills =
 		{
 			name_en: "High Ground",
 			name_jp: "地の利",
-			details: "Increases the Masauro and allies in their same row's physical attack for a set amount of turns.<br>Has a 60% speed modifier at all levels.",
+			details: "Increases physical attack of the Masurao's Line for a set amount of turns.<br>Has a 60% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -2783,7 +2783,7 @@ var classSkills =
 		{
 			name_en: "Multi-Katana",
 			name_jp: "多刀術",
-			details: "Lets the Masauro equip multiple katanas.<br>When using the Attack command, there is a chance that the Masauro will attack with all of their equipped swords.<br>Every hit past the first has reduced power -- the second hit has 80%, the third hit has 65%, and the fourth hit has 50%.",
+			details: "Lets the Masauro equip multiple katanas.<br>When using the Attack command, there is a chance that the Masauro will attack with all of their equipped weapons.<br>Every hit beyond the first has reduced power -- the second hit has 80%, the third hit has 65%, and the fourth hit has 50%.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -2807,7 +2807,7 @@ var classSkills =
 		{
 			name_en: "Hell Slash",
 			name_jp: "三途渡し",
-			details: "Chases all attacks made by allies and enemies this turn.<br>Deals melee cut damage to targets.<br>Number of max chases is (MaxChases * NumberOfKatanas).<br>Has a 1000% speed modifier and no base accuracy modifier at all levels.",
+			details: "Chases all attacks made by allies and enemies this turn.<br>Deals melee, STR-based Cut damage to targets.<br>Number of max chases is (MaxChases * NumberOfKatanas).<br>Has a 1000% speed modifier and 96% base accuracy at all levels.",
 			dep: {FlyingSparrow:3},
 			active: true,
 			reqLevel: 20,
@@ -2819,7 +2819,7 @@ var classSkills =
 		{
 			name_en: "Sacred Tetrad",
 			name_jp: "四神",
-			details: "Deals melee cut damage to one enemy.<br>Performs a number of hits equal to the number of katanas the Masauro has equipped.<br>Has 101% base accuracy at all levels.",
+			details: "Deals melee cut damage to one enemy.<br>Performs a number of hits equal to the number of Katanas the Masauro has equipped.<br>Has 101% base accuracy at all levels.",
 			dep: {Kamaitachi:3},
 			active: true,
 			reqLevel: 20,
@@ -2831,7 +2831,7 @@ var classSkills =
 		{
 			name_en: "Layered Bloom",
 			name_jp: "八重の華",
-			details: "Deals 2-8 instances of melee cut damage to one row of enemies.<br>Can hit the same target multiple times.<br>The damage modifier has 25% added to it for 2 katanas, 50% for 3 katanas, and 75% for 4 katanas.<br>Has a 70% speed modifier and -4 base accuracy at all levels.",
+			details: "Deals 2-8 instances of melee, STR-based Cut damage to an enemy Line.<br>Can hit the same target multiple times.<br>If the Masurao has multiple Katanas equipped, the damage per hit increases.",
 			dep: {Kamaitachi:3},
 			active: true,
 			reqLevel: 20,
@@ -2855,7 +2855,7 @@ var classSkills =
 		{
 			name_en: "Reincarnation",
 			name_jp: "仮死再生",
-			details: "Gives a chance for the Masauro to revive at 1 HP at the end of the turn when dead.",
+			details: "While dead, gives a chance for the Masauro to revive at 1 HP at the end of the turn.",
 			dep: {HPBoost:3},
 			active: false,
 			reqLevel: 20,
@@ -2867,7 +2867,7 @@ var classSkills =
 		{
 			name_en: "Reblossom",
 			name_jp: "返り咲き",
-			details: "Gives a chance to repeat katana skills.<br>The chance is modified in some unknown way by how many katanas the Masauro has equipped.",
+			details: "If the Masurao has a Katana equipped, gives a chance to repeat Katana skills after use.<br>If the Masurao has multiple Katanas equipped, this chance increases.",
 			dep: {CrossingtheSanzu:3},
 			active: false,
 			reqLevel: 20,
@@ -2879,7 +2879,7 @@ var classSkills =
 		{
 			name_en: "Vast Flourish",
 			name_jp: "百華繚乱",
-			details: "Deals (NumberOfKatanas * NumberOfEnemies) instances of melee cut damage to random enemies.<br>Can hit the same target multiple times.<br>Has a 50% speed modifier and 88% base accuracy at all levels.",
+			details: "Deals (NumberOfKatanas * NumberOfEnemies) instances of melee, STR-based Cut damage to random enemies.<br>Can hit the same target multiple times.<br>Has a 50% speed modifier and 88% base accuracy at all levels.",
 			dep: {FourGods:3,LayeredBlossoms:3},
 			active: true,
 			reqLevel: 20,
@@ -2891,7 +2891,7 @@ var classSkills =
 		{
 			name_en: "Meteor Rain",
 			name_jp: "天流乱星",
-			details: "Deals melee, random-element damage to random enemies.<br>Number of hits is equal to number of katanas equipped.<br>Has 86% base accuracy at all levels.",
+			details: "Deals melee, STR-based random-element damage to random enemies.<br>Number of hits is equal to number of Katanas equipped.<br>Has 86% base accuracy at all levels.",
 			dep: {PhysicalAttackBoost:3},
 			active: true,
 			reqLevel: 20,
@@ -2903,7 +2903,7 @@ var classSkills =
 		{
 			name_en: "Sword God",
 			name_jp: "剣神",
-			details: "Increases the Masauro's critical hit chance.<br>Lets katana skills crit.<br>Increases critical hit damage.",
+			details: "Increases the Masauro's critical hit damage and chance.<br>Lets Katana skills crit.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -2927,7 +2927,7 @@ var classSkills =
 		{
 			name_en: "Foot Sweep",
 			name_jp: "裾払い",
-			details: "Deals melee cut damage to one row of enemies.<br>Reduces hit targets' evasion for a set amount of turns.<br>Has a 120% speed modifier and +20 base accuracy at all levels.",
+			details: "Deals melee, STR-based Cut damage to an enemy Line.<br>On hit, reduces the targets' evasion for a set amount of turns.<br>Has a 120% speed modifier and 146% base accuracy at all levels.",
 			dep: {MistSlice:3},
 			active: true,
 			reqLevel: 20,
@@ -2951,7 +2951,7 @@ var classSkills =
 		{
 			name_en: "Speed Up",
 			name_jp: "素早さブースト",
-			details: "Increases speed, evasion, and accuracy.",
+			details: "Increases the Masurao's speed, evasion, and accuracy.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -2963,7 +2963,7 @@ var classSkills =
 		{
 			name_en: "Bolt Slash",
 			name_jp: "雷切",
-			details: "Deals melee, STR-based cut+volt damage to one enemy.",
+			details: "Deals melee, STR-based Cut+Volt damage to one enemy.",
 			dep: {TPBoost:5},
 			active: true,
 			reqLevel: 20,
@@ -2975,7 +2975,7 @@ var classSkills =
 		{
 			name_en: "Mirror Moon",
 			name_jp: "水月",
-			details: "On this turn, when the Masauro is attacked with physical damage, there is a chance they will counterattack the source.<br>Each time the Masurao counters, the chance to counter again is reduced by 35%.<br>Counterattacks have 116% base accuracy at all levels.",
+			details: "On this turn, when the Masauro is attacked with physical damage, there is a chance they will nullify the damage and counterattack the source.<br>Each time the Masurao counters, the chance to counter again is reduced by 35%.<br>Counterattacks have 116% base accuracy at all levels.",
 			dep: {TPBoost:5},
 			active: true,
 			reqLevel: 20,
@@ -2987,7 +2987,7 @@ var classSkills =
 		{
 			name_en: "Helm Splitter",
 			name_jp: "兜割り",
-			details: "Deals melee cut damage to one enemy.<br>Ignores the enemy's resistance to cut damage.<br>Has a 70% speed modifier at all levels.",
+			details: "Deals melee, STR-based cut damage to one enemy.<br>Ignores the enemy's resistance to Cut damage.<br>Has a 70% speed modifier at all levels.",
 			dep: {LegSweep:5},
 			active: true,
 			reqLevel: 20,
@@ -2999,7 +2999,7 @@ var classSkills =
 		{
 			name_en: "Triple Strike",
 			name_jp: "三段討ち",
-			details: "Deals melee cut damage to one enemy.<br>Can hit up to three times.<br>Each hit attempts to inflict head, arm, and leg bind.<br>If the target is bound by Three-Stage Strike, the skill ends.",
+			details: "Deals 3 instances of melee, STR-based Cut damage to one enemy.<br>The hits attempt to inflict head, arm, and leg bind respectively.<br>If the target is bound by one of the attacks, the remaining attacks will not be made.",
 			dep: {SwordsVigor:5},
 			active: true,
 			reqLevel: 20,
@@ -3011,7 +3011,7 @@ var classSkills =
 		{
 			name_en: "Petal Scatter",
 			name_jp: "散華",
-			details: "Deals ranged, STR-based cut damage to all enemies.<br>Damage decreases based on the number of enemies.<br>The data suggests 65% damage for 2 enemies, 45% for 3 enemies, and 35% for 4+ enemies.<br>Has a 90% speed modifier and no base accuracy modifier at all levels.",
+			details: "Deals ranged, STR-based cut damage to all enemies.<br>Damage decreases based on the number of enemies.<br>Does 65% damage for 2 enemies, 45% for 3 enemies, and 35% for 4+ enemies.<br>Has a 90% speed modifier and 96% base accuracy at all levels.",
 			dep: {SwordsVigor:5},
 			active: true,
 			reqLevel: 20,
