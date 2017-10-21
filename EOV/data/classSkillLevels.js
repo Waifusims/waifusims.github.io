@@ -3347,16 +3347,16 @@ var classSkillLevels =
 		},
 		ConsolingtheDead: 
 		{
-			1: "5% MaxHP Restore",
-			2: "6% MaxHP Restore",
-			3: "7% MaxHP Restore",
-			4: "8% MaxHP Restore",
-			5: "12% MaxHP Restore",
-			6: "14% MaxHP Restore",
-			7: "16% MaxHP Restore",
-			8: "18% MaxHP Restore",
-			9: "20% MaxHP Restore",
-			10: "25% MaxHP Restore",
+			1: "5% healing power",
+			2: "6% healing power",
+			3: "7% healing power",
+			4: "8% healing power",
+			5: "12% healing power",
+			6: "14% healing power",
+			7: "16% healing power",
+			8: "18% healing power",
+			9: "20% healing power",
+			10: "25% healing power",
 		},
 		PrayerExorcism: 
 		{

@@ -3266,7 +3266,7 @@ var classSkills =
 		{
 			name_en: "Appease Spirits",
 			name_jp: "慰霊",
-			details: "When the Shaman is alive, party members with buffs will recover a percentage of their max HP when they act.",
+			details: "When the Shaman is alive, party members with buffs will HP when they act.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -3725,7 +3725,7 @@ var classSkills =
 		{
 			name_en: "Passing Scent",
 			name_jp: "移り香",
-			details: "For a set number of turns, the last used Smoke skill has a chance to affect all enemies at the end of the turn.<br>The version of the Smoke skill used is dependent upon this skill's level (As in if you had a level 7 Toxic Smoke active, but only have Passing Scent at level 4, a level 4 Toxic Smoke will be cast at the end of the turn).<br>This still works even if Passing Scent is at a higher level than the currently applied Smoke skill.<br>Has a 70% speed modifier.",
+			details: "Inflicts a debuff on all enemies that, for a set number of turns, gives a chance to afflict enemies with an ailment based on the Smoke debuffs they are affected by at the end of the turn.<br>The strength of the applied Smoke and chance to apply are dependant on the level of Passing Scent rather than the Smoke skill.<br>Has a 70% speed modifier at all levels.",
 			dep: {SmokeSolid:3,SmokeSpark:3},
 			active: true,
 			reqLevel: 20,
