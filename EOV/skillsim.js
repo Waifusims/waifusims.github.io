@@ -796,7 +796,20 @@ function updateTooltipText(skillName)
 		tooltip.innerHTML = "<strong>" + skill.name_en;
 
 		// add passive/active indicator
-		tooltip.innerHTML += ":&ensp;" + (skill.active ? "Active" : "Passive") + "<br>- - -<br>";
+		tooltip.innerHTML += ":&ensp;" + (skill.active ? "Active" : "Passive");
+
+		// add icons for body parts the skill uses (if any)
+		if(skill.bodyParts != null)
+		{
+			for(var i = 0; i < skill.bodyParts.length; i++)
+			{
+				tooltip.innerHTML += "&ensp;";
+				tooltip.innerHTML += getIcon(skill.bodyParts[i]);
+			}
+		}
+
+		// divider
+		tooltip.innerHTML += "<br>- - -<br>";
 
 		// add skill description
 		tooltip.innerHTML += "<p>" + skill.details + "</p><br>";
@@ -914,6 +927,49 @@ function redrawCurrentSkillTree()
 	{
 		showRaceSkillTree();
 	}
+}
+
+function getIcon(name)
+{
+	var iconHtml = "<img src=\"img/"
+
+	switch(name)
+	{
+		case "HEAD":
+			iconHtml += "head.png";
+			break;
+		case "ARMS":
+			iconHtml += "arm.png";
+			break;
+		case "LEGS":
+			iconHtml += "leg.png";
+			break;
+		case "FIRE":
+			iconHtml += "fire.png";
+			break;
+		case "ICE":
+			iconHtml += "ice.png";
+			break;
+		case "VOLT":
+			iconHtml += "volt.png";
+			break;
+		case "STAB":
+			iconHtml += "";
+			break;
+		case "CUT":
+			iconHtml += "";
+			break;
+		case "BASH":
+			iconHtml += "";
+			break;
+		default:
+			iconHtml += "";
+			break;
+	}
+
+	iconHtml += "\"/>";
+
+	return iconHtml;
 }
 
 function onResize()
