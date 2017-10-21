@@ -22,7 +22,7 @@ var classSkills =
 		{
 			name_en: "Chain Flame",
 			name_jp: "チェインファイア",
-			details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
+			details: "This turn, if the designated target is hit by a Fire or Stab attack, follow up with a STR-based Fire+Stab attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -38,7 +38,7 @@ var classSkills =
 		{
 			name_en: "Chain Freeze",
 			name_jp: "チェインフリーズ",
-			details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
+			details: "This turn, if the designated target is hit by an Ice or Stab attack, follow up with a STR-based Ice+Stab attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -54,7 +54,7 @@ var classSkills =
 		{
 			name_en: "Chain Shock",
 			name_jp: "チェインショック",
-			details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
+			details: "This turn, if the designated target is hit by a Volt or Stab attack, follow up with a STR-based Volt+Stab attack.<br>The chance of a Chain activating starts at 100%, and decreases with each activation.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -102,7 +102,7 @@ var classSkills =
 		{
 			name_en: "Chain Burst",
 			name_jp: "チェインバースト",
-			details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element.<br>The activation has +10 base accuracy.",
+			details: "When an enemy is killed with a Chain skill, the Fencer will attack another enemy with melee STR-based damage of the same element.",
 			dep: {ChainFire:2, ChainIce:2, ChainVolt:2},
 			active: false,
 			reqLevel: 0,
@@ -134,7 +134,7 @@ var classSkills =
 		{
 			name_en: "Optic Thrust",
 			name_jp: "ビジョンスラスト",
-			details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy.",
+			details: "Melee, STR-based stab attack to one enemy, may blind.<br>Has a 120% speed modifier and +25 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -182,7 +182,7 @@ var classSkills =
 		{
 			name_en: "Phantom Swords",
 			name_jp: "幻惑の剣舞",
-			details: "Reduces the accuracy of one enemy line for a set amount of turns.<br>Has a 90% speed modifier.",
+			details: "Reduces the accuracy of one enemy line for a set amount of turns.<br>Has a 90% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -214,7 +214,7 @@ var classSkills =
 		{
 			name_en: "Deft Thrust",
 			name_jp: "シャープスラスト",
-			details: "Melee, STR-based stab attack to one enemy.<br>For the rest of the turn, the Fencer's evasion and chance to be targeted are increased.<br>Has a 500% speed modifier and 119% base accuracy.",
+			details: "Melee, STR-based stab attack to one enemy.<br>For the rest of the turn, the Fencer's evasion and chance to be targeted are increased.<br>Has a 500% speed modifier and 119% base accuracy at all levels.",
 			dep: {VisionThrust:3},
 			active: true,
 			reqLevel: 20,
@@ -230,7 +230,7 @@ var classSkills =
 		{
 			name_en: "Counter Boost",
 			name_jp: "カウンタブースト",
-			details: "Gives a chance for an additional counterattack when Sylphid activates.",
+			details: "Gives a chance for additional counterattacks when Sylphid activates.",
 			dep: {Sylphid:5},
 			active: false,
 			reqLevel: 20,
@@ -262,7 +262,7 @@ var classSkills =
 		{
 			name_en: "Lure",
 			name_jp: "誘い込み",
-			details: "On this turn, when the Fencer dodges an attack, all other party members in their row will counter-attack the source of the attack.<br>The counterattacks are based on the attacking party members' individual stats/equipment/buffs/abilities.<br>Has a 300% speed modifier.<br>Counter-attacks have 104% base accuracy.",
+			details: "On this turn, when the Fencer dodges an attack, all other party members in their row will counter-attack the source of the attack.<br>The counterattacks are based on the attacking party members' individual stats/equipment/buffs/abilities.<br>Has a 300% speed modifier at all levels.<br>Counter-attacks have 104% base accuracy at all levels.",
 			dep: {BewitchingSwordDance:3},
 			active: true,
 			reqLevel: 20,
@@ -294,7 +294,7 @@ var classSkills =
 		{
 			name_en: "Divine Gust",
 			name_jp: "ディバインガスト",
-			details: "Increases all party members' evasion for one turn.<br>Each time a party member dodges, the bonus provided by Divine Gust is reduced.<br>Has a 150% speed modifier.",
+			details: "Increases all party members' evasion for one turn.<br>Each time a party member dodges, the bonus provided by Divine Gust is reduced.<br>Has a 150% speed modifier at all levels.",
 			dep: {PreemptiveCurtain:3},
 			active: true,
 			reqLevel: 20,
@@ -310,7 +310,7 @@ var classSkills =
 		{
 			name_en: "Revenge Thrust",
 			name_jp: "リベンジスラスト",
-			details: "Melee, STR-based stab+volt attack to one enemy.<br>Damage is equal to a modifier multiplied by the number of times the Fencer has dodged since the last use of Revenge Thrust, but has a maximum value.<br>Has a 75% speed modifier and +10 base accuracy.",
+			details: "Melee, STR-based stab+volt attack to one enemy.<br>Damage is equal to a modifier multiplied by the number of times the Fencer has dodged since the last use of Revenge Thrust, but has a maximum value.<br>Has a 75% speed modifier and +10 base accuracy at all levels.",
 			dep: {SharpThrust:5},
 			active: true,
 			reqLevel: 20,
@@ -326,7 +326,7 @@ var classSkills =
 		{
 			name_en: "Sonic Blade",
 			name_jp: "音速剣",
-			details: "Gives normal attacks a chance to add an extra cut attack.<br>The extra attack has the same base damage as the first.",
+			details: "Gives normal attacks a chance to add an extra Cut attack.<br>The extra attack has the same base damage as the first.",
 			dep: {RapierMastery:3},
 			active: false,
 			reqLevel: 20,
@@ -342,7 +342,7 @@ var classSkills =
 		{
 			name_en: "Chain Killer",
 			name_jp: "チェインキラー",
-			details: "Targets one enemy.<br>For one turn, if that enemy becomes afflicted with an ailment, bind, or stun, the Fencer will attack.<br>Follow-up attacks have 99% base accuracy.",
+			details: "Targets one enemy.<br>For one turn, if that enemy becomes afflicted with an ailment, bind, or stun, the Fencer will attack.<br>Follow-up attacks have 99% base accuracy at all levels.",
 			dep: {ChainBoost:3, ChainBurst:3},
 			active: true,
 			reqLevel: 20,
@@ -374,7 +374,7 @@ var classSkills =
 		{
 			name_en: "Multi-Stab",
 			name_jp: "乱れ突き",
-			details: "Performs a random number of randomly-distributed attacks to an enemy line.<br>Can hit the same target multiple times.<br>94% base accuracy.",
+			details: "Performs a random number of randomly-distributed attacks to an enemy line.<br>Can hit the same target multiple times.<br>94% base accuracy at all levels.",
 			dep: {VisionThrust:3},
 			active: true,
 			reqLevel: 20,
@@ -466,7 +466,7 @@ var classSkills =
 		{
 			name_en: "Resonance",
 			name_jp: "レゾナンス",
-			details: "Melee stab attack to one enemy.<br>Damage is equal to a base amount multiplied by the number of times the Fencer attacked last turn, but has a maximum value.<br>Maximum damage is achieved with 9 attacks.<br>Has a 75% speed modifier and 109% base accuracy.",
+			details: "Melee stab attack to one enemy.<br>Damage is equal to a base amount multiplied by the number of times the Fencer attacked last turn, but has a maximum value.<br>Maximum damage is achieved with 9 attacks.<br>Has a 75% speed modifier and 109% base accuracy at all levels.",
 			dep: {RandomStab:5},
 			active: true,
 			reqLevel: 20,
@@ -533,7 +533,7 @@ var classSkills =
 		{
 			name_en: "Decoy Bunker",
 			name_jp: "バンカー",
-			details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP.<br>In addition to reduction via its DEF value, the bunker only takes a set percent of any damage.<br>Has a 125% speed modifier.",
+			details: "Creates a bunker that draws enemy attacks.<br>The bunker has 10 HP at all levels.<br>In addition to reduction via its DEF value, the bunker only takes a set percent of any damage.<br>Has a 125% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -569,7 +569,7 @@ var classSkills =
 		{
 			name_en: "Barrage Wall",
 			name_jp: "バラージウォール",
-			details: "Deals ranged, STR-based Bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier.",
+			details: "Deals ranged, STR-based Bash damage to all enemies.<br>Reduces hit targets' physical attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -593,7 +593,7 @@ var classSkills =
 		{
 			name_en: "Defense Form",
 			name_jp: "防衛陣地",
-			details: "Can only be used when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier.",
+			details: "Can only be used when a bunker is out.<br>Increases all party members' physical defense for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 			dep: {Bunker:2},
 			active: true,
 			reqLevel: 0,
@@ -653,7 +653,7 @@ var classSkills =
 		{
 			name_en: "Shield Throw",
 			name_jp: "シールドスロー",
-			details: "Ranged, STR-based cut attack to an enemy Line.<br>Uses some function of the equipped shield's DEF as a substitute for weapon ATK.<br>Has a 60% speed modifier and 75 base accuracy.",
+			details: "Ranged, STR-based cut attack to an enemy Line.<br>Uses the equipped shield's DEF multiplied by 3 as a substitute for weapon ATK.<br>Has a 60% speed modifier and 75 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -725,7 +725,7 @@ var classSkills =
 		{
 			name_en: "Gun Revenge",
 			name_jp: "ガンリベンジ",
-			details: "Increases the damage of artillery skills after either activating a Guard skill, or a Bunker or Pillbox is attacked.",
+			details: "Increases the damage of artillery skills after either activating a Guard skill, or a Bunker or Turret is attacked.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -749,7 +749,7 @@ var classSkills =
 		{
 			name_en: "Rapid Cannon",
 			name_jp: "ラピッドカノン",
-			details: "Ranged, STR-based bash attack to one enemy at the start of the turn.<br>Has +20 base accuracy.",
+			details: "Ranged, STR-based bash attack to one enemy at the start of the turn.<br>Has +20 base accuracy at all levels.",
 			dep: {BarrageWall:3},
 			active: true,
 			reqLevel: 20,
@@ -761,7 +761,7 @@ var classSkills =
 		{
 			name_en: "Curse Cannon",
 			name_jp: "カースカノン",
-			details: "Ranged, STR-based bash attack to one enemy, may curse.<br>Has a 60% speed modifier.",
+			details: "Ranged, STR-based bash attack to one enemy, may curse.<br>Has a 60% speed modifier at all levels.",
 			dep: {BarrageWall:3},
 			active: true,
 			reqLevel: 20,
@@ -773,7 +773,7 @@ var classSkills =
 		{
 			name_en: "Hypno Cannon",
 			name_jp: "ヒュプノカノン",
-			details: "Ranged, STR-based Bash attack to one enemy, may sleep.<br>Has a 60% speed modifier.",
+			details: "Ranged, STR-based Bash attack to one enemy, may sleep.<br>Has a 60% speed modifier at all levels.",
 			dep: {BarrageWall:3},
 			active: true,
 			reqLevel: 20,
@@ -785,7 +785,7 @@ var classSkills =
 		{
 			name_en: "Decoy Turret",
 			name_jp: "トーチカ",
-			details: "Creates a pillbox that draws enemy attacks.<br>When attacked, the pillbox will counter-attack the source of the damage.<br>The pillbox has 10 HP.<br>In addition to reduction via its DEF value, the pillbox only takes a set percent of any damage.",
+			details: "Creates a turret that draws enemy attacks.<br>When attacked, the turret will counter-attack the source of the damage.<br>The turret has 10 HP at all levels.<br>In addition to reduction via its DEF value, the turret only takes a set percent of any damage.",
 			dep: {DefensivePosition:3},
 			active: true,
 			reqLevel: 20,
@@ -833,7 +833,7 @@ var classSkills =
 		{
 			name_en: "Gun Support",
 			name_jp: "ガンサポート",
-			details: "Gives a chance to automatically use Pillbox when the Dragoon reduces damage being taken themselves, or negates an attack.",
+			details: "Gives a chance to automatically use Decoy Turret when the Dragoon reduces damage being taken themselves, or negates an attack.",
 			dep: {Pillbox:3},
 			active: false,
 			reqLevel: 20,
@@ -860,7 +860,7 @@ var classSkills =
 		{
 			name_en: "Concussion",
 			name_jp: "フリッカー",
-			details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5.",
+			details: "Deals STR-based melee bash damage to one target and has a chance to bind their head.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -872,7 +872,7 @@ var classSkills =
 		{
 			name_en: "Arm Crusher",
 			name_jp: "アームブレイク",
-			details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5.",
+			details: "Deals STR-based melee bash damage to one target and has a chance to bind their arms.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -884,7 +884,7 @@ var classSkills =
 		{
 			name_en: "Low Blow",
 			name_jp: "リバーブロー",
-			details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5.",
+			details: "Deals STR-based melee bash damage to one target and has a chance to bind their legs.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -896,7 +896,7 @@ var classSkills =
 		{
 			name_en: "Blood Wrath",
 			name_jp: "血の暴走",
-			details: "Every time the Cestus' HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier.",
+			details: "Every time the Pugilist's HP decreases, they have a chance of attacking a random enemy with their current weapon.<br>The damage modifier of the attack is 100%, and is capped at 5 attacks per turn.<br>The attacks do not count as normal attacks (They can't crit).<br>Has a +5 accuracy modifier at all levels.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -908,7 +908,7 @@ var classSkills =
 		{
 			name_en: "Thunder Fist",
 			name_jp: "雷神拳",
-			details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Cestus takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10.",
+			details: "Deals STR-based melee bash + volt damage to one target.<br>If the target does not die, the Pugilist takes recoil damage.<br>Has a 130% speed modifier and an accuracy modifier of +10 at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -932,7 +932,7 @@ var classSkills =
 		{
 			name_en: "One-Two Punch",
 			name_jp: "ワンツー",
-			details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Cestus knows (Flicker, Arm Break, or Liver Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5.",
+			details: "Deals STR-based melee bash damage to one target. Has a chance to follow up with all binding skills the Pugilist knows (Concussion, Arm Crusher, and Low Blow) on unbound parts.<br>Has a 90% speed modifier and an accuracy modifier of +5 at all levels.",
 			dep: {Flicker:3,ArmBreak:3,LiverBlow:3},
 			active: true,
 			reqLevel: 0,
@@ -944,7 +944,7 @@ var classSkills =
 		{
 			name_en: "Overexertion",
 			name_jp: "粉骨砕身",
-			details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP every time they act (This means that the HP loss from this buff cannot kill them no matter what).<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier.",
+			details: "Places a buff on an ally that boosts the amount of physical damage they deal for 4 turns, but causes them to lose a portion of their current HP before their every action (This means that the HP loss from this buff cannot kill them no matter what).<br>The initial cast does not cause the target to lose HP.<br>Has a 40% speed modifier at all levels.",
 			dep: {RushingBlood:1},
 			active: true,
 			reqLevel: 0,
@@ -956,7 +956,7 @@ var classSkills =
 		{
 			name_en: "Devil's Fist",
 			name_jp: "鬼人拳",
-			details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier.",
+			details: "The Pugilist spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target that splashes to adjacent enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 			dep: {ThunderGodFist:2},
 			active: true,
 			reqLevel: 0,
@@ -968,7 +968,7 @@ var classSkills =
 		{
 			name_en: "Double Punch",
 			name_jp: "ダブルパンチ",
-			details: "If a binding skill fails to inflict a bind, there is a chance for that skill to activate again.<br>Will not activate if the target already has the specified body part bound.",
+			details: "When Concussion, Arm Crusher, Low Blow or Corkscrew is used (on their own) and fails to inflict its disable, there is a chance for that skill to activate again.<br>Will not activate if the target already has the applicable disable.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -980,7 +980,7 @@ var classSkills =
 		{
 			name_en: "Corkscrew",
 			name_jp: "コークスクリュー",
-			details: "Deals STR-based melee bash damage to one target and has a chance to inflict paralysis.<br>Has a 90% speed modifier and an accuracy modifier of -5.",
+			details: "Deals STR-based melee bash damage to one target and has a chance to inflict paralysis.<br>Has a 90% speed modifier and an accuracy modifier of -5 at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -1004,7 +1004,7 @@ var classSkills =
 		{
 			name_en: "Cross Counter",
 			name_jp: "クロスカウンター",
-			details: "When an ally on the same row takes physical damage, the Cestus counters with a STR-based melee attack that attempts to bind the body part used to attack. Only activates once per turn.<br>Has a 1500% speed modifier and an accuracy modifier of +50.",
+			details: "When an ally on the same row takes physical damage, the Pugilist counters with a STR-based melee attack that attempts to bind the body part used to attack. Only activates once per turn.<br>Has a 1500% speed modifier and an accuracy modifier of +50 at all levels.",
 			dep: {GivingitEverything:5},
 			active: true,
 			reqLevel: 20,
@@ -1016,7 +1016,7 @@ var classSkills =
 		{
 			name_en: "Breather",
 			name_jp: "インターバル",
-			details: "Dispels all ailments and binds on the Cestus and increases their attack power for the next turn.<br>Does not work if you don't have any binds/ailments.<br>Will not increase the damage output of Union skills.<br>The charge lasts until the end of the next turn (This means that the charge will not get used up on the very next attack).<br>Has a 200% speed modifier.",
+			details: "Dispels all ailments and binds on the Cestus and increases their attack power for the next turn.<br>Does not work if you don't have any binds/ailments.<br>Will not increase the damage output of Union skills.<br>The charge lasts until the end of the next turn (This means that the charge will not get used up on the very next attack).<br>Has a 200% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -1028,7 +1028,7 @@ var classSkills =
 		{
 			name_en: "Fault Blocker",
 			name_jp: "アームブロック",
-			details: "Raises ailment and bind resistance for allies in the same row as the Cestus for a set number of turns (This buff may follow EO4's Dancer buff rules).<br>Has a speed modifier of 70%.",
+			details: "Reduces the chance of being afflicted with ailments and binds for allies in the user's row for a set number of turns.<br>Has a speed modifier of 70% at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -1052,7 +1052,7 @@ var classSkills =
 		{
 			name_en: "Leading Blow",
 			name_jp: "リードブロー",
-			details: "Deals STR-based melee bash damage to one enemy.<br>If they have any binds or ailments, follow up with any skills that inflict those binds (Flicker, Arm Break, or Liver Blow).<br>For ailments, Corkscrew will be used, no matter what ailment the target has.<br>Has a 90% speed modifier and no accuracy modifier.",
+			details: "Deals STR-based melee bash damage to one enemy.<br>If they have any binds or ailments, follow up with the appropriate binding skill (Concussion, Arm Crusher and Low Blow) for binds, and Corkscrew for ailments.<br>Has a 90% speed modifier and no accuracy modifier at all levels.",
 			dep: {Corkscrew:2,OneTwo:5},
 			active: true,
 			reqLevel: 20,
@@ -1064,7 +1064,7 @@ var classSkills =
 		{
 			name_en: "Lash Out",
 			name_jp: "ラッシュアウト",
-			details: "Attacks one enemy with STR-based melee bash damage multiple times.<br>The number of attacks is equal to the number of times the Cestus attacked on the previous turn. Maximum number of hits is 9.<br>Any Union skills that got cast does not count toward the hit total.<br>Has an 80% speed modifier and an accuracy modifier of -10.",
+			details: "Attacks one enemy with STR-based melee bash damage multiple times.<br>The number of attacks is equal to the number of times the Pugilist attacked on the previous turn. Maximum number of hits is 9.<br>Any Union skills that got cast does not count toward the hit total.<br>Has an 80% speed modifier and an accuracy modifier of -10 at all levels.",
 			dep: {SpeedBoost:5},
 			active: true,
 			reqLevel: 20,
@@ -1076,7 +1076,7 @@ var classSkills =
 		{
 			name_en: "Clinch",
 			name_jp: "クリンチ",
-			details: "Chance to bind the head, arms, and legs of the Cestus and one enemy.<br>Attempts to bind the enemy before binding the Cestus.<br>Has an 80% speed modifier.",
+			details: "Chance to bind the head, arms, and legs of the Pugilist and one enemy.<br>Attempts to bind the enemy before binding the Pugilist.<br>Has an 80% speed modifier at all levels.",
 			dep: {Interval:3,ArmBlock:3},
 			active: true,
 			reqLevel: 20,
@@ -1088,7 +1088,7 @@ var classSkills =
 		{
 			name_en: "Fortitude",
 			name_jp: "不屈",
-			details: "Increases the Cestus' damage output when their HP is below a certain percentage.",
+			details: "Increases the Pugilist' damage output when their HP is below a certain percentage.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -1100,7 +1100,7 @@ var classSkills =
 		{
 			name_en: "Vajra Stance",
 			name_jp: "金剛の構え",
-			details: "Raises physical defense for allies in the same row as the Cestus for a set number of turns (This buff may follow EO4's Dancer buff rules).<br>Has a speed modifier of 70%.",
+			details: "Raises physical defense for allies in the same row as the Cestus for a set number of turns.<br>Has a speed modifier of 70% at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -1112,7 +1112,7 @@ var classSkills =
 		{
 			name_en: "Soul Crusher",
 			name_jp: "魂砕き",
-			details: "Deals STR-based melee bash damage to all enemies, and heals the Cestus for a portion of the damage they dealt.<br>Has an 80% speed modifier and an accuracy modifier of -5.",
+			details: "Deals STR-based melee bash damage to all enemies, and heals the Pugilist for a portion of the damage they dealt.<br>Has an 80% speed modifier and an accuracy modifier of -5 at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -1124,7 +1124,7 @@ var classSkills =
 		{
 			name_en: "Titan Killer",
 			name_jp: "大物殺し",
-			details: "Deals STR-based melee bash damage to one enemy.<br>Deals even more damage as long as the target has at least 1% more remaining HP% than the Cestus' current HP pool.<br>Has a 150% speed modifier and no accuracy modifier.",
+			details: "Deals STR-based melee bash damage to one enemy.<br>Deals even more damage as long as the target has a higher currentHP/maxHP ratio than the user.<br>Has a 150% speed modifier and no accuracy modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 20,
@@ -1136,7 +1136,7 @@ var classSkills =
 		{
 			name_en: "Death's Edge",
 			name_jp: "黄泉返し",
-			details: "Deals STR-based melee bash damage to one enemy.<br>Deals more damage the less HP the entire party has. How this works is that each % of HP missing is added onto a 1x multiplier (dead party members do not count for this), up to a maximum of a 5.95x multiplier (each party member has only 1% HP remaining).<br>Has a 20% speed modifier and an accuracy modifier of +50.",
+			details: "Deals STR-based melee bash damage to one enemy.<br>Deals more damage the less HP the entire party has. Both the party's current average precentage of HP remaining as well as the raw amount of HP missing are taken into account by this.<br>Has a 20% speed modifier and an accuracy modifier of +50 at all levels.",
 			dep: {GivingitEverything:3},
 			active: true,
 			reqLevel: 20,
@@ -1148,7 +1148,7 @@ var classSkills =
 		{
 			name_en: "Satan's Fist",
 			name_jp: "鬼神拳",
-			details: "The Cestus spends a portion of their maximum HP to deal STR-based melee bash damage to 1 target.<br>Has an 80% speed modifier and no accuracy modifier.",
+			details: "The Pugilist spends a portion of their maximum HP to deal STR-based melee bash damage to one row of enemies.<br>Has an 80% speed modifier and no accuracy modifier at all levels.",
 			dep: {DemonFist:3},
 			active: true,
 			reqLevel: 20,
@@ -1184,7 +1184,7 @@ var classSkills =
 		{
 			name_en: "Abyssal Killer",
 			name_jp: "奥義 煉獄殺",
-			details: "When cast, places the Cestus under the Endure status (not a buff, lasts one turn), which lets them survive a fatal blow and increases the amount of damage they deal on the next turn when the Endure activates.<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier.",
+			details: "When cast, the user will endure fatal damage once.<br>If the user endured a fatal hit through Abyssal Killer, their damage on the next turn is increased by a base multiplier, multiplied by the square root of the square root of the precentage of the user's maxHP the endured hit would've overkilled them by.<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.",
 			dep: {VajraStance:5,SoulSmash:5},
 			active: true,
 			reqLevel: 20,
@@ -1196,7 +1196,7 @@ var classSkills =
 		{
 			name_en: "Heavenly Aid",
 			name_jp: "奥義 天地破天",
-			details: "When cast, this lets the Cestus deal even more damage on the next turn the more HP they recover on the previous turn (Not a buff, lasts one turn).<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier.<br>NOTE: How much HP recovery is needed to reach the max damage boost is currently unknown at this time.",
+			details: "Increase the user's damage on the next turn based on the amount of HP the user is recovered by on this turn.<br>The damage increase is approximately by a base multiplier, multiplied by the precentage of their maxHP the user recovered.<br>The damage boost will not affect Union skills.<br>Has a 200% speed modifier at all levels.",
 			dep: {GiantKiller:3,BackFromtheDead:3},
 			active: true,
 			reqLevel: 20,
@@ -1223,7 +1223,7 @@ var classSkills =
 		{
 			name_en: "Miasma Armor",
 			name_jp: "瘴気の兵装",
-			details: "Sacrifices a percentage of the user's current HP to apply the Miasma Armor buff to the user for 3 turns, increasing all action speed (including normal attacks) while active.",
+			details: "Sacrifices a percentage of the user's current HP to apply the Miasma Armor state (not a buff) to the user for 3 turns, increasing all action speed (including normal attacks) while active.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1247,7 +1247,7 @@ var classSkills =
 		{
 			name_en: "Paralyzing Reap",
 			name_jp: "痺止の鎌",
-			details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and 98% base accuracy.",
+			details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict paralysis.<br>Has a 60% speed modifier and 98% base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1295,7 +1295,7 @@ var classSkills =
 		{
 			name_en: "Judgment",
 			name_jp: "死の審判",
-			details: "If Miasma Armor is active, the Harbinger has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100%.",
+			details: "If Miasma Armor is active, the Harbinger has a chance to put an enemy to sleep every time they lose HP.<br>The sleep has a base infliction rate of 100% at all levels.",
 			dep: {MiasmaWeapon:2},
 			active: false,
 			reqLevel: 0,
@@ -1319,7 +1319,7 @@ var classSkills =
 		{
 			name_en: "Cursed Reap",
 			name_jp: "呪禁の鎌",
-			details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier.",
+			details: "Deals STR based melee cut damage to one row.<br>If Miasma Armor is active, has a chance to inflict curse.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 			dep: {ScytheofNumbStasis:3},
 			active: true,
 			reqLevel: 0,
@@ -1331,7 +1331,7 @@ var classSkills =
 		{
 			name_en: "Black Blade",
 			name_jp: "黒き刃",
-			details: "If Miasma Armor is active, the Harbinger's attack power increases every time they inflict an ailment.<br>Lasts until the Harbinger dies, or until the battle ends.<br>Affects all damage types.",
+			details: "If Miasma Armor is active, the Harbinger's attack power increases every time they inflict an ailment.<br>The bonus is reset is Miasma Armor state ends for any reason.<br>Affects all damage types.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -1355,7 +1355,7 @@ var classSkills =
 		{
 			name_en: "Bloody Reap",
 			name_jp: "鮮血の斬撃",
-			details: "The Harbinger sacrifices a portion of their current HP to deal 2 to 4 STR based melee cut attacks to random enemies.<br>Has a 50% speed modifier and -10 accuracy modifier.",
+			details: "The Harbinger sacrifices a portion of their current HP to deal 2 to 4 STR based melee cut attacks to random enemies.<br>Requires the Miasma Armor state to use.<br>Has a 50% speed modifier and -10 accuracy modifier at all levels.",
 			dep: {DeathsJudgment:3},
 			active: true,
 			reqLevel: 20,
@@ -1367,7 +1367,7 @@ var classSkills =
 		{
 			name_en: "Frigid Reap",
 			name_jp: "冷灰の大鎌",
-			details: "Deals STR based melee cut + ice damage to one row.<br>Deals a follow-up attack on enemies that have ailments.<br>The follow-up attack deals double damage.<br>Has a 75% speed modifier and no base accuracy modifier.",
+			details: "Deals STR based melee cut + ice damage to one row.<br>Deals a follow-up attack on enemies that have ailments.<br>The follow-up attack deals double damage.<br>Has a 75% speed modifier and no base accuracy modifier at all levels.",
 			dep: {DeathsJudgment:3},
 			active: true,
 			reqLevel: 20,
@@ -1379,7 +1379,7 @@ var classSkills =
 		{
 			name_en: "Toxic Reap",
 			name_jp: "惨毒の鎌",
-			details: "Deals STR based melee cut damage to one row.<br>If the Harbinger has Miasma Armor active, it has a chance to inflict poison.<br>Has a 60% speed modifier and no base accuracy modifier.",
+			details: "Deals STR based melee cut damage to one row.<br>If the Harbinger has Miasma Armor active, it has a chance to inflict poison.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 			dep: {ScytheofExorcism:3},
 			active: true,
 			reqLevel: 20,
@@ -1391,7 +1391,7 @@ var classSkills =
 		{
 			name_en: "Chaos Reap",
 			name_jp: "禍乱の鎌",
-			details: "Deals STR based melee cut damage to one row.<br>If the Harbinger has Miasma Armor active, it has a chance to inflict panic.<br>Has a 60% speed modifier and no base accuracy modifier.",
+			details: "Deals STR based melee cut damage to one row.<br>If the Harbinger has Miasma Armor active, it has a chance to inflict panic.<br>Has a 60% speed modifier and no base accuracy modifier at all levels.",
 			dep: {ScytheofExorcism:3},
 			active: true,
 			reqLevel: 20,
@@ -1403,7 +1403,7 @@ var classSkills =
 		{
 			name_en: "Black Shroud",
 			name_jp: "黒き衣",
-			details: "If Miasma Armor is active, the Harbinger's defense increases every time they inflict an ailment.<br>Lasts until the Harbinger dies, or until the battle ends. Affects all damage types.",
+			details: "If Miasma Armor is active, the Harbinger's defense increases every time they inflict an ailment.<br>The bonus is reset is Miasma Armor state ends for any reason.<br>Affects all damage types.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -1427,7 +1427,7 @@ var classSkills =
 		{
 			name_en: "Temporal Shroud",
 			name_jp: "空蝉の衣",
-			details: "This skill can only be used when Miasma Armor is active.<br>Dispels the Miasma Armor buff from the Harbinger and hides them from the battle for the current turn.<br>At the end of the turn, the Harbinger will reenter battle and deal STR based melee cut damage to one enemy.<br>Has 148 base accuracy.<br>The initial cast has a variable speed modifier.",
+			details: "This skill can only be used when Miasma Armor is active.<br>Dispels the Miasma Armor state from the Harbinger and hides them from the battle for the current turn.<br>At the end of the turn, the Harbinger will reenter battle and deal STR based melee cut damage to one enemy.<br>Has 148 base accuracy at all levels.<br>The initial cast has a variable speed modifier.",
 			dep: {FreshBloodSlash:3,GreateScytheofColdAsh:3},
 			active: true,
 			reqLevel: 20,
@@ -1439,7 +1439,7 @@ var classSkills =
 		{
 			name_en: "Fatal Reap",
 			name_jp: "死の鎌",
-			details: "Deals STR based melee cut damage to one enemy and has a chance to inflict instant death.<br>If the target is asleep, the damage and instant death chance rises.<br>Has a 20% speed modifier and -10 accuracy modifier.<br>NOTE: The data does not include the damage multiplier from attacking a sleeping enemy (which is usually 1.5x in the other EO games). Also, it is possible that the damage and success rate multipliers may be flipped.",
+			details: "Deals STR based melee cut damage to one enemy and has a chance to inflict instant death.<br>If the target is asleep, the damage and instant death chance rises.<br>Has a 20% speed modifier and -10 accuracy modifier at all levels.<br>NOTE: The data includes the original 1.5x sleep damage bonus.",
 			dep: {ScytheofCruelPoison:3,ScytheofWickedChaos:3},
 			active: true,
 			reqLevel: 20,
@@ -1451,7 +1451,7 @@ var classSkills =
 		{
 			name_en: "Spirit Absorb",
 			name_jp: "生気吸収",
-			details: "When the Harbinger debuffs an enemy, the Harbinger is healed.<br>The heal can bring the Harbinger's HP above the Harbinger's maximum HP pool, but any extra HP will go away at the end of the turn.",
+			details: "When the Harbinger debuffs an enemy, the Harbinger is healed.<br>The heal can bring the Harbinger's HP above the Harbinger's maximum HP pool for one turn.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
@@ -1487,7 +1487,7 @@ var classSkills =
 		{
 			name_en: "Eroding Miasma",
 			name_jp: "削弱の瘴気",
-			details: "Lowers all enemies' physical and elemental defense for a set amount of turns.<br>Has an 85% speed modifier.",
+			details: "Lowers all enemies' physical and elemental defense for a set amount of turns.<br>Has an 85% speed modifier at all levels.",
 			dep: {FeebleMiasma:3},
 			active: true,
 			reqLevel: 20,
@@ -1499,7 +1499,7 @@ var classSkills =
 		{
 			name_en: "Masking Miasma",
 			name_jp: "闇弱の瘴気",
-			details: "Lowers all enemies' accuracy for a set amount of turns.<br>Has an 85% speed modifier.",
+			details: "Lowers all enemies' accuracy for a set amount of turns.<br>Has an 85% speed modifier at all levels.",
 			dep: {FeebleMiasma:3},
 			active: true,
 			reqLevel: 20,
@@ -1523,7 +1523,7 @@ var classSkills =
 		{
 			name_en: "Atonement",
 			name_jp: "贖いの血",
-			details: "Dispels Miasma Armor to heal all allies HP, with a chance of curing ailments as well.<br>Has an 85% speed modifier.",
+			details: "This skill can only be used when Miasma Armor is active.<br>Dispels Miasma Armor to heal all allies HP, with a chance of curing ailments as well.<br>Has an 85% speed modifier at all levels.",
 			dep: {DeathResistance:5},
 			active: true,
 			reqLevel: 20,
@@ -1547,7 +1547,7 @@ var classSkills =
 		{
 			name_en: "Ephemeral Reap",
 			name_jp: "泡沫の鎌",
-			details: "Removes all debuffs from one enemy and attacks them with STR based melee cut attacks.<br>The number of times they attack is equal to the number of debuffs that have been removed (Maximum of 3).<br>Only deals 100% damage if the enemy has no debuffs.<br>The debuffs are purged before dealing damage.<br>Has a 75% speed modifier and cannot miss.",
+			details: "Removes all debuffs from one enemy and attacks them with STR based melee cut attacks.<br>The number of times they attack is equal to the number of debuffs that have been removed (Maximum of 3).<br>Only deals 100% damage if the enemy has no debuffs.<br>The debuffs are purged before dealing damage.<br>Has a 75% speed modifier and cannot miss at all levels.",
 			dep: {BrittleMiasma:5,DimMiasma:5},
 			active: true,
 			reqLevel: 20,
@@ -1586,7 +1586,7 @@ var classSkills =
 		{
 			name_en: "Amplifier",
 			name_jp: "アンプリファー",
-			details: "Increases one row's magic attack for a set amount of turns.<br>Has an 80% speed modifier.",
+			details: "Increases one row's magic attack for a set amount of turns.<br>Has an 80% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1598,7 +1598,7 @@ var classSkills =
 		{
 			name_en: "Levitation",
 			name_jp: "レビテーション",
-			details: "For a set number of steps, negates damage taken from damage tiles, and increases the chance of preemptive attacks.",
+			details: "For a set number of steps, negates damage taken from damage tiles, reduces all other field damage to 1, and increases the chance of preemptive attacks.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1610,7 +1610,7 @@ var classSkills =
 		{
 			name_en: "Quick-Chant",
 			name_jp: "高速詠唱",
-			details: "Enables the use of Incantation skills without using a turn, but increases the skill used's TP cost.<br>WARNING: This is a permanent passive, and once learned, it cannot be turned off!",
+			details: "Enables the use of Incantation skills without using a turn, but increases the skill used's TP cost. The Magi skill's speed modifier will be used.<br>WARNING: This is a permanent passive, and once learned, it cannot be turned off!",
 			dep: {MagiMastery:5},
 			active: false,
 			reqLevel: 0,
@@ -1622,7 +1622,7 @@ var classSkills =
 		{
 			name_en: "Fireball",
 			name_jp: "ファイアボール",
-			details: "Deals ranged INT-based fire damage to one enemy, with splash damage.<br>Has a 70% speed modifier and 130 base accuracy.",
+			details: "Deals ranged INT-based fire damage to one enemy, with splash damage.<br>Has a 70% speed modifier and 130 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1634,7 +1634,7 @@ var classSkills =
 		{
 			name_en: "Icicle Lance",
 			name_jp: "アイシクルランス",
-			details: "Deals ranged INT-based ice damage to one enemy, with piercing effect.<br>Has no speed modifier and 130 base accuracy.",
+			details: "Deals ranged INT-based ice damage to one enemy, with line-piercing effect.<br>Has no speed modifier and 130 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1646,7 +1646,7 @@ var classSkills =
 		{
 			name_en: "Lighning",
 			name_jp: "ライトニング",
-			details: "Deals ranged INT-based volt damage to an enemy Line.<br>Has a 130% speed modifier and 130 base accuracy.",
+			details: "Deals ranged INT-based volt damage to an enemy Line.<br>Has a 130% speed modifier and 130 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1658,7 +1658,7 @@ var classSkills =
 		{
 			name_en: "Magic Shield",
 			name_jp: "マジックシールド",
-			details: "Reduces elemental damage to the party for one turn.<br>Has a 500% speed modifier.",
+			details: "Reduces elemental damage to the party for one turn.<br>Has a 500% speed modifier at all levels.",
 			dep: {Amplifier:2},
 			active: true,
 			reqLevel: 0,
@@ -1670,7 +1670,7 @@ var classSkills =
 		{
 			name_en: "Focus Chant",
 			name_jp: "詠唱：圧縮術式",
-			details: "Next turn, the Warlock's Magi skills will only hit a single target, but their power is increased.<br>Has a 60% speed modifier.",
+			details: "Next turn, the Warlock's Magi skills will only hit a single target, but their power is increased.<br>Has a 60% speed modifier at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1706,7 +1706,7 @@ var classSkills =
 		{
 			name_en: "Windstorm",
 			name_jp: "ウィンドストーム",
-			details: "Deals ranged INT-based cut damage to all enemies.<br>Attempts to inflict arm bind on hit targets.<br>Has no speed modifier and 130 base accuracy.",
+			details: "Deals ranged INT-based cut damage to all enemies.<br>Attempts to inflict arm bind on hit targets.<br>Has no speed modifier and 130 base accuracy at all levels.",
 			dep: {Fireball:3,IcicleLance:3,Lightning:3},
 			active: true,
 			reqLevel: 20,
@@ -1718,7 +1718,7 @@ var classSkills =
 		{
 			name_en: "Earthspike",
 			name_jp: "アーススパイク",
-			details: "Deals ranged INT-based stab damage to all enemies.<br>Reduces hit targets' magic attack for 3 turns.<br>Has no speed modifier and 130 base accuracy.",
+			details: "Deals ranged INT-based stab damage to all enemies.<br>Reduces hit targets' magic attack for 3 turns.<br>Has no speed modifier and 130 base accuracy at all levels.",
 			dep: {Fireball:3,IcicleLance:3,Lightning:3},
 			active: true,
 			reqLevel: 20,
@@ -1754,7 +1754,7 @@ var classSkills =
 		{
 			name_en: "Spread Chant",
 			name_jp: "詠唱：多段術式",
-			details: "On the next turn, Magi skills will become random-target that hits 2-6 times.<br>Each hit is a percentage of the skill's original damage.<br>Can hit the same target multiple times.<br>Has a 60% speed modifier.",
+			details: "On the next turn, Magi skills will become random-target that hits 2-6 times.<br>Each hit is a percentage of the skill's original damage.<br>Can hit the same target multiple times.<br>Has a 60% speed modifier at all levels.",
 			dep: {IncantationCompressionForm:5},
 			active: true,
 			reqLevel: 20,
@@ -1790,7 +1790,7 @@ var classSkills =
 		{
 			name_en: "Altar",
 			name_jp: "アルター",
-			details: "Three turns after casting, deals ranged INT-based bash damage to all enemies.<br>Attempts to inflict petrification on hit targets.<br>Initial cast has a 90% speed modifier.<br>Actual hit has an 80% speed modifier and 200 base accuracy.",
+			details: "Three turns after casting, deals ranged INT-based bash damage to one enemy.<br>During this time, for each time the target's weakness is hit, Altar's damage is increased, up to 20 stacks.<br>Multi-hit attacks will trigger multiple stacks.<br>Attempts to inflict petrification on hit targets.<br>Initial cast has a 90% speed modifier.<br>Actual hit has an 80% speed modifier and 200 base accuracy.<br>Not affected by chants.",
 			dep: {Windstorm:5,EarthSpike:5,Rockfall:5},
 			active: true,
 			reqLevel: 20,
@@ -1824,9 +1824,9 @@ var classSkills =
 		},
 		Explode: 
 		{
-			name_en: "Explode",
+			name_en: "Explosion",
 			name_jp: "エクスプロード",
-			details: "Deals ranged INT-based fire damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy.",
+			details: "Deals ranged INT-based fire damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 			dep: {Fireball:5},
 			active: true,
 			reqLevel: 20,
@@ -1838,7 +1838,7 @@ var classSkills =
 		{
 			name_en: "Hailstorm",
 			name_jp: "アイスストリーム",
-			details: "Deals ranged INT-based ice damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy.",
+			details: "Deals ranged INT-based ice damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 			dep: {IcicleLance:5},
 			active: true,
 			reqLevel: 20,
@@ -1850,7 +1850,7 @@ var classSkills =
 		{
 			name_en: "Thunderbreak",
 			name_jp: "サンダーブレイク",
-			details: "Deals ranged INT-based volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy.",
+			details: "Deals ranged INT-based volt damage to all enemies.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 			dep: {Lightning:5},
 			active: true,
 			reqLevel: 20,
@@ -1862,7 +1862,7 @@ var classSkills =
 		{
 			name_en: "Clever Strike",
 			name_jp: "マジックウェポン",
-			details: "Deals melee INT-based damage to one target.<br>The element's based on the user's weapon.",
+			details: "Deals INT-based damage to one target.<br>The element and range are based on the user's weapon.<br/>Not affected by chants.",
 			dep: {MagicShield:3},
 			active: true,
 			reqLevel: 20,
@@ -1874,7 +1874,7 @@ var classSkills =
 		{
 			name_en: "Abating Chant",
 			name_jp: "詠唱：減縮術式",
-			details: "On the next turn, Magi skills will have both reduced damage and TP cost.<br>Has a 60% speed modifier.",
+			details: "On the next turn, Magi skills will have both reduced damage and TP cost.<br>Has a 60% speed modifier at all levels.",
 			dep: {IncantationCompressionForm:5},
 			active: true,
 			reqLevel: 20,
@@ -1922,7 +1922,7 @@ var classSkills =
 		{
 			name_en: "Cutting Costs",
 			name_jp: "コストカット",
-			details: "Gives a chance to not expend TP when using a skill.",
+			details: "Gives a chance to not expend TP when using a skill.<br>When used with Quick-chant, only the TP cost of the actual Magi skill is negated.",
 			dep: {Explode:3,IceStream:3,ThunderBreak:3},
 			active: true,
 			reqLevel: 20,
@@ -1937,7 +1937,7 @@ var classSkills =
 		{
 			name_en: "Wraith Mastery",
 			name_jp: "死霊マスタリー",
-			details: "Increases ghost damage and disable infliction chance.",
+			details: "Increases Wraith damage and disable infliction chance.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -1949,7 +1949,7 @@ var classSkills =
 		{
 			name_en: "Summon Wraith",
 			name_jp: "死霊召喚",
-			details: "Consumes 15% of the Necromancer's (most likely current) HP to summon a ghost with a static HP bonus.",
+			details: "Consumes 15% of the Necromancer's (most likely current) HP to summon a Wraith with increased maxHP.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1961,7 +1961,7 @@ var classSkills =
 		{
 			name_en: "Wraith Cry",
 			name_jp: "死霊の呻き",
-			details: "Destroys one ghost. Reduces all enemies' physical/magical defense for a set amount of turns.",
+			details: "Destroys one Wraith. Reduces all enemies' physical/magical defense for a set amount of turns.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1973,7 +1973,7 @@ var classSkills =
 		{
 			name_en: "Soul Candy",
 			name_jp: "魂の糧",
-			details: "Destroys one ghost. Increases all allies' magical defense for a set amount of turns.",
+			details: "Destroys one Wraith. Increases all allies' elemental defense for a set amount of turns.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -1985,7 +1985,7 @@ var classSkills =
 		{
 			name_en: "Gravekeeping",
 			name_jp: "墓守の心得",
-			details: "Chance to summon a ghost when the Necromancer hasn't taken damage for one turn.",
+			details: "If the user does not take any damage for one turn, they have a chance to summon a Wraith at the end of the turn.",
 			dep: {},
 			active: false,
 			reqLevel: 0,
@@ -1997,7 +1997,7 @@ var classSkills =
 		{
 			name_en: "Life Exchange",
 			name_jp: "生の代償",
-			details: "Destroys one ghost. Restores all party members' HP.<br>Has an 80% speed modifier.",
+			details: "Destroys one Wraith. Restores all party members' HP.<br>Has an 80% speed modifier.",
 			dep: {GhostSummoning:2},
 			active: true,
 			reqLevel: 0,
@@ -2009,7 +2009,7 @@ var classSkills =
 		{
 			name_en: "Fierce Shield",
 			name_jp: "無慈悲な盾",
-			details: "Targets one ghost. That ghost will take damage for the entire party for one turn.",
+			details: "Targets one Wraith. That Wraith will take damage for the entire party for one turn, with a multiplier applied to the damage they take from redirected hits.",
 			dep: {MoaningSpirits:2,SoulFood:2},
 			active: true,
 			reqLevel: 0,
@@ -2021,7 +2021,7 @@ var classSkills =
 		{
 			name_en: "Reincarnation",
 			name_jp: "死霊転生",
-			details: "Gives a chance to summon a ghost whenever a ghost is destroyed in battle.",
+			details: "Gives a chance to summon a Wraith whenever a Wraith is destroyed in battle.",
 			dep: {GravekeepingKnowledge:3},
 			active: false,
 			reqLevel: 0,
@@ -2033,7 +2033,7 @@ var classSkills =
 		{
 			name_en: "Poison Bomb",
 			name_jp: "毒爆弾",
-			details: "Destroys one ghost. Attempts to inflict poison on all enemies.",
+			details: "Destroys one Wraith. Attempts to inflict poison on all enemies.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -2045,7 +2045,7 @@ var classSkills =
 		{
 			name_en: "Flame Bomb",
 			name_jp: "炎爆弾",
-			details: "Destroys one ghost. Deals ranged fire damage to all enemies.<br>Has no speed modifier and 150 base accuracy.",
+			details: "Destroys one Wraith. Deals ranged fire damage to all enemies.<br>Has no speed modifier at all levels and 150 base accuracy at all levels.",
 			dep: {},
 			active: true,
 			reqLevel: 0,
@@ -2069,7 +2069,7 @@ var classSkills =
 		{
 			name_en: "Burden Shift",
 			name_jp: "呪詛移し",
-			details: "If a Wraith is alive when the Necromancer takes fatal damage, there is a chance that the Wraith will be destroyed and the Necromancer will recover some HP instead of dying.",
+			details: "If a Wraith is alive when the Necromancer takes fatal damage, there is a chance that a Wraith will be destroyed and the Necromancer will recover some HP instead of dying.",
 			dep: {ThePriceofLife:5},
 			active: false,
 			reqLevel: 20,
@@ -2081,7 +2081,7 @@ var classSkills =
 		{
 			name_en: "Grave",
 			name_jp: "墓穴",
-			details: "For one turn, ghosts will counterattack any enemy that hits a selected ally.<br>The chance to counter starts at 100%, and is decreased by 9% for every counter.<br>Counterattacks attempt to inflict paralysis.<br>Has a 300% speed modifier.<br>Counterattacks have 120 base accuracy.",
+			details: "For one turn, Wraiths will counterattack with ranged damage when any enemy that hits a selected ally.<br>The chance to counter starts at 100%, and is decreased by 9% for every counter.<br>Counterattacks attempt to inflict paralysis.<br>Has a 300% speed modifier at all levels.<br>Counterattacks have 120 base accuracy.",
 			dep: {MercilessWall:3},
 			active: true,
 			reqLevel: 20,
@@ -2117,7 +2117,7 @@ var classSkills =
 		{
 			name_en: "Ice Bomb",
 			name_jp: "氷爆弾",
-			details: "Destroys one Wraith.<br>Deals ranged ice damage to all enemies.<br>Has no speed modifier and 150 base accuracy.",
+			details: "Destroys one Wraith.<br>Deals ranged ice damage to all enemies.<br>Has no speed modifier and 150 base accuracy at all levels.",
 			dep: {FireBomb:3},
 			active: true,
 			reqLevel: 20,
@@ -2141,7 +2141,7 @@ var classSkills =
 		{
 			name_en: "Soul Trade",
 			name_jp: "ソウルトレード",
-			details: "Destroys one Wraith.<br>Attempts to revive all dead party members.<br>Revived party members will be healed.",
+			details: "Destroys one Wraith.<br>Attempts to revive all dead party members.",
 			dep: {CurseTransfer:5},
 			active: true,
 			reqLevel: 20,
@@ -2153,7 +2153,7 @@ var classSkills =
 		{
 			name_en: "Wraith Dance",
 			name_jp: "死霊乱舞",
-			details: "On the turn used, all ghosts will attack three times, with damage modifiers.",
+			details: "On the turn used, all Wraiths will attack three times, with damage modifiers.",
 			dep: {OpenGrave:5},
 			active: true,
 			reqLevel: 20,
@@ -2165,7 +2165,7 @@ var classSkills =
 		{
 			name_en: "Tombstone Vice",
 			name_jp: "石塔絞り",
-			details: "Destroys all ghosts.<br>Attempts to petrify one enemy.<br>The petrification chance is increased based on the number of ghosts destroyed.",
+			details: "Destroys all Wraiths.<br>Attempts to petrify one enemy.<br>The petrification chance is increased based on the number of Wraiths destroyed.",
 			dep: {CurseBomb:3,FireBomb:3},
 			active: true,
 			reqLevel: 20,
@@ -2201,7 +2201,7 @@ var classSkills =
 		{
 			name_en: "Fair Trade",
 			name_jp: "等価交換",
-			details: "Destroys one Wraith.<br>Deals a percentage of the HP it had before dying to one enemy.<br>Has an 80% speed modifier and 150 base accuracy.",
+			details: "Destroys one Wraith.<br>Deals a percentage of the HP it had before dying to one enemy.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 			dep: {MercilessWall:3},
 			active: true,
 			reqLevel: 20,
@@ -2237,7 +2237,7 @@ var classSkills =
 		{
 			name_en: "Gates of Hell",
 			name_jp: "地獄門",
-			details: "Deals ranged bash damage to one enemy.<br>Summons a ghost with HP equal to damage dealt.<br>Has an 80% speed modifier and 150 base accuracy.",
+			details: "Deals ranged bash damage to one enemy.<br>Summons a Wraith with HP equal to damage dealt.<br>Has an 80% speed modifier and 150 base accuracy at all levels.",
 			dep: {PoisonBomb:5,FireBomb:5},
 			active: true,
 			reqLevel: 20,
@@ -2261,7 +2261,7 @@ var classSkills =
 		{
 			name_en: "Wraith Explosion",
 			name_jp: "死霊大爆発",
-			details: "Destroys all Wraiths.<br>Deals ranged bash+fire damage to all enemies. Damage is based on the number of Wraiths destroyed.<br>Has no speed modifier and 150 base accuracy.",
+			details: "Destroys all Wraiths.<br>Deals ranged bash+fire damage to all enemies. Damage is based on the number of Wraiths destroyed.<br>Has no speed modifier and 150 base accuracy at all levels.",
 			dep: {EquivalentExchange:5},
 			active: true,
 			reqLevel: 20,
@@ -2273,7 +2273,7 @@ var classSkills =
 		{
 			name_en: "Negative Energy",
 			name_jp: "負の力",
-			details: "Deals ranged almighty damage to one enemy.<br>The damage has 150% added to it for every party member killed, enemy killed, and ghost killed before use.<br>There is no cap on how many times Negative Energy can have its damage increased.<br>Has a -100% speed modifier.<br>Does not check for accuracy.",
+			details: "Deals ranged almighty damage to one enemy.<br>The damage is increased by 150% for every party member killed, enemy killed, and Wraith killed before use.<br>There is no cap on how many times Negative Energy can have its damage increased.<br>Has a -100% speed modifier.<br>Does not check for accuracy.",
 			dep: {Sacrifice:3},
 			active: true,
 			reqLevel: 20,
@@ -2285,7 +2285,7 @@ var classSkills =
 		{
 			name_en: "Zombie Powder",
 			name_jp: "ゾンビパウダー",
-			details: "Attempts to instantly kill one enemy.<br>If the instant death is successful, summons one ghost.<br>Has a 50% speed modifier.",
+			details: "Attempts to instantly kill one enemy.<br>If the instant death is successful, summons one Wraith equal to the current HP of that enemy.<br>Has a 50% speed modifier at all levels.",
 			dep: {TheGatesofHell:5},
 			active: true,
 			reqLevel: 20,

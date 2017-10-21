@@ -69,16 +69,16 @@ var classSkillLevels =
 		},
 		Predict:
 		{
-			1: "7 TP, +1000 aggro/evade, -600 evade per dodge, -800 aggro per dodge",
-			2: "7 TP, +1120 aggro/evade, -600 evade per dodge, -800 aggro per dodge",
-			3: "7 TP, +1240 aggro/evade, -600 evade per dodge, -800 aggro per dodge",
-			4: "7 TP, +1360 aggro/evade, -600 evade per dodge, -800 aggro per dodge",
-			5: "11 TP, +1360 aggro/evade, -500 evade per dodge, -650 aggro per dodge",
-			6: "11 TP, +1520 aggro/evade, -500 evade per dodge, -650 aggro per dodge",
-			7: "11 TP, +1680 aggro/evade, -500 evade per dodge, -650 aggro per dodge",
-			8: "11 TP, +1840 aggro/evade, -500 evade per dodge, -650 aggro per dodge",
-			9: "11 TP, +2000 aggro/evade, -500 evade per dodge, -650 aggro per dodge",
-			10: "15 TP, +2000 aggro/evade, -400 evade per dodge, -500 aggro per dodge"
+			1: "7 TP, +100% aggro/evade, -60% aggro per dodge, -80% evade per dodge",
+			2: "7 TP, +112% aggro/evade, -60% aggro per dodge, -80% evade per dodge",
+			3: "7 TP, +124% aggro/evade, -60% aggro per dodge, -80% evade per dodge",
+			4: "7 TP, +136% aggro/evade, -60% aggro per dodge, -80% evade per dodge",
+			5: "11 TP, +136% aggro/evade, -50% aggro per dodge, -65% evade per dodge",
+			6: "11 TP, +152% aggro/evade, -50% aggro per dodge, -65% evade per dodge",
+			7: "11 TP, +168% aggro/evade, -50% aggro per dodge, -65% evade per dodge",
+			8: "11 TP, +184% aggro/evade, -50% aggro per dodge, -65% evade per dodge",
+			9: "11 TP, +200% aggro/evade, -50% aggro per dodge, -65% evade per dodge",
+			10: "15 TP, +200% aggro/evade, -40% aggro per dodge, -50% evade per dodge"
 		},
 		ChainBoost:
 		{
@@ -142,29 +142,29 @@ var classSkillLevels =
 		},
 		RayofLight:
 		{
-			1: "+30 aggro per stack, +4% defense per stack, max 60 aggro, max 8% defense (2 stacks)",
-			2: "+30 aggro per stack, +4% defense per stack, max 90 aggro, max 12% defense (3 stacks)",
-			3: "+30 aggro per stack, +4% defense per stack, max 120 aggro, max 16% defense (4 stacks)",
-			4: "+30 aggro per stack, +4% defense per stack, max 150 aggro, max 20% defense (5 stacks)",
-			5: "+40 aggro per stack, +6% defense per stack, max 200 aggro, max 30% defense (5 stacks)",
-			6: "+40 aggro per stack, +6% defense per stack, max 240 aggro, max 36% defense (6 stacks)",
-			7: "+40 aggro per stack, +6% defense per stack, max 280 aggro, max 42% defense (7 stacks)",
-			8: "+40 aggro per stack, +6% defense per stack, max 320 aggro, max 48% defense (8 stacks)",
-			9: "+40 aggro per stack, +6% defense per stack, max 360 aggro, max 54% defense (9 stacks)",
-			10: "+50 aggro per stack, +8% defense per stack, max 450 aggro, max 72% defense (9 stacks)"
+			1: "+3% aggro per stack, +4% defense per stack, max 6% aggro, max 8% defense (2 stacks)",
+			2: "+3% aggro per stack, +4% defense per stack, max 9% aggro, max 12% defense (3 stacks)",
+			3: "+3% aggro per stack, +4% defense per stack, max 12% aggro, max 16% defense (4 stacks)",
+			4: "+3% aggro per stack, +4% defense per stack, max 15% aggro, max 20% defense (5 stacks)",
+			5: "+4% aggro per stack, +6% defense per stack, max 20% aggro, max 30% defense (5 stacks)",
+			6: "+4% aggro per stack, +6% defense per stack, max 24% aggro, max 36% defense (6 stacks)",
+			7: "+4% aggro per stack, +6% defense per stack, max 28% aggro, max 42% defense (7 stacks)",
+			8: "+4% aggro per stack, +6% defense per stack, max 32% aggro, max 48% defense (8 stacks)",
+			9: "+4% aggro per stack, +6% defense per stack, max 36% aggro, max 54% defense (9 stacks)",
+			10: "+5% aggro per stack, +8% defense per stack, max 45% aggro, max 72% defense (9 stacks)"
 		},
 		BewitchingSwordDance:
 		{
-			1: "5 TP, -95 acc, lasts 4 turns",
-			2: "5 TP, -110 acc, lasts 4 turns",
-			3: "5 TP, -125 acc, lasts 4 turns",
-			4: "5 TP, -140 acc, lasts 4 turns",
-			5: "9 TP, -140 acc, lasts 5 turns",
-			6: "9 TP, -155 acc, lasts 5 turns",
-			7: "9 TP, -170 acc, lasts 5 turns",
-			8: "9 TP, -185 acc, lasts 5 turns",
-			9: "9 TP, -200 acc, lasts 5 turns",
-			10:"13 TP, -200 acc, lasts 6 turns"
+			1: "5 TP, -9.5% acc, lasts 4 turns",
+			2: "5 TP, -11% acc, lasts 4 turns",
+			3: "5 TP, -12.5% acc, lasts 4 turns",
+			4: "5 TP, -14% acc, lasts 4 turns",
+			5: "9 TP, -14% acc, lasts 5 turns",
+			6: "9 TP, -15.5% acc, lasts 5 turns",
+			7: "9 TP, -17% acc, lasts 5 turns",
+			8: "9 TP, -18.5% acc, lasts 5 turns",
+			9: "9 TP, -20% acc, lasts 5 turns",
+			10:"13 TP, -20% acc, lasts 6 turns"
 		},
 		PreemptiveCurtain:
 		{
@@ -176,16 +176,16 @@ var classSkillLevels =
 		},
 		SharpThrust:
 		{
-			1: "8 TP, 135% damage, +200 aggro/evade",
-			2: "8 TP, 150% damage, +200 aggro/evade",
-			3: "8 TP, 165% damage, +200 aggro/evade",
-			4: "8 TP, 180% damage, +200 aggro/evade",
-			5: "13 TP, 180% damage, +275 aggro/evade",
-			6: "13 TP, 195% damage, +275 aggro/evade",
-			7: "13 TP, 210% damage, +275 aggro/evade",
-			8: "13 TP, 225% damage, +275 aggro/evade",
-			9: "13 TP, 240% damage, +275 aggro/evade",
-			10:"18 TP, 240% damage, +350 aggro/evade"
+			1: "8 TP, 135% damage, +20% aggro/evade",
+			2: "8 TP, 150% damage, +20% aggro/evade",
+			3: "8 TP, 165% damage, +20% aggro/evade",
+			4: "8 TP, 180% damage, +20% aggro/evade",
+			5: "13 TP, 180% damage, +27.5% aggro/evade",
+			6: "13 TP, 195% damage, +27.5% aggro/evade",
+			7: "13 TP, 210% damage, +27.5% aggro/evade",
+			8: "13 TP, 225% damage, +27.5% aggro/evade",
+			9: "13 TP, 240% damage, +27.5% aggro/evade",
+			10:"18 TP, 240% damage, +35% aggro/evade"
 		},
 		CounterBoost:
 		{
@@ -202,16 +202,16 @@ var classSkillLevels =
 		},
 		Unburdened:
 		{
-			1: "+40, +100, +200, +300",
-			2: "+44, +110, +220, +330",
-			3: "+48, +120, +240, +360",
-			4: "+52, +130, +260, +390",
-			5: "+68, +170, +340, +510",
-			6: "+72, +180, +360, +540",
-			7: "+76, +190, +380, +570",
-			8: "+80, +200, +400, +600",
-			9: "+84, +210, +420, +630",
-			10:"+100, +250, +500, +750"
+			1: "+4%, +10%, +20%, +30%",
+			2: "+4.4%, +11%, +22%, +33%",
+			3: "+4.8%, +12%, +24%, +36%",
+			4: "+5.2%, +13%, +26%, +39%",
+			5: "+6.8%, +17%, +34%, +51%",
+			6: "+7.2%, +18%, +36%, +54%",
+			7: "+7.6%, +19%, +38%, +57%",
+			8: "+8%, +20%, +40%, +60%",
+			9: "+8.4%, +21%, +42%, +63%",
+			10:"+10%, +25%, +50%, +75%"
 		},
 		PileOn:
 		{
@@ -236,16 +236,16 @@ var classSkillLevels =
 		},
 		DivineWind:
 		{
-			1: "15 TP, +500 evade, -250 evade per dodge",
-			2: "15 TP, +530 evade, -250 evade per dodge",
-			3: "15 TP, +560 evade, -250 evade per dodge",
-			4: "15 TP, +590 evade, -250 evade per dodge",
-			5: "21 TP, +700 evade, -300 evade per dodge",
-			6: "21 TP, +740 evade, -300 evade per dodge",
-			7: "21 TP, +780 evade, -300 evade per dodge",
-			8: "21 TP, +820 evade, -300 evade per dodge",
-			9: "21 TP, +860 evade, -300 evade per dodge",
-			10:"30 TP, +1050 evade, -350 evade per dodge"
+			1: "15 TP, +50% evade, -25% evade per dodge",
+			2: "15 TP, +53% evade, -25% evade per dodge",
+			3: "15 TP, +56% evade, -25% evade per dodge",
+			4: "15 TP, +59% evade, -25% evade per dodge",
+			5: "21 TP, +70% evade, -30% evade per dodge",
+			6: "21 TP, +74% evade, -30% evade per dodge",
+			7: "21 TP, +78% evade, -30% evade per dodge",
+			8: "21 TP, +82% evade, -30% evade per dodge",
+			9: "21 TP, +86% evade, -30% evade per dodge",
+			10:"30 TP, +105% evade, -35% evade per dodge"
 		},
 		RevengeThrust:
 		{
@@ -288,16 +288,16 @@ var classSkillLevels =
 		},
 		SylphScreen:
 		{
-			1: "+25 evade per atk, +2% defense per atk",
-			2: "+30 evade per atk, +2% defense per atk",
-			3: "+35 evade per atk, +2% defense per atk",
-			4: "+40 evade per atk, +2% defense per atk",
-			5: "+40 evade per atk, +4% defense per atk",
-			6: "+45 evade per atk, +4% defense per atk",
-			7: "+50 evade per atk, +4% defense per atk",
-			8: "+55 evade per atk, +4% defense per atk",
-			9: "+60 evade per atk, +4% defense per atk",
-			10:"+60 evade per atk, +6% defense per atk"
+			1: "+2.5% evade per atk, +2% defense per atk",
+			2: "+3% evade per atk, +2% defense per atk",
+			3: "+3.5% evade per atk, +2% defense per atk",
+			4: "+4% evade per atk, +2% defense per atk",
+			5: "+4% evade per atk, +4% defense per atk",
+			6: "+4.5% evade per atk, +4% defense per atk",
+			7: "+5% evade per atk, +4% defense per atk",
+			8: "+5.5% evade per atk, +4% defense per atk",
+			9: "+6% evade per atk, +4% defense per atk",
+			10:"+6% evade per atk, +6% defense per atk"
 		},
 		RandomStab:
 		{
@@ -314,16 +314,16 @@ var classSkillLevels =
 		},
 		SpeedBoost:
 		{
-			1: "1.11x speed, +24 acc/evade",
-			2: "1.14x speed, +28 acc/evade",
-			3: "1.17x speed, +32 acc/evade",
-			4: "1.2x speed, +36 acc/evade",
-			5: "1.24x speed, +52 acc/evade",
-			6: "1.27x speed, +58 acc/evade",
-			7: "1.3x speed, +64 acc/evade",
-			8: "1.33x speed, +70 acc/evade",
-			9: "1.36x speed, +76 acc/evade",
-			10:"1.4x speed, +100 acc/evade"
+			1: "1.11x speed, +2.4% acc/evade",
+			2: "1.14x speed, +2.8% acc/evade",
+			3: "1.17x speed, +3.2% acc/evade",
+			4: "1.2x speed, +3.6% acc/evade",
+			5: "1.24x speed, +5.2% acc/evade",
+			6: "1.27x speed, +5.8% acc/evade",
+			7: "1.3x speed, +6.4% acc/evade",
+			8: "1.33x speed, +7% acc/evade",
+			9: "1.36x speed, +7.6% acc/evade",
+			10:"1.4x speed, +10% acc/evade"
 		},
 		PhysicalAttackBoost:
 		{
@@ -399,7 +399,7 @@ var classSkillLevels =
 			7: "11% reduction",
 			8: "12% reduction",
 			9: "13% reduction",
-			10:" 15% reduction"
+			10: "15% reduction"
 		},
 		LineGuard: 
 		{
@@ -412,7 +412,7 @@ var classSkillLevels =
 			7: "8 TP, 43% reduction",
 			8: "8 TP, 44% reduction",
 			9: "8 TP, 45% reduction",
-			10:" 11 TP, 50% reduction"
+			10: "11 TP, 50% reduction"
 		},
 		MaterialGuard: 
 		{
@@ -425,7 +425,7 @@ var classSkillLevels =
 			7: "10 TP, 53% reduction",
 			8: "10 TP, 55% reduction",
 			9: "10 TP, 57% reduction",
-			10:" 15 TP, 67% reduction"
+			10: "15 TP, 67% reduction"
 		},
 		HealingGuard: 
 		{
@@ -438,20 +438,20 @@ var classSkillLevels =
 			7: "5 TP, 29 static restore, 7% max HP restore",
 			8: "5 TP, 31 static restore, 7% max HP restore",
 			9: "5 TP, 33 static restore, 7% max HP restore",
-			10:" 7 TP, 40 static restore, 10% max HP restore"
+			10: "7 TP, 40 static restore, 10% max HP restore"
 		},
 		Bunker: 
 		{
-			1: "6 TP, 35 DEF, 6% damage taken, +2000 aggro",
-			2: "6 TP, 55 DEF, 6% damage taken, +2000 aggro",
-			3: "6 TP, 75 DEF, 6% damage taken, +2000 aggro",
-			4: "6 TP, 95 DEF, 6% damage taken, +2000 aggro",
-			5: "10 TP, 95 DEF, 4% damage taken, +2750 aggro",
-			6: "10 TP, 135 DEF, 4% damage taken, +2750 aggro",
-			7: "10 TP, 175 DEF, 4% damage taken, +2750 aggro",
-			8: "10 TP, 215 DEF, 4% damage taken, +2750 aggro",
-			9: "10 TP, 255 DEF, 4% damage taken, +2750 aggro",
-			10:" 16 TP, 255 DEF, 1% damage taken, +3500 aggro"
+			1: "6 TP, 35 DEF, 6% damage taken, +200% aggro",
+			2: "6 TP, 55 DEF, 6% damage taken, +200% aggro",
+			3: "6 TP, 75 DEF, 6% damage taken, +200% aggro",
+			4: "6 TP, 95 DEF, 6% damage taken, +200% aggro",
+			5: "10 TP, 95 DEF, 4% damage taken, +275% aggro",
+			6: "10 TP, 135 DEF, 4% damage taken, +275% aggro",
+			7: "10 TP, 175 DEF, 4% damage taken, +275% aggro",
+			8: "10 TP, 215 DEF, 4% damage taken, +275% aggro",
+			9: "10 TP, 255 DEF, 4% damage taken, +275% aggro",
+			10: "16 TP, 255 DEF, 1% damage taken, +350% aggro"
 		},
 		ArtilleryMastery: 
 		{
@@ -464,7 +464,7 @@ var classSkillLevels =
 			7: "10% attack increase",
 			8: "11% attack increase",
 			9: "12% attack increase",
-			10:" 15% attack increase"
+			10: "15% attack increase"
 		},
 		GunMount: 
 		{
@@ -477,7 +477,7 @@ var classSkillLevels =
 			7: "7 TP, 245% damage, 160% speed modifier",
 			8: "7 TP, 255% damage, 160% speed modifier",
 			9: "7 TP, 265% damage, 160% speed modifier",
-			10:" 14 TP, 450% damage, 200% speed modifier"
+			10: "14 TP, 450% damage, 200% speed modifier"
 		},
 		BarrageWall: 
 		{
@@ -490,20 +490,20 @@ var classSkillLevels =
 			7: "15 TP, 134% damage, 15% attack reduction, lasts for 5 turns",
 			8: "15 TP, 142% damage, 15% attack reduction, lasts for 5 turns",
 			9: "15 TP, 150% damage, 15% attack reduction, lasts for 5 turns",
-			10:" 22 TP, 150% damage, 20% attack reduction, lasts for 6 turns"
+			10: "22 TP, 150% damage, 20% attack reduction, lasts for 6 turns"
 		},
 		DragonsRoar: 
 		{
-			1: "5 TP, 3% def increase, +200 aggro, lasts for 4 turns, 100% speed modifier",
-			2: "5 TP, 4% def increase, +230 aggro, lasts for 4 turns, 100% speed modifier",
-			3: "5 TP, 5% def increase, +260 aggro, lasts for 4 turns, 100% speed modifier",
-			4: "5 TP, 6% def increase, +290 aggro, lasts for 4 turns, 100% speed modifier",
-			5: "9 TP, 6% def increase, +290 aggro, lasts for 5 turns, 130% speed modifier",
-			6: "9 TP, 7% def increase, +330 aggro, lasts for 5 turns, 130% speed modifier",
-			7: "9 TP, 8% def increase, +370 aggro, lasts for 5 turns, 130% speed modifier",
-			8: "9 TP, 9% def increase, +410 aggro, lasts for 5 turns, 130% speed modifier",
-			9: "9 TP, 10% def increase, +450 aggro, lasts for 5 turns, 130% speed modifier",
-			10:" 13 TP, 10% def increase, +450 aggro, lasts for 6 turns, 160% speed modifier"
+			1: "5 TP, 3% def increase, +20% aggro, lasts for 4 turns, 100% speed modifier",
+			2: "5 TP, 4% def increase, +23% aggro, lasts for 4 turns, 100% speed modifier",
+			3: "5 TP, 5% def increase, +26% aggro, lasts for 4 turns, 100% speed modifier",
+			4: "5 TP, 6% def increase, +29% aggro, lasts for 4 turns, 100% speed modifier",
+			5: "9 TP, 6% def increase, +29% aggro, lasts for 5 turns, 130% speed modifier",
+			6: "9 TP, 7% def increase, +33% aggro, lasts for 5 turns, 130% speed modifier",
+			7: "9 TP, 8% def increase, +37% aggro, lasts for 5 turns, 130% speed modifier",
+			8: "9 TP, 9% def increase, +41% aggro, lasts for 5 turns, 130% speed modifier",
+			9: "9 TP, 10% def increase, +45% aggro, lasts for 5 turns, 130% speed modifier",
+			10: "13 TP, 10% def increase, +45% aggro, lasts for 6 turns, 160% speed modifier"
 		},
 		DefensivePosition: 
 		{
@@ -516,7 +516,7 @@ var classSkillLevels =
 			7: "7 TP, 30% increase, lasts for 5 turns",
 			8: "7 TP, 32% increase, lasts for 5 turns",
 			9: "7 TP, 34% increase, lasts for 5 turns",
-			10:" 10 TP, 34% increase, lasts for 6 turns"
+			10: "10 TP, 34% increase, lasts for 6 turns"
 		},
 		HPBoost:
 		{
@@ -529,20 +529,20 @@ var classSkillLevels =
 			7: "+14% max HP",
 			8: "+15% max HP",
 			9: "+16% max HP",
-			10:" +20% max HP",
+			10: "+20% max HP",
 		},
 		RecoveryGuard:
 		{
-			1: "7 TP, 13% reduction, 50% bind remove chance",
-			2: "7 TP, 16% reduction, 53% bind remove chance",
-			3: "7 TP, 19% reduction, 56% bind remove chance",
-			4: "7 TP, 22% reduction, 59% bind remove chance",
-			5: "11 TP, 22% reduction, 78% bind remove chance",
-			6: "11 TP, 24% reduction, 80% bind remove chance",
-			7: "11 TP, 26% reduction, 82% bind remove chance",
-			8: "11 TP, 28% reduction, 84% bind remove chance",
-			9: "11 TP, 30% reduction, 86% bind remove chance",
-			10:" 16 TP, 30% reduction, 100% bind remove chance",
+			1: "7 TP, 13% reduction, 50% bind remove chance, max 1 bind",
+			2: "7 TP, 16% reduction, 53% bind remove chance, max 1 bind",
+			3: "7 TP, 19% reduction, 56% bind remove chance, max 1 bind",
+			4: "7 TP, 22% reduction, 59% bind remove chance, max 1 bind",
+			5: "11 TP, 22% reduction, 78% bind remove chance, max 2 binds",
+			6: "11 TP, 24% reduction, 80% bind remove chance, max 2 binds",
+			7: "11 TP, 26% reduction, 82% bind remove chance, max 2 binds",
+			8: "11 TP, 28% reduction, 84% bind remove chance, max 2 binds",
+			9: "11 TP, 30% reduction, 86% bind remove chance, max 2 binds",
+			10: "16 TP, 30% reduction, 100% bind remove chance, max 3 binds",
 		},
 		CounterGuard:
 		{
@@ -556,7 +556,7 @@ var classSkillLevels =
 			7: "12 TP, 30% damage reduction, 260% damage, -15% chance to counter per counter",
 			8: "12 TP, 32% damage reduction, 265% damage, -15% chance to counter per counter",
 			9: "12 TP, 34% damage reduction, 265% damage, -15% chance to counter per counter",
-			10:" 18 TP, 34% damage reduction, 300% damage",
+			10: "18 TP, 34% damage reduction, 300% damage",
 		},
 		DivideGuard:
 		{
@@ -569,7 +569,7 @@ var classSkillLevels =
 			7: "8 TP, 20% damage reduction",
 			8: "8 TP, 22% damage reduction",
 			9: "8 TP, 24% damage reduction",
-			10:" 12 TP, 30% damage reduction",
+			10: "12 TP, 30% damage reduction",
 		},
 		ShieldThrow:
 		{
@@ -582,7 +582,7 @@ var classSkillLevels =
 			7: "15 TP, 355% damage",
 			8: "15 TP, 375% damage",
 			9: "15 TP, 395% damage",
-			10:" 25 TP, 500% damage",
+			10: "25 TP, 500% damage",
 		},
 		PreemptiveRoar:
 		{
@@ -611,7 +611,7 @@ var classSkillLevels =
 			7: "35 TP, 38% reduction, 6 turn cooldown",
 			8: "35 TP, 39% reduction, 6 turn cooldown",
 			9: "35 TP, 40% reduction, 6 turn cooldown",
-			10:" 50 TP, 50% reduction, 5 turn cooldown",
+			10: "50 TP, 50% reduction, 5 turn cooldown",
 		},
 		SoulGuard:
 		{
@@ -624,7 +624,7 @@ var classSkillLevels =
 			7: "16 TP, 26% reduction, 48% survive chance",
 			8: "16 TP, 28% reduction, 50% survive chance",
 			9: "16 TP, 30% reduction, 52% survive chance",
-			10:" 23 TP, 30% reduction, 66% survive chance",
+			10: "23 TP, 30% reduction, 66% survive chance",
 		},
 		DragonForce:
 		{
@@ -637,7 +637,7 @@ var classSkillLevels =
 			7: "11% chance",
 			8: "12% chance",
 			9: "13% chance",
-			10:" 15% chance",
+			10: "15% chance",
 		},
 		GunRevenge:
 		{
@@ -650,7 +650,7 @@ var classSkillLevels =
 			7: "+13% damage, max +91% damage (7 stacks)",
 			8: "+13% damage, max +104% damage (8 stacks)",
 			9: "+13% damage, max +117% damage (9 stacks)",
-			10:" +17% damage, max +153% damage (9 stacks)",
+			10: "+17% damage, max +153% damage (9 stacks)",
 		},
 		TPBoost:
 		{
@@ -663,7 +663,7 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		RapidCannon:
 		{
@@ -676,7 +676,7 @@ var classSkillLevels =
 			7: "7 TP, 230% damage",
 			8: "7 TP, 240% damage",
 			9: "7 TP, 250% damage",
-			10:" 14 TP, 400% damage",
+			10: "14 TP, 400% damage",
 		},
 		CurseCannon:
 		{
@@ -689,7 +689,7 @@ var classSkillLevels =
 			7: "12 TP, 262% damage, 60% base curse chance",
 			8: "12 TP, 270% damage, 60% base curse chance",
 			9: "12 TP, 278% damage, 60% base curse chance",
-			10:" 18 TP, 350% damage, 80% base curse chance",
+			10: "18 TP, 350% damage, 80% base curse chance",
 		},
 		HypnoCannon:
 		{
@@ -702,20 +702,20 @@ var classSkillLevels =
 			7: "12 TP, 262% damage, 75% base sleep chance",
 			8: "12 TP, 270% damage, 75% base sleep chance",
 			9: "12 TP, 278% damage, 75% base sleep chance",
-			10:" 18 TP, 350% damage, 100% base sleep chance",
+			10: "18 TP, 350% damage, 100% base sleep chance",
 		},
 		Pillbox:
 		{
-			1: "6 TP, 205 ATK, 75 DEF, 6% damage taken, +1500 aggro",
-			2: "6 TP, 230 ATK, 90 DEF, 6% damage taken, +1500 aggro",
-			3: "6 TP, 255 ATK, 105 DEF, 6% damage taken, +1500 aggro",
-			4: "6 TP, 280 ATK, 120 DEF, 6% damage taken, +1500 aggro",
-			5: "10 TP, 280 ATK, 120 DEF, 4% damage taken, +2000 aggro",
-			6: "10 TP, 335 ATK, 140 DEF, 4% damage taken, +2000 aggro",
-			7: "10 TP, 390 ATK, 160 DEF, 4% damage taken, +2000 aggro",
-			8: "10 TP, 445 ATK, 180 DEF, 4% damage taken, +2000 aggro",
-			9: "10 TP, 500 ATK, 200 DEF, 4% damage taken, +2000 aggro",
-			10:" 16 TP, 500 ATK, 200 DEF, 1% damage taken, +2500 aggro",
+			1: "6 TP, 205 ATK, 75 DEF, 6% damage taken, +150% aggro",
+			2: "6 TP, 230 ATK, 90 DEF, 6% damage taken, +150% aggro",
+			3: "6 TP, 255 ATK, 105 DEF, 6% damage taken, +150% aggro",
+			4: "6 TP, 280 ATK, 120 DEF, 6% damage taken, +150% aggro",
+			5: "10 TP, 280 ATK, 120 DEF, 4% damage taken, +200% aggro",
+			6: "10 TP, 335 ATK, 140 DEF, 4% damage taken, +200% aggro",
+			7: "10 TP, 390 ATK, 160 DEF, 4% damage taken, +200% aggro",
+			8: "10 TP, 445 ATK, 180 DEF, 4% damage taken, +200% aggro",
+			9: "10 TP, 500 ATK, 200 DEF, 4% damage taken, +200% aggro",
+			10: "16 TP, 500 ATK, 200 DEF, 1% damage taken, +250% aggro",
 		},
 		PhysicalAttackBoost:
 		{
@@ -728,20 +728,20 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		BombardmentPrep:
 		{
-			1: "10 TP, 2x damage, +200 acc, 1.5x speed",
-			2: "10 TP, 2x damage, +240 acc, 1.6x speed",
-			3: "10 TP, 2x damage, +280 acc, 1.7x speed",
-			4: "10 TP, 2x damage, +320 acc, 1.8x speed",
-			5: "15 TP, 2.25x damage, +320 acc, 1.8x speed",
-			6: "15 TP, 2.25x damage, +380 acc, 2.1x speed",
-			7: "15 TP, 2.25x damage, +440 acc, 2.4x speed",
-			8: "15 TP, 2.25x damage, +500 acc, 2.7x speed",
-			9: "15 TP, 2.25x damage, +560 acc, 3x speed",
-			10:" 20 TP, 2.5x damage, +560 acc, 3x speed",
+			1: "10 TP, 2x damage, +20% acc, 1.5x speed",
+			2: "10 TP, 2x damage, +24% acc, 1.6x speed",
+			3: "10 TP, 2x damage, +28% acc, 1.7x speed",
+			4: "10 TP, 2x damage, +32% acc, 1.8x speed",
+			5: "15 TP, 2.25x damage, +32% acc, 1.8x speed",
+			6: "15 TP, 2.25x damage, +38% acc, 2.1x speed",
+			7: "15 TP, 2.25x damage, +44% acc, 2.4x speed",
+			8: "15 TP, 2.25x damage, +50% acc, 2.7x speed",
+			9: "15 TP, 2.25x damage, +56% acc, 3x speed",
+			10: "20 TP, 2.5x damage, +56% acc, 3x speed",
 		},
 		BusterCannon:
 		{
@@ -754,7 +754,7 @@ var classSkillLevels =
 			7: "30 TP, 405% base damage",
 			8: "30 TP, 425% base damage",
 			9: "30 TP, 445% base damage",
-			10:" 40 TP, 520% base damage",
+			10: "40 TP, 520% base damage",
 		},
 		GunSupport:
 		{
@@ -767,7 +767,7 @@ var classSkillLevels =
 			7: "23% chance",
 			8: "24% chance",
 			9: "25% chance",
-			10:" 34% chance",
+			10: "34% chance",
 		}		
 	},
 	cestus:
@@ -783,7 +783,7 @@ var classSkillLevels =
 			7: "10% attack increase",
 			8: "11% attack increase",
 			9: "12% attack increase",
-			10:" 15% attack increase",
+			10: "15% attack increase",
 		},
 		Flicker: 
 		{
@@ -809,7 +809,7 @@ var classSkillLevels =
 			7: "5 TP, 201% damage, 40% base arm bind chance",
 			8: "5 TP, 213% damage, 40% base arm bind chance",
 			9: "5 TP, 225% damage, 40% base arm bind chance",
-			10:" 8 TP, 225% damage, 50% base arm bind chance",
+			10: "8 TP, 225% damage, 50% base arm bind chance",
 		},
 		LiverBlow: 
 		{
@@ -822,7 +822,7 @@ var classSkillLevels =
 			7: "5 TP, 201% damage, 40% base leg bind chance",
 			8: "5 TP, 213% damage, 40% base leg bind chance",
 			9: "5 TP, 225% damage, 40% base leg bind chance",
-			10:" 8 TP, 225% damage, 50% base leg bind chance",
+			10: "8 TP, 225% damage, 50% base leg bind chance",
 		},
 		RushingBlood: 
 		{
@@ -835,7 +835,7 @@ var classSkillLevels =
 			7: "36% chance",
 			8: "38% chance",
 			9: "40% chance",
-			10:" 50% chance",
+			10: "50% chance",
 		},
 		ThunderGodFist: 
 		{
@@ -848,7 +848,7 @@ var classSkillLevels =
 			7: "5 TP, 324% damage, 35% recoil damage",
 			8: "5 TP, 336% damage, 35% recoil damage",
 			9: "5 TP, 348% damage, 35% recoil damage",
-			10:" 8 TP, 450% damage, 50% recoil damage",
+			10: "8 TP, 450% damage, 50% recoil damage",
 		},
 		PhysicalAttackBoost: 
 		{
@@ -861,7 +861,7 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		OneTwo: 
 		{
@@ -874,7 +874,7 @@ var classSkillLevels =
 			7: "9 TP, 127% damage, 52% chance",
 			8: "9 TP, 131% damage, 54% chance",
 			9: "9 TP, 135% damage, 56% chance",
-			10:" 13 TP, 150% damage, 66% chance",
+			10: "13 TP, 150% damage, 66% chance",
 		},
 		GivingitEverything: 
 		{
@@ -887,7 +887,7 @@ var classSkillLevels =
 			7: "4 TP, 1.65x damage, -26% current HP per action",
 			8: "4 TP, 1.65x damage, -19% current HP per action",
 			9: "4 TP, 1.65x damage, -12% current HP per action",
-			10:" 5 TP, 2.0x damage, -50% current HP per action",
+			10: "5 TP, 2.0x damage, -50% current HP per action",
 		},
 		DemonFist: 
 		{
@@ -900,7 +900,7 @@ var classSkillLevels =
 			7: "11 TP, 240% damage, -20% max HP",
 			8: "11 TP, 255% damage, -20% max HP",
 			9: "11 TP, 270% damage, -20% max HP",
-			10:" 16 TP, 270% damage, -5% max HP",
+			10: "16 TP, 270% damage, -5% max HP",
 		},
 		DoublePunch: 
 		{
@@ -913,7 +913,7 @@ var classSkillLevels =
 			7: "34% chance",
 			8: "37% chance",
 			9: "40% chance",
-			10:" 50% chance",
+			10: "50% chance",
 		},
 		Corkscrew: 
 		{
@@ -926,20 +926,20 @@ var classSkillLevels =
 			7: "7 TP, 216% damage, 50% base paralysis chance",
 			8: "7 TP, 228% damage, 50% base paralysis chance",
 			9: "7 TP, 240% damage, 50% base paralysis chance",
-			10:" 10 TP, 240% damage, 60% base paralysis chance",
+			10: "10 TP, 240% damage, 60% base paralysis chance",
 		},
 		SpeedBoost: 
 		{
-			1: "1.11x speed, +24 acc/evade",
-			2: "1.14x speed, +28 acc/evade",
-			3: "1.17x speed, +32 acc/evade",
-			4: "1.2x speed, +36 acc/evade",
-			5: "1.24x speed, +52 acc/evade",
-			6: "1.27x speed, +58 acc/evade",
-			7: "1.3x speed, +64 acc/evade",
-			8: "1.33x speed, +70 acc/evade",
-			9: "1.36x speed, +76 acc/evade",
-			10:" 1.4x speed, +100 acc/evade",
+			1: "1.11x speed, +2.4% acc/evade",
+			2: "1.14x speed, +2.8% acc/evade",
+			3: "1.17x speed, +3.2% acc/evade",
+			4: "1.2x speed, +3.6% acc/evade",
+			5: "1.24x speed, +5.2% acc/evade",
+			6: "1.27x speed, +5.8% acc/evade",
+			7: "1.3x speed, +6.4% acc/evade",
+			8: "1.33x speed, +7% acc/evade",
+			9: "1.36x speed, +7.6% acc/evade",
+			10: "1.4x speed, +10% acc/evade",
 		},
 		CrossCounter: 
 		{
@@ -952,7 +952,7 @@ var classSkillLevels =
 			7: "5 TP, 445% damage, 74% base bind chance",
 			8: "5 TP, 465% damage, 77% base bind chance",
 			9: "5 TP, 485% damage, 80% base bind chance",
-			10:" 8 TP, 600% damage, 100% base bind chance",
+			10: "8 TP, 600% damage, 100% base bind chance",
 		},
 		Interval: 
 		{
@@ -965,7 +965,7 @@ var classSkillLevels =
 			7: "8 TP, 1.9x damage",
 			8: "8 TP, 1.95x damage",
 			9: "8 TP, 2x damage",
-			10:" 20 TP, 2.5x damage",
+			10: "20 TP, 2.5x damage",
 		},
 		ArmBlock: 
 		{
@@ -978,7 +978,7 @@ var classSkillLevels =
 			7: "12 TP, 57% resistance, lasts 5 turns",
 			8: "12 TP, 62% resistance, lasts 5 turns",
 			9: "12 TP, 67% resistance, lasts 5 turns",
-			10:" 18 TP, 67% resistance, lasts 6 turns",
+			10: "18 TP, 67% resistance, lasts 6 turns",
 		},
 		ConstraintAttackBoost: 
 		{
@@ -991,7 +991,7 @@ var classSkillLevels =
 			7: "1.14x infliction rate",
 			8: "1.15x infliction rate",
 			9: "1.16x infliction rate",
-			10:" 1.20x infliction rate",
+			10: "1.20x infliction rate",
 		},
 		LeadBlow: 
 		{
@@ -1004,7 +1004,7 @@ var classSkillLevels =
 			7: "22 TP, 127% damage, follow-up attacks deal 112% of the original damage",
 			8: "22 TP, 131% damage, follow-up attacks deal 116% of the original damage",
 			9: "22 TP, 135% damage, follow-up attacks deal 120% of the original damage",
-			10:" 30 TP, 150% damage, follow-up attacks deal 150% of the original damage",
+			10: "30 TP, 150% damage, follow-up attacks deal 150% of the original damage",
 		},
 		RushOut: 
 		{
@@ -1017,7 +1017,7 @@ var classSkillLevels =
 			7: "4 TP, 152% damage, max damage is 1368%",
 			8: "4 TP, 156% damage, max damage is 1404%",
 			9: "4 TP, 160% damage, max damage is 1440%",
-			10:" 7 TP, 180% damage, max damage is 1620%",
+			10: "7 TP, 180% damage, max damage is 1620%",
 		},
 		Clinch: 
 		{
@@ -1030,7 +1030,7 @@ var classSkillLevels =
 			7: "10 TP, 44% enemy bind chance, 38% self bind chance",
 			8: "10 TP, 47% enemy bind chance, 40% self bind chance",
 			9: "10 TP, 50% enemy bind chance, 42% self bind chance",
-			10:" 15 TP, 67% enemy bind chance, 50% self bind chance",
+			10: "15 TP, 67% enemy bind chance, 50% self bind chance",
 		},
 		Grit: 
 		{
@@ -1043,7 +1043,7 @@ var classSkillLevels =
 			7: "36% damage boost when below 41% HP",
 			8: "38% damage boost when below 42% HP",
 			9: "40% damage boost when below 43% HP",
-			10:" 50% damage boost when below 50% HP",
+			10: "50% damage boost when below 50% HP",
 		},
 		VajraStance: 
 		{
@@ -1056,7 +1056,7 @@ var classSkillLevels =
 			7: "10 TP, 21% defense boost, lasts 5 turns",
 			8: "10 TP, 23% defense boost, lasts 5 turns",
 			9: "10 TP, 25% defense boost, lasts 5 turns",
-			10:" 15 TP, 25% defense boost, lasts 6 turns",
+			10: "15 TP, 25% defense boost, lasts 6 turns",
 		},
 		SoulSmash: 
 		{
@@ -1069,33 +1069,33 @@ var classSkillLevels =
 			7: "16 TP, 189% damage, 15% of damage dealt as healing",
 			8: "16 TP, 197% damage, 15% of damage dealt as healing",
 			9: "16 TP, 205% damage, 15% of damage dealt as healing",
-			10:" 25 TP, 250% damage, 25% of damage dealt as healing",
+			10: "25 TP, 250% damage, 25% of damage dealt as healing",
 		},
 		GiantKiller: 
 		{
-			1: "3 TP, 100% base damage, 3x damage multiplier (300% damage to healthier enemies)",
-			2: "3 TP, 102% base damage, 3.05x damage multiplier (311% damage to healthier enemies)",
-			3: "3 TP, 104% base damage, 3.1x damage multiplier (322% damage to healthier enemies)",
-			4: "3 TP, 106% base damage, 3.15x damage multiplier (333% damage to healthier enemies)",
-			5: "5 TP, 121% base damage, 3.58x damage multiplier (433% damage to healthier enemies)",
-			6: "5 TP, 124% base damage, 3.66x damage multiplier (453% damage to healthier enemies)",
-			7: "5 TP, 127% base damage, 3.74x damage multiplier (474% damage to healthier enemies)",
-			8: "5 TP, 130% base damage, 3.82x damage multiplier (496% damage to healthier enemies)",
-			9: "5 TP, 133% base damage, 3.9x damage multiplier (518% damage to healthier enemies)",
-			10:" 7 TP, 150% base damage, 4.5x damage multiplier (675% damage to healthier enemies)",
+			1: "3 TP, 100% base damage, 300% damage to healthier enemies",
+			2: "3 TP, 102% base damage, 307% damage to healthier enemies",
+			3: "3 TP, 104% base damage, 314% damage to healthier enemies",
+			4: "3 TP, 106% base damage, 321% damage to healthier enemies",
+			5: "5 TP, 121% base damage, 479% damage to healthier enemies",
+			6: "5 TP, 124% base damage, 490% damage to healthier enemies",
+			7: "5 TP, 127% base damage, 501% damage to healthier enemies",
+			8: "5 TP, 130% base damage, 512% damage to healthier enemies",
+			9: "5 TP, 133% base damage, 523% damage to healthier enemies",
+			10: "7 TP, 150% base damage, 600% damage to healthier enemies",
 		},
 		BackFromtheDead: 
 		{
-			1: "4 TP, 150% base damage, 892% maximum damage",
-			2: "4 TP, 154% base damage, 916% maximum damage",
-			3: "4 TP, 158% base damage, 940% maximum damage",
-			4: "4 TP, 162% base damage, 963% maximum damage",
-			5: "8 TP, 180% base damage, 1071% maximum damage",
-			6: "8 TP, 185% base damage, 1100% maximum damage",
-			7: "8 TP, 190% base damage, 1130% maximum damage",
-			8: "8 TP, 195% base damage, 1160% maximum damage",
-			9: "8 TP, 200% base damage, 1190% maximum damage",
-			10:" 14 TP, 225% base damage, 1338% maximum damage",
+			1: "4 TP, 150% base damage",
+			2: "4 TP, 154% base damage",
+			3: "4 TP, 158% base damage",
+			4: "4 TP, 162% base damage",
+			5: "8 TP, 180% base damage",
+			6: "8 TP, 185% base damage",
+			7: "8 TP, 190% base damage",
+			8: "8 TP, 195% base damage",
+			9: "8 TP, 200% base damage",
+			10: "14 TP, 225% base damage",
 		},
 		DemonGodFist: 
 		{
@@ -1108,7 +1108,7 @@ var classSkillLevels =
 			7: "13 TP, 300% damage, -30% max HP",
 			8: "13 TP, 320% damage, -30% max HP",
 			9: "13 TP, 340% damage, -30% max HP",
-			10:" 20 TP, 340% damage, -10% max HP",
+			10: "20 TP, 340% damage, -10% max HP",
 		},
 		ConstraintDefenseBoost: 
 		{
@@ -1121,7 +1121,7 @@ var classSkillLevels =
 			7: "+22% resistance",
 			8: "+24% resistance",
 			9: "+26% resistance",
-			10:" +30% resistance",
+			10: "+30% resistance",
 		},
 		HPBoost: 
 		{
@@ -1134,33 +1134,33 @@ var classSkillLevels =
 			7: "+14% max HP",
 			8: "+15% max HP",
 			9: "+16% max HP",
-			10:" +20% max HP",
+			10: "+20% max HP",
 		},
 		OugiRengokusatsu: 
 		{
-			1: "15 TP, 1.4x damage",
-			2: "15 TP, 1.43x damage",
-			3: "15 TP, 1.46x damage",
-			4: "15 TP, 1.49x damage",
-			5: "18 TP, 1.8x damage",
-			6: "18 TP, 1.85x damage",
-			7: "18 TP, 1.9x damage",
-			8: "18 TP, 1.95x damage",
-			9: "18 TP, 2x damage",
-			10:" 24 TP, 2.5x damage",
+			1: "15 TP, +0.4x base damage boost",
+			2: "15 TP, +0.43x base damage boost",
+			3: "15 TP, +0.46x base damage boost",
+			4: "15 TP, +0.49x base damage boost",
+			5: "18 TP, +0.8x base damage boost",
+			6: "18 TP, +0.85x base damage boost",
+			7: "18 TP, +0.9x base damage boost",
+			8: "18 TP, +0.95x base damage boost",
+			9: "18 TP, +1x base damage boost",
+			10: "24 TP, +1.5x base damage boost",
 		},
 		OugiTenchihaten: 
 		{
-			1: "4 TP, 1.7x max damage boost",
-			2: "4 TP,1.74x max damage boost",
-			3: "4 TP, 1.78x max damage boost",
-			4: "4 TP, 1.82x max damage boost",
-			5: "9 TP, 2.2x max damage boost",
-			6: "9 TP, 2.26x max damage boost",
-			7: "9 TP, 2.32x max damage boost",
-			8: "9 TP, 2.38x max damage boost",
-			9: "9 TP, 2.44x max damage boost",
-			10:" 20 TP, 3x max damage boost",
+			1: "4 TP, 1.7x base damage boost",
+			2: "4 TP, 1.74x base damage boost",
+			3: "4 TP, 1.78x base damage boost",
+			4: "4 TP, 1.82x base damage boost",
+			5: "9 TP, 2.2x base damage boost",
+			6: "9 TP, 2.26x base damage boost",
+			7: "9 TP, 2.32x base damage boost",
+			8: "9 TP, 2.38x base damage boost",
+			9: "9 TP, 2.44x base damage boost",
+			10: "20 TP, 3x base damage boost",
 		}		
 	},
 	reaper:
@@ -1176,7 +1176,7 @@ var classSkillLevels =
 			7: "11% attack increase",
 			8: "12% attack increase",
 			9: "13% attack increase",
-			10:" 15% attack increase",
+			10: "15% attack increase",
 		},
 		MiasmaWeapon: 
 		{
@@ -1197,7 +1197,7 @@ var classSkillLevels =
 			7: "11 TP, 18% attack reduction, lasts for 5 turns",
 			8: "11 TP, 19% attack reduction, lasts for 5 turns",
 			9: "11 TP, 20% attack reduction, lasts for 5 turns",
-			10:" 16 TP, 20% attack reduction, lasts for 6 turns",
+			10: "16 TP, 20% attack reduction, lasts for 6 turns",
 		},
 		ScytheofNumbStasis: 
 		{
@@ -1210,20 +1210,20 @@ var classSkillLevels =
 			7: "11 TP, 219% damage, 55% base paralysis chance",
 			8: "11 TP, 226% damage, 55% base paralysis chance",
 			9: "11 TP, 233% damage, 55% base paralysis chance",
-			10:" 16 TP, 280% damage, 70% base paralysis chance",
+			10: "16 TP, 280% damage, 70% base paralysis chance",
 		},
 		GatherSouls: 
 		{
-			1: "5 TP, +50% encounter rate, + 20% exp, 200 steps",
-			2: "5 TP, +60% encounter rate, + 25% exp, 200 steps",
-			3: "5 TP, +70% encounter rate, + 30% exp, 200 steps",
-			4: "5 TP, +80% encounter rate, + 35% exp, 200 steps",
-			5: "10 TP, +80% encounter rate, + 55% exp, 350 steps",
-			6: "10 TP, +100% encounter rate, + 60% exp, 350 steps",
-			7: "10 TP, +120% encounter rate, + 65% exp, 350 steps",
-			8: "10 TP, +140% encounter rate, + 70% exp, 350 steps",
-			9: "10 TP, +160% encounter rate, + 75% exp, 350 steps",
-			10:" 15 TP, +160% encounter rate, + 100% exp, 500 steps",
+			1: "5 TP, +50% encounter rate, +20% exp, 200 steps",
+			2: "5 TP, +60% encounter rate, +25% exp, 200 steps",
+			3: "5 TP, +70% encounter rate, +30% exp, 200 steps",
+			4: "5 TP, +80% encounter rate, +35% exp, 200 steps",
+			5: "10 TP, +80% encounter rate, +55% exp, 350 steps",
+			6: "10 TP, +100% encounter rate, +60% exp, 350 steps",
+			7: "10 TP, +120% encounter rate, +65% exp, 350 steps",
+			8: "10 TP, +140% encounter rate, +70% exp, 350 steps",
+			9: "10 TP, +160% encounter rate, +75% exp, 350 steps",
+			10: "15 TP, +160% encounter rate, +100% exp, 500 steps",
 		},
 		PreemptiveWeapon: 
 		{
@@ -1236,7 +1236,7 @@ var classSkillLevels =
 			7: "70% chance",
 			8: "75% chance",
 			9: "80% chance",
-			10:" 100% chance",
+			10: "100% chance",
 		},
 		EndlessShroud: 
 		{
@@ -1249,7 +1249,7 @@ var classSkillLevels =
 			7: "42% chance",
 			8: "46% chance",
 			9: "50% chance",
-			10:" 67% chance",
+			10: "67% chance",
 		},
 		DeathsJudgment: 
 		{
@@ -1262,7 +1262,7 @@ var classSkillLevels =
 			7: "21% activation rate",
 			8: "22% activation rate",
 			9: "23% activation rate",
-			10:" 30% activation rate",
+			10: "30% activation rate",
 		},
 		FeebleMiasma: 
 		{
@@ -1275,7 +1275,7 @@ var classSkillLevels =
 			7: "11 TP, 1.42x infliction rate, lasts for 5 turns",
 			8: "11 TP, 1.46x infliction rate, lasts for 5 turns",
 			9: "11 TP, 1.5x infliction rate, lasts for 5 turns",
-			10:" 16 TP, 1.5x infliction rate, lasts for 6 turns",
+			10: "16 TP, 1.5x infliction rate, lasts for 6 turns",
 		},
 		ScytheofExorcism: 
 		{
@@ -1288,7 +1288,7 @@ var classSkillLevels =
 			7: "11 TP, 219% damage, 55% base curse chance",
 			8: "11 TP, 226% damage, 55% base curse chance",
 			9: "11 TP, 233% damage, 55% base curse chance",
-			10:" 16 TP, 280% damage, 70% base curse chance",
+			10: "16 TP, 280% damage, 70% base curse chance",
 		},
 		BlackBlade: 
 		{
@@ -1301,7 +1301,7 @@ var classSkillLevels =
 			7: "+27% damage per stack, max 54% damage (2 stacks)",
 			8: "+30% damage per stack, max 60% damage (2 stacks)",
 			9: "+33% damage per stack, max 66% damage (2 stacks)",
-			10:" +33% damage per stack, max 99% damage (3 stacks)",
+			10: "+33% damage per stack, max 99% damage (3 stacks)",
 		},
 		TPBoost: 
 		{
@@ -1314,7 +1314,7 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		FreshBloodSlash: 
 		{
@@ -1327,7 +1327,7 @@ var classSkillLevels =
 			7: "8 TP, 162% damage per hit, 324% to 648% total damage, -40% max HP",
 			8: "8 TP, 169% damage per hit, 338% to 676% total damage, -40% max HP",
 			9: "8 TP, 176% damage per hit, 352% to 704% total damage, -40% max HP",
-			10:" 12 TP, 230% damage per hit, 460% to 920% total damage, -60% max HP",
+			10: "12 TP, 230% damage per hit, 460% to 920% total damage, -60% max HP",
 		},
 		GreateScytheofColdAsh: 
 		{
@@ -1340,7 +1340,7 @@ var classSkillLevels =
 			7: "20 TP, 219% damage, 438% follow-up damage, 657% total damage.",
 			8: "20 TP, 226% damage, 452% follow-up damage, 678% total damage.",
 			9: "20 TP, 233% damage, 466% follow-up damage, 699% total damage.",
-			10:" 30 TP, 280% damage, 560% follow-up damage, 840% total damage.",
+			10: "30 TP, 280% damage, 560% follow-up damage, 840% total damage.",
 		},
 		ScytheofCruelPoison: 
 		{
@@ -1353,7 +1353,7 @@ var classSkillLevels =
 			7: "15 TP, 219% damage, 55% base poison chance, 340 base poison damage",
 			8: "15 TP, 226% damage, 55% base poison chance, 390 base poison damage",
 			9: "15 TP, 233% damage, 55% base poison chance, 440 base poison damage",
-			10:" 20 TP, 280% damage, 70% base poison chance, 440 base poison damage",
+			10: "20 TP, 280% damage, 70% base poison chance, 440 base poison damage",
 		},
 		ScytheofWickedChaos: 
 		{
@@ -1361,12 +1361,12 @@ var classSkillLevels =
 			2: "10 TP, 156% damage, 30% base panic chance",
 			3: "10 TP, 162% damage, 30% base panic chance",
 			4: "10 TP, 168% damage, 30% base panic chance",
-			5: "15 TP, 205% damage, 40% base panic chance",
-			6: "15 TP, 212% damage, 40% base panic chance",
-			7: "15 TP, 219% damage, 40% base panic chance",
-			8: "15 TP, 226% damage, 40% base panic chance",
-			9: "15 TP, 233% damage, 40% base panic chance",
-			10:" 20 TP, 280% damage, 50% base panic chance",
+			5: "16 TP, 205% damage, 40% base panic chance",
+			6: "16 TP, 212% damage, 40% base panic chance",
+			7: "16 TP, 219% damage, 40% base panic chance",
+			8: "16 TP, 226% damage, 40% base panic chance",
+			9: "16 TP, 233% damage, 40% base panic chance",
+			10: "24 TP, 280% damage, 50% base panic chance",
 		},
 		BlackShroud: 
 		{
@@ -1379,7 +1379,7 @@ var classSkillLevels =
 			7: "+12% defense per stack, max 24% defense (2 stacks)",
 			8: "+13% defense per stack, max 26% defense (2 stacks)",
 			9: "+14% defense per stack, max 28% defense (2 stacks)",
-			10:" +14% defense per stack, max 42% defense (3 stacks)",
+			10: "+14% defense per stack, max 42% defense (3 stacks)",
 		},
 		ConstraintAttackBoost: 
 		{
@@ -1392,7 +1392,7 @@ var classSkillLevels =
 			7: "1.14x infliction rate",
 			8: "1.15x infliction rate",
 			9: "1.16x infliction rate",
-			10:" 1.20x infliction rate",
+			10: "1.20x infliction rate",
 		},
 		ShroudofReality: 
 		{
@@ -1405,33 +1405,33 @@ var classSkillLevels =
 			7: "30 TP, 750% damage, 60% speed modifier",
 			8: "30 TP, 775% damage, 65% speed modifier",
 			9: "30 TP, 800% damage, 70% speed modifier",
-			10:" 40 TP, 1000% damage, 200% speed modifier",
+			10: "40 TP, 1000% damage, 200% speed modifier",
 		},
 		ScytheofDeath: 
 		{
-			1: "10 TP, 205% damage, 25% base death chance, 2.5x success rate multiplier on sleeping targets.",
-			2: "10 TP, 220% damage, 28% base death chance, 2.5x success rate multiplier on sleeping targets.",
-			3: "10 TP, 235% damage, 31% base death chance, 2.5x success rate multiplier on sleeping targets.",
-			4: "10 TP, 250% damage, 34% base death chance, 2.5x success rate multiplier on sleeping targets.",
-			5: "18 TP, 250% damage, 34% base death chance, 1.75x damage multiplier and 3.0x success rate multiplier on sleeping targets.",
-			6: "18 TP, 270% damage, 38% base death chance, 1.75x damage multiplier and 3.0x success rate multiplier on sleeping targets.",
-			7: "18 TP, 290% damage, 42% base death chance, 1.75x damage multiplier and 3.0x success rate multiplier on sleeping targets.",
-			8: "18 TP, 310% damage, 46% base death chance, 1.75x damage multiplier and 3.0x success rate multiplier on sleeping targets.",
-			9: "18 TP, 330% damage, 50% base death chance, 1.75x damage multiplier and 3.0x success rate multiplier on sleeping targets.",
-			10:" 28 TP, 330% damage, 50% base death chance, 2.5x damage multiplier and 3.5x success rate multiplier on sleeping targets.",
+			1: "10 TP, 205% damage, 25% base death chance, 769% damage and 100% base death chance on sleeping targets.",
+			2: "10 TP, 220% damage, 28% base death chance, 825% damage and 100% base death chance on sleeping targets.",
+			3: "10 TP, 235% damage, 31% base death chance, 881% damage and 100% base death chance on sleeping targets.",
+			4: "10 TP, 250% damage, 34% base death chance, 938% damage and 100% base death chance on sleeping targets.",
+			5: "18 TP, 250% damage, 34% base death chance, 1125% damage and 175% base death chance on sleeping targets.",
+			6: "18 TP, 270% damage, 38% base death chance, 1215% damage and 175% base death chance on sleeping targets.",
+			7: "18 TP, 290% damage, 42% base death chance, 1305% damage and 175% base death chance on sleeping targets.",
+			8: "18 TP, 310% damage, 46% base death chance, 1395% damage and 175% base death chance on sleeping targets.",
+			9: "18 TP, 330% damage, 50% base death chance, 1485% damage and 175% base death chance on sleeping targets.",
+			10: "28 TP, 330% damage, 50% base death chance, 1733% damage and 250% base death chance on sleeping targets.",
 		},
 		AbsorbVitality: 
 		{
-			1: "Restores 50 HP, max HP can be increased by 15%",
-			2: "Restores 55 HP, max HP can be increased by 17%",
-			3: "Restores 60 HP, max HP can be increased by 19%",
-			4: "Restores 65 HP, max HP can be increased by 21%",
-			5: "Restores 90 HP, max HP can be increased by 27%",
-			6: "Restores 96 HP, max HP can be increased by 30%",
-			7: "Restores 102 HP, max HP can be increased by 33%",
-			8: "Restores 108 HP, max HP can be increased by 36%",
-			9: "Restores 112 HP, max HP can be increased by 39%",
-			10:" Restores 150 HP, max HP can be increased by 50%",
+			1: "50% Healing Power, max HP can be increased by 15%",
+			2: "55% Healing Power, max HP can be increased by 17%",
+			3: "60% Healing Power, max HP can be increased by 19%",
+			4: "65% Healing Power, max HP can be increased by 21%",
+			5: "90% Healing Power, max HP can be increased by 27%",
+			6: "96% Healing Power, max HP can be increased by 30%",
+			7: "102% Healing Power, max HP can be increased by 33%",
+			8: "108% Healing Power, max HP can be increased by 36%",
+			9: "112% Healing Power, max HP can be increased by 39%",
+			10: "150% Healing Power, max HP can be increased by 50%",
 		},
 		MagicDefenseBoost: 
 		{
@@ -1444,7 +1444,7 @@ var classSkillLevels =
 			7: "+11% mag def",
 			8: "+12% mag def",
 			9: "+13% mag def",
-			10:" +15% mag def",
+			10: "+15% mag def",
 		},
 		DeathResistance: 
 		{
@@ -1457,7 +1457,7 @@ var classSkillLevels =
 			7: "19% chance",
 			8: "20% chance",
 			9: "21% chance",
-			10:" 25% chance",
+			10: "25% chance",
 		},
 		BrittleMiasma: 
 		{
@@ -1470,20 +1470,20 @@ var classSkillLevels =
 			7: "11 TP, 29% defense reduction, lasts for 5 turns",
 			8: "11 TP, 32% defense reduction, lasts for 5 turns",
 			9: "11 TP, 35% defense reduction, lasts for 5 turns",
-			10:" 16 TP, 35% defense reduction, lasts for 6 turns",
+			10: "16 TP, 35% defense reduction, lasts for 6 turns",
 		},
 		DimMiasma: 
 		{
-			1: "6 TP, 110 accuracy reduction, lasts for 4 turns",
-			2: "6 TP, 120 accuracy reduction, lasts for 4 turns",
-			3: "6 TP, 130 accuracy reduction, lasts for 4 turns",
-			4: "6 TP, 140 accuracy reduction, lasts for 4 turns",
-			5: "11 TP, 140 accuracy reduction, lasts for 5 turns",
-			6: "11 TP, 155 accuracy reduction, lasts for 5 turns",
-			7: "11 TP, 170 accuracy reduction, lasts for 5 turns",
-			8: "11 TP, 185 accuracy reduction, lasts for 5 turns",
-			9: "11 TP, 200 accuracy reduction, lasts for 5 turns",
-			10:" 16 TP, 200 accuracy reduction, lasts for 6 turns",
+			1: "6 TP, 11% accuracy reduction, lasts for 4 turns",
+			2: "6 TP, 12% accuracy reduction, lasts for 4 turns",
+			3: "6 TP, 13% accuracy reduction, lasts for 4 turns",
+			4: "6 TP, 14% accuracy reduction, lasts for 4 turns",
+			5: "11 TP, 14% accuracy reduction, lasts for 5 turns",
+			6: "11 TP, 15.5% accuracy reduction, lasts for 5 turns",
+			7: "11 TP, 17% accuracy reduction, lasts for 5 turns",
+			8: "11 TP, 18.5% accuracy reduction, lasts for 5 turns",
+			9: "11 TP, 20% accuracy reduction, lasts for 5 turns",
+			10: "16 TP, 20% accuracy reduction, lasts for 6 turns",
 		},
 		HPBoost: 
 		{
@@ -1496,20 +1496,20 @@ var classSkillLevels =
 			7: "+14% max HP",
 			8: "+15% max HP",
 			9: "+16% max HP",
-			10:" +20% max HP",
+			10: "+20% max HP",
 		},
 		BloodofAtonement: 
 		{
-			1: "9 TP, Restores 150 HP, 30% chance",
-			2: "9 TP, Restores 155 HP, 33% chance",
-			3: "9 TP, Restores 160 HP, 36% chance",
-			4: "9 TP, Restores 165 HP, 39% chance",
-			5: "14 TP, Restores 220 HP, 54% chance",
-			6: "14 TP, Restores 225 HP, 58% chance",
-			7: "14 TP, Restores 230 HP, 62% chance",
-			8: "14 TP, Restores 235 HP, 66% chance",
-			9: "14 TP, Restores 240 HP, 70% chance",
-			10:" 20 TP, Restores 300 HP, 90% chance",
+			1: "9 TP, 150% Healing Power, 30% chance",
+			2: "9 TP, 155% Healing Power, 33% chance",
+			3: "9 TP, 160% Healing Power, 36% chance",
+			4: "9 TP, 165% Healing Power, 39% chance",
+			5: "14 TP, 220% Healing Power, 54% chance",
+			6: "14 TP, 225% Healing Power, 58% chance",
+			7: "14 TP, 230% Healing Power, 62% chance",
+			8: "14 TP, 235% Healing Power, 66% chance",
+			9: "14 TP, 240% Healing Power, 70% chance",
+			10: "20 TP, 300% Healing Power, 90% chance",
 		},
 		WallofMiasma: 
 		{
@@ -1522,7 +1522,7 @@ var classSkillLevels =
 			7: "22 TP, 86% chance, protects against 4 disables",
 			8: "22 TP, 88% chance, protects against 4 disables",
 			9: "22 TP, 90% chance, protects against 4 disables",
-			10:" 35 TP, 100% chance, protects against 5 disables",
+			10: "35 TP, 100% chance, protects against 5 disables",
 		},
 		ScytheofTransience: 
 		{
@@ -1535,7 +1535,7 @@ var classSkillLevels =
 			7: "18 TP, 540% damage per hit, max damage is 1620%",
 			8: "18 TP, 565% damage per hit, max damage is 1695%",
 			9: "18 TP, 590% damage per hit, max damage is 1770%",
-			10:" 24 TP, 700% damage per hit, max damage is 2100%",
+			10: "24 TP, 700% damage per hit, max damage is 2100%",
 		},
 		SoulTransfer: 
 		{
@@ -1548,7 +1548,7 @@ var classSkillLevels =
 			7: "12 TP, 54% chance, Restores 255 HP",
 			8: "12 TP, 56% chance, Restores 295 HP",
 			9: "12 TP, 58% chance, Restores 335 HP",
-			10:" 21 TP, 75% chance, Restores 500 HP",
+			10: "21 TP, 75% chance, Restores 500 HP",
 		}
 	},
 	warlock:
@@ -1564,7 +1564,7 @@ var classSkillLevels =
 			7: "+10% damage increase",
 			8: "+11% damage increase",
 			9: "+12% damage increase",
-			10:" +15% damage increase",
+			10: "+15% damage increase",
 		},
 		Amplifier: 
 		{
@@ -1577,7 +1577,7 @@ var classSkillLevels =
 			7: "9 TP, 37% mag atk increase, lasts for 5 turns",
 			8: "9 TP, 41% mag atk increase, lasts for 5 turns",
 			9: "9 TP, 45% mag atk increase, lasts for 5 turns",
-			10:" 13 TP, 45% mag atk increase, lasts for 6 turns",
+			10: "13 TP, 45% mag atk increase, lasts for 6 turns",
 		},
 		Levitation: 
 		{
@@ -1590,7 +1590,7 @@ var classSkillLevels =
 			7: "7 TP, +190% preemptive rate, 130 steps",
 			8: "7 TP, +220% preemptive rate, 130 steps",
 			9: "7 TP, +250% preemptive rate, 130 steps",
-			10:" 10 TP, +250% preemptive rate, 250 steps",
+			10: "10 TP, +250% preemptive rate, 250 steps",
 		},
 		HighSpeedIncantation: 
 		{
@@ -1611,7 +1611,7 @@ var classSkillLevels =
 			7: "12 TP, 155% damage",
 			8: "12 TP, 162% damage",
 			9: "12 TP, 169% damage",
-			10:" 18 TP, 210% damage",
+			10: "18 TP, 210% damage",
 		},
 		IcicleLance: 
 		{
@@ -1624,7 +1624,7 @@ var classSkillLevels =
 			7: "12 TP, 149% damage",
 			8: "12 TP, 156% damage",
 			9: "12 TP, 163% damage",
-			10:" 18 TP, 200% damage",
+			10: "18 TP, 200% damage",
 		},
 		Lightning: 
 		{
@@ -1637,7 +1637,7 @@ var classSkillLevels =
 			7: "12 TP, 143% damage",
 			8: "12 TP, 150% damage",
 			9: "12 TP, 157% damage",
-			10:" 18 TP, 190% damage",
+			10: "18 TP, 190% damage",
 		},
 		MagicShield: 
 		{
@@ -1650,7 +1650,7 @@ var classSkillLevels =
 			7: "14 TP, 59% reduction",
 			8: "14 TP, 62% reduction",
 			9: "14 TP, 65% reduction",
-			10:" 20 TP, 75% reduction",
+			10: "20 TP, 75% reduction",
 		},
 		IncantationCompressionForm: 
 		{
@@ -1663,7 +1663,7 @@ var classSkillLevels =
 			7: "10 TP, 2.02x damage",
 			8: "10 TP, 2.04x damage",
 			9: "10 TP, 2.06x damage",
-			10:" 15 TP, 2.25x damage",
+			10: "15 TP, 2.25x damage",
 		},
 		Invisible: 
 		{
@@ -1676,7 +1676,7 @@ var classSkillLevels =
 			7: "8 TP, -76% encounter rate, 160 steps",
 			8: "8 TP, -83% encounter rate, 160 steps",
 			9: "8 TP, -90% encounter rate, 160 steps",
-			10:" 12 TP, -90% encounter rate, 250 steps",
+			10: "12 TP, -90% encounter rate, 250 steps",
 		},
 		ReserveMagic: 
 		{
@@ -1689,7 +1689,7 @@ var classSkillLevels =
 			7: "+18% damage bonus",
 			8: "+19% damage bonus",
 			9: "+20% damage bonus",
-			10:" +25% damage bonus",
+			10: "+25% damage bonus",
 		},
 		Windstorm: 
 		{
@@ -1702,7 +1702,7 @@ var classSkillLevels =
 			7: "20 TP, 137% damage, 25% base arm bind chance",
 			8: "20 TP, 143% damage, 25% base arm bind chance",
 			9: "20 TP, 149% damage, 25% base arm bind chance",
-			10:" 27 TP, 180% damage, 30% base arm bind chance",
+			10: "27 TP, 180% damage, 30% base arm bind chance",
 		},
 		EarthSpike: 
 		{
@@ -1715,7 +1715,7 @@ var classSkillLevels =
 			7: "20 TP, 137% damage, 20% mag atk reduction",
 			8: "20 TP, 143% damage, 21% mag atk reduction",
 			9: "20 TP, 149% damage, 22% mag atk reduction",
-			10:" 27 TP, 180% damage, 25% mag atk reduction",
+			10: "27 TP, 180% damage, 25% mag atk reduction",
 		},
 		Rockfall: 
 		{
@@ -1728,7 +1728,7 @@ var classSkillLevels =
 			7: "20 TP, 137% damage, 25% base stun chance",
 			8: "20 TP, 143% damage, 25% base stun chance",
 			9: "20 TP, 149% damage, 25% base stun chance",
-			10:" 27 TP, 180% damage, 30% base stun chance",
+			10: "27 TP, 180% damage, 30% base stun chance",
 		},
 		AntiMagic: 
 		{
@@ -1741,7 +1741,7 @@ var classSkillLevels =
 			7: "11% chance",
 			8: "12% chance",
 			9: "13% chance",
-			10:" 15% chance",
+			10: "15% chance",
 		},
 		IncantationMultistrikeForm: 
 		{
@@ -1754,7 +1754,7 @@ var classSkillLevels =
 			7: "16 TP, 60% original dmg per hit",
 			8: "14 TP, 60% original dmg per hit",
 			9: "12 TP, 60% original dmg per hit",
-			10:" 25 TP, 75% original dmg per hit",
+			10: "25 TP, 75% original dmg per hit",
 		},
 		MagicDefenseBoost: 
 		{
@@ -1767,7 +1767,7 @@ var classSkillLevels =
 			7: "+11% mag def",
 			8: "+12% mag def",
 			9: "+13% mag def",
-			10:" +15% mag def",
+			10: "+15% mag def",
 		},
 		TPBoost: 
 		{
@@ -1780,20 +1780,20 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		Alter: 
 		{
-			1: "20 TP, 100% damage, 50% base petrify chance",
-			2: "20 TP, 102% damage, 52% base petrify chance",
-			3: "20 TP, 104% damage, 54% base petrify chance",
-			4: "20 TP, 106% damage, 56% base petrify chance",
-			5: "30 TP, 114% damage, 66% base petrify chance",
-			6: "30 TP, 117% damage, 68% base petrify chance",
-			7: "30 TP, 120% damage, 70% base petrify chance",
-			8: "30 TP, 123% damage, 72% base petrify chance",
-			9: "30 TP, 126% damage, 74% base petrify chance",
-			10:" 40 TP, 140% damage, 90% base petrify chance",
+			1: "20 TP, 100% damage, 30% increase per stack, 700% maximum damage, 50% base petrify chance",
+			2: "20 TP, 102% damage, 31% increase per stack, 722% maximum damage, 52% base petrify chance",
+			3: "20 TP, 104% damage, 32% increase per stack, 744% maximum damage, 54% base petrify chance",
+			4: "20 TP, 106% damage, 33% increase per stack, 766% maximum damage, 56% base petrify chance",
+			5: "30 TP, 114% damage, 37% increase per stack, 854% maximum damage, 66% base petrify chance",
+			6: "30 TP, 117% damage, 38% increase per stack, 877% maximum damage, 68% base petrify chance",
+			7: "30 TP, 120% damage, 39% increase per stack, 900% maximum damage, 70% base petrify chance",
+			8: "30 TP, 123% damage, 40% increase per stack, 923% maximum damage, 72% base petrify chance",
+			9: "30 TP, 126% damage, 41% increase per stack, 946% maximum damage, 74% base petrify chance",
+			10: "40 TP, 140% damage, 45% increase per stack, 1040% maximum damage, 90% base petrify chance",
 		},
 		LifeDrain: 
 		{
@@ -1814,7 +1814,7 @@ var classSkillLevels =
 			7: "38% damage bonus",
 			8: "40% damage bonus",
 			9: "42% damage bonus",
-			10:" 50% damage bonus",
+			10: "50% damage bonus",
 		},
 		Explode: 
 		{
@@ -1827,7 +1827,7 @@ var classSkillLevels =
 			7: "30 TP, 203% damage",
 			8: "30 TP, 212% damage",
 			9: "30 TP, 221% damage",
-			10:" 40 TP, 270% damage",
+			10: "40 TP, 270% damage",
 		},
 		IceStream: 
 		{
@@ -1840,7 +1840,7 @@ var classSkillLevels =
 			7: "30 TP, 203% damage",
 			8: "30 TP, 212% damage",
 			9: "30 TP, 221% damage",
-			10:" 40 TP, 270% damage",
+			10: "40 TP, 270% damage",
 		},
 		ThunderBreak: 
 		{
@@ -1853,7 +1853,7 @@ var classSkillLevels =
 			7: "30 TP, 203% damage",
 			8: "30 TP, 212% damage",
 			9: "30 TP, 221% damage",
-			10:" 40 TP, 270% damage",
+			10: "40 TP, 270% damage",
 		},
 		MagicWeapon: 
 		{
@@ -1866,20 +1866,20 @@ var classSkillLevels =
 			7: "5 TP, 270% damage",
 			8: "5 TP, 280% damage",
 			9: "5 TP, 290% damage",
-			10:" 10 TP, 450% damage, +10 base accuracy",
+			10: "10 TP, 450% damage, +10% base accuracy",
 		},
 		IncantationReductionForm: 
 		{
-			1: "1 TP, 0.14x TP cost, 0.6x damage",
-			2: "1 TP, 0.15x TP cost, 0.61x damage",
-			3: "1 TP, 0.16x TP cost, 0.62x damage",
-			4: "1 TP, 0.17x TP cost, 0.63x damage",
-			5: "3 TP, 0.19x TP cost, 0.73x damage",
-			6: "3 TP, 0.20x TP cost, 0.74x damage",
-			7: "3 TP, 0.21x TP cost, 0.75x damage",
-			8: "3 TP, 0.22x TP cost, 0.76x damage",
-			9: "3 TP, 0.23x TP cost, 0.77x damage",
-			10:" 5 TP, 0.25x TP cost, 0.9x damage",
+			1: "1 TP, -14 TP cost, 0.6x damage",
+			2: "1 TP, -15 TP cost, 0.61x damage",
+			3: "1 TP, -16 TP cost, 0.62x damage",
+			4: "1 TP, -17 TP cost, 0.63x damage",
+			5: "3 TP, -19 TP cost, 0.73x damage",
+			6: "3 TP, -20 TP cost, 0.74x damage",
+			7: "3 TP, -21 TP cost, 0.75x damage",
+			8: "3 TP, -22 TP cost, 0.76x damage",
+			9: "3 TP, -23 TP cost, 0.77x damage",
+			10: "5 TP, -25 TP cost, 0.9x damage",
 		},
 		ConstraintDefenseBoost: 
 		{
@@ -1892,7 +1892,7 @@ var classSkillLevels =
 			7: "+22% resistance",
 			8: "+24% resistance",
 			9: "+26% resistance",
-			10:" +30% resistance",
+			10: "+30% resistance",
 		},
 		MagicAttackBoost: 
 		{
@@ -1905,7 +1905,7 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		MagicLeak: 
 		{
@@ -1918,7 +1918,7 @@ var classSkillLevels =
 			7: "3 TP, 42% used TP restored, lasts for 5 turns",
 			8: "3 TP, 46% used TP restored, lasts for 5 turns",
 			9: "3 TP, 50% used TP restored, lasts for 5 turns",
-			10:" 5 TP, 50% used TP restored, lasts for 6 turns",
+			10: "5 TP, 50% used TP restored, lasts for 6 turns",
 		},
 		CostCut: 
 		{
@@ -1931,36 +1931,36 @@ var classSkillLevels =
 			7: "22% chance",
 			8: "24% chance",
 			9: "26% chance",
-			10:" 34% chance",
+			10: "34% chance",
 		}
 	},
 	necromancer:
 	{
 		GhostMastery: 
 		{
-			1: "2x damage, 1.1x disable chance",
-			2: "2.2x damage, 1.15x disable chance",
-			3: "2.4x damage, 1.2x disable chance",
-			4: "2.6x damage, 1.25x disable chance",
-			5: "3.6x damage, 1.45x disable chance",
-			6: "3.85x damage, 1.52x disable chance",
-			7: "4.1x damage, 1.59x disable chance",
-			8: "4.35x damage, 1.66x disable chance",
-			9: "4.6x damage, 1.73x disable chance",
-			10:" 6x damage, 2x disable chance",
+			1: "1.1x damage, 1x disable chance",
+			2: "1.15x damage, 1.2x disable chance",
+			3: "1.2x damage, 1.4x disable chance",
+			4: "1.25x damage, 1.6x disable chance",
+			5: "1.45x damage, 2.6x disable chance",
+			6: "1.52x damage, 2.85x disable chance",
+			7: "1.59x damage, 3.1x disable chance",
+			8: "1.66x damage, 3.35x disable chance",
+			9: "1.73x damage, 3.6x disable chance",
+			10: "2x damage, 5x disable chance",
 		},
 		GhostSummoning: 
 		{
-			1: "5 TP, +5 ghost HP",
-			2: "5 TP, +8 ghost HP",
-			3: "5 TP, +11 ghost HP",
-			4: "5 TP, +14 ghost HP",
-			5: "8 TP, +39 ghost HP",
-			6: "8 TP, +43 ghost HP",
-			7: "8 TP, +47 ghost HP",
-			8: "8 TP, +51 ghost HP",
-			9: "8 TP, +55 ghost HP",
-			10:" 12 TP, +80 ghost HP",
+			1: "5 TP, +5% Wraith HP",
+			2: "5 TP, +8% Wraith HP",
+			3: "5 TP, +11% Wraith HP",
+			4: "5 TP, +14% Wraith HP",
+			5: "8 TP, +39% Wraith HP",
+			6: "8 TP, +43% Wraith HP",
+			7: "8 TP, +47% Wraith HP",
+			8: "8 TP, +51% Wraith HP",
+			9: "8 TP, +55% Wraith HP",
+			10: "12 TP, +80% Wraith HP",
 		},
 		MoaningSpirits: 
 		{
@@ -1973,7 +1973,7 @@ var classSkillLevels =
 			7: "10 TP, 29% defense reduction, lasts for 5 turns",
 			8: "10 TP, 32% defense reduction, lasts for 5 turns",
 			9: "10 TP, 35% defense reduction, lasts for 5 turns",
-			10:" 15 TP, 35% defense reduction, lasts for 6 turns",
+			10: "15 TP, 35% defense reduction, lasts for 6 turns",
 		},
 		SoulFood: 
 		{
@@ -1986,7 +1986,7 @@ var classSkillLevels =
 			7: "10 TP, 30% defense increase, lasts for 5 turns",
 			8: "10 TP, 32% defense increase, lasts for 5 turns",
 			9: "10 TP, 34% defense increase, lasts for 5 turns",
-			10:" 15 TP, 34% defense increase, lasts for 6 turns",
+			10: "15 TP, 34% defense increase, lasts for 6 turns",
 		},
 		GravekeepingKnowledge: 
 		{
@@ -1999,7 +1999,7 @@ var classSkillLevels =
 			7: "19% chance",
 			8: "20% chance",
 			9: "21% chance",
-			10:" 25% chance",
+			10: "25% chance",
 		},
 		ThePriceofLife: 
 		{
@@ -2012,7 +2012,7 @@ var classSkillLevels =
 			7: "18 TP, 200% healing power",
 			8: "18 TP, 205% healing power",
 			9: "18 TP, 210% healing power",
-			10:" 24 TP, 270% healing power",
+			10: "24 TP, 270% healing power",
 		},
 		MercilessWall: 
 		{
@@ -2025,7 +2025,7 @@ var classSkillLevels =
 			7: "5 TP, 0.94x damage taken",
 			8: "5 TP, 0.91x damage taken",
 			9: "5 TP, 0.88x damage taken",
-			10:" 8 TP, 0.75x damage taken",
+			10: "8 TP, 0.75x damage taken",
 		},
 		GhostReincarnation: 
 		{
@@ -2038,7 +2038,7 @@ var classSkillLevels =
 			7: "25% chance",
 			8: "26% chance",
 			9: "27% chance",
-			10:" 33% chance",
+			10: "33% chance",
 		},
 		PoisonBomb: 
 		{
@@ -2051,7 +2051,7 @@ var classSkillLevels =
 			7: "12 TP, 75% base poison chance, 215 base poison damage",
 			8: "12 TP, 75% base poison chance, 250 base poison damage",
 			9: "12 TP, 75% base poison chance, 285 base poison damage",
-			10:" 20 TP, 95% base poison chance, 360 base poison damage",
+			10: "20 TP, 95% base poison chance, 360 base poison damage",
 		},
 		FireBomb: 
 		{
@@ -2064,7 +2064,7 @@ var classSkillLevels =
 			7: "22 TP, 201% damage",
 			8: "22 TP, 211% damage",
 			9: "22 TP, 221% damage",
-			10:" 30 TP, 280% damage",
+			10: "30 TP, 280% damage",
 		},
 		GhostSecretArts: 
 		{
@@ -2077,7 +2077,7 @@ var classSkillLevels =
 			7: "29% chance",
 			8: "30% chance",
 			9: "31% chance",
-			10:" 40% chance",
+			10: "40% chance",
 		},
 		CurseTransfer: 
 		{
@@ -2090,7 +2090,7 @@ var classSkillLevels =
 			7: "38% chance, 111 HP restore",
 			8: "40% chance, 121 HP restore",
 			9: "42% chance, 131 HP restore",
-			10:" 50% chance, 200 HP restore",
+			10: "50% chance, 200 HP restore",
 		},
 		OpenGrave: 
 		{
@@ -2103,7 +2103,7 @@ var classSkillLevels =
 			7: "8 TP, 440% damage, 46% base paralysis chance",
 			8: "8 TP, 455% damage, 48% base paralysis chance",
 			9: "8 TP, 470% damage, 50% base paralysis chance",
-			10:" 14 TP, 600% damage, 60% base paralysis chance",
+			10: "14 TP, 600% damage, 60% base paralysis chance",
 		},
 		ConstraintAttackBoost: 
 		{
@@ -2116,7 +2116,7 @@ var classSkillLevels =
 			7: "1.14x chance multiplier",
 			8: "1.15x chance multiplier",
 			9: "1.16x chance multiplier",
-			10:" 1.2x chance multiplier",
+			10: "1.2x chance multiplier",
 		},
 		CurseBomb: 
 		{
@@ -2129,7 +2129,7 @@ var classSkillLevels =
 			7: "12 TP, 84% base curse chance",
 			8: "12 TP, 86% base curse chance",
 			9: "12 TP, 88% base curse chance",
-			10:" 20 TP, 100% base curse chance",
+			10: "20 TP, 100% base curse chance",
 		},
 		IceBomb: 
 		{
@@ -2142,7 +2142,7 @@ var classSkillLevels =
 			7: "22 TP, 201% damage",
 			8: "22 TP, 211% damage",
 			9: "22 TP, 221% damage",
-			10:" 30 TP, 280% damage",
+			10: "30 TP, 280% damage",
 		},
 		HPBoost: 
 		{
@@ -2155,20 +2155,20 @@ var classSkillLevels =
 			7: "+14% max HP",
 			8: "+15% max HP",
 			9: "+16% max HP",
-			10:" +20% max HP",
+			10: "+20% max HP",
 		},
 		SoulTrade: 
 		{
-			1: "20 TP, 50% revive chance, 1% healing power",
-			2: "20 TP, 51% revive chance, 11% healing power",
-			3: "20 TP, 52% revive chance, 21% healing power",
-			4: "20 TP, 53% revive chance, 31% healing power",
-			5: "25 TP, 62% revive chance, 90% healing power",
-			6: "25 TP, 63% revive chance, 100% healing power",
-			7: "25 TP, 64% revive chance, 110% healing power",
-			8: "25 TP, 65% revive chance, 120% healing power",
-			9: "25 TP, 66% revive chance, 130% healing power",
-			10:" 30 TP, 75% revive chance, 200% healing power",
+			1: "20 TP, 50% revive chance, revives with 1 HP",
+			2: "20 TP, 51% revive chance, revives with 11 HP",
+			3: "20 TP, 52% revive chance, revives with 21 HP",
+			4: "20 TP, 53% revive chance, revives with 31 HP",
+			5: "25 TP, 62% revive chance, revives with 90 HP",
+			6: "25 TP, 63% revive chance, revives with 100 HP",
+			7: "25 TP, 64% revive chance, revives with 110 HP",
+			8: "25 TP, 65% revive chance, revives with 120 HP",
+			9: "25 TP, 66% revive chance, revives with 130 HP",
+			10: "30 TP, 75% revive chance, revives with 200 HP",
 		},
 		GhostDance: 
 		{
@@ -2181,7 +2181,7 @@ var classSkillLevels =
 			7: "19 TP, 92% dmg per hit, 276% total dmg",
 			8: "19 TP, 96% dmg per hit, 288% total dmg",
 			9: "19 TP, 100% dmg per hit, 300% total dmg",
-			10:" 25 TP, 120% dmg per hit, 360% total dmg",
+			10: "25 TP, 120% dmg per hit, 360% total dmg",
 		},
 		GravestoneBinding: 
 		{
@@ -2194,7 +2194,7 @@ var classSkillLevels =
 			7: "7 TP, 40% base petrify chance, 74% base chance w/ 2 ghosts, 108% base chance w/ 3 ghosts",
 			8: "7 TP, 42% base petrify chance, 78% base chance w/ 2 ghosts, 114% base chance w/ 3 ghosts",
 			9: "7 TP, 44% base petrify chance, 82% base chance w/ 2 ghosts, 122% base chance w/ 3 ghosts",
-			10:" 12 TP, 60% base petrify chance, 110% base chance w/ 2 ghosts, 160% base chance w/ 3 ghosts",
+			10: "12 TP, 60% base petrify chance, 110% base chance w/ 2 ghosts, 160% base chance w/ 3 ghosts",
 		},
 		TheBeckoningofHades: 
 		{
@@ -2207,7 +2207,7 @@ var classSkillLevels =
 			7: "79% chance, 19% HP threshold",
 			8: "82% chance, 20% HP threshold",
 			9: "85% chance, 21% HP threshold",
-			10:" 100% chance, 30% HP threshold",
+			10: "100% chance, 30% HP threshold",
 		},
 		PreemptiveGhostSummoning: 
 		{
@@ -2220,7 +2220,7 @@ var classSkillLevels =
 			7: "67% chance",
 			8: "71% chance",
 			9: "75% chance",
-			10:" 100% chance",
+			10: "100% chance",
 		},
 		EquivalentExchange: 
 		{
@@ -2233,7 +2233,7 @@ var classSkillLevels =
 			7: "5 TP, 74% HP as damage",
 			8: "5 TP, 77% HP as damage",
 			9: "5 TP, 80% HP as damage",
-			10:" 9 TP, 100% HP as damage",
+			10: "9 TP, 100% HP as damage",
 		},
 		Sacrifice: 
 		{
@@ -2246,7 +2246,7 @@ var classSkillLevels =
 			7: "10 TP, 1.9x damage",
 			8: "10 TP, 1.95x damage",
 			9: "10 TP, 2x damage",
-			10:" 25 TP, 2.5x damage",
+			10: "25 TP, 2.5x damage",
 		},
 		MagicAttackBoost: 
 		{
@@ -2259,7 +2259,7 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		TheGatesofHell: 
 		{
@@ -2272,7 +2272,7 @@ var classSkillLevels =
 			7: "24 TP, 216% damage",
 			8: "24 TP, 223% damage",
 			9: "24 TP, 230% damage",
-			10:" 34 TP, 280% damage",
+			10: "34 TP, 280% damage",
 		},
 		TPBoost: 
 		{
@@ -2285,7 +2285,7 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		GhostExplosion: 
 		{
@@ -2298,7 +2298,7 @@ var classSkillLevels =
 			7: "30 TP, 147% dmg per ghost",
 			8: "30 TP, 151% dmg per ghost",
 			9: "30 TP, 155% dmg per ghost",
-			10:" 45 TP, 200% dmg per ghost",
+			10: "45 TP, 200% dmg per ghost",
 		},
 		NegativeEnergy: 
 		{
@@ -2311,7 +2311,7 @@ var classSkillLevels =
 			7: "8 TP, 154% base damage",
 			8: "8 TP, 159% base damage",
 			9: "8 TP, 164% base damage",
-			10:" 12 TP, 200% base damage",
+			10: "12 TP, 200% base damage",
 		},
 		ZombiePowder: 
 		{
@@ -2324,7 +2324,7 @@ var classSkillLevels =
 			7: "14 TP, 63% base instant death chance",
 			8: "14 TP, 65% base instant death chance",
 			9: "14 TP, 67% base instant death chance",
-			10:" 19 TP, 80% base instant death chance",
+			10: "19 TP, 80% base instant death chance",
 		}
 	},
 	hound:
@@ -2340,7 +2340,7 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		HawkWhistle: 
 		{
@@ -2353,7 +2353,7 @@ var classSkillLevels =
 			7: "45 TP, 1.27x stat multiplier",
 			8: "45 TP, 1.31x stat multiplier",
 			9: "45 TP, 1.35x stat multiplier",
-			10:" 75 TP, 1.5x stat multiplier",
+			10: "75 TP, 1.5x stat multiplier",
 		},
 		DogWhistle: 
 		{
@@ -2366,33 +2366,33 @@ var classSkillLevels =
 			7: "45 TP, 1.27x stat multiplier",
 			8: "45 TP, 1.31x stat multiplier",
 			9: "45 TP, 1.35x stat multiplier",
-			10:" 75 TP, 1.5x stat multiplier",
+			10: "75 TP, 1.5x stat multiplier",
 		},
 		Brushing: 
 		{
-			1: "20 HP restored",
-			2: "25 HP restored",
-			3: "30 HP restored",
-			4: "35 HP restored",
-			5: "53 HP restored",
-			6: "59 HP restored",
-			7: "65 HP restored",
-			8: "71 HP restored",
-			9: "77 HP restored",
-			10:" 100 HP restored",
+			1: "20% Healing Power",
+			2: "25% Healing Power",
+			3: "30% Healing Power",
+			4: "35% Healing Power",
+			5: "53% Healing Power",
+			6: "59% Healing Power",
+			7: "65% Healing Power",
+			8: "71% Healing Power",
+			9: "77% Healing Power",
+			10: "100% Healing Power",
 		},
 		AnimalTherapy: 
 		{
-			1: "1 HP restored",
-			2: "3 HP restored",
-			3: "5 HP restored",
-			4: "7 HP restored",
-			5: "15 HP restored",
-			6: "17 HP restored",
-			7: "19 HP restored",
-			8: "21 HP restored",
-			9: "23 HP restored",
-			10:" 35 HP restored",
+			1: "1% Healing Power",
+			2: "3% Healing Power",
+			3: "5% Healing Power",
+			4: "7% Healing Power",
+			5: "15% Healing Power",
+			6: "17% Healing Power",
+			7: "19% Healing Power",
+			8: "21% Healing Power",
+			9: "23% Healing Power",
+			10: "35% Healing Power",
 		},
 		HawkArrow: 
 		{
@@ -2405,7 +2405,7 @@ var classSkillLevels =
 			7: "9 TP, 127% initial damage, 270% hawk damage",
 			8: "9 TP, 131% initial damage, 280% hawk damage",
 			9: "9 TP, 135% initial damage, 290% hawk damage",
-			10:" 12 TP, 150% initial damage, 330% hawk damage",
+			10: "12 TP, 150% initial damage, 330% hawk damage",
 		},
 		FlashofBothWings: 
 		{
@@ -2418,7 +2418,7 @@ var classSkillLevels =
 			7: "13 TP, 101% initial damage, 166% hawk damage",
 			8: "13 TP, 104% initial damage, 172% hawk damage",
 			9: "13 TP, 107% initial damage, 178% hawk damage",
-			10:" 18 TP, 120% initial damage, 210% hawk damage",
+			10: "18 TP, 120% initial damage, 210% hawk damage",
 		},
 		AidCommand: 
 		{
@@ -2431,7 +2431,7 @@ var classSkillLevels =
 			7: "10 TP, 94 static heal, 28% max HP heal",
 			8: "10 TP, 102 static heal, 29% max HP heal",
 			9: "10 TP, 110 static heal, 30% max HP heal",
-			10:" 14 TP, 150 static heal, 34% max HP heal",
+			10: "14 TP, 150 static heal, 34% max HP heal",
 		},
 		HunterShot: 
 		{
@@ -2444,7 +2444,7 @@ var classSkillLevels =
 			7: "9 TP, 192% damage, 40% base bind chance",
 			8: "9 TP, 201% damage, 40% base bind chance",
 			9: "9 TP, 210% damage, 40% base bind chance",
-			10:" 13 TP, 210% damage, 50% base bind chance",
+			10: "13 TP, 210% damage, 50% base bind chance",
 		},
 		TargetArrow: 
 		{
@@ -2457,7 +2457,7 @@ var classSkillLevels =
 			7: "7 TP, 157% damage, 20% defense reduction, lasts for 5 turns",
 			8: "7 TP, 166% damage, 20% defense reduction, lasts for 5 turns",
 			9: "7 TP, 175% damage, 20% defense reduction, lasts for 5 turns",
-			10:" 10 TP, 175% damage, 30% defense reduction, lasts for 6 turns",
+			10: "10 TP, 175% damage, 30% defense reduction, lasts for 6 turns",
 		},
 		SkyPatrol: 
 		{
@@ -2473,7 +2473,7 @@ var classSkillLevels =
 			7: "12 TP, 306% damage, 39% base head bind chance",
 			8: "12 TP, 318% damage, 40% base head bind chance",
 			9: "12 TP, 330% damage, 41% base head bind chance",
-			10:" 17 TP, 400% damage, 50% base head bind chance",
+			10: "17 TP, 400% damage, 50% base head bind chance",
 		},
 		IcePeck: 
 		{
@@ -2486,7 +2486,7 @@ var classSkillLevels =
 			7: "17 TP, 78% initial damage, 160% hawk damage",
 			8: "17 TP, 82% initial damage, 165% hawk damage",
 			9: "17 TP, 86% initial damage, 170% hawk damage",
-			10:" 24 TP, 100% initial damage, 200% hawk damage",
+			10: "24 TP, 100% initial damage, 200% hawk damage",
 		},
 		PhysicalAttackBoost: 
 		{
@@ -2499,20 +2499,20 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		SpeedBoost: 
 		{
-			1: "1.11x speed, +24 acc/evade",
-			2: "1.14x speed, +28 acc/evade",
-			3: "1.17x speed, +32 acc/evade",
-			4: "1.2x speed, +36 acc/evade",
-			5: "1.24x speed, +52 acc/evade",
-			6: "1.27x speed, +58 acc/evade",
-			7: "1.3x speed, +64 acc/evade",
-			8: "1.33x speed, +70 acc/evade",
-			9: "1.36x speed, +76 acc/evade",
-			10:" 1.4x speed, +100 acc/evade",
+			1: "1.11x speed, +2.4% acc/evade",
+			2: "1.14x speed, +2.8% acc/evade",
+			3: "1.17x speed, +3.2% acc/evade",
+			4: "1.2x speed, +3.6% acc/evade",
+			5: "1.24x speed, +5.2% acc/evade",
+			6: "1.27x speed, +5.8% acc/evade",
+			7: "1.3x speed, +6.4% acc/evade",
+			8: "1.33x speed, +7% acc/evade",
+			9: "1.36x speed, +7.6% acc/evade",
+			10: "1.4x speed, +10% acc/evade",
 		},
 		PowerShot: 
 		{
@@ -2525,7 +2525,7 @@ var classSkillLevels =
 			7: "15 TP, 270% damage",
 			8: "15 TP, 280% damage",
 			9: "15 TP, 290% damage",
-			10:" 21 TP, 340% damage",
+			10: "21 TP, 340% damage",
 		},
 		ScatterFeathers: 
 		{
@@ -2538,7 +2538,7 @@ var classSkillLevels =
 			7: "6 TP, 54% base blind chance",
 			8: "6 TP, 56% base blind chance",
 			9: "6 TP, 58% base blind chance",
-			10:" 9 TP, 70% base blind chance",
+			10: "9 TP, 70% base blind chance",
 		},
 		FinishingArrow: 
 		{
@@ -2551,7 +2551,7 @@ var classSkillLevels =
 			7: "21% HP threshold",
 			8: "22% HP threshold",
 			9: "23% HP threshold",
-			10:" 30% HP threshold",
+			10: "30% HP threshold",
 		},
 		SkyDive: 
 		{
@@ -2564,7 +2564,7 @@ var classSkillLevels =
 			7: "23 TP, 970% damage, 92% base head bind chance",
 			8: "23 TP, 1020% damage, 96% base head bind chance",
 			9: "23 TP, 1070% damage, 100% base head bind chance",
-			10:" 32 TP, 1300% damage, 120% base head bind chance",
+			10: "32 TP, 1300% damage, 120% base head bind chance",
 		},
 		MillionShot: 
 		{
@@ -2577,20 +2577,10 @@ var classSkillLevels =
 			7: "19 TP, 168% dmg per hit, 6-16 total hits",
 			8: "19 TP, 184% dmg per hit, 6-16 total hits",
 			9: "19 TP, 200% dmg per hit, 6-16 total hits",
-			10:" 27 TP, 200% dmg per hit, 8-16 total hits",
+			10: "27 TP, 200% dmg per hit, 8-16 total hits",
 		},
 		GroundPatrol: 
 		{
-			1: "7 TP, 160% damage",
-			2: "7 TP, 165% damage",
-			3: "7 TP, 170% damage",
-			4: "7 TP, 175% damage",
-			5: "12 TP, 215% damage",
-			6: "12 TP, 220% damage",
-			7: "12 TP, 225% damage",
-			8: "12 TP, 230% damage",
-			9: "12 TP, 235% damage",
-			10:" 18 TP, 280% damage",
 		},
 		ConstraintAttackBoost: 
 		{
@@ -2603,7 +2593,7 @@ var classSkillLevels =
 			7: "1.14x chance multiplier",
 			8: "1.15x chance multiplier",
 			9: "1.16x chance multiplier",
-			10:" 1.2x chance multiplier",
+			10: "1.2x chance multiplier",
 		},
 		MenacingHowl: 
 		{
@@ -2616,7 +2606,7 @@ var classSkillLevels =
 			7: "9 TP, 34% base panic chance",
 			8: "9 TP, 35% base panic chance",
 			9: "9 TP, 36% base panic chance",
-			10:" 13 TP, 40% base panic chance",
+			10: "13 TP, 40% base panic chance",
 		},
 		DefenseCommand: 
 		{
@@ -2629,7 +2619,7 @@ var classSkillLevels =
 			7: "7 TP, 1.19x damage taken, 60 static restore, 21% max HP restore",
 			8: "7 TP, 1.16x damage taken, 60 static restore, 22% max HP restore",
 			9: "7 TP, 1.13x damage taken, 60 static restore, 23% max HP restore",
-			10:" 10 TP, 1x damage taken, 80 static restore, 25% max HP restore",
+			10: "10 TP, 1x damage taken, 80 static restore, 25% max HP restore",
 		},
 		FootPierce: 
 		{
@@ -2642,7 +2632,7 @@ var classSkillLevels =
 			7: "15 TP, 134% initial damage, 35% base leg bind chance, 510% Hound damage",
 			8: "15 TP, 142% initial damage, 35% base leg bind chance, 555% Hound damage",
 			9: "15 TP, 150% initial damage, 35% base leg bind chance, 600% Hound damage",
-			10:" 20 TP, 150% initial damage, 50% base leg bind chance, 600% Hound damage",
+			10: "20 TP, 150% initial damage, 50% base leg bind chance, 600% Hound damage",
 		},
 		DropShot: 
 		{
@@ -2655,7 +2645,7 @@ var classSkillLevels =
 			7: "12 TP, 225% damage",
 			8: "12 TP, 230% damage",
 			9: "12 TP, 235% damage",
-			10:" 18 TP, 280% damage",
+			10: "18 TP, 280% damage",
 		},
 		HealingBoost: 
 		{
@@ -2668,7 +2658,7 @@ var classSkillLevels =
 			7: "+25 static heal, +4% max HP heal",
 			8: "+28 static heal, +4% max HP heal",
 			9: "+31 static heal, +4% max HP heal",
-			10:" +35 static heal, +7% max HP heal",
+			10: "+35 static heal, +7% max HP heal",
 		},
 		TPBoost: 
 		{
@@ -2681,7 +2671,7 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		MedicalLick: 
 		{
@@ -2694,7 +2684,7 @@ var classSkillLevels =
 			7: "17 TP, 62 static restore, 16% max HP heal, 7 heals",
 			8: "17 TP, 66 static restore, 18% max HP heal, 7 heals",
 			9: "17 TP, 70 static restore, 20% max HP heal, 7 heals",
-			10:" 25 TP, 70 static restore, 20% max HP heal, 9 heals",
+			10: "25 TP, 70 static restore, 20% max HP heal, 9 heals",
 		},
 		StunShot: 
 		{
@@ -2707,7 +2697,7 @@ var classSkillLevels =
 			7: "13 TP, 310% damage, 50% base stun chance",
 			8: "13 TP, 335% damage, 50% base stun chance",
 			9: "13 TP, 360% damage, 50% base stun chance",
-			10:" 18 TP, 360% damage, 65% base stun chance",
+			10: "18 TP, 360% damage, 65% base stun chance",
 		}
 	},
 	masurao:
@@ -2723,7 +2713,7 @@ var classSkillLevels =
 			7: "10% damage bonus",
 			8: "11% damage bonus",
 			9: "12% damage bonus",
-			10:" 15% damage bonus",
+			10: "15% damage bonus",
 		},
 		PeerlessDemon: 
 		{
@@ -2736,7 +2726,7 @@ var classSkillLevels =
 			7: "7% bonus dmg per hit, 49% max bonus dmg (7 stacks)",
 			8: "7% bonus dmg per hit, 56% max bonus dmg (8 stacks)",
 			9: "7% bonus dmg per hit, 63% max bonus dmg (9 stacks)",
-			10:" 9% bonus dmg per hit, 81% max bonus dmg (9 stacks)",
+			10: "9% bonus dmg per hit, 81% max bonus dmg (9 stacks)",
 		},
 		TotheDeath: 
 		{
@@ -2749,7 +2739,7 @@ var classSkillLevels =
 			7: "19% damage bonus",
 			8: "20% damage bonus",
 			9: "21% damage bonus",
-			10:" 25% damage bonus",
+			10: "25% damage bonus",
 		},
 		ArmorPenetrate: 
 		{
@@ -2762,7 +2752,7 @@ var classSkillLevels =
 			7: "8 TP, 176% damage, 25% defense reduction",
 			8: "8 TP, 188% damage, 25% defense reduction",
 			9: "8 TP, 200% damage, 25% defense reduction",
-			10:" 13 TP, 200% damage, 40% defense reduction",
+			10: "13 TP, 200% damage, 40% defense reduction",
 		},
 		VacuumBlade: 
 		{
@@ -2775,7 +2765,7 @@ var classSkillLevels =
 			7: "6 TP, 194% damage",
 			8: "6 TP, 202% damage",
 			9: "6 TP, 210% damage",
-			10:" 9 TP, 260% damage",
+			10: "9 TP, 260% damage",
 		},
 		NewChallenger: 
 		{
@@ -2796,7 +2786,7 @@ var classSkillLevels =
 			7: "12 TP, 132% damage per hit",
 			8: "12 TP, 136% damage per hit",
 			9: "12 TP, 140% damage per hit",
-			10:" 17 TP, 160% damage per hit",
+			10: "17 TP, 160% damage per hit",
 		},
 		MistSlice: 
 		{
@@ -2809,7 +2799,7 @@ var classSkillLevels =
 			7: "11 TP, 220% damage, 60% base sleep chance, 70% speed modifier",
 			8: "11 TP, 235% damage, 60% base sleep chance, 70% speed modifier",
 			9: "11 TP, 250% damage, 60% base sleep chance, 70% speed modifier",
-			10:" 15 TP, 250% damage, 90% base sleep chance, 10% speed modifier",
+			10: "15 TP, 250% damage, 90% base sleep chance, 10% speed modifier",
 		},
 		Kamaitachi: 
 		{
@@ -2822,7 +2812,7 @@ var classSkillLevels =
 			7: "14 TP, 146% dmg per hit, 2-5 hits",
 			8: "14 TP, 151% dmg per hit, 2-5 hits",
 			9: "14 TP, 156% dmg per hit, 2-5 hits",
-			10:" 20 TP, 180% dmg per hit, 3-6 hits",
+			10: "20 TP, 180% dmg per hit, 3-6 hits",
 		},
 		AdvantageousPosition: 
 		{
@@ -2835,7 +2825,7 @@ var classSkillLevels =
 			7: "9 TP, 34% attack increase, lasts for 5 turns",
 			8: "9 TP, 37% attack increase, lasts for 5 turns",
 			9: "9 TP, 40% attack increase, lasts for 5 turns",
-			10:" 13 TP, 40% attack increase, lasts for 6 turns",
+			10: "13 TP, 40% attack increase, lasts for 6 turns",
 		},
 		MultiSwordTechnique: 
 		{
@@ -2848,7 +2838,7 @@ var classSkillLevels =
 			7: "34% chance",
 			8: "37% chance",
 			9: "40% chance",
-			10:" 50% chance",
+			10: "50% chance",
 		},
 		HPBoost: 
 		{
@@ -2861,20 +2851,20 @@ var classSkillLevels =
 			7: "+14% max HP",
 			8: "+15% max HP",
 			9: "+16% max HP",
-			10:" +20% max HP",
+			10: "+20% max HP",
 		},
 		CrossingtheSanzu: 
 		{
-			1: "4 TP, 1 max chases, 300% damage to party members, 100% damage to enemies",
-			2: "4 TP, 1 max chases, 270% damage to party members, 105% damage to enemies",
-			3: "4 TP, 1 max chases, 240% damage to party members, 110% damage to enemies",
-			4: "4 TP, 1 max chases, 210% damage to party members, 115% damage to enemies",
-			5: "12 TP, 2 max chases, 100% damage to party members, 138% damage to enemies",
-			6: "12 TP, 2 max chases, 93% damage to party members, 145% damage to enemies",
-			7: "12 TP, 2 max chases, 86% damage to party members, 152% damage to enemies",
-			8: "12 TP, 2 max chases, 79% damage to party members, 159% damage to enemies",
-			9: "12 TP, 2 max chases, 72% damage to party members, 166% damage to enemies",
-			10:" 35 TP, 3 max chases, 34% damage to party members, 200% damage to enemies ",
+			1: "4 TP, 1 max chases per katana, 300% damage to party members, 100% damage to enemies",
+			2: "4 TP, 1 max chases per katana, 270% damage to party members, 105% damage to enemies",
+			3: "4 TP, 1 max chases per katana, 240% damage to party members, 110% damage to enemies",
+			4: "4 TP, 1 max chases per katana, 210% damage to party members, 115% damage to enemies",
+			5: "12 TP, 2 max chases per katana, 100% damage to party members, 138% damage to enemies",
+			6: "12 TP, 2 max chases per katana, 93% damage to party members, 145% damage to enemies",
+			7: "12 TP, 2 max chases per katana, 86% damage to party members, 152% damage to enemies",
+			8: "12 TP, 2 max chases per katana, 79% damage to party members, 159% damage to enemies",
+			9: "12 TP, 2 max chases per katana, 72% damage to party members, 166% damage to enemies",
+			10: "35 TP, 3 max chases per katana, 34% damage to party members, 200% damage to enemies",
 		},
 		FourGods: 
 		{
@@ -2887,20 +2877,20 @@ var classSkillLevels =
 			7: "7 TP, 75% dmg per hit",
 			8: "7 TP, 76% dmg per hit",
 			9: "7 TP, 77% dmg per hit",
-			10:" 10 TP, 90% dmg per hit",
+			10: "10 TP, 90% dmg per hit",
 		},
 		LayeredBlossoms: 
 		{
-			1: "9 TP, 30% base dmg per hit, 55% dmg per hit w/ 2, 80% dmg per hit w/ 3, 105% dmg per hit w/ 4",
-			2: "9 TP, 31% base dmg per hit, 56% dmg per hit w/ 2, 81% dmg per hit w/ 3, 106% dmg per hit w/ 4",
-			3: "9 TP, 32% base dmg per hit, 57% dmg per hit w/ 2, 82% dmg per hit w/ 3, 107% dmg per hit w/ 4",
-			4: "9 TP, 33% base dmg per hit, 58% dmg per hit w/ 2, 83% dmg per hit w/ 3, 108% dmg per hit w/ 4",
-			5: "14 TP, 39% base dmg per hit, 64% dmg per hit w/ 2, 89% dmg per hit w/ 3, 114% dmg per hit w/ 4",
-			6: "14 TP, 40% base dmg per hit, 65% dmg per hit w/ 2, 90% dmg per hit w/ 3, 115% dmg per hit w/ 4",
-			7: "14 TP, 41% base dmg per hit, 66% dmg per hit w/ 2, 91% dmg per hit w/ 3, 116% dmg per hit w/ 4",
-			8: "14 TP, 42% base dmg per hit, 67% dmg per hit w/ 2, 92% dmg per hit w/ 3, 117% dmg per hit w/ 4",
-			9: "14 TP, 43% base dmg per hit, 68% dmg per hit w/ 2, 93% dmg per hit w/ 3, 118% dmg per hit w/ 4",
-			10:" 21 TP, 50% base dmg per hit, 75% dmg per hit w/ 2, 100% dmg per hit w/ 3, 125% dmg per hit w/ 4",
+			1: "9 TP, 38% base dmg per hit, 45% dmg per hit w/ 2, 53% dmg per hit w/ 3, 60% dmg per hit w/ 4",
+			2: "9 TP, 39% base dmg per hit, 47% dmg per hit w/ 2, 54% dmg per hit w/ 3, 62% dmg per hit w/ 4",
+			3: "9 TP, 40% base dmg per hit, 48% dmg per hit w/ 2, 56% dmg per hit w/ 3, 64% dmg per hit w/ 4",
+			4: "9 TP, 41% base dmg per hit, 50% dmg per hit w/ 2, 58% dmg per hit w/ 3, 66% dmg per hit w/ 4",
+			5: "14 TP, 49% base dmg per hit, 59% dmg per hit w/ 2, 68% dmg per hit w/ 3, 78% dmg per hit w/ 4",
+			6: "14 TP, 50% base dmg per hit, 60% dmg per hit w/ 2, 70% dmg per hit w/ 3, 80% dmg per hit w/ 4",
+			7: "14 TP, 51% base dmg per hit, 62% dmg per hit w/ 2, 72% dmg per hit w/ 3, 82% dmg per hit w/ 4",
+			8: "14 TP, 53% base dmg per hit, 63% dmg per hit w/ 2, 74% dmg per hit w/ 3, 84% dmg per hit w/ 4",
+			9: "14 TP, 54% base dmg per hit, 65% dmg per hit w/ 2, 75% dmg per hit w/ 3, 86% dmg per hit w/ 4",
+			10: "21 TP, 62% base dmg per hit, 75% dmg per hit w/ 2, 88% dmg per hit w/ 3, 100% dmg per hit w/ 4",
 		},
 		PhysicalAttackBoost: 
 		{
@@ -2913,7 +2903,7 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		BrinkofDeathResuscitation: 
 		{
@@ -2926,20 +2916,20 @@ var classSkillLevels =
 			7: "19% chance",
 			8: "20% chance",
 			9: "21% chance",
-			10:" 25% chance",
+			10: "25% chance",
 		},
 		Reflower: 
 		{
-			1: "15% chance",
-			2: "16% chance",
-			3: "17% chance",
-			4: "18% chance",
-			5: "24% chance",
-			6: "25% chance",
-			7: "26% chance",
-			8: "27% chance",
-			9: "28% chance",
-			10:" 34% chance",
+			1: "15/30/45% chance",
+			2: "16/32/48% chance",
+			3: "17/34/51% chance",
+			4: "18/36/54% chance",
+			5: "24/48/72% chance",
+			6: "25/50/75% chance",
+			7: "26/52/78% chance",
+			8: "27/54/81% chance",
+			9: "28/56/84% chance",
+			10: "34/68/100% chance",
 		},
 		Hyakkaryouran: 
 		{
@@ -2952,7 +2942,7 @@ var classSkillLevels =
 			7: "21 TP, 33% dmg per hit",
 			8: "21 TP, 34% dmg per hit",
 			9: "21 TP, 35% dmg per hit",
-			10:" 30 TP, 40% dmg per hit",
+			10: "30 TP, 40% dmg per hit",
 		},
 		Tenryuuransei: 
 		{
@@ -2965,20 +2955,20 @@ var classSkillLevels =
 			7: "11 TP, 101% dmg per hit",
 			8: "11 TP, 104% dmg per hit",
 			9: "11 TP, 107% dmg per hit",
-			10:" 16 TP, 120% dmg per hit",
+			10: "16 TP, 120% dmg per hit",
 		},
 		SwordGod: 
 		{
-			1: "No crit rate increase, 172% crit damage",
-			2: "1.1x crit rate, 174% crit damage",
-			3: "1.2x crit rate, 175% crit damage",
-			4: "1.3x crit rate, 177% crit damage",
-			5: "1.9x crit rate, 186% crit damage",
-			6: "2x crit rate, 187% crit damage",
-			7: "2.1x crit rate, 189% crit damage",
-			8: "2.2x crit rate, 190% crit damage",
-			9: "2.3x crit rate, 192% crit damage",
-			10:" 3x crit rate, 202% crit damage",
+			1: "10% crit rate, 172% crit damage",
+			2: "11% crit rate, 174% crit damage",
+			3: "12% crit rate, 175% crit damage",
+			4: "13% crit rate, 177% crit damage",
+			5: "19% crit rate, 186% crit damage",
+			6: "20% crit rate, 187% crit damage",
+			7: "21% crit rate, 189% crit damage",
+			8: "22% crit rate, 190% crit damage",
+			9: "23% crit rate, 192% crit damage",
+			10: "30% crit rate, 202% crit damage",
 		},
 		TPBoost: 
 		{
@@ -2991,20 +2981,20 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		LegSweep: 
 		{
-			1: "12 TP, 111% damage, -160 evade, lasts for 4 turns",
-			2: "12 TP, 119% damage, -180 evade, lasts for 4 turns",
-			3: "12 TP, 127% damage, -200 evade, lasts for 4 turns",
-			4: "12 TP, 135% damage, -220 evade, lasts for 4 turns",
-			5: "16 TP, 135% damage, -220 evade, lasts for 5 turns",
-			6: "16 TP, 145% damage, -240 evade, lasts for 5 turns",
-			7: "16 TP, 155% damage, -260 evade, lasts for 5 turns",
-			8: "16 TP, 165% damage, -280 evade, lasts for 5 turns",
-			9: "16 TP, 175% damage, -300 evade, lasts for 5 turns",
-			10:" 22 TP, 175% damage, -300 evade, lasts for 6 turns",
+			1: "12 TP, 111% damage, -16% evade, lasts for 4 turns",
+			2: "12 TP, 119% damage, -18% evade, lasts for 4 turns",
+			3: "12 TP, 127% damage, -20% evade, lasts for 4 turns",
+			4: "12 TP, 135% damage, -22% evade, lasts for 4 turns",
+			5: "16 TP, 135% damage, -22% evade, lasts for 5 turns",
+			6: "16 TP, 145% damage, -24% evade, lasts for 5 turns",
+			7: "16 TP, 155% damage, -26% evade, lasts for 5 turns",
+			8: "16 TP, 165% damage, -28% evade, lasts for 5 turns",
+			9: "16 TP, 175% damage, -30% evade, lasts for 5 turns",
+			10: "22 TP, 175% damage, -30% evade, lasts for 6 turns",
 		},
 		SwordsVigor: 
 		{
@@ -3017,20 +3007,20 @@ var classSkillLevels =
 			7: "14% damage reduction",
 			8: "15% damage reduction",
 			9: "16% damage reduction",
-			10:" 20% damage reduction",
+			10: "20% damage reduction",
 		},
 		SpeedBoost: 
 		{
-			1: "1.11x speed, +24 acc/evade",
-			2: "1.14x speed, +28 acc/evade",
-			3: "1.17x speed, +32 acc/evade",
-			4: "1.2x speed, +36 acc/evade",
-			5: "1.24x speed, +52 acc/evade",
-			6: "1.27x speed, +58 acc/evade",
-			7: "1.3x speed, +64 acc/evade",
-			8: "1.33x speed, +70 acc/evade",
-			9: "1.36x speed, +76 acc/evade",
-			10:" 1.4x speed, +100 acc/evade",
+			1: "1.11x speed, +2.4% acc/evade",
+			2: "1.14x speed, +2.8% acc/evade",
+			3: "1.17x speed, +3.2% acc/evade",
+			4: "1.2x speed, +3.6% acc/evade",
+			5: "1.24x speed, +5.2% acc/evade",
+			6: "1.27x speed, +5.8% acc/evade",
+			7: "1.3x speed, +6.4% acc/evade",
+			8: "1.33x speed, +7% acc/evade",
+			9: "1.36x speed, +7.6% acc/evade",
+			10: "1.4x speed, +10% acc/evade",
 		},
 		ThunderSlash: 
 		{
@@ -3043,7 +3033,7 @@ var classSkillLevels =
 			7: "16 TP, 282% damage",
 			8: "16 TP, 288% damage",
 			9: "16 TP, 294% damage",
-			10:" 24 TP, 340% damage",
+			10: "24 TP, 340% damage",
 		},
 		Suigetsu: 
 		{
@@ -3056,7 +3046,7 @@ var classSkillLevels =
 			7: "15 TP, 400% damage, 106% starting chance",
 			8: "15 TP, 410% damage, 109% starting chance",
 			9: "15 TP, 420% damage, 112% starting chance",
-			10:" 22 TP, 500% damage, 135% starting chance",
+			10: "22 TP, 500% damage, 135% starting chance",
 		},
 		HelmDivide: 
 		{
@@ -3069,7 +3059,7 @@ var classSkillLevels =
 			7: "12 TP, 420% damage, -40 base accuracy",
 			8: "12 TP, 435% damage, -40 base accuracy",
 			9: "12 TP, 450% damage, -40 base accuracy",
-			10:" 17 TP, 600% damage, -60 base accuracy",
+			10: "17 TP, 600% damage, -60 base accuracy",
 		},
 		ThreeStageStrike: 
 		{
@@ -3082,7 +3072,7 @@ var classSkillLevels =
 			7: "16 TP, 85% dmg per hit, 9% base bind chance",
 			8: "16 TP, 87% dmg per hit, 9% base bind chance",
 			9: "16 TP, 89% dmg per hit, 9% base bind chance",
-			10:" 20 TP, 100% dmg per hit, 12% base bind chance",
+			10: "20 TP, 100% dmg per hit, 12% base bind chance",
 		},
 		Sange: 
 		{
@@ -3095,7 +3085,7 @@ var classSkillLevels =
 			7: "24 TP, 340% base damage",
 			8: "24 TP, 350% base damage",
 			9: "24 TP, 360% base damage",
-			10:" 34 TP, 450% base damage",
+			10: "34 TP, 450% base damage",
 		}
 	},
 	shaman:
@@ -3111,7 +3101,7 @@ var classSkillLevels =
 			7: "1.25x speed, (90% - 2) TP cost",
 			8: "1.3x speed, (90% - 2) TP cost",
 			9: "1.35x speed, (90% - 2) TP cost",
-			10:" 1.35x speed, (80% - 3) TP cost",
+			10: "1.35x speed, (80% - 3) TP cost",
 		},
 		PrayerEradication: 
 		{
@@ -3124,7 +3114,7 @@ var classSkillLevels =
 			7: "16 TP, 31% attack increase, lasts for 5 turns",
 			8: "16 TP, 33% attack increase, lasts for 5 turns",
 			9: "16 TP, 35% attack increase, lasts for 5 turns",
-			10:" 22 TP, 35% attack increase, lasts for 6 turns",
+			10: "22 TP, 35% attack increase, lasts for 6 turns",
 		},
 		PrayerGuardian: 
 		{
@@ -3137,20 +3127,20 @@ var classSkillLevels =
 			7: "16 TP, 21% defense increase, lasts for 5 turns",
 			8: "16 TP, 23% defense increase, lasts for 5 turns",
 			9: "16 TP, 25% defense increase, lasts for 5 turns",
-			10:" 22 TP, 25% defense increase, lasts for 6 turns",
+			10: "22 TP, 25% defense increase, lasts for 6 turns",
 		},
 		PrayerBullseye: 
 		{
-			1: "6 TP, 150 accuracy increase, lasts for 4 turns",
-			2: "6 TP, 180 accuracy increase, lasts for 4 turns",
-			3: "6 TP, 210 accuracy increase, lasts for 4 turns",
-			4: "6 TP, 240 accuracy increase, lasts for 4 turns",
-			5: "10 TP, 240 accuracy increase, lasts for 5 turns",
-			6: "10 TP, 280 accuracy increase, lasts for 5 turns",
-			7: "10 TP, 320 accuracy increase, lasts for 5 turns",
-			8: "10 TP, 360 accuracy increase, lasts for 5 turns",
-			9: "10 TP, 400 accuracy increase, lasts for 5 turns",
-			10:" 15 TP, 400 accuracy increase, lasts for 6 turns",
+			1: "6 TP, 15% accuracy increase, lasts for 4 turns",
+			2: "6 TP, 18% accuracy increase, lasts for 4 turns",
+			3: "6 TP, 21% accuracy increase, lasts for 4 turns",
+			4: "6 TP, 24% accuracy increase, lasts for 4 turns",
+			5: "10 TP, 24% accuracy increase, lasts for 5 turns",
+			6: "10 TP, 28% accuracy increase, lasts for 5 turns",
+			7: "10 TP, 32% accuracy increase, lasts for 5 turns",
+			8: "10 TP, 36% accuracy increase, lasts for 5 turns",
+			9: "10 TP, 40% accuracy increase, lasts for 5 turns",
+			10: "15 TP, 40% accuracy increase, lasts for 6 turns",
 		},
 		PrayerBlaze: 
 		{
@@ -3163,7 +3153,7 @@ var classSkillLevels =
 			7: "21 TP, 42% resistance increase, lasts for 5 turns",
 			8: "21 TP, 46% resistance increase, lasts for 5 turns",
 			9: "21 TP, 50% resistance increase, lasts for 5 turns",
-			10:" 28 TP, 50% resistance increase, lasts for 6 turns",
+			10: "28 TP, 50% resistance increase, lasts for 6 turns",
 		},
 		PrayerColdRain: 
 		{
@@ -3176,7 +3166,7 @@ var classSkillLevels =
 			7: "21 TP, 42% resistance increase, lasts for 5 turns",
 			8: "21 TP, 46% resistance increase, lasts for 5 turns",
 			9: "21 TP, 50% resistance increase, lasts for 5 turns",
-			10:" 28 TP, 50% resistance increase, lasts for 6 turns",
+			10: "28 TP, 50% resistance increase, lasts for 6 turns",
 		},
 		PrayerPurpleLightning: 
 		{
@@ -3189,46 +3179,46 @@ var classSkillLevels =
 			7: "21 TP, 42% resistance increase, lasts for 5 turns",
 			8: "21 TP, 46% resistance increase, lasts for 5 turns",
 			9: "21 TP, 50% resistance increase, lasts for 5 turns",
-			10:" 28 TP, 50% resistance increase, lasts for 6 turns",
+			10: "28 TP, 50% resistance increase, lasts for 6 turns",
 		},
 		Gospel: 
 		{
-			1: "6 static HP restore, 3% max HP restore",
-			2: "7 static HP restore, 3% max HP restore",
-			3: "8 static HP restore, 3% max HP restore",
-			4: "9 static HP restore, 3% max HP restore",
-			5: "10 static HP restore, 5% max HP restore",
-			6: "11 static HP restore, 5% max HP restore",
-			7: "12 static HP restore, 5% max HP restore",
-			8: "13 static HP restore, 5% max HP restore",
-			9: "14 static HP restore, 5% max HP restore",
-			10:" 15 static HP restore, 7% max HP restore",
+			1: "6% max HP restore",
+			2: "7% max HP restore",
+			3: "8% max HP restore",
+			4: "9% max HP restore",
+			5: "10% max HP restore",
+			6: "11% max HP restore",
+			7: "12% max HP restore",
+			8: "13% max HP restore",
+			9: "14% max HP restore",
+			10: "15% max HP restore",
 		},
 		BlessingofHeaven: 
 		{
-			1: "3 TP, 150% base healing power",
-			2: "3 TP, 155% base healing power",
-			3: "3 TP, 160% base healing power",
-			4: "3 TP, 165% base healing power",
-			5: "6 TP, 216% base healing power",
-			6: "6 TP, 222% base healing power",
-			7: "6 TP, 228% base healing power",
-			8: "6 TP, 234% base healing power",
-			9: "6 TP, 240% base healing power",
-			10:" 12 TP, 300% base healing power",
+			1: "3 TP, 150% base healing power, 1x speed",
+			2: "3 TP, 155% base healing power, 1.5x speed",
+			3: "3 TP, 160% base healing power, 2x speed",
+			4: "3 TP, 165% base healing power, 2.5x speed",
+			5: "6 TP, 216% base healing power, 7.5x speed",
+			6: "6 TP, 222% base healing power, 10x speed",
+			7: "6 TP, 228% base healing power, 12.5x speed",
+			8: "6 TP, 234% base healing power, 15x speed",
+			9: "6 TP, 240% base healing power, 17.5x speed",
+			10: "12 TP, 300% base healing power, 999.9x speed",
 		},
 		OracleDance: 
 		{
-			1: "12 TP, 150% damage, 20% resist reduction",
-			2: "12 TP, 156% damage, 22% resist reduction",
-			3: "12 TP, 162% damage, 24% resist reduction",
-			4: "12 TP, 168% damage, 26% resist reduction",
-			5: "18 TP, 192% damage, 34% resist reduction",
-			6: "18 TP, 199% damage, 36% resist reduction",
-			7: "18 TP, 206% damage, 38% resist reduction",
-			8: "18 TP, 213% damage, 40% resist reduction",
-			9: "18 TP, 220% damage, 42% resist reduction",
-			10:" 26 TP, 250% damage, 50% resist reduction",
+			1: "12 TP, 150% damage, 20% damage increase",
+			2: "12 TP, 156% damage, 22% damage increase",
+			3: "12 TP, 162% damage, 24% damage increase",
+			4: "12 TP, 168% damage, 26% damage increase",
+			5: "18 TP, 192% damage, 34% damage increase",
+			6: "18 TP, 199% damage, 36% damage increase",
+			7: "18 TP, 206% damage, 38% damage increase",
+			8: "18 TP, 213% damage, 40% damage increase",
+			9: "18 TP, 220% damage, 42% damage increase",
+			10: "26 TP, 250% damage, 50% damage increase",
 		},
 		MemoriesofaPreviousLife: 
 		{
@@ -3241,7 +3231,7 @@ var classSkillLevels =
 			7: "33% chance",
 			8: "35% chance",
 			9: "37% chance",
-			10:" 50% chance",
+			10: "50% chance",
 		},
 		PrayerfortheSoul: 
 		{
@@ -3254,7 +3244,7 @@ var classSkillLevels =
 			7: "14% chance",
 			8: "15% chance",
 			9: "16% chance",
-			10:" 20% chance",
+			10: "20% chance",
 		},
 		ProtectionoftheOfferings: 
 		{
@@ -3267,7 +3257,7 @@ var classSkillLevels =
 			7: "21 base TP restored",
 			8: "22 base TP restored",
 			9: "23 base TP restored",
-			10:" 30 base TP restored",
+			10: "30 base TP restored",
 		},
 		MagicAttackBoost: 
 		{
@@ -3280,7 +3270,7 @@ var classSkillLevels =
 			7: "11% damage increase",
 			8: "12% damage increase",
 			9: "13% damage increase",
-			10:" 15% damage increase",
+			10: "15% damage increase",
 		},
 		OracleThreeRuns: 
 		{
@@ -3293,7 +3283,7 @@ var classSkillLevels =
 			7: "16 TP, 152% dmg per hit",
 			8: "16 TP, 158% dmg per hit",
 			9: "16 TP, 164% dmg per hit",
-			10:" 24 TP, 200% dmg per hit",
+			10: "24 TP, 200% dmg per hit",
 		},
 		OracleHalo: 
 		{
@@ -3314,7 +3304,7 @@ var classSkillLevels =
 			7: "+14% max HP",
 			8: "+15% max HP",
 			9: "+16% max HP",
-			10:" +20% max HP",
+			10: "+20% max HP",
 		},
 		Purification: 
 		{
@@ -3327,7 +3317,7 @@ var classSkillLevels =
 			7: "20 base TP restore",
 			8: "20 base TP restore",
 			9: "20 base TP restore",
-			10:" 20 base TP restore",
+			10: "20 base TP restore",
 		},
 		TPBoost: 
 		{
@@ -3340,7 +3330,7 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		ChanneltheGods: 
 		{
@@ -3353,20 +3343,20 @@ var classSkillLevels =
 			7: "32 TP, 1150% damage, 68% damage reduction",
 			8: "32 TP, 1200% damage, 69% damage reduction",
 			9: "32 TP, 1250% damage, 70% damage reduction",
-			10:" 45 TP, 1500% damage, 80% damage reduction",
+			10: "45 TP, 1500% damage, 80% damage reduction",
 		},
 		ConsolingtheDead: 
 		{
-			1: "5 HP restored",
-			2: "6 HP restored",
-			3: "7 HP restored",
-			4: "8 HP restored",
-			5: "12 HP restored",
-			6: "14 HP restored",
-			7: "16 HP restored",
-			8: "18 HP restored",
-			9: "20 HP restored",
-			10:" 25 HP restored",
+			1: "5% MaxHP Restore",
+			2: "6% MaxHP Restore",
+			3: "7% MaxHP Restore",
+			4: "8% MaxHP Restore",
+			5: "12% MaxHP Restore",
+			6: "14% MaxHP Restore",
+			7: "16% MaxHP Restore",
+			8: "18% MaxHP Restore",
+			9: "20% MaxHP Restore",
+			10: "25% MaxHP Restore",
 		},
 		PrayerExorcism: 
 		{
@@ -3379,20 +3369,20 @@ var classSkillLevels =
 			7: "28 TP, 48% disable res increase, lasts for 5 turns",
 			8: "28 TP, 52% disable res increase, lasts for 5 turns",
 			9: "28 TP, 56% disable res increase, lasts for 5 turns",
-			10:" 40 TP, 56% disable res increase, lasts for 6 turns",
+			10: "40 TP, 56% disable res increase, lasts for 6 turns",
 		},
 		PrayerEscape: 
 		{
-			1: "12 TP, 105 evade increase, lasts for 4 turns",
-			2: "12 TP, 120 evade increase, lasts for 4 turns",
-			3: "12 TP, 135 evade increase, lasts for 4 turns",
-			4: "12 TP, 150 evade increase, lasts for 4 turns",
-			5: "18 TP, 150 evade increase, lasts for 5 turns",
-			6: "18 TP, 165 evade increase, lasts for 5 turns",
-			7: "18 TP, 180 evade increase, lasts for 5 turns",
-			8: "18 TP, 195 evade increase, lasts for 5 turns",
-			9: "18 TP, 210 evade increase, lasts for 5 turns",
-			10:" 24 TP, 210 evade increase, lasts for 6 turns",
+			1: "12 TP, 10.5% evade increase, lasts for 4 turns",
+			2: "12 TP, 12% evade increase, lasts for 4 turns",
+			3: "12 TP, 13.5% evade increase, lasts for 4 turns",
+			4: "12 TP, 15% evade increase, lasts for 4 turns",
+			5: "18 TP, 15% evade increase, lasts for 5 turns",
+			6: "18 TP, 16.5% evade increase, lasts for 5 turns",
+			7: "18 TP, 18% evade increase, lasts for 5 turns",
+			8: "18 TP, 19.5% evade increase, lasts for 5 turns",
+			9: "18 TP, 21% evade increase, lasts for 5 turns",
+			10: "24 TP, 21% evade increase, lasts for 6 turns",
 		},
 		PrayerLongevity: 
 		{
@@ -3405,7 +3395,7 @@ var classSkillLevels =
 			7: "24 TP, 34% max HP increase, lasts for 6 turns",
 			8: "24 TP, 37% max HP increase, lasts for 6 turns",
 			9: "24 TP, 40% max HP increase, lasts for 6 turns",
-			10:" 32 TP, 40% max HP increase, lasts for 6 turns",
+			10: "32 TP, 40% max HP increase, lasts for 6 turns",
 		},
 		PurifyingFlame: 
 		{
@@ -3418,7 +3408,7 @@ var classSkillLevels =
 			7: "16 HP restored",
 			8: "18 HP restored",
 			9: "20 HP restored",
-			10:" 30 HP restored",
+			10: "30 HP restored",
 		},
 		Bunrei: 
 		{
@@ -3431,7 +3421,7 @@ var classSkillLevels =
 			7: "6 TP, 58% damage as restore",
 			8: "6 TP, 62% damage as restore",
 			9: "6 TP, 66% damage as restore",
-			10:" 10 TP, 100% damage as restore",
+			10: "10 TP, 100% damage as restore",
 		},
 		MagicDefenseBoost: 
 		{
@@ -3444,7 +3434,7 @@ var classSkillLevels =
 			7: "11% reduction",
 			8: "12% reduction",
 			9: "13% reduction",
-			10:" 15% reduction",
+			10: "15% reduction",
 		},
 		ConstraintDefenseBoost: 
 		{
@@ -3457,7 +3447,7 @@ var classSkillLevels =
 			7: "22% resistance",
 			8: "24% resistance",
 			9: "26% resistance",
-			10:" 30% resistance",
+			10: "30% resistance",
 		},
 		Sanctuary: 
 		{
@@ -3470,7 +3460,7 @@ var classSkillLevels =
 			7: "5 TP, 84% chance, 7 max blocks",
 			8: "5 TP, 86% chance, 7 max blocks",
 			9: "5 TP, 88% chance, 7 max blocks",
-			10:" 8 TP, 95% chance, 10 max blocks",
+			10: "8 TP, 95% chance, 10 max blocks",
 		},
 		Affection: 
 		{
@@ -3483,7 +3473,7 @@ var classSkillLevels =
 			7: "20 static HP restore, 4% max HP restore",
 			8: "22 static HP restore, 4% max HP restore",
 			9: "24 static HP restore, 4% max HP restore",
-			10:" 25 static HP restore, 6% max HP restore",
+			10: "25 static HP restore, 6% max HP restore",
 		}
 	},
 	herbalist:
@@ -3499,7 +3489,7 @@ var classSkillLevels =
 			7: "+21% heal increase",
 			8: "+22% heal increase",
 			9: "+23% heal increase",
-			10:" +30% heal increase"
+			10: "+30% heal increase"
 		},
 		CureHerb: 
 		{
@@ -3512,7 +3502,7 @@ var classSkillLevels =
 			7: "5 TP, 240% healing power",
 			8: "5 TP, 255% healing power",
 			9: "5 TP, 270% healing power",
-			10:" 8 TP, 350% healing power"
+			10: "8 TP, 350% healing power"
 		},
 		RefreshHerb: 
 		{
@@ -3533,7 +3523,7 @@ var classSkillLevels =
 			7: "10 TP, 50% base poison chance, 190 base poison damage, 1.34x poison infliction, lasts 5 turns",
 			8: "10 TP, 50% base poison chance, 235 base poison damage, 1.37x poison infliction, lasts 5 turns",
 			9: "10 TP, 50% base poison chance, 280 base poison damage, 1.4x poison infliction, lasts 5 turns",
-			10:" 14 TP, 60% base poison chance, 280 base poison damage, 1.4x poison infliction, lasts 6 turns"
+			10: "14 TP, 60% base poison chance, 280 base poison damage, 1.4x poison infliction, lasts 6 turns"
 		},
 		DarkSmoke: 
 		{
@@ -3546,7 +3536,7 @@ var classSkillLevels =
 			7: "10 TP, 44% base blind chance, 1.34x blind infliction, lasts 5 turns",
 			8: "10 TP, 44% base blind chance, 1.37x blind infliction, lasts 5 turns",
 			9: "10 TP, 44% base blind chance, 1.4x blind infliction, lasts 5 turns",
-			10:" 14 TP, 55% base blind chance, 1.4x blind infliction, lasts 6 turns"
+			10: "14 TP, 55% base blind chance, 1.4x blind infliction, lasts 6 turns"
 		},
 		LineHerb: 
 		{
@@ -3559,7 +3549,7 @@ var classSkillLevels =
 			7: "10 TP, 187% healing power",
 			8: "10 TP, 197% healing power",
 			9: "10 TP, 207% healing power",
-			10:" 15 TP, 270% healing power"
+			10: "15 TP, 270% healing power"
 		},
 		ResurrectionHerb: 
 		{
@@ -3572,7 +3562,7 @@ var classSkillLevels =
 			7: "12 TP, revives with 185 HP",
 			8: "12 TP, revives with 215 HP",
 			9: "12 TP, revives with 245 HP",
-			10:" 16 TP, revives with 400 HP"
+			10: "16 TP, revives with 400 HP"
 		},
 		Antibody: 
 		{
@@ -3585,7 +3575,7 @@ var classSkillLevels =
 			7: "34% increase",
 			8: "37% increase",
 			9: "40% increase",
-			10:" 50% increase"
+			10: "50% increase"
 		},
 		MedicinalKnowledge: 
 		{
@@ -3598,20 +3588,20 @@ var classSkillLevels =
 			7: "49% activation rate, recovers 33 HP and 9 TP, max 3 activations",
 			8: "55% activation rate, recovers 35 HP and 10 TP, max 3 activations",
 			9: "61% activation rate, recovers 37 HP and 11 TP, max 3 activations",
-			10:" 90% activation rate, recovers 45 HP and 15 TP, max 5 activations"
+			10: "90% activation rate, recovers 45 HP and 15 TP, max 5 activations"
 		},
 		SmokeRot: 
 		{
-			1: "5 TP, 4% defense reduction, increases to 25% with an ailment, lasts 4 turns",
-			2: "5 TP, 5% defense reduction, increases to 28% with an ailment, lasts 4 turns",
-			3: "5 TP, 6% defense reduction, increases to 31% with an ailment, lasts 4 turns",
-			4: "5 TP, 7% defense reduction, increases to 34% with an ailment, lasts 4 turns",
-			5: "8 TP, 7% defense reduction, increases to 34% with an ailment, lasts 5 turns",
-			6: "8 TP, 9% defense reduction, increases to 38% with an ailment, lasts 5 turns",
-			7: "8 TP, 11% defense reduction, increases to 42% with an ailment, lasts 5 turns",
-			8: "8 TP, 13% defense reduction, increases to 46% with an ailment, lasts 5 turns",
-			9: "8 TP, 15% defense reduction, increases to 50% with an ailment, lasts 5 turns",
-			10:" 12 TP, 15% defense reduction, increases to 50% with an ailment, lasts 6 turns"
+			1: "5 TP, 4% defense reduction, increases to 25% with smoke debuff, lasts 4 turns",
+			2: "5 TP, 5% defense reduction, increases to 28% with smoke debuff, lasts 4 turns",
+			3: "5 TP, 6% defense reduction, increases to 31% with smoke debuff, lasts 4 turns",
+			4: "5 TP, 7% defense reduction, increases to 34% with smoke debuff, lasts 4 turns",
+			5: "8 TP, 7% defense reduction, increases to 34% with smoke debuff, lasts 5 turns",
+			6: "8 TP, 9% defense reduction, increases to 38% with smoke debuff, lasts 5 turns",
+			7: "8 TP, 11% defense reduction, increases to 42% with smoke debuff, lasts 5 turns",
+			8: "8 TP, 13% defense reduction, increases to 46% with smoke debuff, lasts 5 turns",
+			9: "8 TP, 15% defense reduction, increases to 50% with smoke debuff, lasts 5 turns",
+			10: "12 TP, 15% defense reduction, increases to 50% with smoke debuff, lasts 6 turns"
 		},
 		HerbBoost: 
 		{
@@ -3624,7 +3614,7 @@ var classSkillLevels =
 			7: "Max HP increases to 121%",
 			8: "Max HP increases to 122%",
 			9: "Max HP increases to 123%",
-			10:" Max HP increases to 133%",
+			10: "Max HP increases to 133%",
 		},
 		AreaHerb: 
 		{
@@ -3637,7 +3627,7 @@ var classSkillLevels =
 			7: "22 TP, 152% healing power",
 			8: "22 TP, 157% healing power",
 			9: "22 TP, 162% healing power",
-			10:" 30 TP, 220% healing power",
+			10: "30 TP, 220% healing power",
 		},
 		RecoveryHerb: 
 		{
@@ -3658,7 +3648,7 @@ var classSkillLevels =
 			7: "+22% resistance",
 			8: "+24% resistance",
 			9: "+26% resistance",
-			10:" +30% resistance",
+			10: "+30% resistance",
 		},
 		SecretRemedyCompound: 
 		{
@@ -3671,7 +3661,7 @@ var classSkillLevels =
 			7: "30 TP, 13% heal and speed reduction, lasts 5 turns",
 			8: "30 TP, 9% heal and speed reduction, lasts 5 turns",
 			9: "30 TP, 5% heal and speed reduction, lasts 5 turns",
-			10:" 40 TP, 5% heal and speed reduction, lasts 6 turns",
+			10: "40 TP, 5% heal and speed reduction, lasts 6 turns",
 		},
 		ChaseHerb: 
 		{
@@ -3684,7 +3674,7 @@ var classSkillLevels =
 			7: "7 TP, 108% healing power, max 3 heals, -25% chance per heal",
 			8: "7 TP, 119% healing power, max 3 heals, -25% chance per heal",
 			9: "7 TP, 130% healing power, max 3 heals, -25% chance per heal",
-			10:" 12 TP, 130% healing power, max 4 heals, -10% chance per heal",
+			10: "12 TP, 130% healing power, max 4 heals, -10% chance per heal",
 		},
 		DelayHerb: 
 		{
@@ -3697,7 +3687,7 @@ var classSkillLevels =
 			7: "15 TP, 122% healing power",
 			8: "15 TP, 127% healing power",
 			9: "15 TP, 132% healing power",
-			10:" 20 TP, 180% healing power",
+			10: "20 TP, 180% healing power",
 		},
 		HPBoost: 
 		{
@@ -3710,7 +3700,7 @@ var classSkillLevels =
 			7: "+14% max HP",
 			8: "+15% max HP",
 			9: "+16% max HP",
-			10:" +20% max HP",
+			10: "+20% max HP",
 		},
 		AutoResurrection: 
 		{
@@ -3723,7 +3713,7 @@ var classSkillLevels =
 			7: "12 TP, revives with 84 HP, 10% chance",
 			8: "12 TP, revives with 92 HP, 11% chance",
 			9: "12 TP, revives with 100 HP, 12% chance",
-			10:" 16 TP, revives with 150 HP, 15% chance",
+			10: "16 TP, revives with 150 HP, 15% chance",
 		},
 		LingeringScent: 
 		{
@@ -3736,7 +3726,7 @@ var classSkillLevels =
 			7: "7 TP, 68% heal reduction, lasts 8 turns",
 			8: "7 TP, 64% heal reduction, lasts 8 turns",
 			9: "7 TP, 60% heal reduction, lasts 8 turns",
-			10:" 9 TP, 60% heal reduction, lasts 10 turns",
+			10: "9 TP, 60% heal reduction, lasts 10 turns",
 		},
 		SmokeBoost: 
 		{
@@ -3749,7 +3739,7 @@ var classSkillLevels =
 			7: "1.44x speed, TP Reduction = (TP Cost * 0.85) - 2",
 			8: "1.52x speed, TP Reduction = (TP Cost * 0.85) - 2",
 			9: "1.60x speed, TP Reduction = (TP Cost * 0.85) - 2",
-			10:" 1.60x speed, TP Reduction = (TP Cost * 0.7) - 3",
+			10: "1.60x speed, TP Reduction = (TP Cost * 0.7) - 3",
 		},
 		ConstraintAttackBoost: 
 		{
@@ -3762,7 +3752,7 @@ var classSkillLevels =
 			7: "1.14x infliction rate",
 			8: "1.15x infliction rate",
 			9: "1.16x infliction rate",
-			10:" 1.20x infliction rate",
+			10: "1.20x infliction rate",
 		},
 		ParalyzeSmoke: 
 		{
@@ -3775,7 +3765,7 @@ var classSkillLevels =
 			7: "10 TP, 44% base paralyze chance, 1.34x paralyze infliction, lasts 5 turns",
 			8: "10 TP, 44% base paralyze chance, 1.37x paralyze infliction, lasts 5 turns",
 			9: "10 TP, 44% base paralyze chance, 1.4x paralyze infliction, lasts 5 turns",
-			10:" 14 TP, 55% base paralyze chance, 1.4x paralyze infliction, lasts 6 turns",
+			10: "14 TP, 55% base paralyze chance, 1.4x paralyze infliction, lasts 6 turns",
 		},
 		BunglingSmoke: 
 		{
@@ -3788,7 +3778,7 @@ var classSkillLevels =
 			7: "15 TP, 33% base panic chance, 1.26x panic infliction, lasts 5 turns",
 			8: "15 TP, 33% base panic chance, 1.28x panic infliction, lasts 5 turns",
 			9: "15 TP, 33% base panic chance, 1.3x panic infliction, lasts 5 turns",
-			10:" 21 TP, 40% base panic chance, 1.3x panic infliction, lasts 6 turns",
+			10: "21 TP, 40% base panic chance, 1.3x panic infliction, lasts 6 turns",
 		},
 		SmokeSolid: 
 		{
@@ -3801,7 +3791,7 @@ var classSkillLevels =
 			7: "8 TP, 58% base petrify chance",
 			8: "8 TP, 60% base petrify chance",
 			9: "8 TP, 62% base petrify chance",
-			10:" 12 TP, 75% base petrify chance",
+			10: "12 TP, 75% base petrify chance",
 		},
 		SmokeSpark: 
 		{
@@ -3814,7 +3804,7 @@ var classSkillLevels =
 			7: "5 TP, 69% base stun chance",
 			8: "5 TP, 71% base stun chance",
 			9: "5 TP, 73% base stun chance",
-			10:" 7 TP, 85% base stun chance",
+			10: "7 TP, 85% base stun chance",
 		},
 		TPBoost: 
 		{
@@ -3827,7 +3817,7 @@ var classSkillLevels =
 			7: "+21% max TP",
 			8: "+23% max TP",
 			9: "+25% max TP",
-			10:" +30% max TP",
+			10: "+30% max TP",
 		},
 		SmokeBomb: 
 		{
@@ -3840,7 +3830,7 @@ var classSkillLevels =
 			7: "28 TP, 920% damage",
 			8: "28 TP, 960% damage",
 			9: "28 TP, 1000% damage",
-			10:" 36 TP, 1200% damage",
+			10: "36 TP, 1200% damage",
 		},
 		PersistingScent: 
 		{
@@ -3853,7 +3843,7 @@ var classSkillLevels =
 			7: "7 TP, lasts 8 turns",
 			8: "7 TP, lasts 8 turns",
 			9: "7 TP, lasts 8 turns",
-			10:" 9 TP, lasts 10 turns",
+			10: "9 TP, lasts 10 turns",
 		},
 		PreemptiveSmoke: 
 		{
@@ -3866,7 +3856,7 @@ var classSkillLevels =
 			7: "17%/34%/51%/67% activation rate",
 			8: "18%/36%/54%/71% activation rate",
 			9: "19%/38%57%/75% activation rate",
-			10:" 25%/50%/75%/100% activation rate",
+			10: "25%/50%/75%/100% activation rate",
 		}
 	}
 }
