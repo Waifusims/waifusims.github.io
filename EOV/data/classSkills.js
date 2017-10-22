@@ -491,7 +491,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:0, y:0}
+			coords: {x:0, y:0},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		LineGuard:
 		{
@@ -503,7 +507,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:0, y:1}
+			coords: {x:0, y:1},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		MaterialGuard:
 		{
@@ -515,7 +523,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:0, y:2}
+			coords: {x:0, y:2},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		HealingGuard:
 		{
@@ -527,7 +539,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:0, y:3}
+			coords: {x:0, y:3},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		Bunker:
 		{
@@ -539,7 +555,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:0, y:6}
+			coords: {x:0, y:6},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		ArtilleryMastery:
 		{
@@ -551,7 +571,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:1, y:0}
+			coords: {x:1, y:0},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		GunMount:
 		{
@@ -563,7 +587,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:1, y:2}
+			coords: {x:1, y:2},
+			scalingStats: ["STR"],
+			damageType: ["BASH"],
+			range: ["RANGED"],
+			bodyParts: ["ARMS"]
 		},
 		BarrageWall:
 		{
@@ -575,7 +603,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:1, y:4}
+			coords: {x:1, y:4},
+			scalingStats: ["STR"],
+			damageType: ["BASH"],
+			range: "RANGED",
+			bodyParts: ["ARMS"]
 		},
 		DragonsRoar:
 		{
@@ -587,7 +619,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:1, y:5}
+			coords: {x:1, y:5},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["HEAD"]
 		},
 		DefensivePosition:
 		{
@@ -599,7 +635,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:1, y:6}
+			coords: {x:1, y:6},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["HEAD"]
 		},
 		HPBoost:
 		{
@@ -611,7 +651,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:0}
+			coords: {x:2, y:0},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		RecoveryGuard:
 		{
@@ -623,19 +667,27 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:1}
+			coords: {x:2, y:1},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		CounterGuard:
 		{
 			name_en: "Counter Guard",
 			name_jp: "カウンターガード",
-			details: "Reduces physical damage to one row of allies for one turn.<br>If Counter Guard is activated by enemy damage, the Dragoon will use their equipped weapon to counter with a ranged stab attack to the source of the damage.<br>Any modifiers to the Dragoon's normal attacks are applied for counter-attacks.<br>The chance for countering starts at 100%, and from levels 1-9, will be reduced with each counter.<br>Level 10 will always counter.",
+			details: "Reduces physical damage to one row of allies for one turn.<br>If Counter Guard is activated by enemy damage, the Dragoon will use their equipped weapon to counterattack the source of the damage.<br>Any modifiers to the Dragoon's normal attacks are applied for counter-attacks.<br>The chance for countering starts at 100%, and from levels 1-9, will be reduced with each counter.<br>Level 10 will always counter.",
 			dep: {GunMount:3},
 			active: true,
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:2}
+			coords: {x:2, y:2},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		DivideGuard:
 		{
@@ -647,7 +699,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:3}
+			coords: {x:2, y:3},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		ShieldThrow:
 		{
@@ -659,7 +715,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:4}
+			coords: {x:2, y:4},
+			scalingStats: ["STR"],
+			damageType: ["CUT"],
+			range: "RANGED",
+			bodyParts: ["ARMS"]
 		},
 		PreemptiveRoar:
 		{
@@ -671,7 +731,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 5,
-			coords: {x:2, y:5}
+			coords: {x:2, y:5},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		PreemptiveBunker:
 		{
@@ -683,7 +747,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 5,
-			coords: {x:2, y:6}
+			coords: {x:2, y:6},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		FullGuard:
 		{
@@ -695,7 +763,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:3, y:1.5}
+			coords: {x:3, y:1.5},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		SoulGuard:
 		{
@@ -707,7 +779,11 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:3, y:2.5}
+			coords: {x:3, y:2.5},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		DragonForce:
 		{
@@ -719,7 +795,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:3, y:5}
+			coords: {x:3, y:5},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},		
 		GunRevenge: 
 		{
@@ -731,7 +811,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:0}
+			coords: {x:2, y:0},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		TPBoost: 
 		{
@@ -743,7 +827,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:1}
+			coords: {x:2, y:1},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		RapidCannon: 
 		{
@@ -755,7 +843,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:3}
+			coords: {x:2, y:3},
+			scalingStats: ["STR"],
+			damageType: ["BASH"],
+			range: "RANGED",
+			bodyParts: ["ARMS"]
 		},
 		CurseCannon: 
 		{
@@ -767,7 +859,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:4}
+			coords: {x:2, y:4},
+			scalingStats: ["STR"],
+			damageType: ["BASH"],
+			range: "RANGED",
+			bodyParts: ["ARMS"]
 		},
 		HypnoCannon: 
 		{
@@ -779,7 +875,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:5}
+			coords: {x:2, y:5},
+			scalingStats: ["STR"],
+			damageType: ["BASH"],
+			range: "RANGED",
+			bodyParts: ["ARMS"]
 		},
 		Pillbox: 
 		{
@@ -791,7 +891,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:2, y:6}
+			coords: {x:2, y:6},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["ARMS"]
 		},
 		PhysicalAttackBoost: 
 		{
@@ -803,7 +907,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:3, y:0}
+			coords: {x:3, y:0},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		},
 		BombardmentPrep: 
 		{
@@ -815,7 +923,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:3, y:1}
+			coords: {x:3, y:1},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: ["HEAD"]
 		},
 		BusterCannon: 
 		{
@@ -827,7 +939,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:3, y:4}
+			coords: {x:3, y:4},
+			scalingStats: ["STR"],
+			damageType: ["BASH", "FIRE"],
+			range: "RANGED",
+			bodyParts: ["ARMS"]
 		},
 		GunSupport: 
 		{
@@ -839,7 +955,11 @@ var classSkills =
 			reqLevel: 20,
 			level: 0,
 			max: 10,
-			coords: {x:3, y:6}
+			coords: {x:3, y:6},
+			scalingStats: null,
+			damageType: null,
+			range: null,
+			bodyParts: null
 		}
 	},
 	cestus:
@@ -2867,7 +2987,7 @@ var classSkills =
 		{
 			name_en: "Reblossom",
 			name_jp: "返り咲き",
-			details: "If the Masurao has a Katana equipped, gives a chance to repeat Katana skills after use.<br>If the Masurao has multiple Katanas equipped, this chance increases.",
+			details: "If the Masurao multiple Katanas equipped, gives a chance to repeat Katana skills after use.<br>This chance increases with the number of equipped Katanas.<br>Repeat chance is listed as: 2 Katana/3 Katana/4 Katana",
 			dep: {CrossingtheSanzu:3},
 			active: false,
 			reqLevel: 20,
