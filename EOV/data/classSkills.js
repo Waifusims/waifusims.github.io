@@ -3386,7 +3386,7 @@ var classSkills =
 		{
 			name_en: "Appease Spirits",
 			name_jp: "慰霊",
-			details: "When the Shaman is alive, party members with buffs will HP when they act.",
+			details: "When the Shaman is alive, party members with buffs will recover HP when they act.",
 			dep: {},
 			active: false,
 			reqLevel: 20,
