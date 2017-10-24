@@ -442,16 +442,16 @@ var classSkillLevels =
 		},
 		Bunker: 
 		{
-			1: "6 TP, 35 DEF, 6% damage taken, +200% aggro",
-			2: "6 TP, 55 DEF, 6% damage taken, +200% aggro",
-			3: "6 TP, 75 DEF, 6% damage taken, +200% aggro",
-			4: "6 TP, 95 DEF, 6% damage taken, +200% aggro",
-			5: "10 TP, 95 DEF, 4% damage taken, +275% aggro",
-			6: "10 TP, 135 DEF, 4% damage taken, +275% aggro",
-			7: "10 TP, 175 DEF, 4% damage taken, +275% aggro",
-			8: "10 TP, 215 DEF, 4% damage taken, +275% aggro",
-			9: "10 TP, 255 DEF, 4% damage taken, +275% aggro",
-			10: "16 TP, 255 DEF, 1% damage taken, +350% aggro"
+			1: "3 TP, 35 DEF, 6% damage taken, +200% aggro",
+			2: "3 TP, 55 DEF, 6% damage taken, +200% aggro",
+			3: "3 TP, 75 DEF, 6% damage taken, +200% aggro",
+			4: "3 TP, 95 DEF, 6% damage taken, +200% aggro",
+			5: "6 TP, 95 DEF, 4% damage taken, +275% aggro",
+			6: "6 TP, 135 DEF, 4% damage taken, +275% aggro",
+			7: "6 TP, 175 DEF, 4% damage taken, +275% aggro",
+			8: "6 TP, 215 DEF, 4% damage taken, +275% aggro",
+			9: "6 TP, 255 DEF, 4% damage taken, +275% aggro",
+			10: "10 TP, 255 DEF, 1% damage taken, +350% aggro"
 		},
 		ArtilleryMastery: 
 		{
