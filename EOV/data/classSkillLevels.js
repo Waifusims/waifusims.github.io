@@ -839,16 +839,16 @@ var classSkillLevels =
 		},
 		ThunderGodFist: 
 		{
-			1: "3 TP, 200% damage, 20% recoil damage",
-			2: "3 TP, 208% damage, 20% recoil damage",
-			3: "3 TP, 216% damage, 20% recoil damage",
-			4: "3 TP, 224% damage, 20% recoil damage",
-			5: "5 TP, 300% damage, 35% recoil damage",
-			6: "5 TP, 312% damage, 35% recoil damage",
-			7: "5 TP, 324% damage, 35% recoil damage",
-			8: "5 TP, 336% damage, 35% recoil damage",
-			9: "5 TP, 348% damage, 35% recoil damage",
-			10: "8 TP, 450% damage, 50% recoil damage",
+			1: "4 TP, 200% damage, 20% recoil damage",
+			2: "4 TP, 208% damage, 20% recoil damage",
+			3: "4 TP, 216% damage, 20% recoil damage",
+			4: "4 TP, 224% damage, 20% recoil damage",
+			5: "7 TP, 300% damage, 35% recoil damage",
+			6: "7 TP, 312% damage, 35% recoil damage",
+			7: "7 TP, 324% damage, 35% recoil damage",
+			8: "7 TP, 336% damage, 35% recoil damage",
+			9: "7 TP, 348% damage, 35% recoil damage",
+			10: "10 TP, 450% damage, 50% recoil damage",
 		},
 		PhysicalAttackBoost: 
 		{

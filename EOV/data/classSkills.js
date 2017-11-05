@@ -590,7 +590,7 @@ var classSkills =
 			coords: {x:1, y:2},
 			scalingStats: ["STR"],
 			damageType: ["BASH"],
-			range: ["RANGED"],
+			range: "RANGED",
 			bodyParts: ["ARMS"]
 		},
 		BarrageWall:
