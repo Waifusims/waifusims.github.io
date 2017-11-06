@@ -3119,7 +3119,7 @@ var classSkills =
 		{
 			name_en: "Triple Strike",
 			name_jp: "三段討ち",
-			details: "Deals 3 instances of melee, STR-based Cut damage to one enemy.<br>The hits attempt to inflict head, arm, and leg bind respectively.<br>If the target is bound by one of the attacks, the remaining attacks will not be made.",
+			details: "Deals 3 instances of melee, STR-based Cut damage to one enemy.<br>Each hit attempts to inflict head, arm, and leg bind.<br>If the target is bound by one of the attacks, the remaining attacks will not be made.",
 			dep: {SwordsVigor:5},
 			active: true,
 			reqLevel: 20,
