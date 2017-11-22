@@ -1184,7 +1184,7 @@ var classSkills =
 		{
 			name_en: "Lash Out",
 			name_jp: "ラッシュアウト",
-			details: "Attacks one enemy with STR-based melee bash damage multiple times.<br>The number of attacks is equal to the number of times the Pugilist attacked on the previous turn. Maximum number of hits is 9.<br>Any Union skills that got cast does not count toward the hit total.<br>Has an 80% speed modifier and an accuracy modifier of -10 at all levels.",
+			details: "Attacks one enemy with STR-based melee bash damage multiple times.<br>The number of attacks is equal to the number of times the Pugilist attacked on the previous turn. Maximum number of hits is 9.<br>Union skills will also count towards the hit total.<br>Has an 80% speed modifier and an accuracy modifier of -10 at all levels.",
 			dep: {SpeedBoost:5},
 			active: true,
 			reqLevel: 20,
