@@ -1,7 +1,7 @@
 var classSkills =
 {
 	fencer:
-	{		
+	{
 		RapierMastery:
 		{
 			name_en: "Rapier Mastery",
@@ -161,7 +161,7 @@ var classSkills =
 			damageType: null,
 			range: null,
 			bodyParts: ["ARMS"]
-		},		
+		},
 		RayofLight:
 		{
 			name_en: "Ray of Light",
@@ -321,7 +321,7 @@ var classSkills =
 			damageType: ["STAB", "VOLT"],
 			range: "MELEE",
 			bodyParts: ["ARMS"]
-		},		
+		},
 		SpeedofSoundBlade:
 		{
 			name_en: "Sonic Blade",
@@ -479,8 +479,8 @@ var classSkills =
 			bodyParts: ["ARMS"]
 		},
 	},
-	dragoon: 
-	{		
+	dragoon:
+	{
 		ShieldMastery:
 		{
 			name_en: "Shield Mastery",
@@ -800,8 +800,8 @@ var classSkills =
 			damageType: null,
 			range: null,
 			bodyParts: null
-		},		
-		GunRevenge: 
+		},
+		GunRevenge:
 		{
 			name_en: "Gun Revenge",
 			name_jp: "ガンリベンジ",
@@ -817,7 +817,7 @@ var classSkills =
 			range: null,
 			bodyParts: null
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -833,7 +833,7 @@ var classSkills =
 			range: null,
 			bodyParts: null
 		},
-		RapidCannon: 
+		RapidCannon:
 		{
 			name_en: "Rapid Cannon",
 			name_jp: "ラピッドカノン",
@@ -849,7 +849,7 @@ var classSkills =
 			range: "RANGED",
 			bodyParts: ["ARMS"]
 		},
-		CurseCannon: 
+		CurseCannon:
 		{
 			name_en: "Curse Cannon",
 			name_jp: "カースカノン",
@@ -865,7 +865,7 @@ var classSkills =
 			range: "RANGED",
 			bodyParts: ["ARMS"]
 		},
-		HypnoCannon: 
+		HypnoCannon:
 		{
 			name_en: "Hypno Cannon",
 			name_jp: "ヒュプノカノン",
@@ -881,7 +881,7 @@ var classSkills =
 			range: "RANGED",
 			bodyParts: ["ARMS"]
 		},
-		Pillbox: 
+		Pillbox:
 		{
 			name_en: "Decoy Turret",
 			name_jp: "トーチカ",
@@ -897,7 +897,7 @@ var classSkills =
 			range: null,
 			bodyParts: ["ARMS"]
 		},
-		PhysicalAttackBoost: 
+		PhysicalAttackBoost:
 		{
 			name_en: "Phys ATK Up",
 			name_jp: "物理攻撃ブースト",
@@ -913,7 +913,7 @@ var classSkills =
 			range: null,
 			bodyParts: null
 		},
-		BombardmentPrep: 
+		BombardmentPrep:
 		{
 			name_en: "Prep Artillery",
 			name_jp: "砲撃準備",
@@ -929,7 +929,7 @@ var classSkills =
 			range: null,
 			bodyParts: ["HEAD"]
 		},
-		BusterCannon: 
+		BusterCannon:
 		{
 			name_en: "Buster Cannon",
 			name_jp: "バスターカノン",
@@ -945,7 +945,7 @@ var classSkills =
 			range: "RANGED",
 			bodyParts: ["ARMS"]
 		},
-		GunSupport: 
+		GunSupport:
 		{
 			name_en: "Gun Support",
 			name_jp: "ガンサポート",
@@ -1327,7 +1327,7 @@ var classSkills =
 	},
 	reaper:
 	{
-		ScytheMastery: 
+		ScytheMastery:
 		{
 			name_en: "Scythe Mastery",
 			name_jp: "鎌マスタリー",
@@ -1339,7 +1339,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y:0}
 		},
-		MiasmaWeapon: 
+		MiasmaWeapon:
 		{
 			name_en: "Miasma Armor",
 			name_jp: "瘴気の兵装",
@@ -1351,7 +1351,7 @@ var classSkills =
 			max: 5,
 			coords: {x:0, y:2}
 		},
-		FrailMiasma: 
+		FrailMiasma:
 		{
 			name_en: "Stifling Miasma",
 			name_jp: "繊弱の瘴気",
@@ -1363,7 +1363,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y:4}
 		},
-		ScytheofNumbStasis: 
+		ScytheofNumbStasis:
 		{
 			name_en: "Paralyzing Reap",
 			name_jp: "痺止の鎌",
@@ -1375,7 +1375,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y:5}
 		},
-		GatherSouls: 
+		GatherSouls:
 		{
 			name_en: "Soul Gather",
 			name_jp: "魂寄せ",
@@ -1387,7 +1387,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:0}
 		},
-		PreemptiveWeapon: 
+		PreemptiveWeapon:
 		{
 			name_en: "Auto-Miasma",
 			name_jp: "先制兵装",
@@ -1399,7 +1399,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:1}
 		},
-		EndlessShroud: 
+		EndlessShroud:
 		{
 			name_en: "Endless Shroud",
 			name_jp: "終わりなき衣",
@@ -1411,7 +1411,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:2}
 		},
-		DeathsJudgment: 
+		DeathsJudgment:
 		{
 			name_en: "Judgment",
 			name_jp: "死の審判",
@@ -1423,7 +1423,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:3}
 		},
-		FeebleMiasma: 
+		FeebleMiasma:
 		{
 			name_en: "Wilting Miasma",
 			name_jp: "虚弱の瘴気",
@@ -1435,7 +1435,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:4}
 		},
-		ScytheofExorcism: 
+		ScytheofExorcism:
 		{
 			name_en: "Cursed Reap",
 			name_jp: "呪禁の鎌",
@@ -1447,7 +1447,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:5}
 		},
-		BlackBlade: 
+		BlackBlade:
 		{
 			name_en: "Black Blade",
 			name_jp: "黒き刃",
@@ -1459,7 +1459,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:0}
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -1471,7 +1471,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:1}
 		},
-		FreshBloodSlash: 
+		FreshBloodSlash:
 		{
 			name_en: "Bloody Reap",
 			name_jp: "鮮血の斬撃",
@@ -1483,7 +1483,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:2.5}
 		},
-		GreateScytheofColdAsh: 
+		GreateScytheofColdAsh:
 		{
 			name_en: "Frigid Reap",
 			name_jp: "冷灰の大鎌",
@@ -1495,7 +1495,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:3.5}
 		},
-		ScytheofCruelPoison: 
+		ScytheofCruelPoison:
 		{
 			name_en: "Toxic Reap",
 			name_jp: "惨毒の鎌",
@@ -1507,7 +1507,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:4.5}
 		},
-		ScytheofWickedChaos: 
+		ScytheofWickedChaos:
 		{
 			name_en: "Chaos Reap",
 			name_jp: "禍乱の鎌",
@@ -1519,7 +1519,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:5.5}
 		},
-		BlackShroud: 
+		BlackShroud:
 		{
 			name_en: "Black Shroud",
 			name_jp: "黒き衣",
@@ -1531,7 +1531,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:0}
 		},
-		ConstraintAttackBoost: 
+		ConstraintAttackBoost:
 		{
 			name_en: "Status ATK Up",
 			name_jp: "抑制攻撃ブースト",
@@ -1543,7 +1543,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:1}
 		},
-		ShroudofReality: 
+		ShroudofReality:
 		{
 			name_en: "Temporal Shroud",
 			name_jp: "空蝉の衣",
@@ -1555,7 +1555,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:3}
 		},
-		ScytheofDeath: 
+		ScytheofDeath:
 		{
 			name_en: "Fatal Reap",
 			name_jp: "死の鎌",
@@ -1567,7 +1567,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:5}
 		},
-		AbsorbVitality: 
+		AbsorbVitality:
 		{
 			name_en: "Spirit Absorb",
 			name_jp: "生気吸収",
@@ -1579,7 +1579,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:0}
 		},
-		MagicDefenseBoost: 
+		MagicDefenseBoost:
 		{
 			name_en: "Magic DEF Up",
 			name_jp: "魔法防御ブースト",
@@ -1591,7 +1591,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:1}
 		},
-		DeathResistance: 
+		DeathResistance:
 		{
 			name_en: "Death's Asylum",
 			name_jp: "死の耐性",
@@ -1603,7 +1603,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:2}
 		},
-		BrittleMiasma: 
+		BrittleMiasma:
 		{
 			name_en: "Eroding Miasma",
 			name_jp: "削弱の瘴気",
@@ -1615,7 +1615,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:3.5}
 		},
-		DimMiasma: 
+		DimMiasma:
 		{
 			name_en: "Masking Miasma",
 			name_jp: "闇弱の瘴気",
@@ -1627,7 +1627,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:4.5}
 		},
-		HPBoost: 
+		HPBoost:
 		{
 			name_en: "HP Up",
 			name_jp: "ＨＰブースト",
@@ -1639,7 +1639,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:0}
 		},
-		BloodofAtonement: 
+		BloodofAtonement:
 		{
 			name_en: "Atonement",
 			name_jp: "贖いの血",
@@ -1651,7 +1651,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:1.5}
 		},
-		WallofMiasma: 
+		WallofMiasma:
 		{
 			name_en: "Miasma Wall",
 			name_jp: "瘴気の防壁",
@@ -1663,7 +1663,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:2.5}
 		},
-		ScytheofTransience: 
+		ScytheofTransience:
 		{
 			name_en: "Ephemeral Reap",
 			name_jp: "泡沫の鎌",
@@ -1675,7 +1675,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:3.5}
 		},
-		SoulTransfer: 
+		SoulTransfer:
 		{
 			name_en: "Soul Transfer",
 			name_jp: "魂転移",
@@ -1690,7 +1690,7 @@ var classSkills =
 	},
 	warlock:
 	{
-		MagiMastery: 
+		MagiMastery:
 		{
 			name_en: "Magi Mastery",
 			name_jp: "マギマスタリー",
@@ -1702,7 +1702,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y:0}
 		},
-		Amplifier: 
+		Amplifier:
 		{
 			name_en: "Amplifier",
 			name_jp: "アンプリファー",
@@ -1714,7 +1714,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y:4}
 		},
-		Levitation: 
+		Levitation:
 		{
 			name_en: "Levitation",
 			name_jp: "レビテーション",
@@ -1726,7 +1726,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y:6}
 		},
-		HighSpeedIncantation: 
+		HighSpeedIncantation:
 		{
 			name_en: "Quick-Chant",
 			name_jp: "高速詠唱",
@@ -1738,7 +1738,7 @@ var classSkills =
 			max: 5,
 			coords: {x:1, y:0}
 		},
-		Fireball: 
+		Fireball:
 		{
 			name_en: "Fireball",
 			name_jp: "ファイアボール",
@@ -1762,7 +1762,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:2}
 		},
-		Lightning: 
+		Lightning:
 		{
 			name_en: "Lighning",
 			name_jp: "ライトニング",
@@ -1774,7 +1774,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:3}
 		},
-		MagicShield: 
+		MagicShield:
 		{
 			name_en: "Magic Shield",
 			name_jp: "マジックシールド",
@@ -1786,7 +1786,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:4}
 		},
-		IncantationCompressionForm: 
+		IncantationCompressionForm:
 		{
 			name_en: "Focus Chant",
 			name_jp: "詠唱：圧縮術式",
@@ -1798,7 +1798,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:5}
 		},
-		Invisible: 
+		Invisible:
 		{
 			name_en: "Invisibility",
 			name_jp: "インビジブル",
@@ -1810,7 +1810,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y:6}
 		},
-		ReserveMagic: 
+		ReserveMagic:
 		{
 			name_en: "Reserve Magic",
 			name_jp: "リザーブマジック",
@@ -1822,7 +1822,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:0}
 		},
-		Windstorm: 
+		Windstorm:
 		{
 			name_en: "Windstorm",
 			name_jp: "ウィンドストーム",
@@ -1834,7 +1834,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:1}
 		},
-		EarthSpike: 
+		EarthSpike:
 		{
 			name_en: "Earthspike",
 			name_jp: "アーススパイク",
@@ -1846,7 +1846,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:2}
 		},
-		Rockfall: 
+		Rockfall:
 		{
 			name_en: "Rockfall",
 			name_jp: "ロックフォール",
@@ -1858,7 +1858,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:3}
 		},
-		AntiMagic: 
+		AntiMagic:
 		{
 			name_en: "Anti-Magic",
 			name_jp: "アンチマジック",
@@ -1870,7 +1870,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:4}
 		},
-		IncantationMultistrikeForm: 
+		IncantationMultistrikeForm:
 		{
 			name_en: "Spread Chant",
 			name_jp: "詠唱：多段術式",
@@ -1882,7 +1882,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:5}
 		},
-		MagicDefenseBoost: 
+		MagicDefenseBoost:
 		{
 			name_en: "Magic DEF Up",
 			name_jp: "魔法防御ブースト",
@@ -1894,7 +1894,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y:6}
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -1906,7 +1906,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:0}
 		},
-		Alter: 
+		Alter:
 		{
 			name_en: "Altar",
 			name_jp: "アルター",
@@ -1918,7 +1918,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y:2}
 		},
-		LifeDrain: 
+		LifeDrain:
 		{
 			name_en: "Life Siphon",
 			name_jp: "ライフドレイン",
@@ -1930,7 +1930,7 @@ var classSkills =
 			max: 5,
 			coords: {x:3, y:4}
 		},
-		CommonMagic: 
+		CommonMagic:
 		{
 			name_en: "Common Magic",
 			name_jp: "コモンマジック",
@@ -1942,7 +1942,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		Explode: 
+		Explode:
 		{
 			name_en: "Explosion",
 			name_jp: "エクスプロード",
@@ -1954,7 +1954,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		IceStream: 
+		IceStream:
 		{
 			name_en: "Hailstorm",
 			name_jp: "アイスストリーム",
@@ -1966,7 +1966,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2}
 		},
-		ThunderBreak: 
+		ThunderBreak:
 		{
 			name_en: "Thunderbreak",
 			name_jp: "サンダーブレイク",
@@ -1978,7 +1978,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3}
 		},
-		MagicWeapon: 
+		MagicWeapon:
 		{
 			name_en: "Clever Strike",
 			name_jp: "マジックウェポン",
@@ -2002,7 +2002,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		ConstraintDefenseBoost: 
+		ConstraintDefenseBoost:
 		{
 			name_en: "Status DEF Up",
 			name_jp: "抑制防御ブースト",
@@ -2014,7 +2014,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 6}
 		},
-		MagicAttackBoost: 
+		MagicAttackBoost:
 		{
 			name_en: "Magic ATK Up",
 			name_jp: "魔法攻撃ブースト",
@@ -2026,7 +2026,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		MagicLeak: 
+		MagicLeak:
 		{
 			name_en: "Mana Flow",
 			name_jp: "マジックリーク",
@@ -2038,7 +2038,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 1.5}
 		},
-		CostCut: 
+		CostCut:
 		{
 			name_en: "Cutting Costs",
 			name_jp: "コストカット",
@@ -2053,7 +2053,7 @@ var classSkills =
 	},
 	necromancer:
 	{
-		GhostMastery: 
+		GhostMastery:
 		{
 			name_en: "Wraith Mastery",
 			name_jp: "死霊マスタリー",
@@ -2065,7 +2065,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 0}
 		},
-		GhostSummoning: 
+		GhostSummoning:
 		{
 			name_en: "Summon Wraith",
 			name_jp: "死霊召喚",
@@ -2077,7 +2077,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 1}
 		},
-		MoaningSpirits: 
+		MoaningSpirits:
 		{
 			name_en: "Wraith Cry",
 			name_jp: "死霊の呻き",
@@ -2089,7 +2089,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 2}
 		},
-		SoulFood: 
+		SoulFood:
 		{
 			name_en: "Soul Candy",
 			name_jp: "魂の糧",
@@ -2101,7 +2101,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 3}
 		},
-		GravekeepingKnowledge: 
+		GravekeepingKnowledge:
 		{
 			name_en: "Gravekeeping",
 			name_jp: "墓守の心得",
@@ -2113,7 +2113,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 4}
 		},
-		ThePriceofLife: 
+		ThePriceofLife:
 		{
 			name_en: "Life Exchange",
 			name_jp: "生の代償",
@@ -2125,7 +2125,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 1}
 		},
-		MercilessWall: 
+		MercilessWall:
 		{
 			name_en: "Fierce Shield",
 			name_jp: "無慈悲な盾",
@@ -2137,7 +2137,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 2.5}
 		},
-		GhostReincarnation: 
+		GhostReincarnation:
 		{
 			name_en: "Reincarnation",
 			name_jp: "死霊転生",
@@ -2149,7 +2149,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 4}
 		},
-		PoisonBomb: 
+		PoisonBomb:
 		{
 			name_en: "Poison Bomb",
 			name_jp: "毒爆弾",
@@ -2161,7 +2161,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 5}
 		},
-		FireBomb: 
+		FireBomb:
 		{
 			name_en: "Flame Bomb",
 			name_jp: "炎爆弾",
@@ -2173,7 +2173,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 6}
 		},
-		GhostSecretArts: 
+		GhostSecretArts:
 		{
 			name_en: "Necromancy",
 			name_jp: "死霊の秘術",
@@ -2185,7 +2185,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		CurseTransfer: 
+		CurseTransfer:
 		{
 			name_en: "Burden Shift",
 			name_jp: "呪詛移し",
@@ -2197,7 +2197,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		OpenGrave: 
+		OpenGrave:
 		{
 			name_en: "Grave",
 			name_jp: "墓穴",
@@ -2209,7 +2209,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2.5}
 		},
-		ConstraintAttackBoost: 
+		ConstraintAttackBoost:
 		{
 			name_en: "Status ATK Up",
 			name_jp: "抑制攻撃ブースト",
@@ -2221,7 +2221,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3.5}
 		},
-		CurseBomb: 
+		CurseBomb:
 		{
 			name_en: "Curse Bomb",
 			name_jp: "呪い爆弾",
@@ -2233,7 +2233,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		IceBomb: 
+		IceBomb:
 		{
 			name_en: "Ice Bomb",
 			name_jp: "氷爆弾",
@@ -2245,7 +2245,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 6}
 		},
-		HPBoost: 
+		HPBoost:
 		{
 			name_en: "HP Up",
 			name_jp: "ＨＰブースト",
@@ -2257,7 +2257,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		SoulTrade: 
+		SoulTrade:
 		{
 			name_en: "Soul Trade",
 			name_jp: "ソウルトレード",
@@ -2269,7 +2269,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 1}
 		},
-		GhostDance: 
+		GhostDance:
 		{
 			name_en: "Wraith Dance",
 			name_jp: "死霊乱舞",
@@ -2281,7 +2281,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 2.5}
 		},
-		GravestoneBinding: 
+		GravestoneBinding:
 		{
 			name_en: "Tombstone Vice",
 			name_jp: "石塔絞り",
@@ -2293,7 +2293,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 5.5}
 		},
-		TheBeckoningofHades: 
+		TheBeckoningofHades:
 		{
 			name_en: "Hell's Lure",
 			name_jp: "黄泉の手招き",
@@ -2305,7 +2305,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		PreemptiveGhostSummoning: 
+		PreemptiveGhostSummoning:
 		{
 			name_en: "Auto-Wraith",
 			name_jp: "先制死霊召喚",
@@ -2317,7 +2317,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		EquivalentExchange: 
+		EquivalentExchange:
 		{
 			name_en: "Fair Trade",
 			name_jp: "等価交換",
@@ -2329,7 +2329,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2.5}
 		},
-		Sacrifice: 
+		Sacrifice:
 		{
 			name_en: "Sacrifice",
 			name_jp: "生贄",
@@ -2341,7 +2341,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3.5}
 		},
-		MagicAttackBoost: 
+		MagicAttackBoost:
 		{
 			name_en: "Magic ATK Up",
 			name_jp: "魔法攻撃ブースト",
@@ -2353,7 +2353,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 4.5}
 		},
-		TheGatesofHell: 
+		TheGatesofHell:
 		{
 			name_en: "Gates of Hell",
 			name_jp: "地獄門",
@@ -2365,7 +2365,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5.5}
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -2377,7 +2377,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		GhostExplosion: 
+		GhostExplosion:
 		{
 			name_en: "Wraith Explosion",
 			name_jp: "死霊大爆発",
@@ -2389,7 +2389,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 2.5}
 		},
-		NegativeEnergy: 
+		NegativeEnergy:
 		{
 			name_en: "Negative Energy",
 			name_jp: "負の力",
@@ -2401,7 +2401,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 3.5}
 		},
-		ZombiePowder: 
+		ZombiePowder:
 		{
 			name_en: "Zombie Powder",
 			name_jp: "ゾンビパウダー",
@@ -2416,7 +2416,7 @@ var classSkills =
 	},
 	hound:
 	{
-		BowMastery: 
+		BowMastery:
 		{
 			name_en: "Bow Mastery",
 			name_jp: "弓マスタリー",
@@ -2428,7 +2428,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 0}
 		},
-		HawkWhistle: 
+		HawkWhistle:
 		{
 			name_en: "Hawk Whistle",
 			name_jp: "鷹笛",
@@ -2440,7 +2440,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 1.5}
 		},
-		DogWhistle: 
+		DogWhistle:
 		{
 			name_en: "Hound Whistle",
 			name_jp: "犬笛",
@@ -2452,7 +2452,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 3.5}
 		},
-		Brushing: 
+		Brushing:
 		{
 			name_en: "Brushing",
 			name_jp: "ブラッシング",
@@ -2464,7 +2464,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 5}
 		},
-		AnimalTherapy: 
+		AnimalTherapy:
 		{
 			name_en: "Animal Therapy",
 			name_jp: "獣の癒し",
@@ -2476,7 +2476,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 0}
 		},
-		HawkArrow: 
+		HawkArrow:
 		{
 			name_en: "Hawk Arrow",
 			name_jp: "ホークアロー",
@@ -2488,7 +2488,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 1}
 		},
-		FlashofBothWings: 
+		FlashofBothWings:
 		{
 			name_en: "Wing Thrash",
 			name_jp: "双翼閃",
@@ -2500,7 +2500,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 2}
 		},
-		AidCommand: 
+		AidCommand:
 		{
 			name_en: "Aid Command",
 			name_jp: "救護指示",
@@ -2512,7 +2512,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 3}
 		},
-		HunterShot: 
+		HunterShot:
 		{
 			name_en: "Hunter Shot",
 			name_jp: "ハンターショット",
@@ -2524,7 +2524,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 4}
 		},
-		TargetArrow: 
+		TargetArrow:
 		{
 			name_en: "Target Arrow",
 			name_jp: "ターゲットアロー",
@@ -2536,7 +2536,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 5}
 		},
-		SkyPatrol: 
+		SkyPatrol:
 		{
 			name_en: "Sky Patrol",
 			name_jp: "高度巡回",
@@ -2548,7 +2548,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		FlyingTalonStrike: 
+		FlyingTalonStrike:
 		{
 			name_en: "Aerial Talons",
 			name_jp: "飛来爪撃",
@@ -2560,7 +2560,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		IcePeck: 
+		IcePeck:
 		{
 			name_en: "Ice Peck",
 			name_jp: "氷嘴撃",
@@ -2572,7 +2572,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2}
 		},
-		PhysicalAttackBoost: 
+		PhysicalAttackBoost:
 		{
 			name_en: "Phys ATK Up",
 			name_jp: "物理攻撃ブースト",
@@ -2584,7 +2584,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3}
 		},
-		SpeedBoost: 
+		SpeedBoost:
 		{
 			name_en: "Speed Up",
 			name_jp: "素早さブースト",
@@ -2596,7 +2596,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 4}
 		},
-		PowerShot: 
+		PowerShot:
 		{
 			name_en: "Power Shot",
 			name_jp: "パワーショット",
@@ -2608,7 +2608,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		ScatterFeathers: 
+		ScatterFeathers:
 		{
 			name_en: "Feather Storm",
 			name_jp: "舞い散る羽",
@@ -2620,7 +2620,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 6}
 		},
-		FinishingArrow: 
+		FinishingArrow:
 		{
 			name_en: "Finishing Shot",
 			name_jp: "仕留めの一矢",
@@ -2632,7 +2632,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		SkyDive: 
+		SkyDive:
 		{
 			name_en: "Sky Dive",
 			name_jp: "スカイダイブ",
@@ -2644,7 +2644,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 1.5}
 		},
-		MillionShot: 
+		MillionShot:
 		{
 			name_en: "Million Arrows",
 			name_jp: "ミリオンショット",
@@ -2656,7 +2656,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 5}
 		},
-		GroundPatrol: 
+		GroundPatrol:
 		{
 			name_en: "Ground Patrol",
 			name_jp: "地表巡回",
@@ -2668,7 +2668,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		ConstraintAttackBoost: 
+		ConstraintAttackBoost:
 		{
 			name_en: "Status ATK Up",
 			name_jp: "抑制攻撃ブースト",
@@ -2680,7 +2680,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		MenacingHowl: 
+		MenacingHowl:
 		{
 			name_en: "Menacing Howl",
 			name_jp: "威嚇の咆哮",
@@ -2692,7 +2692,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2}
 		},
-		DefenseCommand: 
+		DefenseCommand:
 		{
 			name_en: "Guard Command",
 			name_jp: "防衛指示",
@@ -2704,7 +2704,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3}
 		},
-		FootPierce: 
+		FootPierce:
 		{
 			name_en: "Foot Pierce",
 			name_jp: "足甲貫き",
@@ -2716,7 +2716,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 4}
 		},
-		DropShot: 
+		DropShot:
 		{
 			name_en: "Arc Shot",
 			name_jp: "ドロップショット",
@@ -2728,7 +2728,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		HealingBoost: 
+		HealingBoost:
 		{
 			name_en: "Healing Up",
 			name_jp: "回復ブースト",
@@ -2740,7 +2740,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -2752,7 +2752,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 1}
 		},
-		MedicalLick: 
+		MedicalLick:
 		{
 			name_en: "Medicinal Lick",
 			name_jp: "メディカルリック",
@@ -2764,7 +2764,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 3.5}
 		},
-		StunShot: 
+		StunShot:
 		{
 			name_en: "Stun Shot",
 			name_jp: "スタンショット",
@@ -2779,7 +2779,7 @@ var classSkills =
 	},
 	masurao:
 	{
-		KatanaMastery: 
+		KatanaMastery:
 		{
 			name_en: "Katana Mastery",
 			name_jp: "刀マスタリー",
@@ -2791,7 +2791,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 0}
 		},
-		PeerlessDemon: 
+		PeerlessDemon:
 		{
 			name_en: "Peerless Demon",
 			name_jp: "鬼無双",
@@ -2803,7 +2803,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 1}
 		},
-		TotheDeath: 
+		TotheDeath:
 		{
 			name_en: "Duel",
 			name_jp: "果し合い",
@@ -2815,7 +2815,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 2}
 		},
-		ArmorPenetrate: 
+		ArmorPenetrate:
 		{
 			name_en: "Armor Pierce",
 			name_jp: "鎧通し",
@@ -2827,7 +2827,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 3}
 		},
-		VacuumBlade: 
+		VacuumBlade:
 		{
 			name_en: "Air Blade",
 			name_jp: "空刃",
@@ -2839,7 +2839,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 4}
 		},
-		NewChallenger: 
+		NewChallenger:
 		{
 			name_en: "New Challenger",
 			name_jp: "新たな強敵",
@@ -2851,7 +2851,7 @@ var classSkills =
 			max: 5,
 			coords: {x:0, y: 5}
 		},
-		FlyingSparrow: 
+		FlyingSparrow:
 		{
 			name_en: "Swallow Soar",
 			name_jp: "飛燕",
@@ -2863,7 +2863,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 2}
 		},
-		MistSlice: 
+		MistSlice:
 		{
 			name_en: "Haze Slash",
 			name_jp: "霞斬り",
@@ -2875,7 +2875,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 3}
 		},
-		Kamaitachi: 
+		Kamaitachi:
 		{
 			name_en: "Whirlwind",
 			name_jp: "鎌鼬",
@@ -2887,7 +2887,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 4}
 		},
-		AdvantageousPosition: 
+		AdvantageousPosition:
 		{
 			name_en: "High Ground",
 			name_jp: "地の利",
@@ -2899,7 +2899,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 5}
 		},
-		MultiSwordTechnique: 
+		MultiSwordTechnique:
 		{
 			name_en: "Multi-Katana",
 			name_jp: "多刀術",
@@ -2911,7 +2911,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		HPBoost: 
+		HPBoost:
 		{
 			name_en: "HP Up",
 			name_jp: "ＨＰブースト",
@@ -2923,7 +2923,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		CrossingtheSanzu: 
+		CrossingtheSanzu:
 		{
 			name_en: "Hell Slash",
 			name_jp: "三途渡し",
@@ -2935,7 +2935,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2}
 		},
-		FourGods: 
+		FourGods:
 		{
 			name_en: "Sacred Tetrad",
 			name_jp: "四神",
@@ -2947,7 +2947,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3.5}
 		},
-		LayeredBlossoms: 
+		LayeredBlossoms:
 		{
 			name_en: "Layered Bloom",
 			name_jp: "八重の華",
@@ -2959,7 +2959,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 4.5}
 		},
-		PhysicalAttackBoost: 
+		PhysicalAttackBoost:
 		{
 			name_en: "Phys ATK Up",
 			name_jp: "物理攻撃ブースト",
@@ -2971,7 +2971,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5.5}
 		},
-		BrinkofDeathResuscitation: 
+		BrinkofDeathResuscitation:
 		{
 			name_en: "Reincarnation",
 			name_jp: "仮死再生",
@@ -2983,7 +2983,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 1}
 		},
-		Reflower: 
+		Reflower:
 		{
 			name_en: "Reblossom",
 			name_jp: "返り咲き",
@@ -2995,7 +2995,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 2}
 		},
-		Hyakkaryouran: 
+		Hyakkaryouran:
 		{
 			name_en: "Vast Flourish",
 			name_jp: "百華繚乱",
@@ -3007,7 +3007,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 4}
 		},
-		Tenryuuransei: 
+		Tenryuuransei:
 		{
 			name_en: "Meteor Rain",
 			name_jp: "天流乱星",
@@ -3019,7 +3019,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 5.5}
 		},
-		SwordGod: 
+		SwordGod:
 		{
 			name_en: "Sword God",
 			name_jp: "剣神",
@@ -3031,7 +3031,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -3043,7 +3043,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1.5}
 		},
-		LegSweep: 
+		LegSweep:
 		{
 			name_en: "Foot Sweep",
 			name_jp: "裾払い",
@@ -3055,7 +3055,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3}
 		},
-		SwordsVigor: 
+		SwordsVigor:
 		{
 			name_en: "Spirit Sword",
 			name_jp: "剣の気迫",
@@ -3067,7 +3067,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		SpeedBoost: 
+		SpeedBoost:
 		{
 			name_en: "Speed Up",
 			name_jp: "素早さブースト",
@@ -3079,7 +3079,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		ThunderSlash: 
+		ThunderSlash:
 		{
 			name_en: "Bolt Slash",
 			name_jp: "雷切",
@@ -3091,7 +3091,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 1}
 		},
-		Suigetsu: 
+		Suigetsu:
 		{
 			name_en: "Mirror Moon",
 			name_jp: "水月",
@@ -3103,7 +3103,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 2}
 		},
-		HelmDivide: 
+		HelmDivide:
 		{
 			name_en: "Helm Splitter",
 			name_jp: "兜割り",
@@ -3115,7 +3115,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 3}
 		},
-		ThreeStageStrike: 
+		ThreeStageStrike:
 		{
 			name_en: "Triple Strike",
 			name_jp: "三段討ち",
@@ -3127,7 +3127,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 4.5}
 		},
-		Sange: 
+		Sange:
 		{
 			name_en: "Petal Scatter",
 			name_jp: "散華",
@@ -3142,7 +3142,7 @@ var classSkills =
 	},
 	shaman:
 	{
-		PrayerMastery: 
+		PrayerMastery:
 		{
 			name_en: "Prayer Mastery",
 			name_jp: "祈祷マスタリー",
@@ -3154,7 +3154,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 0}
 		},
-		PrayerEradication: 
+		PrayerEradication:
 		{
 			name_en: "Ruinous Prayer",
 			name_jp: "祈祷：討滅",
@@ -3166,7 +3166,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 1}
 		},
-		PrayerGuardian: 
+		PrayerGuardian:
 		{
 			name_en: "Aegis Prayer",
 			name_jp: "祈祷：鎮守",
@@ -3178,7 +3178,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 2}
 		},
-		PrayerBullseye: 
+		PrayerBullseye:
 		{
 			name_en: "Focus Prayer",
 			name_jp: "祈祷：適中",
@@ -3190,7 +3190,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 3}
 		},
-		PrayerBlaze: 
+		PrayerBlaze:
 		{
 			name_en: "Blaze Prayer",
 			name_jp: "祈祷：焔",
@@ -3202,7 +3202,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 4}
 		},
-		PrayerColdRain: 
+		PrayerColdRain:
 		{
 			name_en: "Hail Prayer",
 			name_jp: "祈祷：氷雨",
@@ -3214,7 +3214,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 5}
 		},
-		PrayerPurpleLightning: 
+		PrayerPurpleLightning:
 		{
 			name_en: "Bolt Prayer",
 			name_jp: "祈祷：紫電",
@@ -3226,7 +3226,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 6}
 		},
-		Gospel: 
+		Gospel:
 		{
 			name_en: "Gospel",
 			name_jp: "福音",
@@ -3238,7 +3238,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 0}
 		},
-		BlessingofHeaven: 
+		BlessingofHeaven:
 		{
 			name_en: "Heaven's Gift",
 			name_jp: "天恵",
@@ -3250,7 +3250,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 2}
 		},
-		OracleDance: 
+		OracleDance:
 		{
 			name_en: "Dance Oracle",
 			name_jp: "神託：乱舞",
@@ -3262,7 +3262,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 5}
 		},
-		MemoriesofaPreviousLife: 
+		MemoriesofaPreviousLife:
 		{
 			name_en: "Ancient Memory",
 			name_jp: "前世の記憶",
@@ -3274,7 +3274,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		PrayerfortheSoul: 
+		PrayerfortheSoul:
 		{
 			name_en: "Soul Grace",
 			name_jp: "魂の祈り",
@@ -3286,7 +3286,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1.5}
 		},
-		ProtectionoftheOfferings: 
+		ProtectionoftheOfferings:
 		{
 			name_en: "Offering",
 			name_jp: "神供の加護",
@@ -3298,7 +3298,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2.5}
 		},
-		MagicAttackBoost: 
+		MagicAttackBoost:
 		{
 			name_en: "Magic ATK Up",
 			name_jp: "魔法攻撃ブースト",
@@ -3310,7 +3310,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3.5}
 		},
-		OracleThreeRuns: 
+		OracleThreeRuns:
 		{
 			name_en: "Mana Oracle",
 			name_jp: "神託：三走り",
@@ -3322,7 +3322,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 4.5}
 		},
-		OracleHalo: 
+		OracleHalo:
 		{
 			name_en: "Aureole Oracle",
 			name_jp: "神託：後光",
@@ -3334,7 +3334,7 @@ var classSkills =
 			max: 5,
 			coords: {x:2, y: 5.5}
 		},
-		HPBoost: 
+		HPBoost:
 		{
 			name_en: "HP Up",
 			name_jp: "ＨＰブースト",
@@ -3346,7 +3346,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		Purification: 
+		Purification:
 		{
 			name_en: "Purification",
 			name_jp: "禊",
@@ -3358,7 +3358,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 2}
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -3370,7 +3370,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 3.5}
 		},
-		ChanneltheGods: 
+		ChanneltheGods:
 		{
 			name_en: "Invoke Gods",
 			name_jp: "神降ろし",
@@ -3382,7 +3382,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 5}
 		},
-		ConsolingtheDead: 
+		ConsolingtheDead:
 		{
 			name_en: "Appease Spirits",
 			name_jp: "慰霊",
@@ -3394,7 +3394,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		PrayerExorcism: 
+		PrayerExorcism:
 		{
 			name_en: "Exorcism Prayer",
 			name_jp: "祈祷：破邪",
@@ -3406,7 +3406,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		PrayerEscape: 
+		PrayerEscape:
 		{
 			name_en: "Haste Prayer",
 			name_jp: "祈祷：脱兎",
@@ -3418,7 +3418,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2}
 		},
-		PrayerLongevity: 
+		PrayerLongevity:
 		{
 			name_en: "Vitality Prayer",
 			name_jp: "祈祷：長寿",
@@ -3430,7 +3430,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3}
 		},
-		PurifyingFlame: 
+		PurifyingFlame:
 		{
 			name_en: "Holy Flame",
 			name_jp: "忌火",
@@ -3442,7 +3442,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 4}
 		},
-		Bunrei: 
+		Bunrei:
 		{
 			name_en: "Split Spirits",
 			name_jp: "分霊",
@@ -3454,7 +3454,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		MagicDefenseBoost: 
+		MagicDefenseBoost:
 		{
 			name_en: "Magic DEF Up",
 			name_jp: "魔法防御ブースト",
@@ -3466,7 +3466,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 6}
 		},
-		ConstraintDefenseBoost: 
+		ConstraintDefenseBoost:
 		{
 			name_en: "Status DEF Up",
 			name_jp: "抑制防御ブースト",
@@ -3478,7 +3478,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		Sanctuary: 
+		Sanctuary:
 		{
 			name_en: "Sanctuary",
 			name_jp: "神域",
@@ -3490,7 +3490,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 2}
 		},
-		Affection: 
+		Affection:
 		{
 			name_en: "Benevolence",
 			name_jp: "慈愛",
@@ -3504,8 +3504,8 @@ var classSkills =
 		}
 	},
 	herbalist:
-	{		
-		HerbMastery: 
+	{
+		HerbMastery:
 		{
 			name_en: "Herb Mastery",
 			name_jp: "ハーブマスタリー",
@@ -3517,7 +3517,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 0}
 		},
-		CureHerb: 
+		CureHerb:
 		{
 			name_en: "Healing Herb",
 			name_jp: "キュアハーブ",
@@ -3529,7 +3529,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 1}
 		},
-		RefreshHerb: 
+		RefreshHerb:
 		{
 			name_en: "Refreshing Herb",
 			name_jp: "リフレシュハーブ",
@@ -3541,7 +3541,7 @@ var classSkills =
 			max: 5,
 			coords: {x:0, y: 2}
 		},
-		PoisonSmoke: 
+		PoisonSmoke:
 		{
 			name_en: "Toxic Smoke",
 			name_jp: "ポイズンスモーク",
@@ -3553,7 +3553,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 5}
 		},
-		DarkSmoke: 
+		DarkSmoke:
 		{
 			name_en: "Dark Smoke",
 			name_jp: "ダークスモーク",
@@ -3565,7 +3565,7 @@ var classSkills =
 			max: 10,
 			coords: {x:0, y: 6}
 		},
-		LineHerb: 
+		LineHerb:
 		{
 			name_en: "Sweeping Herb",
 			name_jp: "ラインハーブ",
@@ -3577,7 +3577,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 1}
 		},
-		ResurrectionHerb: 
+		ResurrectionHerb:
 		{
 			name_en: "Revival Herb",
 			name_jp: "リザレクトハーブ",
@@ -3589,7 +3589,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 2}
 		},
-		Antibody: 
+		Antibody:
 		{
 			name_en: "Antibodies",
 			name_jp: "抗体",
@@ -3601,7 +3601,7 @@ var classSkills =
 			max: 10,
 			coords: {x:1, y: 3}
 		},
-		MedicinalKnowledge: 
+		MedicinalKnowledge:
 		{
 			name_en: "Herb Foraging",
 			name_jp: "薬草知識",
@@ -3611,9 +3611,9 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:1, y: 4}	
+			coords: {x:1, y: 4}
 		},
-		SmokeRot: 
+		SmokeRot:
 		{
 			name_en: "Smokeblight",
 			name_jp: "スモークロット",
@@ -3623,9 +3623,9 @@ var classSkills =
 			reqLevel: 0,
 			level: 0,
 			max: 10,
-			coords: {x:1, y: 5.5}	
+			coords: {x:1, y: 5.5}
 		},
-		HerbBoost: 
+		HerbBoost:
 		{
 			name_en: "Herb Boost",
 			name_jp: "ハーブブースト",
@@ -3637,7 +3637,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		AreaHerb: 
+		AreaHerb:
 		{
 			name_en: "Bountiful Herb",
 			name_jp: "エリアハーブ",
@@ -3649,7 +3649,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		RecoveryHerb: 
+		RecoveryHerb:
 		{
 			name_en: "Freeing Herb",
 			name_jp: "リカバリーハーブ",
@@ -3661,7 +3661,7 @@ var classSkills =
 			max: 5,
 			coords: {x:2, y: 2}
 		},
-		ConstraintDefenseBoost: 
+		ConstraintDefenseBoost:
 		{
 			name_en: "Status DEF Up",
 			name_jp: "抑制防御ブースト",
@@ -3673,7 +3673,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3}
 		},
-		SecretRemedyCompound: 
+		SecretRemedyCompound:
 		{
 			name_en: "Shared Nostrum",
 			name_jp: "秘薬調合",
@@ -3685,7 +3685,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 4}
 		},
-		ChaseHerb: 
+		ChaseHerb:
 		{
 			name_en: "Reflex Herb",
 			name_jp: "チェイスハーブ",
@@ -3697,7 +3697,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		DelayHerb: 
+		DelayHerb:
 		{
 			name_en: "Delayed Herb",
 			name_jp: "ディレイハーブ",
@@ -3709,7 +3709,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 6}
 		},
-		HPBoost: 
+		HPBoost:
 		{
 			name_en: "HP Up",
 			name_jp: "ＨＰブースト",
@@ -3721,7 +3721,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		AutoResurrection: 
+		AutoResurrection:
 		{
 			name_en: "Auto-Revive",
 			name_jp: "オートリザレクト",
@@ -3733,7 +3733,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 2}
 		},
-		LingeringScent: 
+		LingeringScent:
 		{
 			name_en: "Lingering Scent",
 			name_jp: "残り香",
@@ -3745,7 +3745,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 5.5}
 		},
-		SmokeBoost: 
+		SmokeBoost:
 		{
 			name_en: "Smoke Boost",
 			name_jp: "スモークブースト",
@@ -3757,7 +3757,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 0}
 		},
-		ConstraintAttackBoost: 
+		ConstraintAttackBoost:
 		{
 			name_en: "Status ATK Up",
 			name_jp: "抑制攻撃ブースト",
@@ -3769,7 +3769,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 1}
 		},
-		ParalyzeSmoke: 
+		ParalyzeSmoke:
 		{
 			name_en: "Numbing Smoke",
 			name_jp: "パラライスモーク",
@@ -3781,7 +3781,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 2.5}
 		},
-		BunglingSmoke: 
+		BunglingSmoke:
 		{
 			name_en: "Chaos Smoke",
 			name_jp: "マズルスモーク",
@@ -3793,7 +3793,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 3.5}
 		},
-		SmokeSolid: 
+		SmokeSolid:
 		{
 			name_en: "Smokestone",
 			name_jp: "スモークソリッド",
@@ -3805,7 +3805,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 5}
 		},
-		SmokeSpark: 
+		SmokeSpark:
 		{
 			name_en: "Smokeflash",
 			name_jp: "スモークスパーク",
@@ -3817,7 +3817,7 @@ var classSkills =
 			max: 10,
 			coords: {x:2, y: 6}
 		},
-		TPBoost: 
+		TPBoost:
 		{
 			name_en: "TP Up",
 			name_jp: "ＴＰブースト",
@@ -3829,7 +3829,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 0}
 		},
-		SmokeBomb: 
+		SmokeBomb:
 		{
 			name_en: "Smoke Bomb",
 			name_jp: "スモークボム",
@@ -3841,7 +3841,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 3}
 		},
-		PersistingScent: 
+		PersistingScent:
 		{
 			name_en: "Passing Scent",
 			name_jp: "移り香",
@@ -3853,7 +3853,7 @@ var classSkills =
 			max: 10,
 			coords: {x:3, y: 5}
 		},
-		PreemptiveSmoke: 
+		PreemptiveSmoke:
 		{
 			name_en: "Auto-Smoke",
 			name_jp: "先制スモーク",

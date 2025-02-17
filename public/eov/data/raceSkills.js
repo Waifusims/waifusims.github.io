@@ -1,4 +1,4 @@
-﻿var raceSkills = 
+﻿var raceSkills =
 {
 	earthrun:
 	{

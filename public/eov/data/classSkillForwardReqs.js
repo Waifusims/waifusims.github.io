@@ -62,7 +62,7 @@ var classSkillForwardReqs =
 			Resonance: {}
 		}
 	},
-	dragoon: 
+	dragoon:
 	{
 		base:
 		{
