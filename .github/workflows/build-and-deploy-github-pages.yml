@@ -16,6 +16,8 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v4
+      with:
+        lfs: true
     - name: enable corepack
       run: corepack enable
     - name: set up node
